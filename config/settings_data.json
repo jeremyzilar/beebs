@@ -1,7 +1,7 @@
 {
   "current": {
     "logo": "{{ shop.brand.logo }}",
-    "logo_width": 450,
+    "logo_width": 330,
     "type_header_font": "archivo_n7",
     "heading_scale": 110,
     "type_body_font": "questrial_n4",
