@@ -1,6 +1,6 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/beebs_logo.png",
+    "logo": "{{ shop.brand.logo }}",
     "logo_width": 450,
     "type_header_font": "archivo_n7",
     "heading_scale": 110,
