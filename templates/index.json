@@ -69,7 +69,7 @@
         "image": "shopify:\/\/shop_images\/IMG_2812.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
-        "layout": "text_first",
+        "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
         "content_layout": "no-overlap",
