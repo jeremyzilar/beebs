@@ -13,13 +13,12 @@
         "paragraph_BT9tPi": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>We’ll send you a discount code to get <strong>10% off<\/strong> your first order<\/p>"
+            "text": "<p>We’ll send you a discount code to get <strong>10% off</strong> your first order</p>"
           }
         },
         "email_form_yKgQgN": {
           "type": "email_form",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -47,7 +46,7 @@
         "text_jByCgT": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_style": "body"
           }
         },
@@ -60,13 +59,9 @@
           }
         }
       },
-      "block_order": [
-        "heading_DYcLDp",
-        "text_jByCgT",
-        "button_fbxz77"
-      ],
+      "block_order": ["heading_DYcLDp", "text_jByCgT", "button_fbxz77"],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_2812.jpg",
+        "image": "shopify://shop_images/IMG_2812.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -82,8 +77,5 @@
       }
     }
   },
-  "order": [
-    "newsletter_9EBd9K",
-    "image_with_text_XmBdNM"
-  ]
+  "order": ["newsletter_9EBd9K", "image_with_text_XmBdNM"]
 }
