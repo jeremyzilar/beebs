@@ -1,1 +1,52 @@
-{"name":"t:sections.header.name","type":"header","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"announcement_LxDgjm":{"type":"announcement","settings":{"text":"Follow @beebsgoods on Instagram","link":"https:\/\/www.instagram.com\/beebsgoods"}}},"block_order":["announcement_LxDgjm"],"settings":{"color_scheme":"scheme-72a088ce-189c-4565-854a-217746a0488e","show_line_separator":true,"show_social":true,"auto_rotate":true,"change_slides_speed":5,"enable_country_selector":false,"enable_language_selector":false}},"header":{"type":"header","settings":{"logo_position":"middle-center","menu":"","menu_type_desktop":"drawer","sticky_header_type":"none","show_line_separator":false,"color_scheme":"scheme-cab2752d-1694-4724-bc61-9f569493f0bd","menu_color_scheme":"scheme-cab2752d-1694-4724-bc61-9f569493f0bd","enable_country_selector":false,"enable_language_selector":false,"mobile_logo_position":"center","margin_bottom":0,"padding_top":36,"padding_bottom":36}}},"order":["announcement-bar","header"]}
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_LxDgjm": {
+          "type": "announcement",
+          "settings": {
+            "text": "Follow @beebsgoods on Instagram",
+            "link": "https:\/\/www.instagram.com\/beebsgoods"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_LxDgjm"
+      ],
+      "settings": {
+        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
+        "show_line_separator": true,
+        "show_social": true,
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-center",
+        "menu": "",
+        "menu_type_desktop": "drawer",
+        "sticky_header_type": "reduce-logo-size",
+        "show_line_separator": true,
+        "color_scheme": "scheme-cab2752d-1694-4724-bc61-9f569493f0bd",
+        "menu_color_scheme": "scheme-cab2752d-1694-4724-bc61-9f569493f0bd",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
