@@ -122,10 +122,38 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "newsletter_f6g44n": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_ibMBGi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe today and get 15% off your first purchase.",
+            "heading_size": "h2"
+          }
+        },
+        "email_form_AEFLeY": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_ibMBGi",
+        "email_form_AEFLeY"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "newsletter_f6g44n"
   ]
 }
