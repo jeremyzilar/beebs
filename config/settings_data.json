@@ -1,6 +1,7 @@
 {
   "current": {
-    "logo_width": 100,
+    "logo": "shopify:\/\/shop_images\/beebs_logo.png",
+    "logo_width": 240,
     "type_header_font": "avenir_next_n5",
     "heading_scale": 125,
     "type_body_font": "anonymous_pro_n4",
@@ -131,6 +132,9 @@
         }
       }
     },
+    "content_for_index": [
+
+    ],
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -156,11 +160,11 @@
       },
       "scheme-3": {
         "settings": {
-          "background": "#DBE9E0",
+          "background": "#dbe9e0",
           "background_gradient": "",
           "text": "#020912",
           "button": "#020912",
-          "button_label": "#DBE9E0",
+          "button_label": "#dbe9e0",
           "secondary_button_label": "#020912",
           "shadow": "#020912"
         }
@@ -178,11 +182,11 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#FFDFB8",
+          "background": "#ffdfb8",
           "background_gradient": "",
           "text": "#020912",
           "button": "#020912",
-          "button_label": "#FFDFB8",
+          "button_label": "#ffdfb8",
           "secondary_button_label": "#020912",
           "shadow": "#020912"
         }
