@@ -49,6 +49,31 @@
           "settings": {
             "share_label": "Share with a friend"
           }
+        },
+        "inventory_i9YctU": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
+        "rating_FYyzUm": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "icon_with_text_gYY8kP": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "heart",
+            "heading_1": "Heading",
+            "icon_2": "return",
+            "heading_2": "Heading",
+            "icon_3": "truck",
+            "heading_3": "Heading"
+          }
         }
       },
       "block_order": [
@@ -59,7 +84,10 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "inventory_i9YctU",
+        "rating_FYyzUm",
+        "icon_with_text_gYY8kP"
       ],
       "settings": {
         "enable_sticky_info": true,
