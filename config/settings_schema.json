@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Taste",
-    "theme_version": "14.0.0",
+    "theme_name": "Refresh",
+    "theme_version": "13.0.1",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.logo.name",
@@ -19,7 +19,7 @@
         "type": "range",
         "id": "logo_width",
         "min": 50,
-        "max": 300,
+        "max": 600,
         "step": 10,
         "default": 100,
         "unit": "px",
