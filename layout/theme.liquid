@@ -99,6 +99,12 @@
         background-color: rgb(var(--color-background));
       }
 
+      @font-face {
+        font-family: "Fugue";
+        src: url("https://cdn.shopify.com/s/files/1/0419/1115/6900/files/Fugue_Regular.otf?v=1720544370")
+          format("opentype");
+      }
+
       :root {
         --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
         --font-body-style: {{ settings.type_body_font.style }};
