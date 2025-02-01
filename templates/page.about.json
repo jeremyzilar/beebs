@@ -1,0 +1,149 @@
+{
+  "sections": {
+    "image_with_text_38fdgX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Wyk9xV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Story",
+            "heading_size": "h0"
+          }
+        },
+        "text_8UbabU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When we first brought our puppy home, we were in love, and wanted to give her everything even though she was super hard to train. We soon found her “dog cabinet” and our trash can filling up with plastic, which we had spent years trying to reduce in our own lives. When she wouldn’t even look at most of the treats in those bags, we felt like we had failed.<\/p><p>We are artists and designers who strive to use our time and energy to bring joy into the world in a responsible way. Beeb’s mission is to bring maximum health and happiness to dogs and their dog parents everywhere without adding more plastic into the world. <\/p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Wyk9xV",
+        "text_8UbabU"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_8360.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_Ug7niD": {
+      "type": "collage",
+      "blocks": {
+        "image_9cVRMe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_3737.jpg"
+          }
+        },
+        "image_Uecxyj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_2419.jpg"
+          }
+        },
+        "image_zHVWLN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_4946.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_9cVRMe",
+        "image_Uecxyj",
+        "image_zHVWLN"
+      ],
+      "custom_css": [
+        "h2 {text-align: center;}"
+      ],
+      "settings": {
+        "heading": "Our Beeb",
+        "heading_size": "h0",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
+        "padding_top": 36,
+        "padding_bottom": 20
+      }
+    },
+    "collage_VG7FDe": {
+      "type": "collage",
+      "blocks": {
+        "image_tixEbJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0008.jpg"
+          }
+        },
+        "image_Jdq9PC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_1825.jpg"
+          }
+        },
+        "image_dMKd3C": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_3007.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_tixEbJ",
+        "image_Jdq9PC",
+        "image_dMKd3C"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "hxl",
+        "desktop_layout": "right",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "custom_css": [
+        "button {background:white;}"
+      ],
+      "settings": {
+        "heading": "Get in touch",
+        "heading_size": "h1",
+        "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "image_with_text_38fdgX",
+    "collage_Ug7niD",
+    "collage_VG7FDe",
+    "main",
+    "form"
+  ]
+}

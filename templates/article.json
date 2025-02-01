@@ -12,13 +12,8 @@
         "title": {
           "type": "title",
           "settings": {
-            "blog_show_date": false,
+            "blog_show_date": true,
             "blog_show_author": false
-          }
-        },
-        "content": {
-          "type": "content",
-          "settings": {
           }
         },
         "share": {
@@ -26,16 +21,19 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
         }
       },
       "block_order": [
         "featured_image",
         "title",
-        "content",
-        "share"
+        "share",
+        "content"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
