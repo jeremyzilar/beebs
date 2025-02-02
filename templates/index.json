@@ -589,7 +589,7 @@
         "swipe_on_mobile": true,
         "padding_top": 0,
         "padding_bottom": 48,
-        "card_padding": 24
+        "card_padding": 0
       }
     },
     "rich_text_mJPkkr": {
