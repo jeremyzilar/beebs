@@ -4,6 +4,7 @@
 
 .multicolumn[style*="background-image"] {
   background-color: transparent;
+  background-attachment: scroll;
 }
 
 .multicolumn .title {
