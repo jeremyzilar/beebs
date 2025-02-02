@@ -93,9 +93,9 @@
             </span>
             {%- render 'loading-spinner' -%}
           </button>
-          {%- if show_dynamic_checkout -%}
+          {% comment %} {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
-          {%- endif -%}
+          {%- endif -%} {% endcomment %}
           
           {%- assign amazon_url = product.selected_or_first_available_variant.metafields.custom.amazon_product_url | default: "https://www.amazon.com/stores/page/411B391D-E1FE-4D7B-81B6-CF7705C1F82F" -%}
           <a 
@@ -106,23 +106,10 @@
           >
             Buy on Amazon
           </a>
-          <script>
-            document.addEventListener('variant:change', function(event) {
-              console.log('variant:change', event.detail.variant);
-              const variant = event.detail.variant;
-              const amazonButton = document.querySelector('.amazon-button');
-              if (variant && variant.metafields && variant.metafields.custom && variant.metafields.custom.amazon_product_url) {
-                console.log('Setting URL to:', variant.metafields.custom.amazon_product_url);
-                amazonButton.href = variant.metafields.custom.amazon_product_url;
-              } else {
-                console.log('Falling back to default URL');
-                amazonButton.href = amazonButton.dataset.defaultUrl;
-              }
-            });
-          </script>
         </div>
       {%- endform -%}
     </product-form>
+
   {%- else -%}
     <div class="product-form">
       <div class="product-form__buttons form">
