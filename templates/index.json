@@ -1,10 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "custom_liquid_niitzM": {
       "type": "custom-liquid",
       "custom_css": [],
       "settings": {
-        "custom_liquid": "<div class=\"hero\">\n\n<div class=\"media-box\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0419\/1115\/6900\/files\/IMG_3737.jpg?v=1721150476\" alt=\"\"\/>\n<\/div>\n\n<div class=\"beeb\">\n\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0419\/1115\/6900\/files\/beebs-stack_05d8b000-0078-4b35-800c-0e7e7fcbcd17_430x.png\" alt=\"beebs-logo\"\/>\n\n<a href=\"https:\/\/www.amazon.com\/stores\/page\/411B391D-E1FE-4D7B-81B6-CF7705C1F82F\" class=\"button button--secondary\">Buy on Amazon<\/a>\n\n<!--<p><a href=\"https:\/\/www.amazon.com\/promocode\/AW13A1AJBTC7D\" title=\"Sign up to get 10% off\">Grand opening: get 10% off<\/a><\/p>-->\n\n<\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"hero\">\n\n<div class=\"media-box\">\n<img src=\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/IMG_3737.jpg?v=1721150476\" alt=\"\"/>\n</div>\n\n<div class=\"beeb\">\n\n<img src=\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/beebs-stack_05d8b000-0078-4b35-800c-0e7e7fcbcd17_430x.png\" alt=\"beebs-logo\"/>\n\n<a href=\"https://www.amazon.com/stores/page/411B391D-E1FE-4D7B-81B6-CF7705C1F82F\" class=\"button button--secondary\">Buy on Amazon</a>\n\n<!--<p><a href=\"https://www.amazon.com/promocode/AW13A1AJBTC7D\" title=\"Sign up to get 10% off\">Grand opening: get 10% off</a></p>-->\n\n</div>\n</div>",
         "color_scheme": "scheme-2",
         "padding_top": 0,
         "padding_bottom": 0
@@ -16,8 +25,8 @@
         "column_Xy9hzD": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/starter-pack_2a46c7c6-198f-4e1c-bf2e-9baafdb82104.png",
-            "title": "<a href=\"https:\/\/www.amazon.com\/Beebs-Natural-Protein-Ingredient-Starter\/dp\/B0D7XFQTGT\" title=\"https:\/\/www.amazon.com\/Beebs-Natural-Protein-Ingredient-Starter\/dp\/B0D7XFQTGT\">Starter pack<\/a>",
+            "image": "shopify://shop_images/starter-pack_2a46c7c6-198f-4e1c-bf2e-9baafdb82104.png",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Natural-Protein-Ingredient-Starter/dp/B0D7XFQTGT\" title=\"https://www.amazon.com/Beebs-Natural-Protein-Ingredient-Starter/dp/B0D7XFQTGT\">Starter pack</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -26,8 +35,8 @@
         "column_TMwyxJ": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/0.5oz-front.jpg",
-            "title": "<a href=\"https:\/\/www.amazon.com\/Beebs-Treats-Natural-Protein-Ingredient\/dp\/B0D775B5PZ\" title=\"https:\/\/www.amazon.com\/Beebs-Treats-Natural-Protein-Ingredient\/dp\/B0D775B5PZ\">Pocket tube<\/a>",
+            "image": "shopify://shop_images/0.5oz-front.jpg",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ\">Pocket tube</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -36,8 +45,8 @@
         "column_EQeUd3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4oz-front.jpg",
-            "title": "<a href=\"https:\/\/www.amazon.com\/Beebs-Treats-Natural-Protein-Ingredient\/dp\/B0CZJS4BKT\" title=\"https:\/\/www.amazon.com\/Beebs-Treats-Natural-Protein-Ingredient\/dp\/B0CZJS4BKT\">4.0oz Refill bag<\/a>",
+            "image": "shopify://shop_images/4oz-front.jpg",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\">4.0oz Refill bag</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -46,8 +55,8 @@
         "column_KAkNLk": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2oz-front.jpg",
-            "title": "<a href=\"https:\/\/www.amazon.com\/Beebs-Treats-Natural-Protein-Ingredient\/dp\/B0CZJS8SHJ\" title=\"https:\/\/www.amazon.com\/Beebs-Treats-Natural-Protein-Ingredient\/dp\/B0CZJS8SHJ\">2.0oz Refill bag<\/a>",
+            "image": "shopify://shop_images/2oz-front.jpg",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS8SHJ\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS8SHJ\">2.0oz Refill bag</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -61,7 +70,6 @@
         "column_KAkNLk"
       ],
       "custom_css": [
-        ".multicolumn {background-image: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0419\/1115\/6900\/files\/bean-1.png\"); background-attachment: scroll;}",
         ".multicolumn__title {display: block;}",
         ".multicolumn__title h2.title {text-align: center;}",
         ".content-container h2 {text-align: center;}",
@@ -69,7 +77,8 @@
         ".multicolumn-card__image-wrapper {padding-top: 1.5rem;}"
       ],
       "settings": {
-        "title": "✨<strong>Introducing<\/strong> plastic free, reusable, refillable, recyclable, magic dog treats✨",
+        "background_image": "shopify://shop_images/bean-2.png",
+        "title": "✨<strong>Introducing</strong> plastic free, reusable, refillable, recyclable, magic dog treats✨",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "square",
@@ -102,7 +111,7 @@
         "paragraph_qRjJnE": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Already ordered? <a href=\"https:\/\/www.amazon.com\/Beebs-Treats-Natural-Protein-Ingredient\/dp\/B0D775B5PZ\" target=\"_blank\" title=\"Leave us a review on Amazon\">Please leave us a review!<\/a> It would mean the world to us. We are aiming to get 30 reviews in 30 days 💬<\/p>"
+            "text": "<p>Already ordered? <a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ\" target=\"_blank\" title=\"Leave us a review on Amazon\">Please leave us a review!</a> It would mean the world to us. We are aiming to get 30 reviews in 30 days 💬</p>"
           }
         }
       },
@@ -129,7 +138,7 @@
           "type": "column",
           "settings": {
             "title": "★★★★★",
-            "text": "<p>”My dogs absolutely lose their mind over these treats their owner loses his mind over the fact that he’s not zipping up some silly plastic ziploc that’s going to sit in a landfill for 10,000 years.” <\/p><p>— Matt, Santa Fe, NM<\/p>",
+            "text": "<p>”My dogs absolutely lose their mind over these treats their owner loses his mind over the fact that he’s not zipping up some silly plastic ziploc that’s going to sit in a landfill for 10,000 years.” </p><p>— Matt, Santa Fe, NM</p>",
             "link_label": "",
             "link": ""
           }
@@ -138,7 +147,7 @@
           "type": "column",
           "settings": {
             "title": "★★★★★",
-            "text": "<p>”Taco loves these treats! We love that they are one ingredient, and in eco-friendly packaging. The small tube goes on walks with us, and the larger size is great for re-fills and storing away.” <\/p><p>– Amy, New York, NY<br\/><\/p>",
+            "text": "<p>”Taco loves these treats! We love that they are one ingredient, and in eco-friendly packaging. The small tube goes on walks with us, and the larger size is great for re-fills and storing away.” </p><p>– Amy, New York, NY<br/></p>",
             "link_label": "",
             "link": ""
           }
@@ -147,7 +156,7 @@
           "type": "column",
           "settings": {
             "title": "★★★★★",
-            "text": "<p>”The pocket tube is a great idea for walks, and I love that everything is plastic-free <em>(I wish more companies would figure this out)<\/em>. Thrilled to find such a conscientious lamb lung dealer!” <\/p><p>– Eric, Dallas, TX<\/p>",
+            "text": "<p>”The pocket tube is a great idea for walks, and I love that everything is plastic-free <em>(I wish more companies would figure this out)</em>. Thrilled to find such a conscientious lamb lung dealer!” </p><p>– Eric, Dallas, TX</p>",
             "link_label": "",
             "link": ""
           }
@@ -156,7 +165,7 @@
           "type": "column",
           "settings": {
             "title": "★★★★★",
-            "text": "<p>”I have two French bulldogs and they’re a bit overweight. These are great low calorie treats for training and they love them. I LOVE the plastic-free packaging and super cute branding too!!”<\/p><p>– Jeanie, Stuart, FL<\/p>",
+            "text": "<p>”I have two French bulldogs and they’re a bit overweight. These are great low calorie treats for training and they love them. I LOVE the plastic-free packaging and super cute branding too!!”</p><p>– Jeanie, Stuart, FL</p>",
             "link_label": "",
             "link": ""
           }
@@ -169,7 +178,7 @@
         "column_dYBjmM"
       ],
       "custom_css": [
-        ".multicolumn {background-image: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0419\/1115\/6900\/files\/bean-1.png\"); background-attachment: scroll;}",
+        ".multicolumn {background-image: url(\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/bean-1.png\"); background-attachment: scroll;}",
         ".multicolumn__title {display: block;}",
         ".multicolumn__title h2.title {text-align: center;}",
         ".content-container h2 {text-align: center;}",
@@ -188,7 +197,7 @@
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "50+ Reviews",
-        "button_link": "https:\/\/www.amazon.com\/Beebs-Training-Grass-Fed-Ingredient-Packaging\/product-reviews\/B0CZJS4BKT\/",
+        "button_link": "https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/product-reviews/B0CZJS4BKT/",
         "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
@@ -233,7 +242,7 @@
         "text_YXUAL3": {
           "type": "text",
           "settings": {
-            "text": "<p>The toxic “forever chemicals” known as PFAs found in pet food packaging affect your dog’s health even more than yours: Average blood levels of chemicals from plastics are much higher in pets than in humans. (source: <a href=\"https:\/\/ewg.org\" target=\"_blank\" title=\"https:\/\/ewg.org\">ewg.org<\/a>)<\/p><h2>✨ Plastic recycling is a myth <\/h2><p>You may be putting plastic in your recycling bin, but only 5-6% of plastic is being recycled and made into new items. Meanwhile humans currently produce more than 350 million metric tons of plastic waste per year.<\/p><h2>✨ Most “eco” packaging either contains plastic, or is plastic<\/h2><p>Not our packages! We've worked hard to source bags, tubes, and labels that are free of plastic coatings and adhesives and can be composted at home. <\/p>",
+            "text": "<p>The toxic “forever chemicals” known as PFAs found in pet food packaging affect your dog’s health even more than yours: Average blood levels of chemicals from plastics are much higher in pets than in humans. (source: <a href=\"https://ewg.org\" target=\"_blank\" title=\"https://ewg.org\">ewg.org</a>)</p><h2>✨ Plastic recycling is a myth </h2><p>You may be putting plastic in your recycling bin, but only 5-6% of plastic is being recycled and made into new items. Meanwhile humans currently produce more than 350 million metric tons of plastic waste per year.</p><h2>✨ Most “eco” packaging either contains plastic, or is plastic</h2><p>Not our packages! We've worked hard to source bags, tubes, and labels that are free of plastic coatings and adhesives and can be composted at home. </p>",
             "text_style": "body"
           }
         }
@@ -246,7 +255,7 @@
         ".image-with-text__media {background: #efefef;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/hand-tube_57de2249-c9a0-49f1-b08c-63116df3b0ae.png",
+        "image": "shopify://shop_images/hand-tube_57de2249-c9a0-49f1-b08c-63116df3b0ae.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -297,7 +306,7 @@
         "text_6bnAPd": {
           "type": "text",
           "settings": {
-            "text": "<p>It’s love at first sniff, even for picky pups that are hard to please. Beeb’s lamb lung treats are perfect for training, especially for tough-to-train behaviors like recall, reactiveness, and potty training.<\/p><h2>✨  Easy for dogs of all sizes and ages<\/h2><p>Because they are less dense and sticky than other treats, puppies, small dogs, and older dogs can chew and digest them easily.<\/p><h2>✨ Use as much as you need<\/h2><p>Beeb's lamb lung is irresistible but also low calorie. Break it up into many small pieces to mark big moments or habituate your pup to the street or the car.<\/p>",
+            "text": "<p>It’s love at first sniff, even for picky pups that are hard to please. Beeb’s lamb lung treats are perfect for training, especially for tough-to-train behaviors like recall, reactiveness, and potty training.</p><h2>✨  Easy for dogs of all sizes and ages</h2><p>Because they are less dense and sticky than other treats, puppies, small dogs, and older dogs can chew and digest them easily.</p><h2>✨ Use as much as you need</h2><p>Beeb's lamb lung is irresistible but also low calorie. Break it up into many small pieces to mark big moments or habituate your pup to the street or the car.</p>",
             "text_style": "body"
           }
         },
@@ -317,7 +326,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_4084.jpg",
+        "image": "shopify://shop_images/IMG_4084.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -368,7 +377,7 @@
         "text_W4NHz4": {
           "type": "text",
           "settings": {
-            "text": "<p>100% all natural, gently baked, grass fed lamb lung, with no grains, no gluten, no fillers, nothing but lamb.<\/p><h2>✨ Low calorie <\/h2><p>You can reward your dog more often with these high-protein, low fat treats without worrying about their weight.<\/p><h2>✨ Responsibly sourced<\/h2><p>Our lamb lung is sourced from New Zealand, where sheep are grass-fed, humanely raised and free range.<\/p>",
+            "text": "<p>100% all natural, gently baked, grass fed lamb lung, with no grains, no gluten, no fillers, nothing but lamb.</p><h2>✨ Low calorie </h2><p>You can reward your dog more often with these high-protein, low fat treats without worrying about their weight.</p><h2>✨ Responsibly sourced</h2><p>Our lamb lung is sourced from New Zealand, where sheep are grass-fed, humanely raised and free range.</p>",
             "text_style": "body"
           }
         },
@@ -387,7 +396,7 @@
         "caption_iHpMbT"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_2156.heic",
+        "image": "shopify://shop_images/IMG_2156.heic",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -438,7 +447,7 @@
         "text_KbCtpe": {
           "type": "text",
           "settings": {
-            "text": "<p>These treats are dry and light. They won't make your hands sticky or oily or fill your pockets with crumbs. And you won't gag every time you use them.<\/p><h2>✨ Easily breaks to any size<\/h2><p>Sometimes you need one big treat, and sometimes you need a lot of little treats. Beeb’s lamb lung is already broken up into smaller pieces, and you can break them down more by snapping them with your fingers.<\/p><h2>✨ Pocket-friendly<\/h2><p>Our pocket tube is made for easy walks to the dog park, and a satisfying “pop” that will get your dog’s attention. And if you just need one treat, you can toss it in your pocket.<br\/><\/p>",
+            "text": "<p>These treats are dry and light. They won't make your hands sticky or oily or fill your pockets with crumbs. And you won't gag every time you use them.</p><h2>✨ Easily breaks to any size</h2><p>Sometimes you need one big treat, and sometimes you need a lot of little treats. Beeb’s lamb lung is already broken up into smaller pieces, and you can break them down more by snapping them with your fingers.</p><h2>✨ Pocket-friendly</h2><p>Our pocket tube is made for easy walks to the dog park, and a satisfying “pop” that will get your dog’s attention. And if you just need one treat, you can toss it in your pocket.<br/></p>",
             "text_style": "body"
           }
         },
@@ -457,7 +466,7 @@
         "caption_bY3d34"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/doctor.jpg",
+        "image": "shopify://shop_images/doctor.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -485,7 +494,7 @@
         "text_d6fiJd": {
           "type": "text",
           "settings": {
-            "text": "<p>This is our dog Juniper, but we often call her 'The Beeb' or 'Our Noodle'.<\/p>"
+            "text": "<p>This is our dog Juniper, but we often call her 'The Beeb' or 'Our Noodle'.</p>"
           }
         }
       },
@@ -508,7 +517,7 @@
         "column_3tLqVa": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_8360.jpg",
+            "image": "shopify://shop_images/IMG_8360.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -518,7 +527,7 @@
         "column_i8cFCp": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_4946.jpg",
+            "image": "shopify://shop_images/IMG_4946.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -528,7 +537,7 @@
         "column_KXXBfQ": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_3737.jpg",
+            "image": "shopify://shop_images/IMG_3737.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -538,7 +547,7 @@
         "column_fUXqxR": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_2419.jpg",
+            "image": "shopify://shop_images/IMG_2419.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -548,7 +557,7 @@
         "column_BKdbyE": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_0008.jpg",
+            "image": "shopify://shop_images/IMG_0008.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -576,7 +585,7 @@
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "Our story",
-        "button_link": "shopify:\/\/pages\/about-us",
+        "button_link": "shopify://pages/about-us",
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
@@ -613,45 +622,45 @@
         "row_arkRQk": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/starter-pack_2a46c7c6-198f-4e1c-bf2e-9baafdb82104.png",
+            "image": "shopify://shop_images/starter-pack_2a46c7c6-198f-4e1c-bf2e-9baafdb82104.png",
             "caption": "Beeb’s lamb lung",
             "heading": "Starter pack",
-            "text": "<p>Our tube is perfect for slipping in your pocket for walks. Refill and reuse your Beeb’s pocket tube from our 2oz bag.<\/p>",
+            "text": "<p>Our tube is perfect for slipping in your pocket for walks. Refill and reuse your Beeb’s pocket tube from our 2oz bag.</p>",
             "button_label": "Buy on Amazon",
-            "button_link": "https:\/\/www.amazon.com\/Beebs-Natural-Protein-Ingredient-Starter\/dp\/B0D7XFQTGT"
+            "button_link": "https://www.amazon.com/Beebs-Natural-Protein-Ingredient-Starter/dp/B0D7XFQTGT"
           }
         },
         "row_rBBjKt": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/0.5oz-front.jpg",
+            "image": "shopify://shop_images/0.5oz-front.jpg",
             "caption": "Beeb’s lamb lung",
             "heading": "Pocket Tube",
-            "text": "<p>The perfect size and form to bring treats on the go. It also makes a satisfying sound when you open it that your pup will notice.<\/p><p>It's filled with single-ingredient, feather light, low calorie treats that even picky dogs enjoy. <\/p>",
+            "text": "<p>The perfect size and form to bring treats on the go. It also makes a satisfying sound when you open it that your pup will notice.</p><p>It's filled with single-ingredient, feather light, low calorie treats that even picky dogs enjoy. </p>",
             "button_label": "Buy on Amazon",
-            "button_link": "https:\/\/www.amazon.com\/Beebs-Treats-Natural-Protein-Ingredient\/dp\/B0D775B5PZ"
+            "button_link": "https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ"
           }
         },
         "row_hPUEdG": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4oz-front.jpg",
+            "image": "shopify://shop_images/4oz-front.jpg",
             "caption": "Beeb’s lamb lung",
             "heading": "4oz refill bag",
-            "text": "<p>We empty our 4oz refill bag into a large canister we use to train at home. We also use it to refill our pocket tubes.<\/p><p>Our bag is 100% plastic free, and fully recyclable with paper. No need to remove labels or zippers to recycle. ♻️ <\/p>",
+            "text": "<p>We empty our 4oz refill bag into a large canister we use to train at home. We also use it to refill our pocket tubes.</p><p>Our bag is 100% plastic free, and fully recyclable with paper. No need to remove labels or zippers to recycle. ♻️ </p>",
             "button_label": "Buy on Amazon",
-            "button_link": "https:\/\/www.amazon.com\/Beebs-Treats-Natural-Protein-Ingredient\/dp\/B0CZJS4BKT"
+            "button_link": "https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT"
           }
         },
         "row_tfkNPM": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2oz-front.jpg",
+            "image": "shopify://shop_images/2oz-front.jpg",
             "caption": "Beeb’s lamb lung",
             "heading": "2oz refill bag",
-            "text": "<p>Our 2oz refill bag is a similar size to other dog treat bags, but not made of plastic. It's great to way to refill your pocket tube or treat container you keep in the house.<\/p><p>Each high-protein treat is about 2 calories, so you can shower your pup with treats for harder-to-train behaviors.<\/p>",
+            "text": "<p>Our 2oz refill bag is a similar size to other dog treat bags, but not made of plastic. It's great to way to refill your pocket tube or treat container you keep in the house.</p><p>Each high-protein treat is about 2 calories, so you can shower your pup with treats for harder-to-train behaviors.</p>",
             "button_label": "Buy on Amazon",
-            "button_link": "https:\/\/www.amazon.com\/Beebs-Treats-Natural-Protein-Ingredient\/dp\/B0CZJS8SHJ"
+            "button_link": "https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS8SHJ"
           }
         }
       },
@@ -662,7 +671,7 @@
         "row_tfkNPM"
       ],
       "custom_css": [
-        ".subtitle p {font-size: 24px; line-height: calc(1 + 0.5 \/ var(--font-body-scale));}",
+        ".subtitle p {font-size: 24px; line-height: calc(1 + 0.5 / var(--font-body-scale));}",
         ".button--secondary {font-size: 18px;}"
       ],
       "settings": {
