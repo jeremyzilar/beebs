@@ -110,6 +110,7 @@
           </a>
           <script>
             document.addEventListener('variant:change', function(event) {
+              console.log('variant:change', custom.amazon_product_url);
               const variant = event.detail.variant;
               const amazonButton = document.querySelector('.amazon-button');
               if (variant && variant.metafields && variant.metafields.custom && variant.metafields.custom.amazon_product_url) {
