@@ -1,6 +1,15 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/beebs-plastic-free.png",
+    "logo": "shopify://shop_images/beebs-plastic-free.png",
     "logo_width": 160,
     "type_header_font": "archivo_n7",
     "heading_scale": 110,
@@ -101,7 +110,7 @@
     "brand_description": "",
     "brand_image_width": 100,
     "social_facebook_link": "",
-    "social_instagram_link": "https:\/\/www.instagram.com\/beebsgoods",
+    "social_instagram_link": "https://www.instagram.com/beebsgoods",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -135,7 +144,7 @@
     "content_for_index": [],
     "blocks": {
       "13768625480086291342": {
-        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
         "settings": {}
       }
@@ -420,7 +429,7 @@
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-1",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
@@ -458,7 +467,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "@font-face {font-family: \"Fugue\"; src: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0419\/1115\/6900\/files\/Fugue_Regular.otf?v=1720544370\") format(\"opentype\");}",
+      "@font-face {font-family: \"Fugue\"; src: url(\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/Fugue_Regular.otf?v=1720544370\") format(\"opentype\");}",
       "body {letter-spacing: 0.06rem;}",
       "h1,h2,h3 {letter-spacing: 0.1rem !important;}",
       ".hero {background: #e7ceaf; height: 500px; overflow: hidden; position: relative;}",
