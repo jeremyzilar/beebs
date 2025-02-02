@@ -70,12 +70,11 @@
               assign quantity_rule_soldout = true
             endif
           -%}
-          {% comment %}
           <button
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
             name="add"
-            class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+            class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %} hidden"
             {% if product.selected_or_first_available_variant.available == false
               or quantity_rule_soldout
               or product.selected_or_first_available_variant == null
@@ -97,7 +96,6 @@
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}
-          {% endcomment %}
           
           {%- assign amazon_url = product.selected_or_first_available_variant.metafields.custom.amazon_product_url | default: "https://www.amazon.com/stores/page/411B391D-E1FE-4D7B-81B6-CF7705C1F82F" -%}
           <a 
@@ -175,3 +173,9 @@
     <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 </div>
+
+<style>
+  .hidden {
+    display: none !important;
+  }
+</style>
