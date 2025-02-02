@@ -261,3 +261,13 @@
     display: list-item;
   }
 }
+
+.title-wrapper--center {
+  text-align: center;
+  justify-content: center;
+}
+
+.title-wrapper--right {
+  text-align: right;
+  justify-content: flex-end;
+}
