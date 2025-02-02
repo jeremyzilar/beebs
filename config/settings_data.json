@@ -10,7 +10,7 @@
 {
   "current": {
     "enable_amazon_payments": true,
-    "enable_shopify_payments": true,
+    "enable_shopify_payments": false,
     "logo": "shopify://shop_images/beebs-plastic-free.png",
     "logo_width": 160,
     "type_header_font": "archivo_n7",
