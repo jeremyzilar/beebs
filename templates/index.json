@@ -71,8 +71,7 @@
       ],
       "custom_css": [
         ".multicolumn__title {display: block;}",
-        ".multicolumn__title h2.title {text-align: center;}",
-        ".content-container h2 {text-align: center;}",
+        ".content-container h2 {text-align: left;}",
         ".content-container {border: 3px #333 solid; background: white;}",
         ".multicolumn-card__image-wrapper {padding-top: 1.5rem;}"
       ],
