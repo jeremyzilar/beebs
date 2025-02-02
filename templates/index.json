@@ -90,7 +90,7 @@
         "swipe_on_mobile": true,
         "padding_top": 64,
         "padding_bottom": 48,
-        "card_padding": 0
+        "card_padding": 12
       }
     },
     "newsletter_9EBd9K": {
