@@ -74,7 +74,7 @@
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
             name="add"
-            class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %} hidden"
+            class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
             {% if product.selected_or_first_available_variant.available == false
               or quantity_rule_soldout
               or product.selected_or_first_available_variant == null
@@ -93,19 +93,21 @@
             </span>
             {%- render 'loading-spinner' -%}
           </button>
-          {% comment %} {%- if show_dynamic_checkout -%}
+          {%- if show_dynamic_checkout and block.settings.payment_methods contains 'shopify' -%}
             {{ form | payment_button }}
-          {%- endif -%} {% endcomment %}
+          {%- endif -%}
           
-          {%- assign amazon_url = product.selected_or_first_available_variant.metafields.custom.amazon_product_url | default: "https://www.amazon.com/stores/page/411B391D-E1FE-4D7B-81B6-CF7705C1F82F" -%}
-          <a 
-            href="{{ amazon_url }}" 
-            target="_blank" 
-            class="button button--full-width button--primary amazon-button"
-            data-default-url="https://www.amazon.com/stores/page/411B391D-E1FE-4D7B-81B6-CF7705C1F82F"
-          >
-            Buy on Amazon
-          </a>
+          {%- if block.settings.payment_methods contains 'amazon' -%}
+            {%- assign amazon_url = product.selected_or_first_available_variant.metafields.custom.amazon_product_url | default: "https://www.amazon.com/stores/page/411B391D-E1FE-4D7B-81B6-CF7705C1F82F" -%}
+            <a 
+              href="{{ amazon_url }}" 
+              target="_blank" 
+              class="button button--full-width button--primary amazon-button"
+              data-default-url="https://www.amazon.com/stores/page/411B391D-E1FE-4D7B-81B6-CF7705C1F82F"
+            >
+              Buy on Amazon
+            </a>
+          {%- endif -%}
         </div>
       {%- endform -%}
     </product-form>
@@ -161,8 +163,3 @@
   {%- endif -%}
 </div>
 
-<style>
-  .hidden {
-    display: none !important;
-  }
-</style>
