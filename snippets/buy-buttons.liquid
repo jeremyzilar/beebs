@@ -70,6 +70,7 @@
               assign quantity_rule_soldout = true
             endif
           -%}
+          {% comment %}
           <button
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
@@ -96,6 +97,12 @@
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}
+          {% endcomment %}
+          
+          {%- assign amazon_url = product.selected_or_first_available_variant.metafields.custom.amazon_product_url | default: "https://www.amazon.com/stores/page/411B391D-E1FE-4D7B-81B6-CF7705C1F82F" -%}
+          <a href="{{ amazon_url }}" target="_blank" class="button button--full-width button--primary">
+            Buy on Amazon
+          </a>
         </div>
       {%- endform -%}
     </product-form>
