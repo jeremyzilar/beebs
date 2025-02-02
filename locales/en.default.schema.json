@@ -377,6 +377,19 @@
           "label": "Vertical space"
         }
       }
+    },
+    "payment_methods": {
+      "name": "Payment methods",
+      "settings": {
+        "enable_amazon_payments": {
+          "label": "Enable Amazon Payments",
+          "info": "Allow customers to pay using their Amazon account"
+        },
+        "enable_shopify_payments": {
+          "label": "Enable Shopify Payments",
+          "info": "Process payments directly through Shopify"
+        }
+      }
     }
   },
   "sections": {
