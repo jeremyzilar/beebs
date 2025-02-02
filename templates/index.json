@@ -70,15 +70,13 @@
         "column_KAkNLk"
       ],
       "custom_css": [
-        ".multicolumn__title {display: block;}",
         ".content-container h2 {text-align: left;}",
-        ".content-container {border: 3px #333 solid; background: white;}",
-        ".multicolumn-card__image-wrapper {padding-top: 1.5rem;}"
+        ".content-container {border: 3px #333 solid; background: white;}"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/bean-2.png",
         "title": "✨<strong>Introducing</strong> plastic free, reusable, refillable, recyclable, magic dog treats✨",
         "heading_size": "h2",
+        "heading_alignment": "center",
         "image_width": "full",
         "image_ratio": "square",
         "columns_desktop": 4,
@@ -87,9 +85,10 @@
         "button_label": "",
         "button_link": "",
         "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
+        "background_image": "shopify://shop_images/bean-2.png",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 28,
+        "padding_top": 64,
         "padding_bottom": 48
       }
     },
@@ -190,6 +189,7 @@
       "settings": {
         "title": "What people are saying",
         "heading_size": "h2",
+        "heading_alignment": "left",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 4,
@@ -578,6 +578,7 @@
       "settings": {
         "title": "",
         "heading_size": "h0",
+        "heading_alignment": "left",
         "image_width": "full",
         "image_ratio": "portrait",
         "columns_desktop": 5,
