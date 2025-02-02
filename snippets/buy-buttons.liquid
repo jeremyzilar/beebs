@@ -100,9 +100,25 @@
           {% endcomment %}
           
           {%- assign amazon_url = product.selected_or_first_available_variant.metafields.custom.amazon_product_url | default: "https://www.amazon.com/stores/page/411B391D-E1FE-4D7B-81B6-CF7705C1F82F" -%}
-          <a href="{{ amazon_url }}" target="_blank" class="button button--full-width button--primary">
+          <a 
+            href="{{ amazon_url }}" 
+            target="_blank" 
+            class="button button--full-width button--primary amazon-button"
+            data-default-url="https://www.amazon.com/stores/page/411B391D-E1FE-4D7B-81B6-CF7705C1F82F"
+          >
             Buy on Amazon
           </a>
+          <script>
+            document.addEventListener('variant:change', function(event) {
+              const variant = event.detail.variant;
+              const amazonButton = document.querySelector('.amazon-button');
+              if (variant && variant.metafields && variant.metafields.custom && variant.metafields.custom.amazon_product_url) {
+                amazonButton.href = variant.metafields.custom.amazon_product_url;
+              } else {
+                amazonButton.href = amazonButton.dataset.defaultUrl;
+              }
+            });
+          </script>
         </div>
       {%- endform -%}
     </product-form>
