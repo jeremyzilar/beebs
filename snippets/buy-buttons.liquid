@@ -110,12 +110,14 @@
           </a>
           <script>
             document.addEventListener('variant:change', function(event) {
-              console.log('variant:change', custom.amazon_product_url);
+              console.log('variant:change', event.detail.variant);
               const variant = event.detail.variant;
               const amazonButton = document.querySelector('.amazon-button');
               if (variant && variant.metafields && variant.metafields.custom && variant.metafields.custom.amazon_product_url) {
+                console.log('Setting URL to:', variant.metafields.custom.amazon_product_url);
                 amazonButton.href = variant.metafields.custom.amazon_product_url;
               } else {
+                console.log('Falling back to default URL');
                 amazonButton.href = amazonButton.dataset.defaultUrl;
               }
             });
