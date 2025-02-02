@@ -1,11 +1,28 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Refresh",
-    "theme_version": "15.2.0",
-    "theme_author": "Shopify",
-    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
-    "theme_support_url": "https:\/\/support.shopify.com\/"
+    "theme_name": "SuperBeeb",
+    "theme_version": "1.0.0",
+    "theme_author": "Jeremy Zilar",
+    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
+    "theme_support_url": "https://support.shopify.com/"
+  },
+  {
+    "name": "t:settings_schema.payment_methods.name",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_amazon_payments",
+        "label": "Enable Amazon Payments",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_shopify_payments",
+        "label": "Enable Shopify Payments",
+        "default": true
+      }
+    ]
   },
   {
     "name": "t:settings_schema.logo.name",
