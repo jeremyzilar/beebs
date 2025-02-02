@@ -71,7 +71,7 @@
       ],
       "custom_css": [
         ".content-container h2 {text-align: left;}",
-        ".content-container {border: 3px #333 solid; background: white;}"
+        ".content-container {border: 5px #333 solid; background: white;}"
       ],
       "settings": {
         "title": "✨<strong>Introducing</strong> plastic free, reusable, refillable, recyclable, magic dog treats✨",
@@ -90,7 +90,7 @@
         "swipe_on_mobile": true,
         "padding_top": 64,
         "padding_bottom": 48,
-        "card_padding": 0
+        "card_padding": 12
       }
     },
     "newsletter_9EBd9K": {
@@ -177,33 +177,29 @@
         "column_dYBjmM"
       ],
       "custom_css": [
-        ".multicolumn {background-image: url(\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/bean-1.png\"); background-attachment: scroll;}",
-        ".multicolumn__title {display: block;}",
-        ".multicolumn__title h2.title {text-align: center;}",
-        ".content-container h2 {text-align: center;}",
-        ".content-container {border: none; border: 3px #333 solid; background: white;}",
+        ".content-container {border: none; border: 5px #333 solid; background: white;}",
         ".multicolumn-card__info p {line-height: 24px;}",
-        ".multicolumn-card__image-wrapper {padding-top: 1.5rem;}",
         ".multicolumn-card__info h3 {text-align: center;}",
         ".button--primary {color: white;}"
       ],
       "settings": {
         "title": "What people are saying",
         "heading_size": "h2",
-        "heading_alignment": "left",
+        "heading_alignment": "center",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "50+ Reviews",
+        "button_label": "56+ Reviews",
         "button_link": "https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/product-reviews/B0CZJS4BKT/",
         "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
+        "background_image": "shopify://shop_images/bean-1.png",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36,
-        "card_padding": 24
+        "card_padding": 20
       }
     },
     "rich_text_jBBMWp": {
