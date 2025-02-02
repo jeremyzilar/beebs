@@ -28,10 +28,10 @@
     "buttons_shadow_horizontal_offset": 0,
     "buttons_shadow_vertical_offset": 4,
     "buttons_shadow_blur": 5,
-    "variant_pills_border_thickness": 1,
-    "variant_pills_border_opacity": 55,
+    "variant_pills_border_thickness": 3,
+    "variant_pills_border_opacity": 70,
     "variant_pills_radius": 40,
-    "variant_pills_shadow_opacity": 0,
+    "variant_pills_shadow_opacity": 50,
     "variant_pills_shadow_horizontal_offset": 0,
     "variant_pills_shadow_vertical_offset": 4,
     "variant_pills_shadow_blur": 5,
@@ -104,8 +104,8 @@
     "drawer_shadow_blur": 5,
     "badge_position": "top left",
     "badge_corner_radius": 0,
-    "sale_badge_color_scheme": "scheme-4",
-    "sold_out_badge_color_scheme": "scheme-1",
+    "sale_badge_color_scheme": "scheme-2",
+    "sold_out_badge_color_scheme": "scheme-2",
     "brand_headline": "",
     "brand_description": "",
     "brand_image_width": 100,
@@ -269,6 +269,17 @@
           "button_label": "#eff0f5",
           "secondary_button_label": "#0e1b4d",
           "shadow": "#0e1b4d"
+        }
+      },
+      "scheme-4eaa14df-0968-4703-8791-bb0141307d81": {
+        "settings": {
+          "background": "#e7ceaf",
+          "background_gradient": "",
+          "text": "#262626",
+          "button": "#4770db",
+          "button_label": "#FFFFFF",
+          "secondary_button_label": "#0e1b4d",
+          "shadow": "#262626"
         }
       }
     }
