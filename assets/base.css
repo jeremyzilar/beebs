@@ -1188,11 +1188,6 @@ deferred-media {
 /* component-button */
 /* Button - default */
 
-.button--amazon {
-  background-color: #ff9900;
-  color: white;
-}
-
 .button--secondary,
 .button--tertiary {
   --color-button: var(--color-secondary-button);
@@ -1246,6 +1241,32 @@ button.shopify-payment-button__button--unbranded {
   -webkit-appearance: none;
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
+}
+.button,
+.button--amazon {
+  background-color: white;
+  color: #262626;
+  font-weight: 900;
+  transition: none !important;
+  border: 3px solid #262626;
+}
+
+.button--amazon:hover span {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 2px;
+}
+
+.button:hover,
+.button--amazon:hover,
+.button:after,
+.button--amazon:after,
+.button:hover:after,
+.button--amazon:hover:after {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 .button:before,
