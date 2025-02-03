@@ -34,7 +34,7 @@
     endif
 
     assign option_disabled = true
-    if value.available
+    if value.available or settings.enable_shopify_payments == false
       assign option_disabled = false
     endif
   -%}
