@@ -9,8 +9,8 @@
  */
 {
   "current": {
-    "enable_amazon_payments": false,
-    "enable_shopify_payments": true,
+    "enable_amazon_payments": true,
+    "enable_shopify_payments": false,
     "logo": "shopify://shop_images/beebs-plastic-free.png",
     "logo_width": 160,
     "type_header_font": "archivo_n7",
@@ -480,9 +480,6 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "@font-face {font-family: \"Fugue\"; src: url(\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/Fugue_Regular.otf?v=1720544370\") format(\"opentype\");}",
-      "body {letter-spacing: 0.06rem;}",
-      "h1,h2,h3 {letter-spacing: 0.1rem !important;}",
       ".hero {background: #e7ceaf; height: 500px; overflow: hidden; position: relative;}",
       ".media-box {height: auto;}",
       ".media-box img {width: 50%; height: auto; position: absolute; top: -25%; right: 0;}",
