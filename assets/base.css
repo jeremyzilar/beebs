@@ -1188,6 +1188,11 @@ deferred-media {
 /* component-button */
 /* Button - default */
 
+.button--amazon {
+  background-color: #ff9900;
+  color: white;
+}
+
 .button--secondary,
 .button--tertiary {
   --color-button: var(--color-secondary-button);
