@@ -151,6 +151,7 @@
         "button_link": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "background_image": "shopify://shop_images/bean-2.png",
         "background_opacity": 100
       }
     },
