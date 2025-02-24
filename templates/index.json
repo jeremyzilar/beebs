@@ -22,11 +22,21 @@
     "multicolumn_TAf33G": {
       "type": "multicolumn",
       "blocks": {
-        "column_Xy9hzD": {
+        "column_6TbyFV": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/starter-pack_2a46c7c6-198f-4e1c-bf2e-9baafdb82104.png",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Natural-Protein-Ingredient-Starter/dp/B0D7XFQTGT\" title=\"https://www.amazon.com/Beebs-Natural-Protein-Ingredient-Starter/dp/B0D7XFQTGT\">Starter pack</a>",
+            "image": "shopify://shop_images/beebs-large-tube-front.png",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas\" title=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas\">4.5oz Home tube</a>",
+            "text": "",
+            "link_label": "",
+            "link": "https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas"
+          }
+        },
+        "column_EQeUd3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/4oz-front.jpg",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\">4.0oz Refill bag</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -42,16 +52,6 @@
             "link": ""
           }
         },
-        "column_EQeUd3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/4oz-front.jpg",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\">4.0oz Refill bag</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_KAkNLk": {
           "type": "column",
           "settings": {
@@ -62,30 +62,30 @@
             "link": ""
           }
         },
-        "column_6TbyFV": {
+        "column_Xy9hzD": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/beebs-large-tube-front.png",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas\" title=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas\">4.5oz Home tube</a>",
+            "image": "shopify://shop_images/starter-pack_2a46c7c6-198f-4e1c-bf2e-9baafdb82104.png",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Natural-Protein-Ingredient-Starter/dp/B0D7XFQTGT\" title=\"https://www.amazon.com/Beebs-Natural-Protein-Ingredient-Starter/dp/B0D7XFQTGT\">Starter pack</a>",
             "text": "",
             "link_label": "",
-            "link": "https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas"
+            "link": ""
           }
         }
       },
       "block_order": [
-        "column_Xy9hzD",
-        "column_TMwyxJ",
+        "column_6TbyFV",
         "column_EQeUd3",
+        "column_TMwyxJ",
         "column_KAkNLk",
-        "column_6TbyFV"
+        "column_Xy9hzD"
       ],
       "custom_css": [
         ".content-container h2 {text-align: left;}",
         ".content-container {border: 5px #333 solid; background: white;}"
       ],
       "settings": {
-        "title": "✨<strong>Introducing</strong> plastic free, reusable, refillable, recyclable, magic dog treats✨",
+        "title": "✨<strong>Introducing</strong> Beeb’s all natural, single-ingredient, dog treats✨",
         "heading_size": "h2",
         "heading_alignment": "center",
         "image_width": "full",
@@ -121,7 +121,7 @@
         "paragraph_qRjJnE": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Already ordered? <a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ\" target=\"_blank\" title=\"Leave us a review on Amazon\">Please leave us a review!</a> It would mean the world to us. We are aiming to get 30 reviews in 30 days 💬</p>"
+            "text": "<p>Already ordered? <a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ\" target=\"_blank\" title=\"Leave us a review on Amazon\">Please leave us a review!</a> It would mean the world to us.</p>"
           }
         }
       },
