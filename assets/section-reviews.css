@@ -16,7 +16,7 @@
 }
 
 .reviews .star {
-  color: var(--color-star-rating, #ffb800);
+  color: var(--color-star-rating, #333333);
 }
 
 .reviews .star-empty {
