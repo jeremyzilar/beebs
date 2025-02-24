@@ -2673,6 +2673,13 @@
             "label": "Primary background"
           }
         },
+        "background_image": {
+          "label": "Background image"
+        },
+        "background_opacity": {
+          "label": "Background opacity",
+          "info": "Background image opacity will be adjusted"
+        },
         "button_label": {
           "label": "Button label",
           "default": "View All Reviews"
