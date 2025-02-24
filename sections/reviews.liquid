@@ -23,7 +23,20 @@
   endif
 -%}
 
-<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.background_image %} has-bg-image{% endif %}">
+  
+  {% if section.settings.background_image %}
+    <div class="background-image">
+      {%- assign image_opacity = section.settings.background_opacity | divided_by: 100.0 -%}
+      <div class="background-overlay" style="opacity: {{ 1 | minus: image_opacity }};"></div>
+      {{ section.settings.background_image | image_url: width: 3000 | image_tag:
+        loading: 'lazy',
+        sizes: '100vw',
+        widths: '550, 720, 990, 1100, 1500, 2200, 3000'
+      }}
+    </div>
+  {% endif %}
+
   <div class="page-width section-{{ section.id }}-padding isolate">
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
