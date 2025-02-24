@@ -1052,7 +1052,7 @@
         },
         "header__1": {
           "content": "Email Signup",
-          "info": "Subscribers added automatically to your “accepted marketing” customer list. [Learn more](https://help.shopify.com/manual/customers/manage-customers)"
+          "info": "Subscribers added automatically to your accepted marketing customer list. [Learn more](https://help.shopify.com/manual/customers/manage-customers)"
         },
         "header__2": {
           "content": "Social media icons",
@@ -2652,6 +2652,74 @@
       },
       "presets": {
         "name": "Multicolumn"
+      }
+    },
+    "reviews": {
+      "name": "t:sections.reviews.name",
+      "settings": {
+        "title": {
+          "label": "t:sections.reviews.settings.title.label",
+          "default": "t:sections.reviews.settings.title.default"
+        },
+        "columns_desktop": {
+          "label": "t:sections.reviews.settings.columns_desktop.label"
+        },
+        "background_style": {
+          "label": "t:sections.reviews.settings.background_style.label",
+          "options__1": {
+            "label": "t:sections.reviews.settings.background_style.options__1.label"
+          },
+          "options__2": {
+            "label": "t:sections.reviews.settings.background_style.options__2.label"
+          }
+        },
+        "button_label": {
+          "label": "t:sections.reviews.settings.button_label.label",
+          "default": "t:sections.reviews.settings.button_label.default"
+        },
+        "button_link": {
+          "label": "t:sections.reviews.settings.button_link.label"
+        },
+        "columns_mobile": {
+          "label": "t:sections.reviews.settings.columns_mobile.label",
+          "options__1": {
+            "label": "t:sections.reviews.settings.columns_mobile.options__1.label"
+          },
+          "options__2": {
+            "label": "t:sections.reviews.settings.columns_mobile.options__2.label"
+          }
+        },
+        "swipe_on_mobile": {
+          "label": "t:sections.reviews.settings.swipe_on_mobile.label"
+        }
+      },
+      "blocks": {
+        "review": {
+          "name": "t:sections.reviews.blocks.review.name",
+          "settings": {
+            "star_rating": {
+              "label": "t:sections.reviews.blocks.review.settings.star_rating.label",
+              "default": "t:sections.reviews.blocks.review.settings.star_rating.default"
+            },
+            "title": {
+              "label": "t:sections.reviews.blocks.review.settings.title.label",
+              "default": "t:sections.reviews.blocks.review.settings.title.default"
+            },
+            "text": {
+              "label": "t:sections.reviews.blocks.review.settings.text.label",
+              "default": "t:sections.reviews.blocks.review.settings.text.default"
+            },
+            "link_label": {
+              "label": "t:sections.reviews.blocks.review.settings.link_label.label"
+            },
+            "link": {
+              "label": "t:sections.reviews.blocks.review.settings.link.label"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "t:sections.reviews.presets.name"
       }
     },
     "newsletter": {
