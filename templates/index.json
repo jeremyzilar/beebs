@@ -61,13 +61,24 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_6TbyFV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2oz-front.jpg",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS8SHJ\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS8SHJ\">4.5oz Refill bag</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_Xy9hzD",
         "column_TMwyxJ",
         "column_EQeUd3",
-        "column_KAkNLk"
+        "column_KAkNLk",
+        "column_6TbyFV"
       ],
       "custom_css": [
         ".content-container h2 {text-align: left;}",
@@ -78,8 +89,8 @@
         "heading_size": "h2",
         "heading_alignment": "center",
         "image_width": "full",
-        "image_ratio": "square",
-        "columns_desktop": 4,
+        "image_ratio": "portrait",
+        "columns_desktop": 5,
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
