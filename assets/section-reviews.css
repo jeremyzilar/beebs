@@ -2,6 +2,18 @@
   position: relative;
 }
 
+.reviews .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews .title-wrapper-with-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .reviews .rating {
   display: flex;
   gap: 2px;
