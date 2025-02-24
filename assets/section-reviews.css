@@ -12,7 +12,7 @@
 }
 
 .multicolumn .star {
-  color: var(--color-star-rating, #ffb800);
+  color: var(--color-star-rating, #333333);
 }
 
 .multicolumn .star-empty {
