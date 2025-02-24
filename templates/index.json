@@ -144,13 +144,14 @@
         "review_FCCTCg"
       ],
       "settings": {
-        "title": "Customer Reviews",
+        "title": "Reviews",
         "columns_desktop": 3,
         "background_style": "primary",
         "button_label": "View All Reviews",
         "button_link": "",
         "columns_mobile": "1",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": false,
+        "background_opacity": 100
       }
     },
     "newsletter_9EBd9K": {
