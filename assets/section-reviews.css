@@ -8,6 +8,12 @@
   align-items: center;
 }
 
+.reviews .title-wrapper-with-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .reviews .rating {
   display: flex;
   gap: 2px;
