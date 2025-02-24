@@ -2655,71 +2655,71 @@
       }
     },
     "reviews": {
-      "name": "t:sections.reviews.name",
+      "name": "Reviews",
       "settings": {
         "title": {
-          "label": "t:sections.reviews.settings.title.label",
-          "default": "t:sections.reviews.settings.title.default"
+          "label": "Heading",
+          "default": "Customer Reviews"
         },
         "columns_desktop": {
-          "label": "t:sections.reviews.settings.columns_desktop.label"
+          "label": "Number of columns on desktop"
         },
         "background_style": {
-          "label": "t:sections.reviews.settings.background_style.label",
+          "label": "Background style",
           "options__1": {
-            "label": "t:sections.reviews.settings.background_style.options__1.label"
+            "label": "None"
           },
           "options__2": {
-            "label": "t:sections.reviews.settings.background_style.options__2.label"
+            "label": "Primary background"
           }
         },
         "button_label": {
-          "label": "t:sections.reviews.settings.button_label.label",
-          "default": "t:sections.reviews.settings.button_label.default"
+          "label": "Button label",
+          "default": "View All Reviews"
         },
         "button_link": {
-          "label": "t:sections.reviews.settings.button_link.label"
+          "label": "Button link"
         },
         "columns_mobile": {
-          "label": "t:sections.reviews.settings.columns_mobile.label",
+          "label": "Number of columns on mobile",
           "options__1": {
-            "label": "t:sections.reviews.settings.columns_mobile.options__1.label"
+            "label": "1 column"
           },
           "options__2": {
-            "label": "t:sections.reviews.settings.columns_mobile.options__2.label"
+            "label": "2 columns"
           }
         },
         "swipe_on_mobile": {
-          "label": "t:sections.reviews.settings.swipe_on_mobile.label"
+          "label": "Enable swipe on mobile"
         }
       },
       "blocks": {
         "review": {
-          "name": "t:sections.reviews.blocks.review.name",
+          "name": "Review",
           "settings": {
             "star_rating": {
-              "label": "t:sections.reviews.blocks.review.settings.star_rating.label",
-              "default": "t:sections.reviews.blocks.review.settings.star_rating.default"
+              "label": "Star rating",
+              "default": "5"
             },
             "title": {
-              "label": "t:sections.reviews.blocks.review.settings.title.label",
-              "default": "t:sections.reviews.blocks.review.settings.title.default"
+              "label": "Review title",
+              "default": "Great product!"
             },
             "text": {
-              "label": "t:sections.reviews.blocks.review.settings.text.label",
-              "default": "t:sections.reviews.blocks.review.settings.text.default"
+              "label": "Review text",
+              "default": "<p>Share what your customers are saying about your products, your company, or your customer service.</p>"
             },
             "link_label": {
-              "label": "t:sections.reviews.blocks.review.settings.link_label.label"
+              "label": "Link label"
             },
             "link": {
-              "label": "t:sections.reviews.blocks.review.settings.link.label"
+              "label": "Link"
             }
           }
         }
       },
       "presets": {
-        "name": "t:sections.reviews.presets.name"
+        "name": "Reviews"
       }
     },
     "newsletter": {
