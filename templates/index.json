@@ -104,6 +104,55 @@
         "card_padding": 12
       }
     },
+    "reviews_G6Q73c": {
+      "type": "reviews",
+      "blocks": {
+        "review_JakTD4": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "title": "Great product!",
+            "text": "<p>Share what your customers are saying about your products, your company, or your customer service.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "review_bbJRA6": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "title": "Great product!",
+            "text": "<p>Share what your customers are saying about your products, your company, or your customer service.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "review_FCCTCg": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "title": "Great product!",
+            "text": "<p>Share what your customers are saying about your products, your company, or your customer service.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_JakTD4",
+        "review_bbJRA6",
+        "review_FCCTCg"
+      ],
+      "settings": {
+        "title": "Customer Reviews",
+        "columns_desktop": 3,
+        "background_style": "primary",
+        "button_label": "View All Reviews",
+        "button_link": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false
+      }
+    },
     "newsletter_9EBd9K": {
       "type": "newsletter",
       "blocks": {
@@ -704,6 +753,7 @@
   "order": [
     "custom_liquid_niitzM",
     "multicolumn_TAf33G",
+    "reviews_G6Q73c",
     "newsletter_9EBd9K",
     "multicolumn_wkUGC7",
     "rich_text_jBBMWp",
