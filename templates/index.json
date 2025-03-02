@@ -158,8 +158,8 @@
           "type": "review",
           "settings": {
             "star_rating": 5,
-            "title": "Great product!",
-            "text": "<p>Share what your customers are saying about your products, your company, or your customer service.</p>",
+            "title": "",
+            "text": "<p>”The pocket tube is a great idea for walks, and I love that everything is plastic-free <em>(I wish more companies would figure this out)</em>. Thrilled to find such a conscientious lamb lung dealer!” </p><p>– Eric, Dallas, TX</p>",
             "link_label": "",
             "link": ""
           }
