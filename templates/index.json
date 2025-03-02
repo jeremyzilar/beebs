@@ -148,8 +148,8 @@
           "type": "review",
           "settings": {
             "star_rating": 5,
-            "title": "Great product!",
-            "text": "<p>Share what your customers are saying about your products, your company, or your customer service.</p>",
+            "title": "",
+            "text": "<p>”My dogs absolutely lose their mind over these treats their owner loses his mind over the fact that he’s not zipping up some silly plastic ziploc that’s going to sit in a landfill for 10,000 years.”</p><p>— Matt, Santa Fe, NM</p>",
             "link_label": "",
             "link": ""
           }
