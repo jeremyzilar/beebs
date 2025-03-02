@@ -162,34 +162,6 @@
         "padding_bottom": 60
       }
     },
-    "featured_collection_ArGhyC": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "lamb-lung-dog-treats",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "enable_desktop_slider": true,
-        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "reviews_XjBBLW": {
       "type": "reviews",
       "blocks": {
@@ -242,13 +214,41 @@
         "swipe_on_mobile": false,
         "background_opacity": 100
       }
+    },
+    "featured_collection_ArGhyC": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "lamb-lung-dog-treats",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "multicolumn_XY8KVr",
     "related-products",
-    "featured_collection_ArGhyC",
-    "reviews_XjBBLW"
+    "reviews_XjBBLW",
+    "featured_collection_ArGhyC"
   ]
 }
