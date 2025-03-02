@@ -12,12 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "lead_text_cFE9R4": {
-          "type": "lead_text",
-          "settings": {
-            "text": "<p>Add a short description to introduce your product</p>"
-          }
-        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -63,7 +57,6 @@
         }
       },
       "block_order": [
-        "lead_text_cFE9R4",
         "vendor",
         "title",
         "price",
