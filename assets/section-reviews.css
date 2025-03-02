@@ -44,20 +44,18 @@
 }
 
 .reviews-card__info {
-  padding: 2rem;
-  background-color: var(--color-background);
+  padding: 2.5rem 2rem;
+  /* background-color: var(--color-background); */
+  background-color: #fff;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-card);
+  border: 5px solid black;
 }
 
 .reviews-card__info h3 {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: calc(var(--font-heading-scale) * 1.6rem);
-}
-
-.reviews-card__info .rte {
-  margin-bottom: 1.5rem;
 }
 
 .reviews.has-bg-image {
@@ -95,5 +93,6 @@
 /* Make cards more readable when there's a background image */
 .reviews.has-bg-image .reviews-card__info {
   backdrop-filter: blur(10px);
-  background-color: rgba(var(--color-background-rgb), 0.85);
+  /* background-color: rgba(var(--color-background-rgb), 0.85); */
+  background-color: rgba(255, 255, 255, 0.85);
 }
