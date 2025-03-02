@@ -91,19 +91,20 @@
                 {% render block %}
               {%- when 'text' -%}
                 
-                {%- if product.selected_or_first_available_variant.metafields.custom.amazon_product_reviews > 0 -%}
+                {%- if product.metafields.custom.amazon_product_reviews > 0 -%}
                   <p class="product__review-rating">
-                    <a href="{{ product.selected_or_first_available_variant.metafields.custom.amazon_product_url }}" target="_blank" rel="noopener">
+                    <a href="{{ product.metafields.custom.amazon_attribution_link }}#reviewsMedley" target="_blank" rel="noopener">
                       <span class="product__review-rating-stars">★★★★★</span>
                       <span class="product__review-rating-rating">
-                        {{- product.selected_or_first_available_variant.metafields.custom.amazon_product_rating | round: 1 }}
-                        (<em>{{- product.selected_or_first_available_variant.metafields.custom.amazon_product_reviews -}}+</em>)
+                        {{- product.metafields.custom.amazon_product_rating | round: 1 }}
+                        (<em>{{- product.metafields.custom.amazon_product_reviews -}}+</em>)
                       </span>
                       <span class="product__review-rating-write-review">Write a review</span>
                     </a>
                   </p>
                 {%- endif -%}
               {%- when 'title' -%}
+                
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h1>{{ product.title | escape }}</h1>
                   <a href="{{ product.url }}" class="product__title">
