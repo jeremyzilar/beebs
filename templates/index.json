@@ -99,7 +99,7 @@
         "background_image": "shopify://shop_images/bean-2.png",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 64,
+        "padding_top": 32,
         "padding_bottom": 48,
         "card_padding": 12
       }
