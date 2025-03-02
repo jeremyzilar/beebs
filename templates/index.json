@@ -148,20 +148,30 @@
           "type": "review",
           "settings": {
             "star_rating": 5,
-            "title": "",
-            "text": "<p>”My dogs absolutely lose their mind over these treats their owner loses his mind over the fact that he’s not zipping up some silly plastic ziploc that’s going to sit in a landfill for 10,000 years.”</p>",
+            "title": "My dogs absolutely lose their mind over these treats",
+            "text": "<p>”And their owner loses his mind over the fact that he’s not zipping up some silly plastic ziploc that’s going to sit in a landfill for 10,000 years.”</p>",
             "link_label": "Matt, Santa Fe, NM",
             "link": "https://www.amazon.com/gp/customer-reviews/R3I3QVYSOT6MS9/ref=cm_cr_srp_d_rvw_ttl?ie=UTF8&ASIN=B0D7XFQTGT"
+          }
+        },
+        "review_HgQVET": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "title": "Great product!",
+            "text": "<p>Share what your customers are saying about your products, your company, or your customer service.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "review_bbJRA6": {
           "type": "review",
           "settings": {
             "star_rating": 5,
-            "title": "",
-            "text": "<p>”The pocket tube is a great idea for walks, and I love that everything is plastic-free <em>(I wish more companies would figure this out)</em>. Thrilled to find such a conscientious lamb lung dealer!” </p><p>– Eric, Dallas, TX</p>",
-            "link_label": "",
-            "link": ""
+            "title": "Goodboy Approved :)",
+            "text": "<p>”The pocket tube is a great idea for walks, and I love that everything is plastic-free <em>(I wish more companies would figure this out)</em>. Thrilled to find such a conscientious lamb lung dealer!”</p>",
+            "link_label": "Eric, Dallas, TX",
+            "link": "https://www.amazon.com/gp/customer-reviews/R2IOMX5LA1TFXI/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0D7XFQTGT"
           }
         },
         "review_GWd8Yh": {
@@ -177,6 +187,7 @@
       },
       "block_order": [
         "review_JakTD4",
+        "review_HgQVET",
         "review_bbJRA6",
         "review_GWd8Yh"
       ],
