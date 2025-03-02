@@ -236,10 +236,11 @@ product-info {
 .product__info-container .product__description,
 .product__info-container .product__lead-text,
 .product__info-container .icon-with-text {
-  margin: 2.5rem 0;
+  margin: 2rem 0;
 }
 .product__info-container .product__lead-text {
-  font-size: 3.5rem;
+  font-size: 2rem;
+  line-height: 2.75rem;
 }
 
 .product__info-container .product__description li {
