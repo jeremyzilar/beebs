@@ -87,8 +87,9 @@
                 {%- endif -%}
 
                 {%- if block.settings.link_label != blank -%}
-                  <a
-                    class="link animate-arrow"
+                  <p class="reviews-card__info-link">
+                    —{{ " " }}<a
+                    class="link"
                     {% if block.settings.link == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
@@ -96,9 +97,9 @@
                     {% endif %}
                   >
                     {{- block.settings.link_label | escape -}}
-                    <span class="icon-wrap">&nbsp;{{ 'icon-arrow.svg' | inline_asset_content }}</span>
                   </a>
-                  {%- endif -%}
+                </p>
+                {%- endif -%}
                 </div>
               </div>
             </div>
