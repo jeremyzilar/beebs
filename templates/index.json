@@ -181,10 +181,11 @@
         "review_FCCTCg"
       ],
       "settings": {
-        "title": "Reviews",
+        "title": "What people are saying",
         "padding_top": 36,
         "padding_bottom": 36,
         "columns_desktop": 3,
+        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
         "background_style": "primary",
         "button_label": "View All Reviews",
         "button_link": "",
