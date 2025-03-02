@@ -26,7 +26,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/beebs-large-tube-front.png",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas\" title=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas\">4.5oz tube</a>",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas\" target=\"_blank\" title=\"Beeb’s tube\">4.5oz tube</a>",
             "text": "",
             "link_label": "",
             "link": "https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas"
@@ -36,7 +36,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/4oz-front.jpg",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\">4.0oz bag</a>",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\" target=\"_blank\" title=\"Beeb’s 4.0oz bag\">4.0oz bag</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -46,7 +46,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/2oz-front.jpg",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS8SHJ\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS8SHJ\">2.0oz bag</a>",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0CZJS8SHJ?maas=maas_adg_76DEA2BE611C37241AD0D1175EEAEB39_afap_abs&ref_=aa_maas&tag=maas\" target=\"_blank\" title=\"Beeb’s 2.0oz bag\">2.0oz bag</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -56,7 +56,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/0.5oz-front.jpg",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ\">Pocket tube</a>",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ\" title=\"Beeb’s Pocket Tube\">Pocket tube</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -66,7 +66,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/starter-pack_2a46c7c6-198f-4e1c-bf2e-9baafdb82104.png",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Natural-Protein-Ingredient-Starter/dp/B0D7XFQTGT\" title=\"https://www.amazon.com/Beebs-Natural-Protein-Ingredient-Starter/dp/B0D7XFQTGT\">Starter pack</a>",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0D7XFQTGT?maas=maas_adg_81479165A765813B04BE0F7741212518_afap_abs&ref_=aa_maas&tag=maas\" title=\"Beeb’s Starter Pack\">Starter pack</a>",
             "text": "",
             "link_label": "",
             "link": ""
