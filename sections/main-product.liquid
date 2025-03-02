@@ -93,7 +93,7 @@
                 
                 {%- if product.metafields.custom.amazon_product_reviews > 0 -%}
                   <p class="product__review-rating">
-                    <a href="{{ product.metafields.custom.amazon_reviews_link }}" target="_blank" rel="noopener">
+                    <a href="{{ product.metafields.custom.amazon_product_url }}" target="_blank" rel="noopener">
                       <span class="product__review-rating-stars">★★★★★</span>
                       <span class="product__review-rating-rating">
                         {{- product.metafields.custom.amazon_product_rating | round: 1 }}
@@ -102,6 +102,13 @@
                       <span class="product__review-rating-write-review">Write a review</span>
                     </a>
                   </p>
+                {%- endif -%}
+
+              {%- when 'lead_text' -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="product__lead-text rte" {{ block.shopify_attributes }}>
+                    {{ block.settings.text }}
+                  </div>
                 {%- endif -%}
 
               {%- when 'title' -%}
@@ -2077,6 +2084,19 @@
           "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.default",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+        }
+      ]
+    },
+    {
+      "type": "lead_text",
+      "name": "Lead Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Add a short description to introduce your product</p>"
         }
       ]
     }
