@@ -19,6 +19,43 @@
         "padding_bottom": 0
       }
     },
+    "newsletter_9EBd9K": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_9qibaz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get 10% off your first order!",
+            "heading_size": "h1"
+          }
+        },
+        "email_form_yKgQgN": {
+          "type": "email_form",
+          "settings": {}
+        },
+        "paragraph_qRjJnE": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Already ordered? <a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ\" target=\"_blank\" title=\"Leave us a review on Amazon\">Please leave us a review!</a> It would mean the world to us.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9qibaz",
+        "email_form_yKgQgN",
+        "paragraph_qRjJnE"
+      ],
+      "custom_css": [
+        "p {font-size: 18px;}",
+        "p a {padding: 1px 5px 3px 5px; color: blue; border-radius: 2px; text-underline-offset: 4px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_TAf33G": {
       "type": "multicolumn",
       "blocks": {
@@ -145,6 +182,8 @@
       ],
       "settings": {
         "title": "Reviews",
+        "padding_top": 36,
+        "padding_bottom": 36,
         "columns_desktop": 3,
         "background_style": "primary",
         "button_label": "View All Reviews",
@@ -153,43 +192,6 @@
         "swipe_on_mobile": false,
         "background_image": "shopify://shop_images/bean-2.png",
         "background_opacity": 100
-      }
-    },
-    "newsletter_9EBd9K": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_9qibaz": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get 10% off your first order!",
-            "heading_size": "h1"
-          }
-        },
-        "email_form_yKgQgN": {
-          "type": "email_form",
-          "settings": {}
-        },
-        "paragraph_qRjJnE": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Already ordered? <a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ\" target=\"_blank\" title=\"Leave us a review on Amazon\">Please leave us a review!</a> It would mean the world to us.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_9qibaz",
-        "email_form_yKgQgN",
-        "paragraph_qRjJnE"
-      ],
-      "custom_css": [
-        "p {font-size: 18px;}",
-        "p a {padding: 1px 5px 3px 5px; color: blue; border-radius: 2px; text-underline-offset: 4px;}"
-      ],
-      "settings": {
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "multicolumn_wkUGC7": {
@@ -754,9 +756,9 @@
   },
   "order": [
     "custom_liquid_niitzM",
+    "newsletter_9EBd9K",
     "multicolumn_TAf33G",
     "reviews_G6Q73c",
-    "newsletter_9EBd9K",
     "multicolumn_wkUGC7",
     "rich_text_jBBMWp",
     "image_with_text_4hbz8q",
