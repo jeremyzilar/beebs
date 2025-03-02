@@ -27,11 +27,17 @@
           "type": "price",
           "settings": {}
         },
-        "variant_picker": {
-          "type": "variant_picker",
+        "complementary_9EHz4y": {
+          "type": "complementary",
           "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
           }
         },
         "quantity_selector": {
@@ -60,7 +66,7 @@
         "vendor",
         "title",
         "price",
-        "variant_picker",
+        "complementary_9EHz4y",
         "quantity_selector",
         "buy_buttons",
         "description",
