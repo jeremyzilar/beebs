@@ -190,7 +190,7 @@
         "button_label": "View All Reviews",
         "button_link": "https://beebsgoods.com/",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "background_image": "shopify://shop_images/bean-2.png",
         "background_opacity": 100
       }
