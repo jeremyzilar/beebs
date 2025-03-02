@@ -267,11 +267,6 @@
   "sections": {
     "all": {
       "colors": {
-        "accent_1": "Accent 1",
-        "accent_2": "Accent 2",
-        "background_1": "Background 1",
-        "background_2": "Background 2",
-        "inverse": "Inverse",
         "label": "Color scheme"
       }
     },
