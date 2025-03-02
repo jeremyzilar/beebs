@@ -1,11 +1,23 @@
 .reviews {
   position: relative;
 }
+.reviews .page-width {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.reviews .slider-mobile-gutter ul {
+  margin: 0;
+}
 
 .reviews .title-wrapper-with-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .reviews .rating {
@@ -49,7 +61,7 @@
   background-color: #fff;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-card);
-  border: 5px solid black;
+  border: 3px solid black;
 }
 
 .reviews-card__info h3 {
