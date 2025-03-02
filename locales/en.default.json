@@ -393,19 +393,7 @@
       "step_error": "You can only add this item in increments of {{ step }}"
     },
     "reviews": {
-      "name": "Reviews",
-      "settings": {
-        "color_scheme": {
-          "label": "Color scheme",
-          "options": {
-            "accent_1": "Accent 1",
-            "accent_2": "Accent 2",
-            "background_1": "Background 1",
-            "background_2": "Background 2",
-            "inverse": "Inverse"
-          }
-        }
-      }
+      "name": "Reviews"
     }
   },
   "localization": {
