@@ -154,16 +154,6 @@
             "link": "https://www.amazon.com/gp/customer-reviews/R3I3QVYSOT6MS9/ref=cm_cr_srp_d_rvw_ttl?ie=UTF8&ASIN=B0D7XFQTGT"
           }
         },
-        "review_HgQVET": {
-          "type": "review",
-          "settings": {
-            "star_rating": 5,
-            "title": "Great product!",
-            "text": "<p>Share what your customers are saying about your products, your company, or your customer service.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "review_bbJRA6": {
           "type": "review",
           "settings": {
@@ -178,16 +168,15 @@
           "type": "review",
           "settings": {
             "star_rating": 5,
-            "title": "",
+            "title": "My frenchies love these!",
             "text": "<p>”I have two French bulldogs and they’re a bit overweight. These are great low calorie treats for training and they love them. I LOVE the plastic-free packaging and super cute branding too!!”</p><p>– Jeannie, Stuart, FL</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "Jeannie, Stuart, FL",
+            "link": "https://www.amazon.com/gp/customer-reviews/R2OF07KGUBH0CJ/ref=cm_cr_getr_d_rvw_ttl?ie=UTF8&ASIN=B0D7XFQTGT"
           }
         }
       },
       "block_order": [
         "review_JakTD4",
-        "review_HgQVET",
         "review_bbJRA6",
         "review_GWd8Yh"
       ],
