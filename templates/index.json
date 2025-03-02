@@ -195,78 +195,6 @@
         "background_opacity": 100
       }
     },
-    "multicolumn_wkUGC7": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_VV9968": {
-          "type": "column",
-          "settings": {
-            "title": "★★★★★",
-            "text": "<p>”My dogs absolutely lose their mind over these treats their owner loses his mind over the fact that he’s not zipping up some silly plastic ziploc that’s going to sit in a landfill for 10,000 years.” </p><p>— Matt, Santa Fe, NM</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_k73jAD": {
-          "type": "column",
-          "settings": {
-            "title": "★★★★★",
-            "text": "<p>”Taco loves these treats! We love that they are one ingredient, and in eco-friendly packaging. The small tube goes on walks with us, and the larger size is great for re-fills and storing away.” </p><p>– Amy, New York, NY<br/></p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_pBTabU": {
-          "type": "column",
-          "settings": {
-            "title": "★★★★★",
-            "text": "<p>”The pocket tube is a great idea for walks, and I love that everything is plastic-free <em>(I wish more companies would figure this out)</em>. Thrilled to find such a conscientious lamb lung dealer!” </p><p>– Eric, Dallas, TX</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_dYBjmM": {
-          "type": "column",
-          "settings": {
-            "title": "★★★★★",
-            "text": "<p>”I have two French bulldogs and they’re a bit overweight. These are great low calorie treats for training and they love them. I LOVE the plastic-free packaging and super cute branding too!!”</p><p>– Jeanie, Stuart, FL</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_VV9968",
-        "column_k73jAD",
-        "column_pBTabU",
-        "column_dYBjmM"
-      ],
-      "custom_css": [
-        ".content-container {border: none; border: 5px #333 solid; background: white;}",
-        ".multicolumn-card__info p {line-height: 24px;}",
-        ".multicolumn-card__info h3 {text-align: center;}",
-        ".button--primary {color: white;}"
-      ],
-      "settings": {
-        "title": "What people are saying",
-        "heading_size": "h2",
-        "heading_alignment": "center",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "56+ Reviews",
-        "button_link": "https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/product-reviews/B0CZJS4BKT/",
-        "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
-        "background_image": "shopify://shop_images/bean-1.png",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "card_padding": 20
-      }
-    },
     "rich_text_jBBMWp": {
       "type": "rich-text",
       "blocks": {
@@ -760,7 +688,6 @@
     "newsletter_9EBd9K",
     "multicolumn_TAf33G",
     "reviews_G6Q73c",
-    "multicolumn_wkUGC7",
     "rich_text_jBBMWp",
     "image_with_text_4hbz8q",
     "rich_text_WcrBLV",
