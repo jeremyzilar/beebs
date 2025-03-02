@@ -105,7 +105,11 @@
                 {%- endif -%}
 
               {%- when 'lead_text' -%}
-                {%- if block.settings.text != blank -%}
+                {%- if product.metafields.custom.lead_text != blank -%}
+                  <div class="product__lead-text rte" {{ block.shopify_attributes }}>
+                    {{ product.metafields.custom.lead_text }}
+                  </div>
+                {%- elsif block.settings.text != blank -%}
                   <div class="product__lead-text rte" {{ block.shopify_attributes }}>
                     {{ block.settings.text }}
                   </div>
