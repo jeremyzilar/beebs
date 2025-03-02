@@ -45,6 +45,10 @@
             "show_gift_card_recipient": true
           }
         },
+        "lead_text_xfrCGc": {
+          "type": "lead_text",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -63,6 +67,7 @@
         "variant_picker_CG8PQg",
         "quantity_selector",
         "buy_buttons",
+        "lead_text_xfrCGc",
         "description",
         "share"
       ],
