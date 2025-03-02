@@ -13,7 +13,7 @@
       "type": "custom-liquid",
       "custom_css": [],
       "settings": {
-        "custom_liquid": "<div class=\"hero\">\n\n<div class=\"media-box\">\n<img src=\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/IMG_3737.jpg?v=1721150476\" alt=\"\"/>\n</div>\n\n<div class=\"beeb\">\n\n<img src=\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/beebs-stack_05d8b000-0078-4b35-800c-0e7e7fcbcd17_430x.png\" alt=\"beebs-logo\"/>\n\n<a href=\"https://www.amazon.com/stores/page/411B391D-E1FE-4D7B-81B6-CF7705C1F82F\" class=\"button button--secondary\">Buy on Amazon</a>\n\n</div>\n</div>",
+        "custom_liquid": "<div class=\"hero\">\n\n<div class=\"media-box\">\n<img src=\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/IMG_3737.jpg?v=1721150476\" alt=\"\"/>\n</div>\n\n<div class=\"beeb\">\n\n<img src=\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/beebs-stack_05d8b000-0078-4b35-800c-0e7e7fcbcd17_430x.png\" alt=\"beebs-logo\"/>\n\n<a href=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0CZJS4BKT?maas=maas_adg_B1F0F68BB865631A3434D09E5AB2B93E_afap_abs&ref_=aa_maas&tag=maas\" class=\"button button--secondary\">Buy on Amazon</a>\n\n</div>\n</div>",
         "color_scheme": "scheme-2",
         "padding_top": 0,
         "padding_bottom": 0
