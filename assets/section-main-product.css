@@ -243,10 +243,23 @@ product-info {
   line-height: 2.75rem;
 }
 
-.product__info-container .product__description li {
-  padding-left: 0.5rem;
-  padding-bottom: 1.5rem;
+.product__info-container .product__description ul {
   list-style-position: outside;
+  list-style-position: none;
+  list-style-type: none;
+  padding-left: 0;
+}
+.product__info-container .product__description li {
+  padding-left: 0;
+  padding-bottom: 1.5rem;
+}
+
+.product__info-container .product__description li strong {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  color: rgb(var(--color-foreground));
+  text-decoration-color: rgb(var(--color-foreground));
+  text-decoration-thickness: 0.2rem;
 }
 
 .product__info-container .product__description li::marker {
