@@ -195,71 +195,6 @@
         "background_opacity": 100
       }
     },
-    "rich_text_jBBMWp": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_mVwjpk": {
-          "type": "heading",
-          "settings": {
-            "heading": "Go plastic free",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_mVwjpk"
-      ],
-      "custom_css": [],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "image_with_text_4hbz8q": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_zXiAWy": {
-          "type": "heading",
-          "settings": {
-            "heading": "✨ Bring one less plastic item into your home",
-            "heading_size": "h2"
-          }
-        },
-        "text_YXUAL3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>The toxic “forever chemicals” known as PFAs found in pet food packaging affect your dog’s health even more than yours: Average blood levels of chemicals from plastics are much higher in pets than in humans. (source: <a href=\"https://ewg.org\" target=\"_blank\" title=\"https://ewg.org\">ewg.org</a>)</p><h2>✨ Plastic recycling is a myth </h2><p>You may be putting plastic in your recycling bin, but only 5-6% of plastic is being recycled and made into new items. Meanwhile humans currently produce more than 350 million metric tons of plastic waste per year.</p><h2>✨ Most “eco” packaging either contains plastic, or is plastic</h2><p>Not our packages! We've worked hard to source bags, tubes, and labels that are free of plastic coatings and adhesives and can be composted at home. </p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_zXiAWy",
-        "text_YXUAL3"
-      ],
-      "custom_css": [
-        ".image-with-text__media {background: #efefef;}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/hand-tube_57de2249-c9a0-49f1-b08c-63116df3b0ae.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "rich_text_WcrBLV": {
       "type": "rich-text",
       "blocks": {
@@ -464,6 +399,71 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-4",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_jBBMWp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mVwjpk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Go plastic free",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mVwjpk"
+      ],
+      "custom_css": [],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_4hbz8q": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zXiAWy": {
+          "type": "heading",
+          "settings": {
+            "heading": "✨ Bring one less plastic item into your home",
+            "heading_size": "h2"
+          }
+        },
+        "text_YXUAL3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The toxic “forever chemicals” known as PFAs found in pet food packaging affect your dog’s health even more than yours: Average blood levels of chemicals from plastics are much higher in pets than in humans. (source: <a href=\"https://ewg.org\" target=\"_blank\" title=\"https://ewg.org\">ewg.org</a>)</p><h2>✨ Plastic recycling is a myth </h2><p>You may be putting plastic in your recycling bin, but only 5-6% of plastic is being recycled and made into new items. Meanwhile humans currently produce more than 350 million metric tons of plastic waste per year.</p><h2>✨ Most “eco” packaging either contains plastic, or is plastic</h2><p>Not our packages! We've worked hard to source bags, tubes, and labels that are free of plastic coatings and adhesives and can be composted at home. </p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zXiAWy",
+        "text_YXUAL3"
+      ],
+      "custom_css": [
+        ".image-with-text__media {background: #efefef;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/hand-tube_57de2249-c9a0-49f1-b08c-63116df3b0ae.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
         "color_scheme": "scheme-2",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
@@ -688,14 +688,14 @@
     "multicolumn_TAf33G",
     "newsletter_9EBd9K",
     "reviews_G6Q73c",
-    "rich_text_jBBMWp",
-    "image_with_text_4hbz8q",
     "rich_text_WcrBLV",
     "image_with_text_F9h9pk",
     "rich_text_kr7YDJ",
     "image_with_text_r7gxCg",
     "rich_text_mwtM8k",
     "image_with_text_kGt9y6",
+    "rich_text_jBBMWp",
+    "image_with_text_4hbz8q",
     "rich_text_FTYMRM",
     "multicolumn_iCmLWw",
     "rich_text_mJPkkr",
