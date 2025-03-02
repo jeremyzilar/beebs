@@ -164,12 +164,12 @@
             "link": ""
           }
         },
-        "review_FCCTCg": {
+        "review_GWd8Yh": {
           "type": "review",
           "settings": {
             "star_rating": 5,
-            "title": "Great product!",
-            "text": "<p>Share what your customers are saying about your products, your company, or your customer service.</p>",
+            "title": "",
+            "text": "<p>”I have two French bulldogs and they’re a bit overweight. These are great low calorie treats for training and they love them. I LOVE the plastic-free packaging and super cute branding too!!”</p><p>– Jeannie, Stuart, FL</p>",
             "link_label": "",
             "link": ""
           }
@@ -178,7 +178,7 @@
       "block_order": [
         "review_JakTD4",
         "review_bbJRA6",
-        "review_FCCTCg"
+        "review_GWd8Yh"
       ],
       "settings": {
         "title": "What people are saying",
