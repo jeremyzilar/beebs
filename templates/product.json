@@ -202,16 +202,16 @@
         "review_W7dm8b"
       ],
       "settings": {
-        "title": "Customer Reviews",
+        "title": "What people are saying",
         "padding_top": 36,
         "padding_bottom": 36,
         "columns_desktop": 3,
-        "color_scheme": "",
+        "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
         "background_style": "primary",
-        "button_label": "View All Reviews",
-        "button_link": "",
+        "button_label": "56+ Reviews",
+        "button_link": "https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT?th=1#reviewsMedley",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "background_opacity": 100
       }
     },
