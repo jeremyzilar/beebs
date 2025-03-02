@@ -23,10 +23,6 @@
           "type": "title",
           "settings": {}
         },
-        "rating": {
-          "type": "rating",
-          "settings": {}
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -63,7 +59,6 @@
       "block_order": [
         "vendor",
         "title",
-        "rating",
         "price",
         "variant_picker",
         "quantity_selector",
@@ -123,6 +118,7 @@
         "column_Rg4fzL",
         "column_7p9jBz"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -149,7 +145,7 @@
         "heading_size": "h2",
         "products_to_show": 4,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
         "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
