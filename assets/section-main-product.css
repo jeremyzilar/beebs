@@ -239,8 +239,10 @@ product-info {
   margin: 2rem 0;
 }
 .product__info-container .product__lead-text {
+  margin: 4rem 0;
   font-size: 2rem;
   line-height: 2.75rem;
+  color: rgb(var(--color-foreground));
 }
 
 .product__info-container .product__description ul {
