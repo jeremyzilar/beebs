@@ -26,7 +26,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/beebs-large-tube-front.png",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas\" title=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas\">4.5oz Home tube</a>",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas\" title=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas\">4.5oz tube</a>",
             "text": "",
             "link_label": "",
             "link": "https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas"
@@ -36,7 +36,17 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/4oz-front.jpg",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\">4.0oz Refill bag</a>",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\">4.0oz bag</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KAkNLk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2oz-front.jpg",
+            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS8SHJ\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS8SHJ\">2.0oz bag</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -47,16 +57,6 @@
           "settings": {
             "image": "shopify://shop_images/0.5oz-front.jpg",
             "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ\">Pocket tube</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_KAkNLk": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/2oz-front.jpg",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS8SHJ\" title=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS8SHJ\">2.0oz Refill bag</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -76,8 +76,8 @@
       "block_order": [
         "column_6TbyFV",
         "column_EQeUd3",
-        "column_TMwyxJ",
         "column_KAkNLk",
+        "column_TMwyxJ",
         "column_Xy9hzD"
       ],
       "custom_css": [
