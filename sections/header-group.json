@@ -44,8 +44,7 @@
       "custom_css": [
         ".section-header {z-index: 200;}",
         ".list-menu {}",
-        ".list-menu a {font-weight: 900; font-size: 20px;}",
-        ".header__icons {display: none;}"
+        ".list-menu a {font-weight: 900; font-size: 20px;}"
       ],
       "settings": {
         "logo_position": "middle-center",
