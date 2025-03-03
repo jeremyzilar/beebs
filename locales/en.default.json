@@ -277,6 +277,9 @@
     "all": {
       "colors": {
         "label": "Color scheme"
+      },
+      "background_image": {
+        "label": "Background image"
       }
     },
     "announcements": {
