@@ -346,7 +346,9 @@
             "right": "Right"
           }
         },
-        "background_image": "Background image"
+        "background_image": {
+          "label": "Background image"
+        }
       }
     },
     "collection_list": {
