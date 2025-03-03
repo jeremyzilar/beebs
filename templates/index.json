@@ -110,6 +110,7 @@
       "settings": {
         "title": "✨<strong>Introducing</strong> Beeb’s all natural, single-ingredient, dog treats✨",
         "heading_size": "h2",
+        "heading_alignment": "center",
         "description": "",
         "show_description": false,
         "description_style": "subtitle",
@@ -129,8 +130,8 @@
         "quick_add": "none",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 24,
-        "padding_bottom": 24
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "newsletter_9EBd9K": {
