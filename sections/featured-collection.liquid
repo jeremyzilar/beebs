@@ -59,7 +59,7 @@
 -%}
 
 <div
-  class="color-{{ section.settings.color_scheme }} isolate gradient"
+  class="color-{{ section.settings.color_scheme }} isolate"
   {%- if section.settings.background_image -%}
     style="background-image: url('{{ section.settings.background_image | image_url: width: 3000 }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
   {%- endif -%}
