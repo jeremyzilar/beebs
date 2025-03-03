@@ -234,10 +234,10 @@
           "background": "#ffffff",
           "background_gradient": "linear-gradient(300deg, rgba(231, 206, 175, 1), rgba(196, 156, 115, 1) 100%)",
           "text": "#000000",
-          "button": "rgba(0,0,0,0)",
-          "button_label": "rgba(0,0,0,0)",
-          "secondary_button_label": "rgba(0,0,0,0)",
-          "shadow": "rgba(0,0,0,0)"
+          "button": "#ffffff",
+          "button_label": "#262626",
+          "secondary_button_label": "#000000",
+          "shadow": "#262626"
         }
       },
       "scheme-16210672-7c87-4e3e-9fc2-dd0b8f17a33c": {
