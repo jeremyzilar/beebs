@@ -99,8 +99,8 @@
             {%- endif -%}
           {%- endif -%}
           
-          {%- if settings.enable_amazon_payments -%}
-            {%- assign amazon_url = product.selected_or_first_available_variant.metafields.custom.amazon_product_url | default: "https://www.amazon.com/stores/page/411B391D-E1FE-4D7B-81B6-CF7705C1F82F" -%}
+          {%- assign amazon_url = product.metafields.custom.amazon_attribution_link -%}
+          {%- if settings.enable_amazon_payments and amazon_url != blank -%}
             <a 
               href="{{ amazon_url }}" 
               target="_blank" 
