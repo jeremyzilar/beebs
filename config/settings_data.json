@@ -483,7 +483,7 @@
       ".hero {background: #e7ceaf; height: 500px; overflow: hidden; position: relative;}",
       ".media-box {height: auto;}",
       ".media-box img {width: 50%; height: auto; position: absolute; top: -25%; right: 0;}",
-      ".beeb {padding: 0 6rem; z-index: 9; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 50%; height: 100%;}",
+      ".beeb {padding: 0 6rem; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 50%; height: 100%;}",
       ".beeb img {width: 380px; top: 0;}",
       ".beeb p {margin-bottom: 0;}",
       ".beeb .button {color: black; font-size: 18px;}",
