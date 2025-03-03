@@ -121,7 +121,6 @@
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
-        "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
         "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": false,
@@ -131,7 +130,9 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 32,
-        "padding_bottom": 32
+        "padding_bottom": 32,
+        "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
+        "background_image": "shopify://shop_images/bean-2.png"
       }
     },
     "newsletter_9EBd9K": {
