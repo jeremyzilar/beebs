@@ -14,14 +14,14 @@
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
-        "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343"
+        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81"
       }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 24,
-        "columns_desktop": 4,
+        "columns_desktop": 2,
         "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
         "image_ratio": "portrait",
         "image_shape": "default",
