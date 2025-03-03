@@ -42,7 +42,6 @@
     "header": {
       "type": "header",
       "custom_css": [
-        ".section-header {z-index: 200;}",
         ".list-menu {}",
         ".list-menu a {font-weight: 900; font-size: 20px;}"
       ],
@@ -53,10 +52,10 @@
         "sticky_header_type": "always",
         "show_line_separator": false,
         "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
-        "menu_color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
+        "menu_color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "enable_customer_avatar": false,
+        "enable_customer_avatar": true,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 8,
