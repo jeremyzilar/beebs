@@ -345,7 +345,8 @@
             "center": "Center",
             "right": "Right"
           }
-        }
+        },
+        "background_image": "Background image"
       }
     },
     "collection_list": {

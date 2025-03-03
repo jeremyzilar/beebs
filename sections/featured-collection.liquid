@@ -60,6 +60,9 @@
 
 <div
   class="color-{{ section.settings.color_scheme }} isolate gradient"
+  {%- if section.settings.background_image -%}
+    style="background-image: url('{{ section.settings.background_image | image_url: width: 3000 }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
+  {%- endif -%}
 >
   <div
     class="collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"
@@ -513,6 +516,11 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "t:sections.featured-collection.settings.background_image.label"
     }
   ],
   "presets": [
