@@ -76,7 +76,7 @@
         "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
         "media_size": "medium",
         "constrain_to_viewport": true,
-        "media_fit": "cover",
+        "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "hover",
