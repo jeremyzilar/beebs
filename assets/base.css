@@ -1964,6 +1964,7 @@ input[type="checkbox"] {
 
 /* component-quantity */
 .quantity {
+  font-family: var(--font-body-family);
   color: rgba(var(--color-foreground));
   position: relative;
   width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
@@ -2002,6 +2003,7 @@ input[type="checkbox"] {
     var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius)
     rgba(var(--color-shadow), var(--inputs-shadow-opacity));
   z-index: -1;
+  background-color: white;
 }
 
 .quantity__input {
