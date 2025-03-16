@@ -1439,6 +1439,23 @@ shopify-accelerated-checkout-cart {
 
 /* Button - social share */
 
+.share-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.view-amazon {
+  color: rgb(var(--color-foreground));
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.view-amazon:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 2px;
+}
+
 .share-button {
   display: block;
   position: relative;
@@ -1449,6 +1466,7 @@ shopify-accelerated-checkout-cart {
 }
 
 .share-button__button {
+  font-family: var(--font-body-family);
   font-size: 1.6rem;
   display: flex;
   align-items: center;
