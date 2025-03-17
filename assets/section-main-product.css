@@ -245,6 +245,13 @@ product-info {
   color: rgb(var(--color-foreground));
 }
 
+.product__info-container .product__description .lead {
+  margin: 2rem 0;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  color: rgb(var(--color-foreground));
+}
+
 .product__info-container .product__description ul {
   list-style-position: outside;
   list-style-position: none;
