@@ -1315,7 +1315,7 @@ button.shopify-payment-button__button--unbranded {
   color: #262626;
   font-weight: 900;
   transition: none !important;
-  border: 3px solid #262626;
+  border: 3.5px solid #262626;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1418,7 +1418,7 @@ button.shopify-payment-button__button--unbranded {
 .button-label,
 .shopify-challenge__button,
 .customer button {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   letter-spacing: 0.1rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
 }
