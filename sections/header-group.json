@@ -17,7 +17,7 @@
         "announcement_iFR3Lg": {
           "type": "announcement",
           "settings": {
-            "text": "✨NEW✨ We launched July 15, 2024",
+            "text": "FREE Shipping on orders over $50 📦",
             "link": ""
           }
         }
@@ -25,7 +25,6 @@
       "block_order": [
         "announcement_iFR3Lg"
       ],
-      "disabled": true,
       "custom_css": [
         "p {padding: 0.65rem 0; font-size: 14px; min-height: 3rem;}"
       ],
