@@ -90,7 +90,11 @@
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'text' -%}
-                {{ block.settings.text }}
+                {%- if block.settings.text != blank -%}
+                  <div class="product__text rte">
+                    {{ block.settings.text }}
+                  </div>
+                {%- endif -%}
               {%- when 'product_reviews' -%}
                 {%- if product.metafields.custom.amazon_product_reviews > 0 -%}
                   <p class="product__review-rating">
