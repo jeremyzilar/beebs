@@ -90,7 +90,8 @@
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'text' -%}
-                
+                {{ block.settings.text }}
+              {%- when 'product_reviews' -%}
                 {%- if product.metafields.custom.amazon_product_reviews > 0 -%}
                   <p class="product__review-rating">
                     <a href="{{ product.metafields.custom.amazon_product_url }}" target="_blank" rel="noopener">
@@ -103,7 +104,6 @@
                     </a>
                   </p>
                 {%- endif -%}
-
               {%- when 'lead_text' -%}
                 {%- if product.metafields.custom.lead_text != blank -%}
                   <div class="product__lead-text rte" {{ block.shopify_attributes }}>
@@ -2090,6 +2090,12 @@
     {
       "type": "lead_text",
       "name": "Lead Text",
+      "limit": 1,
+      "settings": []
+    },
+    {
+      "name": "Product reviews",
+      "type": "product_reviews",
       "limit": 1,
       "settings": []
     }
