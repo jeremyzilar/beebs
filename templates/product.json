@@ -19,7 +19,7 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.vendor }}",
+            "text": "<p>{{ product.vendor }}</p>",
             "text_style": "body"
           }
         },
@@ -45,8 +45,8 @@
         "text_kpnnHk": {
           "type": "text",
           "settings": {
-            "text": "📦 Free shipping on orders over $50",
-            "text_style": "uppercase"
+            "text": "<p>📦 Free shipping on orders over $50</p>",
+            "text_style": "centered"
           }
         },
         "buy_buttons": {
