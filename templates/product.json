@@ -12,6 +12,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "product_reviews_bgU6rG": {
+          "type": "product_reviews",
+          "settings": {}
+        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -61,6 +65,7 @@
         }
       },
       "block_order": [
+        "product_reviews_bgU6rG",
         "vendor",
         "title",
         "price",
