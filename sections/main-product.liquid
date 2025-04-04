@@ -91,7 +91,7 @@
                 {% render block %}
               {%- when 'text' -%}
                 {%- if block.settings.text != blank -%}
-                  <div class="product__text rte {{ block.settings.text_style }}">
+                  <div class="product__text rte {% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'centered' %} center{% endif %}">
                     {{ block.settings.text }}
                   </div>
                 {%- endif -%}
