@@ -91,7 +91,7 @@
                 {% render block %}
               {%- when 'text' -%}
                 {%- if block.settings.text != blank -%}
-                  <div class="product__text rte {% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'centered' %} text-center{% endif %}">
+                  <div class="product__text rte {{ block.settings.text_style }}">
                     {{ block.settings.text }}
                   </div>
                 {%- endif -%}
@@ -754,14 +754,14 @@
       "name": "t:sections.main-product.blocks.text.name",
       "settings": [
         {
-          "type": "inline_richtext",
+          "type": "richtext",
           "id": "text",
-          "default": "t:sections.main-product.blocks.text.settings.text.default",
           "label": "t:sections.main-product.blocks.text.settings.text.label"
         },
         {
           "type": "select",
           "id": "text_style",
+          "label": "t:sections.main-product.blocks.text.settings.text_style.label",
           "options": [
             {
               "value": "body",
@@ -770,18 +770,9 @@
             {
               "value": "subtitle",
               "label": "t:sections.main-product.blocks.text.settings.text_style.options__2.label"
-            },
-            {
-              "value": "uppercase",
-              "label": "t:sections.main-product.blocks.text.settings.text_style.options__3.label"
-            },
-            {
-              "value": "centered",
-              "label": "t:sections.main-product.blocks.text.settings.text_style.options__4.label"
             }
           ],
-          "default": "body",
-          "label": "t:sections.main-product.blocks.text.settings.text_style.label"
+          "default": "body"
         }
       ]
     },
@@ -815,6 +806,10 @@
             {
               "value": "uppercase",
               "label": "t:sections.main-product.blocks.sku.settings.text_style.options__3.label"
+            },
+            {
+              "value": "centered",
+              "label": "t:sections.main-product.blocks.sku.settings.text_style.options__4.label"
             }
           ],
           "default": "body",

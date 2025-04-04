@@ -872,6 +872,9 @@
               },
               "options__3": {
                 "label": "Uppercase"
+              },
+              "options__4": {
+                "label": "Centered"
               }
             }
           }
@@ -934,6 +937,9 @@
               },
               "options__3": {
                 "label": "Uppercase"
+              },
+              "options__4": {
+                "label": "Centered"
               }
             }
           }
@@ -1330,6 +1336,9 @@
               "options__3": {
                 "label": "Uppercase"
               },
+              "options__4": {
+                "label": "Centered"
+              },
               "label": "Text style"
             }
           }
@@ -1510,6 +1519,12 @@
               },
               "options__2": {
                 "label": "Subtitle"
+              },
+              "options__3": {
+                "label": "Uppercase"
+              },
+              "options__4": {
+                "label": "Centered"
               }
             }
           }
@@ -1994,8 +2009,7 @@
           "name": "Text",
           "settings": {
             "text": {
-              "label": "Text",
-              "default": "Text block"
+              "label": "Text"
             },
             "text_style": {
               "label": "Text style",
@@ -2004,9 +2018,6 @@
               },
               "options__2": {
                 "label": "Subtitle"
-              },
-              "options__3": {
-                "label": "Uppercase"
               }
             }
           }
