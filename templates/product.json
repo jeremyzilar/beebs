@@ -42,6 +42,13 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "text_kpnnHk": {
+          "type": "text",
+          "settings": {
+            "text": "📦 Free shipping on orders over $50",
+            "text_style": "uppercase"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -71,6 +78,7 @@
         "price",
         "variant_picker_CG8PQg",
         "quantity_selector",
+        "text_kpnnHk",
         "buy_buttons",
         "lead_text_xfrCGc",
         "description",
