@@ -3,20 +3,34 @@
   white-space: nowrap;
   position: relative;
   background: var(--gradient-background);
+  display: flex;
+  align-items: center;
 }
 .reviews-strip-container {
   padding: 0.5rem 0 1rem 0;
   overflow: visible;
-  display: flex;
-  align-items: center;
 }
 .reviews-strip-discount {
-  display: none;
-  padding: 0 2rem;
+  padding: 1.25rem 2rem;
   font-size: 1.4rem;
   line-height: 1.5;
   font-weight: 600;
   color: var(--color-foreground);
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.reviews-strip-discount__text {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
 }
 
 .reviews-scroll-container {
@@ -91,5 +105,99 @@
 @media screen and (max-width: 749px) {
   .review-item {
     margin-right: 2rem;
+  }
+  .reviews-strip-discount {
+    padding: 1.25rem 1rem;
+  }
+}
+
+/* Discount Modal Styles */
+.discount-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.discount-modal.is-active {
+  display: block;
+}
+
+.discount-modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.discount-modal__content {
+  position: relative;
+  background: var(--gradient-background);
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.discount-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--color-foreground);
+}
+
+.discount-modal__title {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  color: var(--color-foreground);
+}
+
+.discount-modal__text {
+  margin: 0 0 1.5rem;
+  color: var(--color-foreground);
+}
+
+.discount-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.discount-modal__input {
+  padding: 0.75rem;
+  border: 1px solid var(--color-foreground);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--color-foreground);
+}
+
+.discount-modal__submit {
+  padding: 0.75rem;
+  background: var(--color-foreground);
+  color: var(--color-background);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.discount-modal__submit:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 749px) {
+  .discount-modal__content {
+    margin: 20px;
+    padding: 1.5rem;
   }
 }

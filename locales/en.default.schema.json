@@ -3588,6 +3588,23 @@
       "presets": {
         "name": "Reviews strip"
       }
+    },
+    "discount-signup": {
+      "name": "Discount signup",
+      "settings": {
+        "title": {
+          "label": "Title"
+        },
+        "text": {
+          "label": "Text"
+        },
+        "button_label": {
+          "label": "Button label"
+        }
+      },
+      "presets": {
+        "name": "Discount signup"
+      }
     }
   }
 }

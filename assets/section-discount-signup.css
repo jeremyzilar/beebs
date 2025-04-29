@@ -1,0 +1,58 @@
+.discount-signup {
+  padding: 5rem 0;
+}
+
+.discount-signup__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.discount-signup__title {
+  margin: 0 0 1rem;
+  font-size: 2.4rem;
+}
+
+.discount-signup__text {
+  margin: 0 0 2rem;
+}
+
+.discount-signup__form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.discount-signup__form .field {
+  margin-bottom: 2rem;
+}
+
+.discount-signup__form .field__input {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border: 1px solid var(--color-foreground);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--color-foreground);
+}
+
+.discount-signup__form .field__label {
+  display: none;
+}
+
+.discount-signup__form .button {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 749px) {
+  .discount-signup {
+    padding: 3rem 0;
+  }
+
+  .discount-signup__title {
+    font-size: 2rem;
+  }
+}

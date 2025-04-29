@@ -1,0 +1,70 @@
+{{ 'section-discount-signup.css' | asset_url | stylesheet_tag }}
+
+<div class="discount-signup color-{{ section.settings.color_scheme }} gradient">
+  <div class="discount-signup__wrapper page-width">
+    <div class="discount-signup__content">
+      <h1 class="discount-signup__title">{{ section.settings.title | escape }}</h1>
+      <div class="discount-signup__text">{{ section.settings.text }}</div>
+      
+      <div class="discount-signup__form">
+        <form action="/contact#contact_form" method="post" id="discount-signup-form">
+          <input type="hidden" name="form_type" value="customer">
+          <input type="hidden" name="utf8" value="✓">
+          
+          <div class="field">
+            <input type="email" 
+                   name="contact[email]" 
+                   id="Email" 
+                   class="field__input" 
+                   autocomplete="email" 
+                   placeholder="{{ 'customer.register.email' | t }}"
+                   required>
+            <label class="field__label" for="Email">{{ 'customer.register.email' | t }}</label>
+          </div>
+          
+          <button type="submit" class="button button--primary">
+            {{ section.settings.button_label | escape }}
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.discount-signup.name",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.discount-signup.settings.title.label",
+      "default": "Get 10% Off Your First Order"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:sections.discount-signup.settings.text.label",
+      "default": "<p>Sign up for our newsletter and get 10% off your first order. Plus, be the first to know about new products and exclusive offers!</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:sections.discount-signup.settings.button_label.label",
+      "default": "Get My Discount"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.discount-signup.presets.name"
+    }
+  ]
+}
+{% endschema %} 

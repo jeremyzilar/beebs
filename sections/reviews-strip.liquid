@@ -15,12 +15,12 @@
 {%- endstyle -%}
 
 <div class="reviews-strip color-{{ section.settings.color_scheme }} gradient">
+  {%- if section.settings.discount_text != blank -%}
+    <a href="/pages/discount-signup" class="reviews-strip-discount color-{{ section.settings.discount_color_scheme }} gradient">
+      <h3 class="reviews-strip-discount__text">{{ section.settings.discount_text | escape }}</h3>
+    </a>
+  {%- endif -%}
   <div class="reviews-strip-container">
-    {%- if section.settings.discount_text != blank -%}
-      <div class="reviews-strip-discount color-{{ section.settings.discount_color_scheme }} gradient">
-        {{ section.settings.discount_text | escape }}
-      </div>
-    {%- endif -%}
     <div class="reviews-scroll-container">
       <div class="reviews-scroll-content">
         {%- for block in section.blocks -%}
