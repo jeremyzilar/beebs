@@ -3546,11 +3546,21 @@
     "reviews-strip": {
       "name": "Reviews strip",
       "settings": {
+        "color_scheme": {
+          "label": "Color scheme"
+        },
         "padding_top": {
           "label": "Top padding"
         },
         "padding_bottom": {
           "label": "Bottom padding"
+        },
+        "discount_text": {
+          "label": "Discount text",
+          "default": "20% OFF"
+        },
+        "discount_color_scheme": {
+          "label": "Discount color scheme"
         }
       },
       "blocks": {
