@@ -23,7 +23,7 @@
     "spacing_grid_horizontal": 28,
     "spacing_grid_vertical": 28,
     "animations_reveal_on_scroll": false,
-    "animations_hover_elements": "vertical-lift",
+    "animations_hover_elements": "default",
     "buttons_border_thickness": 3,
     "buttons_border_opacity": 100,
     "buttons_radius": 40,
