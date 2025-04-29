@@ -3,64 +3,87 @@
   height: 500px;
   overflow: hidden;
   position: relative;
+  display: flex;
 }
-.hero .media-box {
-  height: auto;
-}
-.hero .media-box img {
+
+.hero .image-1 {
   width: 50%;
-  height: auto;
-  position: absolute;
-  top: -25%;
-  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 2;
 }
-.hero .beeb {
+
+.hero .image-1 img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero .image-2 {
+  width: 50%;
+  height: 100%;
   padding: 0 6rem;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  height: 100%;
+  order: 1;
 }
-.hero .beeb img {
+
+.hero .image-2 img {
   width: 380px;
-  top: 0;
+  height: auto;
 }
-.hero .beeb p {
+
+.hero .image-2 p {
   margin-bottom: 0;
 }
-.hero .beeb .button {
+
+.hero .image-2 .button {
   color: black;
   font-size: 18px;
 }
-.hero .beeb a {
+
+.hero .image-2 a {
   margin-top: 2rem;
   color: black;
   font-size: 20px;
   text-underline-offset: 4px;
 }
+
 @media (max-width: 720px) {
   .hero {
-    height: 100%;
+    height: auto;
+    flex-direction: column;
   }
-  .hero .media-box {
-    height: 300px;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero .media-box img {
-    width: 100%;
-    position: relative;
-    top: -30%;
-  }
-  .hero .beeb {
-    padding: 3rem 0;
+
+  .hero .image-1,
+  .hero .image-2 {
     width: 100%;
     height: auto;
   }
-  .hero .beeb img {
+
+  .hero .image-1 {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    order: 1;
+  }
+
+  .hero .image-1 img {
+    width: 100%;
+    position: relative;
+  }
+
+  .hero .image-2 {
+    padding: 3rem 0;
+    order: 2;
+  }
+
+  .hero .image-2 img {
     width: 80%;
   }
 }

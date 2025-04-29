@@ -2,19 +2,7 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 <div class="hero">
-  <div class="media-box">
-    {%- if section.settings.image_1 != blank -%}
-      {{ section.settings.image_1 | image_url: width: 2000 | image_tag:
-        loading: 'eager',
-        width: section.settings.image_1.width,
-        height: section.settings.image_1.height,
-        class: "hero__background",
-        alt: section.settings.image_1.alt | escape
-      }}
-    {%- endif -%}
-  </div>
-
-  <div class="beeb">
+  <div class="image-1">
     {%- if section.settings.image_2 != blank -%}
       {{ section.settings.image_2 | image_url: width: 500 | image_tag:
         loading: 'eager',
@@ -24,6 +12,19 @@
         alt: section.settings.image_2.alt | escape
       }}
     {%- endif -%}
+  </div>
+
+  <div class="image-2">
+    {%- if section.settings.image_1 != blank -%}
+      {{ section.settings.image_1 | image_url: width: 2000 | image_tag:
+        loading: 'eager',
+        width: section.settings.image_1.width,
+        height: section.settings.image_1.height,
+        class: "hero__background",
+        alt: section.settings.image_1.alt | escape
+      }}
+    {%- endif -%}
+    
   </div>
 </div>
 
