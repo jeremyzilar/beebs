@@ -58,9 +58,10 @@
   font-size: 20px;
   text-underline-offset: 4px;
 }
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .hero {
     height: 100%;
+    display: none; /* hide on mobile */
   }
   .media-box {
     height: 300px;
