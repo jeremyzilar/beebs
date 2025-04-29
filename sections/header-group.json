@@ -38,10 +38,7 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [
-        ".list-menu {}",
-        ".list-menu a {font-weight: 900; font-size: 20px;}"
-      ],
+      "custom_css": [],
       "settings": {
         "logo_position": "middle-center",
         "menu": "navigation",
