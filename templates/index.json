@@ -58,9 +58,9 @@
       ],
       "name": "t:sections.reviews-strip.presets.name",
       "settings": {
-        "padding_top": 8,
-        "padding_bottom": 8,
-        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e"
+        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
+        "discount_text": "Get 10% OFF",
+        "discount_color_scheme": "scheme-4"
       }
     },
     "featured_collection_t8NmEN": {
