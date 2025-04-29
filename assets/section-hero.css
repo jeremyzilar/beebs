@@ -1,0 +1,66 @@
+.hero {
+  background: #e7ceaf;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.hero .media-box {
+  height: auto;
+}
+.hero .media-box img {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: -25%;
+  right: 0;
+}
+.hero .beeb {
+  padding: 0 6rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+.hero .beeb img {
+  width: 380px;
+  top: 0;
+}
+.hero .beeb p {
+  margin-bottom: 0;
+}
+.hero .beeb .button {
+  color: black;
+  font-size: 18px;
+}
+.hero .beeb a {
+  margin-top: 2rem;
+  color: black;
+  font-size: 20px;
+  text-underline-offset: 4px;
+}
+@media (max-width: 720px) {
+  .hero {
+    height: 100%;
+  }
+  .hero .media-box {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero .media-box img {
+    width: 100%;
+    position: relative;
+    top: -30%;
+  }
+  .hero .beeb {
+    padding: 3rem 0;
+    width: 100%;
+    height: auto;
+  }
+  .hero .beeb img {
+    width: 80%;
+  }
+}
