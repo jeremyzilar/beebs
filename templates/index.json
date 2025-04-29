@@ -86,9 +86,9 @@
         ".content-container {border: 3px #333 solid; background: white;}"
       ],
       "settings": {
-        "title": "✨<strong>Introducing</strong> Beeb’s all natural, single-ingredient, dog treats✨",
+        "title": "<strong>Introducing</strong> Beeb’s all natural, single-ingredient, dog treats from New Zealand",
         "heading_size": "h2",
-        "heading_alignment": "center",
+        "heading_alignment": "left",
         "image_width": "full",
         "image_ratio": "portrait",
         "columns_desktop": 5,
@@ -108,10 +108,10 @@
     "featured_collection_t8NmEN": {
       "type": "featured-collection",
       "settings": {
-        "title": "✨<strong>Introducing</strong> Beeb’s all natural, single-ingredient, dog treats✨",
+        "title": "Single-ingredient, high-value dog treats",
         "heading_size": "h2",
-        "heading_alignment": "center",
-        "description": "",
+        "heading_alignment": "left",
+        "description": "<p>Made from 100% all-natural, grass-fed lamb from New Zealand</p>",
         "show_description": false,
         "description_style": "subtitle",
         "collection": "lamb-lung-dog-treats",
