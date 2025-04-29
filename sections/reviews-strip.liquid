@@ -16,6 +16,11 @@
 
 <div class="reviews-strip color-{{ section.settings.color_scheme }} gradient">
   <div class="reviews-strip-container">
+    {%- if section.settings.discount_text != blank -%}
+      <div class="reviews-strip-discount color-{{ section.settings.discount_color_scheme }} gradient">
+        {{ section.settings.discount_text | escape }}
+      </div>
+    {%- endif -%}
     <div class="reviews-scroll-container">
       <div class="reviews-scroll-content">
         {%- for block in section.blocks -%}
@@ -108,6 +113,18 @@
   "class": "section",
   "tag": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "discount_text",
+      "label": "Discount text",
+      "default": "20% OFF"
+    },
+    {
+      "type": "color_scheme",
+      "id": "discount_color_scheme",
+      "label": "Discount color scheme",
+      "default": "scheme-2"
+    },
     {
       "type": "range",
       "id": "padding_top",

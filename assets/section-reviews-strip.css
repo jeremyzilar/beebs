@@ -7,6 +7,16 @@
 .reviews-strip-container {
   padding: 0.5rem 0 1rem 0;
   overflow: visible;
+  display: flex;
+  align-items: center;
+}
+.reviews-strip-discount {
+  display: none;
+  padding: 0 2rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--color-foreground);
 }
 
 .reviews-scroll-container {
