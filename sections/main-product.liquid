@@ -97,8 +97,9 @@
                 {%- endif -%}
               {%- when 'product_reviews' -%}
                 {%- if product.metafields.custom.amazon_product_reviews > 0 -%}
+                  {%- assign amazon_url = product.metafields.custom.amazon_attribution_link -%}
                   <p class="product__review-rating">
-                    <a href="{{ product.metafields.custom.amazon_product_url }}" target="_blank" rel="noopener">
+                    <a href="{{ amazon_url }}" target="_blank" rel="noopener">
                       <span class="product__review-rating-stars">★★★★★</span>
                       <span class="product__review-rating-rating">
                         {{- product.metafields.custom.amazon_product_rating | round: 1 }}
