@@ -22,10 +22,10 @@
     "featured_collection_t8NmEN": {
       "type": "featured-collection",
       "settings": {
-        "title": "Single-ingredient, high-value dog treats",
+        "title": "Single-ingredient, high-value dog treats, made from 100% all-natural, grass-fed lamb from New Zealand✨",
         "heading_size": "h2",
-        "heading_alignment": "left",
-        "description": "<p>Made from 100% all-natural, grass-fed lamb from New Zealand</p>",
+        "heading_alignment": "center",
+        "description": "",
         "show_description": false,
         "description_style": "subtitle",
         "collection": "lamb-lung-dog-treats",
