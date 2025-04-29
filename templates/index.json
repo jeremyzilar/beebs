@@ -17,17 +17,6 @@
         "image_2": "shopify://shop_images/IMG_3737.heic"
       }
     },
-    "custom_liquid_niitzM": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "custom_css": [],
-      "settings": {
-        "custom_liquid": "<div class=\"hero-custom\">\n\n<div class=\"media-box\">\n<img src=\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/IMG_3737.jpg?v=1721150476\" alt=\"\"/>\n</div>\n\n<div class=\"beeb\">\n<img src=\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/beebs-stack_05d8b000-0078-4b35-800c-0e7e7fcbcd17_430x.png\" alt=\"beebs-logo\"/>\n\n</div>\n</div>",
-        "color_scheme": "scheme-2",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "featured_collection_t8NmEN": {
       "type": "featured-collection",
       "settings": {
@@ -629,7 +618,6 @@
   },
   "order": [
     "hero_kMjTjW",
-    "custom_liquid_niitzM",
     "featured_collection_t8NmEN",
     "newsletter_9EBd9K",
     "reviews_G6Q73c",
