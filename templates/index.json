@@ -17,60 +17,6 @@
         "image_2": "shopify://shop_images/IMG_3737.heic"
       }
     },
-    "reviews_strip_RkPRna": {
-      "type": "reviews-strip",
-      "blocks": {
-        "review_k9nzNz": {
-          "type": "review",
-          "settings": {
-            "star_rating": 5,
-            "title": "Great product!",
-            "text": "<p>Share what your customers are saying about your products, your company, or your customer service.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "review_BCPryn": {
-          "type": "review",
-          "settings": {
-            "star_rating": 5,
-            "title": "Great product!",
-            "text": "<p>Share what your customers are saying about your products, your company, or your customer service.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "review_xhGweE": {
-          "type": "review",
-          "settings": {
-            "star_rating": 5,
-            "title": "Great product!",
-            "text": "<p>Share what your customers are saying about your products, your company, or your customer service.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "review_k9nzNz",
-        "review_BCPryn",
-        "review_xhGweE"
-      ],
-      "name": "t:sections.reviews.presets.name",
-      "settings": {
-        "title": "Customer Reviews",
-        "padding_top": 8,
-        "padding_bottom": 8,
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "background_style": "primary",
-        "button_label": "View All Reviews",
-        "button_link": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "background_opacity": 100
-      }
-    },
     "featured_collection_t8NmEN": {
       "type": "featured-collection",
       "settings": {
@@ -672,7 +618,6 @@
   },
   "order": [
     "hero_kMjTjW",
-    "reviews_strip_RkPRna",
     "featured_collection_t8NmEN",
     "newsletter_9EBd9K",
     "reviews_G6Q73c",
