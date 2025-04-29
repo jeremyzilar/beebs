@@ -55,7 +55,7 @@
 .reviews-scroll-content {
   display: inline-block;
   white-space: nowrap;
-  animation: scrollReviews 40s linear infinite;
+  animation: scrollReviews 35s linear infinite;
   padding: 0 20px;
 }
 
@@ -69,7 +69,7 @@
 .review-item .review-title,
 .review-item .link {
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 1.5;
 }
 
