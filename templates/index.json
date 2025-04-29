@@ -9,6 +9,16 @@
  */
 {
   "sections": {
+    "hero_kMjTjW": {
+      "type": "hero",
+      "name": "Hero",
+      "settings": {
+        "background_image": "shopify://shop_images/beebs-logo-1000_52c71a43-e615-4595-9f88-48834f99796d.png",
+        "logo_image": "shopify://shop_images/pocket-tube-nm.jpg",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "custom_liquid_niitzM": {
       "type": "custom-liquid",
       "custom_css": [],
@@ -619,6 +629,7 @@
     }
   },
   "order": [
+    "hero_kMjTjW",
     "custom_liquid_niitzM",
     "featured_collection_t8NmEN",
     "newsletter_9EBd9K",
