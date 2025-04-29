@@ -61,7 +61,7 @@
 @media (max-width: 720px) {
   .hero {
     height: 100%;
-    display: none; /* hide on mobile */
+    display: none !important; /* hide on mobile */
   }
   .media-box {
     height: 300px;
