@@ -26,7 +26,7 @@
         {%- for block in section.blocks -%}
           <span class="review-item" {{ block.shopify_attributes }}>
             {%- if block.settings.star_rating != blank -%}
-              <div class="rating" role="img" aria-label="{{ block.settings.star_rating }} out of 5 stars">
+              <span class="rating" role="img" aria-label="{{ block.settings.star_rating }} out of 5 stars">
                 {%- liquid
                   assign rating_decimal = block.settings.star_rating | times: 1.0 
                   assign rating_floor = rating_decimal | floor
@@ -41,7 +41,7 @@
                     <span class="star-empty">☆</span>
                   {%- endif -%}
                 {%- endfor -%}
-              </div>
+              </span>
             {%- endif -%}
             
             {%- if block.settings.title != blank -%}
@@ -49,7 +49,7 @@
             {%- endif -%}
             
             {%- if block.settings.link_label != blank -%}
-              {{ " " }}—{{ " " }}<a
+              <a
                 class="link"
                 {% if block.settings.link == blank %}
                   role="link" aria-disabled="true"
@@ -57,16 +57,16 @@
                   href="{{ block.settings.link }}"
                 {% endif %}
               >
-                {{- block.settings.link_label | escape -}}
+                {{ " " }}—{{ " " }}<span class="link-label">{{- block.settings.link_label | escape -}}</span>
               </a>
             {%- endif -%}
           </span>
         {%- endfor -%}
         
         {%- for block in section.blocks -%}
-          <span class="review-item" {{ block.shopify_attributes }}>
+          <span class="review-item" aria-hidden="true" {{ block.shopify_attributes }}>
             {%- if block.settings.star_rating != blank -%}
-              <div class="rating" role="img" aria-label="{{ block.settings.star_rating }} out of 5 stars">
+              <span class="rating" role="img" aria-label="{{ block.settings.star_rating }} out of 5 stars">
                 {%- liquid
                   assign rating_decimal = block.settings.star_rating | times: 1.0 
                   assign rating_floor = rating_decimal | floor
@@ -81,7 +81,7 @@
                     <span class="star-empty">☆</span>
                   {%- endif -%}
                 {%- endfor -%}
-              </div>
+              </span>
             {%- endif -%}
             
             {%- if block.settings.title != blank -%}
@@ -89,7 +89,7 @@
             {%- endif -%}
             
             {%- if block.settings.link_label != blank -%}
-              {{ " " }}—{{ " " }}<a
+              <a
                 class="link"
                 {% if block.settings.link == blank %}
                   role="link" aria-disabled="true"
@@ -97,7 +97,7 @@
                   href="{{ block.settings.link }}"
                 {% endif %}
               >
-                {{- block.settings.link_label | escape -}}
+                {{ " " }}—{{ " " }}{{- block.settings.link_label | escape -}}
               </a>
             {%- endif -%}
           </span>
