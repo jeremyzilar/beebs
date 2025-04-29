@@ -19,92 +19,6 @@
         "padding_bottom": 0
       }
     },
-    "multicolumn_TAf33G": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_6TbyFV": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/beebs-large-tube-front.png",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas\" target=\"_blank\" title=\"Beeb’s tube\">4.5oz tube</a>",
-            "text": "",
-            "link_label": "",
-            "link": "https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0DMCKSM6Q?maas=maas_adg_3825D552A6846C48846B74F28E9D9AFD_afap_abs&ref_=aa_maas&tag=maas"
-          }
-        },
-        "column_EQeUd3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/4oz-front.jpg",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT\" target=\"_blank\" title=\"Beeb’s 4.0oz bag\">4.0oz bag</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_KAkNLk": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/2oz-front.jpg",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0CZJS8SHJ?maas=maas_adg_76DEA2BE611C37241AD0D1175EEAEB39_afap_abs&ref_=aa_maas&tag=maas\" target=\"_blank\" title=\"Beeb’s 2.0oz bag\">2.0oz bag</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_TMwyxJ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/0.5oz-front.jpg",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ\" title=\"Beeb’s Pocket Tube\">Pocket tube</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_Xy9hzD": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/starter-pack_2a46c7c6-198f-4e1c-bf2e-9baafdb82104.png",
-            "title": "<a href=\"https://www.amazon.com/Beebs-Training-Grass-Fed-Ingredient-Packaging/dp/B0D7XFQTGT?maas=maas_adg_81479165A765813B04BE0F7741212518_afap_abs&ref_=aa_maas&tag=maas\" title=\"Beeb’s Starter Pack\">Starter pack</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_6TbyFV",
-        "column_EQeUd3",
-        "column_KAkNLk",
-        "column_TMwyxJ",
-        "column_Xy9hzD"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".content-container h2 {text-align: left;}",
-        ".content-container {border: 3px #333 solid; background: white;}"
-      ],
-      "settings": {
-        "title": "<strong>Introducing</strong> Beeb’s all natural, single-ingredient, dog treats from New Zealand",
-        "heading_size": "h2",
-        "heading_alignment": "left",
-        "image_width": "full",
-        "image_ratio": "portrait",
-        "columns_desktop": 5,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
-        "background_image": "shopify://shop_images/bean-2.png",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 32,
-        "padding_bottom": 48,
-        "card_padding": 12
-      }
-    },
     "featured_collection_t8NmEN": {
       "type": "featured-collection",
       "settings": {
@@ -706,7 +620,6 @@
   },
   "order": [
     "custom_liquid_niitzM",
-    "multicolumn_TAf33G",
     "featured_collection_t8NmEN",
     "newsletter_9EBd9K",
     "reviews_G6Q73c",
