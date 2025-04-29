@@ -24,9 +24,9 @@
           "type": "review",
           "settings": {
             "star_rating": 5,
-            "title": "",
-            "text": "",
-            "link_label": "",
+            "title": "Title",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+            "link_label": "Jeremy",
             "link": ""
           }
         },
