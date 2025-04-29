@@ -159,6 +159,7 @@
         "review_bbJRA6",
         "review_GWd8Yh"
       ],
+      "disabled": true,
       "settings": {
         "title": "What people are saying",
         "padding_top": 36,
