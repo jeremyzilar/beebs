@@ -59,8 +59,8 @@
       "name": "t:sections.reviews.presets.name",
       "settings": {
         "title": "Customer Reviews",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 8,
+        "padding_bottom": 8,
         "columns_desktop": 3,
         "color_scheme": "",
         "background_style": "primary",
