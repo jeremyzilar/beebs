@@ -27,7 +27,7 @@
         "heading_alignment": "center",
         "description": "",
         "show_description": false,
-        "description_style": "subtitle",
+        "description_style": "body",
         "collection": "lamb-lung-dog-treats",
         "products_to_show": 4,
         "columns_desktop": 4,
