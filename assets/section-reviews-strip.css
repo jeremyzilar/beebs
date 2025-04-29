@@ -69,7 +69,7 @@
 .review-item .review-title,
 .review-item a.link {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 14px !important;
   line-height: 1.5;
 }
 
