@@ -15,23 +15,23 @@
     0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
-.hero {
+.hero-custom {
   background: #e7ceaf;
   height: 500px;
   overflow: hidden;
   position: relative;
 }
-.media-box {
+.hero-custom .media-box {
   height: auto;
 }
-.media-box img {
+.hero-custom .media-box img {
   width: 50%;
   height: auto;
   position: absolute;
   top: -25%;
   right: 0;
 }
-.beeb {
+.hero-custom .beeb {
   padding: 0 6rem;
   position: relative;
   display: flex;
@@ -41,43 +41,43 @@
   width: 50%;
   height: 100%;
 }
-.beeb img {
+.hero-custom .beeb img {
   width: 380px;
   top: 0;
 }
-.beeb p {
+.hero-custom .beeb p {
   margin-bottom: 0;
 }
-.beeb .button {
+.hero-custom .beeb .button {
   color: black;
   font-size: 18px;
 }
-.beeb a {
+.hero-custom .beeb a {
   margin-top: 2rem;
   color: black;
   font-size: 20px;
   text-underline-offset: 4px;
 }
 @media (max-width: 720px) {
-  .hero {
+  .hero-custom {
     height: 100%;
   }
-  .media-box {
+  .hero-custom .media-box {
     height: 300px;
     position: relative;
     overflow: hidden;
   }
-  .media-box img {
+  .hero-custom .media-box img {
     width: 100%;
     position: relative;
     top: -30%;
   }
-  .beeb {
+  .hero-custom .beeb {
     padding: 3rem 0;
     width: 100%;
     height: auto;
   }
-  .beeb img {
+  .hero-custom .beeb img {
     width: 80%;
   }
 }
