@@ -112,7 +112,7 @@
 
 {% schema %}
 {
-  "name": "Reviews strip",
+  "name": "t:sections.reviews-strip.name",
   "class": "section",
   "tag": "section",
   "settings": [
@@ -123,7 +123,7 @@
       "max": 100,
       "step": 2,
       "unit": "px",
-      "label": "t:sections.reviews.settings.padding_top.label",
+      "label": "t:sections.reviews-strip.settings.padding_top.label",
       "default": 8
     },
     {
@@ -131,9 +131,9 @@
       "id": "padding_bottom",
       "min": 0,
       "max": 100,
-      "step": 4,
+      "step": 2,
       "unit": "px",
-      "label": "t:sections.reviews.settings.padding_bottom.label",
+      "label": "t:sections.reviews-strip.settings.padding_bottom.label",
       "default": 8
     },
     {
@@ -146,7 +146,7 @@
   "blocks": [
     {
       "type": "review",
-      "name": "t:sections.reviews.blocks.review.name",
+      "name": "t:sections.reviews-strip.blocks.review.name",
       "settings": [
         {
           "type": "range",
@@ -155,34 +155,34 @@
           "max": 5,
           "step": 0.5,
           "default": 5,
-          "label": "t:sections.reviews.blocks.review.settings.star_rating.label"
+          "label": "t:sections.reviews-strip.blocks.review.settings.star_rating.label"
         },
         {
           "type": "text",
           "id": "title",
-          "label": "t:sections.reviews.blocks.review.settings.title.label"
+          "label": "t:sections.reviews-strip.blocks.review.settings.title.label"
         },
         {
           "type": "richtext",
           "id": "text",
-          "label": "t:sections.reviews.blocks.review.settings.text.label"
+          "label": "t:sections.reviews-strip.blocks.review.settings.text.label"
         },
         {
           "type": "text",
           "id": "link_label",
-          "label": "t:sections.reviews.blocks.review.settings.link_label.label"
+          "label": "t:sections.reviews-strip.blocks.review.settings.link_label.label"
         },
         {
           "type": "url",
           "id": "link",
-          "label": "t:sections.reviews.blocks.review.settings.link.label"
+          "label": "t:sections.reviews-strip.blocks.review.settings.link.label"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "t:sections.reviews.presets.name",
+      "name": "t:sections.reviews-strip.presets.name",
       "blocks": [
         {
           "type": "review"
