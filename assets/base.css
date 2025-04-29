@@ -15,10 +15,6 @@
     0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
-.hero {
-  display: none;
-}
-
 .hero-custom {
   background: #e7ceaf;
   height: 500px;
