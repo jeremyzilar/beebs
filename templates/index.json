@@ -11,7 +11,6 @@
   "sections": {
     "hero_kMjTjW": {
       "type": "hero",
-      "disabled": true,
       "name": "Hero",
       "settings": {
         "image_1": "shopify://shop_images/beebs-stack_05d8b000-0078-4b35-800c-0e7e7fcbcd17.png",
@@ -20,6 +19,7 @@
     },
     "custom_liquid_niitzM": {
       "type": "custom-liquid",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "custom_liquid": "<div class=\"hero-custom\">\n\n<div class=\"media-box\">\n<img src=\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/IMG_3737.jpg?v=1721150476\" alt=\"\"/>\n</div>\n\n<div class=\"beeb\">\n<img src=\"https://cdn.shopify.com/s/files/1/0419/1115/6900/files/beebs-stack_05d8b000-0078-4b35-800c-0e7e7fcbcd17_430x.png\" alt=\"beebs-logo\"/>\n\n</div>\n</div>",
