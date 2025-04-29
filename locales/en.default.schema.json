@@ -467,6 +467,9 @@
         },
         "label": "Image shape",
         "info": "Standard-styled cards have no borders when an image shape is active."
+      },
+      "background_image": {
+        "label": "Background Image"
       }
     },
     "announcement-bar": {
