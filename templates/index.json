@@ -17,6 +17,52 @@
         "image_2": "shopify://shop_images/IMG_3737.heic"
       }
     },
+    "reviews_strip_YaVJir": {
+      "type": "reviews-strip",
+      "blocks": {
+        "review_X34hAP": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "review_CwwYtM": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "review_pB8THK": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_X34hAP",
+        "review_CwwYtM",
+        "review_pB8THK"
+      ],
+      "name": "t:sections.reviews.presets.name",
+      "settings": {
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "color_scheme": ""
+      }
+    },
     "featured_collection_t8NmEN": {
       "type": "featured-collection",
       "settings": {
@@ -618,6 +664,7 @@
   },
   "order": [
     "hero_kMjTjW",
+    "reviews_strip_YaVJir",
     "featured_collection_t8NmEN",
     "newsletter_9EBd9K",
     "reviews_G6Q73c",
