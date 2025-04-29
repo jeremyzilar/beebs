@@ -210,7 +210,7 @@
       },
       "scheme-72a088ce-189c-4565-854a-217746a0488e": {
         "settings": {
-          "background": "rgba(0,0,0,0)",
+          "background": "#262626",
           "background_gradient": "linear-gradient(300deg, rgba(68, 68, 68, 1), rgba(34, 34, 34, 1) 100%)",
           "text": "#ffffff",
           "button": "rgba(0,0,0,0)",
