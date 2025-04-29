@@ -16,7 +16,7 @@
   font-size: 1.4rem;
   line-height: 1.5;
   font-weight: 600;
-  color: var(--color-foreground);
+  color: rgba(var(--color-foreground), 1);
   border: none;
   background: none;
   cursor: pointer;
@@ -62,7 +62,7 @@
 .review-item {
   display: inline-block;
   margin-right: 3.5rem;
-  color: var(--color-foreground);
+  color: rgba(var(--color-foreground));
   vertical-align: middle;
 }
 .review-item,
@@ -76,20 +76,20 @@
 .review-item .rating {
   display: inline-block;
   margin-right: 1rem;
-  color: var(--color-foreground);
+  color: rgba(var(--color-foreground), 1);
 }
 
 .review-item .star {
-  color: var(--color-foreground);
+  color: rgba(var(--color-foreground), 1);
 }
 
 .review-item .star-empty {
-  color: var(--color-foreground);
+  color: rgba(var(--color-foreground), 0.55);
   opacity: 0.3;
 }
 
 .review-item .link {
-  color: var(--color-foreground);
+  color: rgba(var(--color-foreground), 1);
   text-decoration: none;
   font-weight: 500;
 }
