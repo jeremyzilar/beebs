@@ -159,6 +159,7 @@
         "review_t8YXnJ",
         "review_XMypej"
       ],
+      "disabled": true,
       "name": "t:sections.reviews-strip.presets.name",
       "settings": {
         "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
