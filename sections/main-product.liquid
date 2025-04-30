@@ -91,7 +91,7 @@
                 {% render block %}
               {%- when 'text' -%}
                 {%- if block.settings.text != blank -%}
-                  <div class="product__text rte {% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'centered' %} center{% endif %}">
+                  <div class="product__text rte text_style_{{ block.settings.text_style }}">
                     {{ block.settings.text }}
                   </div>
                 {%- endif -%}
@@ -127,7 +127,7 @@
                   </a>
                 </div>
               {%- when 'price' -%}
-                <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                <div id="price-{{ section.id }}" class="product__price" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
                     product: product,
                     use_variant: true,
@@ -764,6 +764,10 @@
           "id": "text_style",
           "label": "t:sections.main-product.blocks.text.settings.text_style.label",
           "options": [
+            {
+              "value": "small",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__0.label"
+            },
             {
               "value": "body",
               "label": "t:sections.main-product.blocks.text.settings.text_style.options__1.label"
