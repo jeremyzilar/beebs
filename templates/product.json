@@ -18,6 +18,7 @@
         },
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>{{ product.vendor }}</p>",
             "text_style": "body"
