@@ -28,6 +28,10 @@
           "type": "title",
           "settings": {}
         },
+        "lead_text_xfrCGc": {
+          "type": "lead_text",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -57,10 +61,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "lead_text_xfrCGc": {
-          "type": "lead_text",
-          "settings": {}
-        },
         "description": {
           "type": "description",
           "settings": {}
@@ -76,12 +76,12 @@
         "product_reviews_bgU6rG",
         "vendor",
         "title",
+        "lead_text_xfrCGc",
         "price",
         "variant_picker_CG8PQg",
         "quantity_selector",
         "text_kpnnHk",
         "buy_buttons",
-        "lead_text_xfrCGc",
         "description",
         "share"
       ],
