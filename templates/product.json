@@ -120,6 +120,52 @@
         "padding_bottom": 60
       }
     },
+    "reviews_strip_hUydrV": {
+      "type": "reviews-strip",
+      "blocks": {
+        "review_FnAeRT": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "review_t8YXnJ": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "review_XMypej": {
+          "type": "review",
+          "settings": {
+            "star_rating": 5,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_FnAeRT",
+        "review_t8YXnJ",
+        "review_XMypej"
+      ],
+      "name": "t:sections.reviews-strip.presets.name",
+      "settings": {
+        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
+        "discount_text": "10% OFF",
+        "discount_color_scheme": "scheme-4"
+      }
+    },
     "reviews_XjBBLW": {
       "type": "reviews",
       "blocks": {
@@ -159,6 +205,7 @@
         "review_3kJjnb",
         "review_W7dm8b"
       ],
+      "disabled": true,
       "settings": {
         "title": "What people are saying",
         "padding_top": 36,
@@ -206,6 +253,7 @@
   "order": [
     "main",
     "related-products",
+    "reviews_strip_hUydrV",
     "reviews_XjBBLW",
     "featured_collection_ArGhyC"
   ]
