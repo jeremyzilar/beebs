@@ -81,6 +81,7 @@
   .hero .image-1 {
     padding: 3rem 0;
     order: 2;
+    display: none;
   }
 
   .hero .image-1 img {
