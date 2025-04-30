@@ -240,13 +240,16 @@ product-info {
 }
 .product__info-container .product__lead-text {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.85rem;
   line-height: 2.75rem;
   color: rgb(var(--color-foreground));
 }
 
 .product__info-container .product__lead-text p {
   margin: 0;
+}
+
+.product__info-container .product__description {
 }
 
 .product__info-container .product__description .lead {
