@@ -77,7 +77,7 @@
         "columns_desktop": 3,
         "full_width": false,
         "show_view_all": false,
-        "view_all_style": "solid",
+        "view_all_style": "link",
         "enable_desktop_slider": true,
         "image_ratio": "portrait",
         "image_shape": "default",
