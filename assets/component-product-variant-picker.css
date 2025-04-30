@@ -1,5 +1,6 @@
 variant-selects {
   display: block;
+  margin-top: 2rem !important;
 }
 
 .product--no-media .product-form__input--pill,
@@ -24,6 +25,7 @@ variant-selects {
 
 :is(.product-form__input--pill, .product-form__input--swatch) .form__label {
   margin-bottom: 0.2rem;
+  display: none;
 }
 
 .product-form__input input[type="radio"] {

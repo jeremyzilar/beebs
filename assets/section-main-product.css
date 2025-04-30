@@ -250,6 +250,7 @@ product-info {
 }
 
 .product__info-container .product__description {
+  margin-top: 3rem;
 }
 
 .product__info-container .product__description .lead {
