@@ -39,7 +39,7 @@
         "text_kpnnHk": {
           "type": "text",
           "settings": {
-            "text": "<p>📦 Free shipping on orders over $50</p>",
+            "text": "<p>Free shipping on orders over $50 📦</p>",
             "text_style": "body"
           }
         },
