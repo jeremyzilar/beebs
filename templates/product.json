@@ -36,6 +36,13 @@
           "type": "price",
           "settings": {}
         },
+        "text_kpnnHk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>📦 Free shipping on orders over $50</p>",
+            "text_style": "body"
+          }
+        },
         "variant_picker_CG8PQg": {
           "type": "variant_picker",
           "settings": {
@@ -46,13 +53,6 @@
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
-        },
-        "text_kpnnHk": {
-          "type": "text",
-          "settings": {
-            "text": "<p>📦 Free shipping on orders over $50</p>",
-            "text_style": "body"
-          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -78,9 +78,9 @@
         "title",
         "lead_text_xfrCGc",
         "price",
+        "text_kpnnHk",
         "variant_picker_CG8PQg",
         "quantity_selector",
-        "text_kpnnHk",
         "buy_buttons",
         "description",
         "share"
