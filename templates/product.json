@@ -34,10 +34,12 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {}
         },
         "text_kpnnHk": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Free shipping on orders over $50 📦</p>",
             "text_style": "body"
@@ -54,16 +56,16 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "loop_subscriptions_loop_widget_f6mtUX": {
+          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
-        },
-        "loop_subscriptions_loop_widget_f6mtUX": {
-          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
-          "settings": {}
         },
         "description": {
           "type": "description",
@@ -85,8 +87,8 @@
         "text_kpnnHk",
         "variant_picker_CG8PQg",
         "quantity_selector",
-        "buy_buttons",
         "loop_subscriptions_loop_widget_f6mtUX",
+        "buy_buttons",
         "description",
         "share"
       ],
