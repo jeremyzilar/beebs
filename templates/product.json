@@ -61,6 +61,10 @@
             "show_gift_card_recipient": true
           }
         },
+        "loop_subscriptions_loop_widget_f6mtUX": {
+          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -82,6 +86,7 @@
         "variant_picker_CG8PQg",
         "quantity_selector",
         "buy_buttons",
+        "loop_subscriptions_loop_widget_f6mtUX",
         "description",
         "share"
       ],
