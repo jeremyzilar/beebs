@@ -34,16 +34,7 @@
         },
         "price": {
           "type": "price",
-          "disabled": true,
           "settings": {}
-        },
-        "text_kpnnHk": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Free shipping on orders over $50 📦</p>",
-            "text_style": "body"
-          }
         },
         "variant_picker_CG8PQg": {
           "type": "variant_picker",
@@ -67,6 +58,13 @@
             "show_gift_card_recipient": true
           }
         },
+        "text_kpnnHk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free shipping on orders over $50 📦</p>",
+            "text_style": "body"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -84,11 +82,11 @@
         "title",
         "lead_text_xfrCGc",
         "price",
-        "text_kpnnHk",
         "variant_picker_CG8PQg",
         "quantity_selector",
         "loop_subscriptions_loop_widget_f6mtUX",
         "buy_buttons",
+        "text_kpnnHk",
         "description",
         "share"
       ],
