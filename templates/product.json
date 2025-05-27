@@ -132,39 +132,38 @@
           "type": "review",
           "settings": {
             "star_rating": 5,
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "title": "My dogs absolutely lose their mind over these treats",
+            "text": "<p>And their owner loses his mind over the fact that he’s not zipping up some silly plastic ziploc that’s going to sit in a landfill for 10,000 years.</p>",
+            "link_label": "Matt, Santa Fe, NM",
+            "link": "https://www.amazon.com/gp/customer-reviews/R3I3QVYSOT6MS9/ref=cm_cr_srp_d_rvw_ttl?ie=UTF8&ASIN=B0D7XFQTGT"
           }
         },
         "review_t8YXnJ": {
           "type": "review",
           "settings": {
             "star_rating": 5,
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "title": "The pocket tube is perfect for our walks!",
+            "text": "<p>The pocket tube is a great idea for walks, and I love that everything is plastic-free<em>(I wish more companies would figure this out)</em>. Thrilled to find such a conscientious lamb lung dealer!</p>",
+            "link_label": "Eric, Dallas, TX",
+            "link": "https://www.amazon.com/gp/customer-reviews/R2IOMX5LA1TFXI/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0D7XFQTGT"
           }
         },
-        "review_XMypej": {
+        "review_GyAnWz": {
           "type": "review",
           "settings": {
             "star_rating": 5,
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "title": "My two French bulldogs love these low calorie treats for training",
+            "text": "<p>I have two French bulldogs and they’re a bit overweight. These are great low calorie treats for training and they love them. I LOVE the plastic-free packaging and super cute branding too!!</p>",
+            "link_label": "Jeannie, Stuart, FL",
+            "link": "https://www.amazon.com/gp/customer-reviews/R2OF07KGUBH0CJ/ref=cm_cr_getr_d_rvw_ttl?ie=UTF8&ASIN=B0D7XFQTGT"
           }
         }
       },
       "block_order": [
         "review_FnAeRT",
         "review_t8YXnJ",
-        "review_XMypej"
+        "review_GyAnWz"
       ],
-      "disabled": true,
       "name": "t:sections.reviews-strip.presets.name",
       "settings": {
         "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
