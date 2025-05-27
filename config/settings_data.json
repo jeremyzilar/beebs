@@ -9,16 +9,16 @@
  */
 {
   "current": {
-    "enable_amazon_payments": true,
+    "enable_amazon_payments": false,
     "enable_shopify_payments": true,
     "logo": "shopify://shop_images/beebs-plastic-free.png",
     "logo_width": 170,
     "favicon": "shopify://shop_images/beebs-favicon.png",
-    "type_header_font": "fugue_n4",
+    "type_header_font": "archivo_n7",
     "heading_scale": 110,
-    "type_body_font": "fugue_n4",
+    "type_body_font": "questrial_n4",
     "body_scale": 105,
-    "page_width": 1100,
+    "page_width": 1200,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 28,
     "spacing_grid_vertical": 28,
@@ -347,9 +347,9 @@
           }
         }
       },
-      "type_header_font": "fugue_n4",
+      "type_header_font": "archivo_n7",
       "heading_scale": 110,
-      "type_body_font": "fugue_n4",
+      "type_body_font": "questrial_n4",
       "body_scale": 105,
       "page_width": 1200,
       "spacing_sections": 0,
