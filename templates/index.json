@@ -615,8 +615,8 @@
             "caption": "Beeb’s lamb lung",
             "heading": "Starter pack",
             "text": "<p>Our tube is perfect for slipping in your pocket for walks. Refill and reuse your Beeb’s pocket tube from our 2oz bag.</p>",
-            "button_label": "Buy on Amazon",
-            "button_link": "https://www.amazon.com/Beebs-Natural-Protein-Ingredient-Starter/dp/B0D7XFQTGT"
+            "button_label": "Buy",
+            "button_link": "shopify://products/starter-pack"
           }
         },
         "row_rBBjKt": {
@@ -626,8 +626,8 @@
             "caption": "Beeb’s lamb lung",
             "heading": "Pocket Tube",
             "text": "<p>The perfect size and form to bring treats on the go. It also makes a satisfying sound when you open it that your pup will notice.</p><p>It's filled with single-ingredient, feather light, low calorie treats that even picky dogs enjoy. </p>",
-            "button_label": "Buy on Amazon",
-            "button_link": "https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0D775B5PZ"
+            "button_label": "Buy",
+            "button_link": "shopify://products/pocket-tube"
           }
         },
         "row_hPUEdG": {
@@ -637,8 +637,8 @@
             "caption": "Beeb’s lamb lung",
             "heading": "4oz refill bag",
             "text": "<p>We empty our 4oz refill bag into a large canister we use to train at home. We also use it to refill our pocket tubes.</p><p>Our bag is 100% plastic free, and fully recyclable with paper. No need to remove labels or zippers to recycle. ♻️ </p>",
-            "button_label": "Buy on Amazon",
-            "button_link": "https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS4BKT"
+            "button_label": "Buy",
+            "button_link": "shopify://products/home-tube"
           }
         },
         "row_tfkNPM": {
@@ -648,8 +648,8 @@
             "caption": "Beeb’s lamb lung",
             "heading": "2oz refill bag",
             "text": "<p>Our 2oz refill bag is a similar size to other dog treat bags, but not made of plastic. It's great to way to refill your pocket tube or treat container you keep in the house.</p><p>Each high-protein treat is about 2 calories, so you can shower your pup with treats for harder-to-train behaviors.</p>",
-            "button_label": "Buy on Amazon",
-            "button_link": "https://www.amazon.com/Beebs-Treats-Natural-Protein-Ingredient/dp/B0CZJS8SHJ"
+            "button_label": "Buy",
+            "button_link": "shopify://products/lamb-lung-refill"
           }
         }
       },
