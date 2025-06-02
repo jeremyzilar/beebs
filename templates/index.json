@@ -75,7 +75,7 @@
         "collection": "lamb-lung-dog-treats",
         "products_to_show": 3,
         "columns_desktop": 3,
-        "full_width": true,
+        "full_width": false,
         "show_view_all": false,
         "view_all_style": "link",
         "enable_desktop_slider": true,
