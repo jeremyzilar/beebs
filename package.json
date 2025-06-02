@@ -1,0 +1,13 @@
+{
+  "name": "beebs",
+  "version": "1.0.0",
+  "description": "Shopify theme with Prettier formatting",
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md,liquid}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,scss,md,liquid}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-liquid": "^1.0.0"
+  }
+}
