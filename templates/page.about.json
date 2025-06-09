@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_with_text_38fdgX": {
@@ -6,14 +15,14 @@
         "heading_Wyk9xV": {
           "type": "heading",
           "settings": {
-            "heading": "Our Story",
+            "heading": "Our story",
             "heading_size": "h0"
           }
         },
         "text_8UbabU": {
           "type": "text",
           "settings": {
-            "text": "<p>When we first brought our puppy home, we were in love, and wanted to give her everything even though she was super hard to train. We soon found her “dog cabinet” and our trash can filling up with plastic, which we had spent years trying to reduce in our own lives. When she wouldn’t even look at most of the treats in those bags, we felt like we had failed.<\/p><p>We are artists and designers who strive to use our time and energy to bring joy into the world in a responsible way. Beeb’s mission is to bring maximum health and happiness to dogs and their dog parents everywhere without adding more plastic into the world. <\/p>",
+            "text": "<p>When we first brought our puppy home, we were in love, and wanted to give her everything even though she was super hard to train. We soon found her “dog cabinet” filling up with plastic, which we had spent years trying to reduce in our own lives. And she wouldn’t even look at most of the treats in those bags. We boiled chicken. Training was a disaster. It wasn't until we discovered lamb lung that we finally managed to change our relationship with Juniper. We continually fed her small treats at home and around the city and slowly she became a calm, confident, potty-trained and crate-trained delight of a dog.</p><p>We are artists and designers who strive to use our time and energy to bring joy into the world in a responsible way. Beeb’s mission is to bring maximum health and happiness to dogs and their dog parents everywhere without adding more plastic into the world. </p>",
             "text_style": "subtitle"
           }
         }
@@ -23,7 +32,7 @@
         "text_8UbabU"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_8360.jpg",
+        "image": "shopify://shop_images/IMG_8360.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -44,19 +53,19 @@
         "image_9cVRMe": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_3737.jpg"
+            "image": "shopify://shop_images/IMG_3737.jpg"
           }
         },
         "image_Uecxyj": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_2419.jpg"
+            "image": "shopify://shop_images/IMG_2419.jpg"
           }
         },
         "image_zHVWLN": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_4946.jpg"
+            "image": "shopify://shop_images/IMG_4946.jpg"
           }
         }
       },
@@ -85,19 +94,19 @@
         "image_tixEbJ": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_0008.jpg"
+            "image": "shopify://shop_images/IMG_0008.jpg"
           }
         },
         "image_Jdq9PC": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_1825.jpg"
+            "image": "shopify://shop_images/IMG_1825.jpg"
           }
         },
         "image_dMKd3C": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_3007.jpg"
+            "image": "shopify://shop_images/IMG_3007.jpg"
           }
         }
       },
@@ -128,7 +137,7 @@
     "form": {
       "type": "contact-form",
       "custom_css": [
-        "button {background:white;}"
+        "button {background: white;}"
       ],
       "settings": {
         "heading": "Get in touch",
