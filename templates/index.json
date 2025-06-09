@@ -426,7 +426,7 @@
         "text_d6fiJd": {
           "type": "text",
           "settings": {
-            "text": "<p>This is our dog Juniper, but we often call her 'The Beeb' or 'Our Noodle'.</p>"
+            "text": "<p>This is our dog Juniper, but we often call her \"The Beeb\" or \"Our Noodle.\"</p>"
           }
         }
       },
@@ -580,8 +580,8 @@
           "settings": {
             "image": "shopify://shop_images/4oz-front.jpg",
             "caption": "Beeb’s lamb lung",
-            "heading": "4oz refill bag",
-            "text": "<p>We empty our 4oz refill bag into a large canister we use to train at home. We also use it to refill our pocket tubes.</p><p>Our bag is 100% plastic free, and fully recyclable with paper. No need to remove labels or zippers to recycle. ♻️ </p>",
+            "heading": "Large refill bag",
+            "text": "<p>This large refill bag fills the Home Tube. We also use it to refill our pocket tubes.</p><p>Our bag is 100% plastic free, and fully curbside recyclable with paper. No need to remove labels or zippers to recycle. ♻️ </p>",
             "button_label": "Buy",
             "button_link": "shopify://products/home-tube"
           }
@@ -591,8 +591,8 @@
           "settings": {
             "image": "shopify://shop_images/2oz-front.jpg",
             "caption": "Beeb’s lamb lung",
-            "heading": "2oz refill bag",
-            "text": "<p>Our 2oz refill bag is a similar size to other dog treat bags, but not made of plastic. It's great to way to refill your pocket tube or treat container you keep in the house.</p><p>Each high-protein treat is about 2 calories, so you can shower your pup with treats for harder-to-train behaviors.</p>",
+            "heading": "Medium refill bag",
+            "text": "<p>Our medium refill bag is a similar size to other dog treat pouches, but not made of plastic. It's great to way to refill your pocket tube or treat container you keep in the house.</p><p>Each high-protein treat is about 2 calories, so you can shower your pup with treats for harder-to-train behaviors.</p>",
             "button_label": "Buy",
             "button_link": "shopify://products/lamb-lung-refill"
           }
