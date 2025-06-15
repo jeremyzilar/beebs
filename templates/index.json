@@ -17,6 +17,23 @@
         "image_2": "shopify://shop_images/family-brighter-crop4.png"
       }
     },
+    "1750009880eb59cd88": {
+      "type": "apps",
+      "blocks": {
+        "amazon_mcf_and_buy_with_prime_promotion_banner_container_4fQTUb": {
+          "type": "shopify://apps/amazon-mcf-and-buy-with-prime/blocks/promotion-banner-container/cd9463cc-4da0-4f9f-92a6-6e3f345eb3ce",
+          "settings": {
+            "horizontal_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "amazon_mcf_and_buy_with_prime_promotion_banner_container_4fQTUb"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "reviews_strip_HAFqxh": {
       "type": "reviews-strip",
       "blocks": {
@@ -623,29 +640,12 @@
         "padding_top": 0,
         "padding_bottom": 60
       }
-    },
-    "1750009880eb59cd88": {
-      "type": "apps",
-      "blocks": {
-        "amazon_mcf_and_buy_with_prime_promotion_banner_container_4fQTUb": {
-          "type": "shopify://apps/amazon-mcf-and-buy-with-prime/blocks/promotion-banner-container/cd9463cc-4da0-4f9f-92a6-6e3f345eb3ce",
-          "settings": {
-            "horizontal_alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "amazon_mcf_and_buy_with_prime_promotion_banner_container_4fQTUb"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "hero_kMjTjW",
-    "reviews_strip_HAFqxh",
     "1750009880eb59cd88",
+    "reviews_strip_HAFqxh",
     "featured_collection_t8NmEN",
     "newsletter_9EBd9K",
     "17488821640b60c9bc",
