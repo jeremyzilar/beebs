@@ -13,7 +13,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/beeb-family-crop-bkextend-nz-hardl.png",
+        "image": "shopify://shop_images/beeb-family-crop-bkextend.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
