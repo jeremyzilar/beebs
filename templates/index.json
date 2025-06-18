@@ -15,12 +15,12 @@
       "settings": {
         "image": "shopify://shop_images/beeb-family-crop-bkextend-nz_03b24e2a-da5d-4dc0-87f7-7afc00a1786e.png",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "adapt",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "",
-        "image_behavior": "ambient",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
