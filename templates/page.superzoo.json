@@ -31,9 +31,9 @@
             "button_label": "Follow us on Instagram",
             "button_link": "https://www.instagram.com/beebsgoods",
             "button_style_secondary": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_label_2": "Follow us on TikTok",
+            "button_link_2": "https://tiktok.com/@beebsgoods",
+            "button_style_secondary_2": true
           }
         }
       },
