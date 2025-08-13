@@ -1,12 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "main": {
-      "type": "superzoo-contact-form",
+    "rich_text_3D3jmt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_B6WmGt": {
+          "type": "heading",
+          "settings": {
+            "heading": "SUPERZOO 2025",
+            "heading_size": "h0"
+          }
+        },
+        "text_fPcGF9": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Hello 👋 We're excited to meet you and explore partnership opportunities.</h3>"
+          }
+        },
+        "button_WJqNLD": {
+          "type": "button",
+          "settings": {
+            "button_label": "Follow us on Instagram",
+            "button_link": "https://www.instagram.com/beebsgoods",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_B6WmGt",
+        "text_fPcGF9",
+        "button_WJqNLD"
+      ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "contact_form_nHgd4J": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "Tell us more about your work",
+        "heading_size": "h2",
+        "color_scheme": "scheme-2",
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "rich_text_3D3jmt",
+    "contact_form_nHgd4J"
+  ]
 }
