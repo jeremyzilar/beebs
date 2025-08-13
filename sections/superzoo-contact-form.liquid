@@ -1,0 +1,368 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .superzoo-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+  }
+
+  .superzoo-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .superzoo-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .superzoo-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 40px;
+  }
+
+  .superzoo-form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .superzoo-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .superzoo-form-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .superzoo-field-group {
+    margin-bottom: 20px;
+  }
+
+  .superzoo-field-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .superzoo-field-group input,
+  .superzoo-field-group select,
+  .superzoo-field-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+
+  .superzoo-field-group input:focus,
+  .superzoo-field-group select:focus,
+  .superzoo-field-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+  }
+
+  .superzoo-submit-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 100%;
+  }
+
+  .superzoo-submit-btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .superzoo-benefits {
+    background: #f8f9fa;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-radius: 12px;
+  }
+
+  .superzoo-benefits h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .superzoo-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .superzoo-benefit-item {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .superzoo-benefit-item h4 {
+    color: #667eea;
+    margin-bottom: 10px;
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="superzoo-hero">
+    <h1>SuperZOO Partnership Inquiry</h1>
+    <p>Connect with us at SuperZOO 2024! We're excited to explore partnership opportunities and showcase our innovative pet products to industry professionals.</p>
+  </div>
+
+  <div class="page-width">
+    <div class="superzoo-form-container">
+      <h2 class="superzoo-form-title">Let's Connect at SuperZOO</h2>
+      
+      {%- form 'contact', id: 'SuperZOOContactForm', class: 'superzoo-contact-form' -%}
+        {%- if form.posted_successfully? -%}
+          <div class="form-status form-status-list form__message" tabindex="-1" autofocus style="background: #d4edda; color: #155724; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+            <h2 style="margin: 0;">
+              {{- 'icon-success.svg' | inline_asset_content -}}
+              Thank you! We've received your SuperZOO inquiry and will be in touch soon.
+            </h2>
+          </div>
+        {%- elsif form.errors -%}
+          <div class="form__message" style="background: #f8d7da; color: #721c24; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+            <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+              {{- 'icon-error.svg' | inline_asset_content -}}
+              Please correct the errors below and try again.
+            </h2>
+          </div>
+          <ul class="form-status-list caption-large" role="list" style="background: #f8d7da; color: #721c24; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+            {%- for field in form.errors -%}
+              <li>
+                <a href="#SuperZOOContactForm-{{ field }}" class="link">
+                  {{ form.errors.translated_fields[field] | capitalize }}
+                  {{ form.errors.messages[field] }}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+
+        <div class="superzoo-form-grid">
+          <div class="superzoo-field-group">
+            <label for="SuperZOOContactForm-name">Full Name *</label>
+            <input
+              class="field__input"
+              autocomplete="name"
+              type="text"
+              id="SuperZOOContactForm-name"
+              name="contact[Full Name]"
+              value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+              placeholder="Your full name"
+              required
+            >
+          </div>
+
+          <div class="superzoo-field-group">
+            <label for="SuperZOOContactForm-company">Company/Business Name *</label>
+            <input
+              class="field__input"
+              type="text"
+              id="SuperZOOContactForm-company"
+              name="contact[Company]"
+              value="{% if form.company %}{{ form.company }}{% endif %}"
+              placeholder="Your company name"
+              required
+            >
+          </div>
+        </div>
+
+        <div class="superzoo-form-grid">
+          <div class="superzoo-field-group">
+            <label for="SuperZOOContactForm-email">Email Address *</label>
+            <input
+              autocomplete="email"
+              type="email"
+              id="SuperZOOContactForm-email"
+              class="field__input"
+              name="contact[email]"
+              spellcheck="false"
+              autocapitalize="off"
+              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+              aria-required="true"
+              placeholder="your.email@company.com"
+              required
+            >
+          </div>
+
+          <div class="superzoo-field-group">
+            <label for="SuperZOOContactForm-phone">Phone Number</label>
+            <input
+              type="tel"
+              id="SuperZOOContactForm-phone"
+              class="field__input"
+              autocomplete="tel"
+              name="contact[Phone]"
+              pattern="[0-9\-]*"
+              value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+              placeholder="(555) 123-4567"
+            >
+          </div>
+        </div>
+
+        <div class="superzoo-field-group">
+          <label for="SuperZOOContactForm-business-type">Business Type *</label>
+          <select id="SuperZOOContactForm-business-type" name="contact[Business Type]" required>
+            <option value="">Select your business type</option>
+            <option value="Pet Store">Pet Store</option>
+            <option value="Veterinary Clinic">Veterinary Clinic</option>
+            <option value="Grooming Salon">Grooming Salon</option>
+            <option value="Pet Trainer">Pet Trainer</option>
+            <option value="Pet Sitter/Dog Walker">Pet Sitter/Dog Walker</option>
+            <option value="Online Retailer">Online Retailer</option>
+            <option value="Distributor">Distributor</option>
+            <option value="Manufacturer">Manufacturer</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="superzoo-field-group">
+          <label for="SuperZOOContactForm-interest">Primary Interest *</label>
+          <select id="SuperZOOContactForm-interest" name="contact[Primary Interest]" required>
+            <option value="">What are you most interested in?</option>
+            <option value="Product Partnership">Product Partnership</option>
+            <option value="Wholesale/Distribution">Wholesale/Distribution</option>
+            <option value="Private Label">Private Label</option>
+            <option value="Product Information">Product Information</option>
+            <option value="Meeting at SuperZOO">Meeting at SuperZOO</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="superzoo-field-group">
+          <label for="SuperZOOContactForm-message">Message *</label>
+          <textarea
+            rows="6"
+            id="SuperZOOContactForm-message"
+            class="text-area field__input"
+            name="contact[Message]"
+            placeholder="Tell us about your business and how we can help you at SuperZOO..."
+            required
+          >{{- form.body -}}</textarea>
+        </div>
+
+        <div class="superzoo-field-group">
+          <label for="SuperZOOContactForm-booth">Will you be at SuperZOO 2024?</label>
+          <select id="SuperZOOContactForm-booth" name="contact[Attending SuperZOO]">
+            <option value="">Select an option</option>
+            <option value="Yes - Exhibiting">Yes - Exhibiting</option>
+            <option value="Yes - Attending">Yes - Attending</option>
+            <option value="No - Not attending">No - Not attending</option>
+            <option value="Maybe - Still deciding">Maybe - Still deciding</option>
+          </select>
+        </div>
+
+        <button type="submit" class="superzoo-submit-btn">
+          Send SuperZOO Inquiry
+        </button>
+      {%- endform -%}
+    </div>
+
+    <div class="superzoo-benefits">
+      <h3>Why Partner with Us at SuperZOO?</h3>
+      <div class="superzoo-benefits-grid">
+        <div class="superzoo-benefit-item">
+          <h4>Innovative Products</h4>
+          <p>Discover our latest pet care innovations designed to enhance your business offerings</p>
+        </div>
+        <div class="superzoo-benefit-item">
+          <h4>Exclusive Deals</h4>
+          <p>Special SuperZOO pricing and partnership opportunities for qualified businesses</p>
+        </div>
+        <div class="superzoo-benefit-item">
+          <h4>Expert Support</h4>
+          <p>Dedicated account management and marketing support to help you succeed</p>
+        </div>
+        <div class="superzoo-benefit-item">
+          <h4>Quality Assurance</h4>
+          <p>Premium products backed by our commitment to pet safety and satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "SuperZOO Contact Form",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "SuperZOO Contact Form"
+    }
+  ]
+}
+{% endschema %} 
