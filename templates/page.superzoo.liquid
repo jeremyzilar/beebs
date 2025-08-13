@@ -57,7 +57,13 @@
   }
 
   .superzoo-field-group {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .superzoo-field-group:last-child {
+    margin-bottom: 0;
   }
 
   .superzoo-field-group label {
@@ -65,17 +71,20 @@
     margin-bottom: 8px;
     font-weight: 600;
     color: #333;
+    line-height: 1.4;
   }
 
   .superzoo-field-group input,
   .superzoo-field-group select,
   .superzoo-field-group textarea {
     width: 100%;
-    padding: 12px;
+    padding: 12px 16px;
     border: 2px solid #e1e5e9;
     border-radius: 8px;
     font-size: 16px;
+    line-height: 1.5;
     transition: border-color 0.3s ease;
+    box-sizing: border-box;
   }
 
   .superzoo-field-group input:focus,
@@ -96,6 +105,7 @@
     cursor: pointer;
     transition: transform 0.2s ease;
     width: 100%;
+    margin-top: 8px;
   }
 
   .superzoo-submit-btn:hover {
