@@ -69,14 +69,43 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "full_width": true,
         "padding_top": 24,
         "padding_bottom": 12
       }
     },
+    "1755090788269c4dc8": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_xYgwBp": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "607458",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_xYgwBp"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "contact_form_nHgd4J": {
       "type": "contact-form",
+      "disabled": true,
       "name": "t:sections.contact-form.presets.name",
       "settings": {
         "heading": "",
@@ -85,11 +114,52 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "175509086218e259a4": {
+      "type": "apps",
+      "blocks": {
+        "faire_sell_wholesale_shopify_widget_FLpU7c": {
+          "type": "shopify://apps/faire-sell-wholesale/blocks/shopify_widget/7bd83f89-a129-4775-9b2a-1f2d88e8f32c",
+          "settings": {
+            "show_collections": false,
+            "show_reviews": false,
+            "appearance": "faireDefault",
+            "background_color": "#eff0f5",
+            "corner_radius": 0,
+            "heading_font": "sans_serif_n4",
+            "heading_color": "#333333",
+            "heading_text_case": "none",
+            "secondary_font": "helvetica_n4",
+            "secondary_font_color": "#333333",
+            "button_background_color": "#333333",
+            "button_font": "helvetica_n4",
+            "button_font_size_scale": 100,
+            "button_text_color": "#FFFFFF",
+            "button_text_case": "none",
+            "button_corner_radius": 0,
+            "button_border_color": "#FFFFFF",
+            "button_border_thickness": 0,
+            "banner_heading_font": "georgia_pro_n4",
+            "banner_secondary_font": "helvetica_n4",
+            "banner_background_color": "#FBF8F6",
+            "review_text_and_star_color": "#333333"
+          }
+        }
+      },
+      "block_order": [
+        "faire_sell_wholesale_shopify_widget_FLpU7c"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "rich_text_3D3jmt",
     "rich_text_YLPaRc",
-    "contact_form_nHgd4J"
+    "1755090788269c4dc8",
+    "contact_form_nHgd4J",
+    "175509086218e259a4"
   ]
 }
