@@ -19,10 +19,10 @@
             "heading_size": "h0"
           }
         },
-        "text_fPcGF9": {
+        "text_nVDBfD": {
           "type": "text",
           "settings": {
-            "text": "<h3>Hello 👋 We're excited to meet you and explore partnership opportunities.</h3>"
+            "text": "<p>Come and find us at <strong>Booth #9170</strong> in the Emerging Products section, or check out our <strong>Booth #33</strong> in the New Products Showcase.</p>"
           }
         },
         "button_WJqNLD": {
@@ -39,7 +39,7 @@
       },
       "block_order": [
         "heading_B6WmGt",
-        "text_fPcGF9",
+        "text_nVDBfD",
         "button_WJqNLD"
       ],
       "name": "t:sections.rich-text.presets.name",
@@ -52,11 +52,34 @@
         "padding_bottom": 52
       }
     },
+    "rich_text_YLPaRc": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Trp6yy": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>We're excited to meet you and explore partnership opportunities!</h3>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Trp6yy"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 12
+      }
+    },
     "contact_form_nHgd4J": {
       "type": "contact-form",
       "name": "t:sections.contact-form.presets.name",
       "settings": {
-        "heading": "Tell us more about your work",
+        "heading": "",
         "heading_size": "h2",
         "color_scheme": "scheme-2",
         "padding_top": 36,
@@ -66,6 +89,7 @@
   },
   "order": [
     "rich_text_3D3jmt",
+    "rich_text_YLPaRc",
     "contact_form_nHgd4J"
   ]
 }
