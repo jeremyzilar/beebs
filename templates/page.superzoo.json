@@ -46,49 +46,6 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "rich_text_Jep6tA": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_jCBTKn": {
-          "type": "heading",
-          "settings": {
-            "heading": "Wholesale orders",
-            "heading_size": "h1"
-          }
-        },
-        "text_PXWHrQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Interested in selling Beeb’s in your retail locations? </p>"
-          }
-        },
-        "button_wGC9rr": {
-          "type": "button",
-          "settings": {
-            "button_label": "Download our line sheet",
-            "button_link": "https://cdn.shopify.com/s/files/1/0419/1115/6900/files/beebs-superzoo-linesheet.pdf?v=1755273760",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_jCBTKn",
-        "text_PXWHrQ",
-        "button_wGC9rr"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
         "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 40,
@@ -110,11 +67,23 @@
           "settings": {
             "text": "<h3>We're excited to meet you and explore partnership opportunities!</h3>"
           }
+        },
+        "button_BTG6TX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download our line sheet",
+            "button_link": "https://cdn.shopify.com/s/files/1/0419/1115/6900/files/beebs-superzoo-linesheet.pdf?v=1755273760",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
       },
       "block_order": [
         "heading_MxmWzT",
-        "text_Trp6yy"
+        "text_Trp6yy",
+        "button_BTG6TX"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -208,7 +177,6 @@
   },
   "order": [
     "rich_text_3D3jmt",
-    "rich_text_Jep6tA",
     "rich_text_YLPaRc",
     "1755090788269c4dc8",
     "contact_form_nHgd4J",
