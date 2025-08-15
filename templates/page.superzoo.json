@@ -31,8 +31,8 @@
             "button_label": "Follow us on Instagram",
             "button_link": "https://www.instagram.com/beebsgoods",
             "button_style_secondary": true,
-            "button_label_2": "Follow us on TikTok",
-            "button_link_2": "https://tiktok.com/@beebsgoods",
+            "button_label_2": "",
+            "button_link_2": "",
             "button_style_secondary_2": true
           }
         }
@@ -41,6 +41,49 @@
         "heading_B6WmGt",
         "text_nVDBfD",
         "button_WJqNLD"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_Jep6tA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jCBTKn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wholesale orders",
+            "heading_size": "h1"
+          }
+        },
+        "text_PXWHrQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Interested in selling Beeb’s in your retail locations? </p>"
+          }
+        },
+        "button_wGC9rr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download our line sheet",
+            "button_link": "https://cdn.shopify.com/s/files/1/0419/1115/6900/files/beebs-superzoo-linesheet.pdf?v=1755273760",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jCBTKn",
+        "text_PXWHrQ",
+        "button_wGC9rr"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -55,6 +98,13 @@
     "rich_text_YLPaRc": {
       "type": "rich-text",
       "blocks": {
+        "heading_MxmWzT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get in touch",
+            "heading_size": "h1"
+          }
+        },
         "text_Trp6yy": {
           "type": "text",
           "settings": {
@@ -63,6 +113,7 @@
         }
       },
       "block_order": [
+        "heading_MxmWzT",
         "text_Trp6yy"
       ],
       "name": "t:sections.rich-text.presets.name",
@@ -84,9 +135,9 @@
             "form_id": "607458",
             "text_color": "#202020",
             "button_background_color": "#202020",
-            "button_label_color": "#FFFFFF",
-            "links_color": "#1878B9",
-            "errors_color": "#E02229",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
             "text_alignment": "center",
             "form_alignment": "center",
             "padding_top": 0,
@@ -134,14 +185,14 @@
             "button_background_color": "#333333",
             "button_font": "helvetica_n4",
             "button_font_size_scale": 100,
-            "button_text_color": "#FFFFFF",
+            "button_text_color": "#ffffff",
             "button_text_case": "none",
             "button_corner_radius": 0,
-            "button_border_color": "#FFFFFF",
+            "button_border_color": "#ffffff",
             "button_border_thickness": 0,
             "banner_heading_font": "georgia_pro_n4",
             "banner_secondary_font": "helvetica_n4",
-            "banner_background_color": "#FBF8F6",
+            "banner_background_color": "#fbf8f6",
             "review_text_and_star_color": "#333333"
           }
         }
@@ -157,6 +208,7 @@
   },
   "order": [
     "rich_text_3D3jmt",
+    "rich_text_Jep6tA",
     "rich_text_YLPaRc",
     "1755090788269c4dc8",
     "contact_form_nHgd4J",
