@@ -576,6 +576,7 @@
       "block_order": [
         "heading_aAq6P6"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -639,6 +640,7 @@
         "row_hPUEdG",
         "row_tfkNPM"
       ],
+      "disabled": true,
       "custom_css": [
         ".subtitle p {font-size: 24px; line-height: calc(1 + 0.5 / var(--font-body-scale));}",
         ".button--secondary {font-size: 18px;}"
