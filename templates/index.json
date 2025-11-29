@@ -9,13 +9,13 @@
  */
 {
   "sections": {
-    "image_banner_3giLEE": {
+    "image_banner_WJPcxP": {
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/beeb-purple-family2.jpg",
+        "image": "shopify://shop_images/beeb-family-crop-bkextend-nz_03b24e2a-da5d-4dc0-87f7-7afc00a1786e.png",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "medium",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -663,7 +663,7 @@
     }
   },
   "order": [
-    "image_banner_3giLEE",
+    "image_banner_WJPcxP",
     "hero_kMjTjW",
     "1750009880eb59cd88",
     "reviews_strip_HAFqxh",
