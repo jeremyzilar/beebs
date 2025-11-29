@@ -11,7 +11,7 @@
   "current": {
     "enable_amazon_payments": true,
     "enable_shopify_payments": true,
-    "logo": "shopify://shop_images/beebs-plastic-free.png",
+    "logo": "shopify://shop_images/beebs-logo-horizontal.png",
     "logo_width": 170,
     "favicon": "shopify://shop_images/favicon_3e60feae-5e24-4a24-8940-035c03f8258d.png",
     "type_header_font": "work_sans_n4",
