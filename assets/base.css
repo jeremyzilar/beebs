@@ -29,6 +29,18 @@ body {
   background-color: #232323;
 }
 
+.badge-new {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #FFFF00; /* red or your brand color */
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
