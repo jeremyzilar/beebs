@@ -600,6 +600,15 @@
             {%- else -%}
               {{ 'product-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
             {% endif %}
+
+
+
+            {% if product.tags contains 'new' %}
+            <span class="badge-new">NEW</span>
+            {% endif %}
+
+
+            
           </div>
         </div>
       </div>
