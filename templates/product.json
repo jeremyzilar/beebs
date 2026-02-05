@@ -12,10 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "judge_me_reviews_preview_badge_yn466d": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
         "product_reviews_bgU6rG": {
           "type": "product_reviews",
           "disabled": true,
@@ -23,14 +19,17 @@
         },
         "vendor": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>{{ product.vendor }}</p>",
+            "text": "<p><strong>The Perfect Single-Ingredient Dog Treat</strong></p>",
             "text_style": "body"
           }
         },
         "title": {
           "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_yn466d": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
         "lead_text_xfrCGc": {
@@ -82,10 +81,10 @@
         }
       },
       "block_order": [
-        "judge_me_reviews_preview_badge_yn466d",
         "product_reviews_bgU6rG",
         "vendor",
         "title",
+        "judge_me_reviews_preview_badge_yn466d",
         "lead_text_xfrCGc",
         "price",
         "variant_picker_CG8PQg",
