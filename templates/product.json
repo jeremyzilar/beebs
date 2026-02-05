@@ -101,14 +101,14 @@
         "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
         "media_size": "medium",
         "constrain_to_viewport": true,
-        "media_fit": "contain",
+        "media_fit": "cover",
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "hover",
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": true,
-        "padding_top": 60,
+        "padding_top": 20,
         "padding_bottom": 60
       }
     },
