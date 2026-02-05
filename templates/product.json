@@ -53,6 +53,7 @@
         },
         "text_kpnnHk": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>🎄📦 All new orders will be shipping out in early January.</p>",
             "text_style": "centered"
