@@ -4,10 +4,19 @@
   "description": "Shopify theme with Prettier formatting",
   "scripts": {
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md,liquid}\"",
-    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,scss,md,liquid}\""
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,scss,md,liquid}\"",
+    "css:build": "postcss src/tailwind.css -o assets/tailwind.css --verbose",
+    "css:watch": "postcss src/tailwind.css -o assets/tailwind.css --watch --verbose",
+    "shopify:dev": "shopify theme dev",
+    "dev": "concurrently \"yarn:shopify:dev\" \"yarn:css:watch\""
   },
   "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.10.0",
+    "@tailwindcss/postcss": "^4.1.18",
+    "concurrently": "^9.2.1",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
     "prettier": "^3.2.5",
-    "prettier-plugin-liquid": "^1.0.0"
+    "tailwindcss": "^4.1.18"
   }
 }

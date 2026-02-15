@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+/* Custom design tokens using @theme directive */
+@theme {
+  /* Custom Breakpoints (screens) */
+  --breakpoint-card: 160px;
+  --breakpoint-card-lg: 240px;
+  --breakpoint-mobile: 320px;
+  --breakpoint-mobile-lg: 480px;
+  --breakpoint-tablet: 640px;
+  --breakpoint-tablet-lg: 880px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-desktop-lg: 1256px;
+  --breakpoint-widescreen: 1400px;
+  
+  /* Custom Widths */
+  --width-card: 160px;
+  --width-card-lg: 240px;
+  --width-mobile: 320px;
+  --width-mobile-lg: 480px;
+  --width-tablet: 640px;
+  --width-tablet-lg: 880px;
+  --width-desktop: 1024px;
+  --width-desktop-lg: 1256px;
+  --width-widescreen: 1400px;
+  
+  /* Custom Fonts */
+  --font-fugue: Fugue, sans-serif;
+  
+  /* Custom Colors (examples - add your brand colors) */
+  --color-brand-primary: oklch(0.72 0.11 178);
+  --color-brand-secondary: oklch(0.65 0.15 220);
+}
+
+/* ============================================
+   CUSTOM UTILITIES IN TAILWIND V4
+   ============================================ */
+
+/* 1. CREATE CUSTOM UTILITIES with @utility
+   These become utility classes you can use in HTML */
+
+@utility text-balance {
+  text-wrap: balance;
+}
+/* Usage: class="text-balance" - Balances text across lines */
+
+@utility tap-highlight-none {
+  -webkit-tap-highlight-color: transparent;
+}
+/* Usage: class="tap-highlight-none" - Remove tap highlight on mobile */
+
+@utility scroll-smooth {
+  scroll-behavior: smooth;
+}
+/* Usage: class="scroll-smooth" - Smooth scrolling */
+
+@utility hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+/* Usage: class="hide-scrollbar" - Hide scrollbars */
+
+
+/* 2. CREATE CUSTOM VARIANTS with @variant
+   These work like hover:, focus:, etc. */
+
+@variant hocus (&:hover, &:focus);
+/* Usage: class="hocus:bg-blue-500" - Applies on both hover AND focus */
+
+@variant not-last (&:not(:last-child));
+/* Usage: class="not-last:mb-4" - Apply to all except last child */
+
+
+/* 3. ADD COMPONENT CLASSES with @layer
+   Reusable component styles */
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-brand-primary text-white;
+  }
+  
+  .btn-secondary {
+    @apply bg-brand-secondary text-white;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow p-6;
+  }
+  
+  .container-custom {
+    @apply w-full mx-auto px-4 mobile:px-6 desktop:px-8;
+    max-width: var(--width-widescreen);
+  }
+}
+/* Usage: class="btn btn-primary" or class="card" */
+
+
+/* 4. ADD CUSTOM BASE STYLES with @layer base
+   Global element defaults */
+
+@layer base {
+  html {
+    @apply scroll-smooth tap-highlight-none;
+  }
+  
+  h1 {
+    @apply text-4xl font-bold mb-4 font-fugue;
+  }
+  
+  h2 {
+    @apply text-3xl font-bold mb-3 font-fugue;
+  }
+  
+  h3 {
+    @apply text-2xl font-semibold mb-2 font-fugue;
+  }
+  
+  a {
+    @apply transition-colors;
+  }
+}
+
+
+/* 5. EXTEND WITH ARBITRARY VALUES
+   You can also use any CSS value on the fly in your HTML:
+   
+   class="w-[350px]" - Custom width
+   class="bg-[#1da1f2]" - Custom color
+   class="grid-cols-[200px_1fr_1fr]" - Custom grid template
+   class="text-[clamp(1rem,2vw,2rem)]" - Responsive sizing
+*/
+
+
+/* ============================================
+   EXAMPLE USAGE COMBINATIONS
+   ============================================ */
+
+/*
+HTML Examples:
+
+<!-- Custom utility -->
+<div class="hide-scrollbar overflow-auto">...</div>
+
+<!-- Custom variant -->
+<button class="hocus:bg-blue-500">Hover or Focus Me</button>
+
+<!-- Component class -->
+<button class="btn btn-primary">Click Me</button>
+
+<!-- Theme token + responsive -->
+<div class="w-mobile desktop:w-desktop bg-brand-primary">...</div>
+
+<!-- Arbitrary value -->
+<div class="w-[calc(100%-2rem)] bg-[oklch(0.5_0.2_180)]">...</div>
+
+<!-- Mix everything -->
+<div class="container-custom card not-last:mb-6 hocus:shadow-lg">
+  <h1>Auto-styled by base layer</h1>
+  <button class="btn btn-secondary">Click</button>
+</div>
+*/
