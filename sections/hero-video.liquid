@@ -7,15 +7,51 @@
   }
 {%- endstyle -%}
 
+{%- liquid
+  assign position = section.settings.content_position | split: '-'
+  assign vertical = position[0]
+  assign horizontal = position[1]
+  
+  case vertical
+    when 'top'
+      assign vertical_class = 'items-start'
+    when 'middle'
+      assign vertical_class = 'items-center'
+    when 'bottom'
+      assign vertical_class = 'items-end'
+  endcase
+  
+  case horizontal
+    when 'left'
+      assign horizontal_class = 'justify-start'
+    when 'center'
+      assign horizontal_class = 'justify-center'
+    when 'right'
+      assign horizontal_class = 'justify-end'
+  endcase
+  
+  case section.settings.content_alignment
+    when 'left'
+      assign text_align_class = 'text-left'
+      assign button_justify_class = 'justify-start'
+    when 'center'
+      assign text_align_class = 'text-center'
+      assign button_justify_class = 'justify-center'
+    when 'right'
+      assign text_align_class = 'text-right'
+      assign button_justify_class = 'justify-end'
+  endcase
+-%}
+
 <div
   id="HeroVideo-{{ section.id }}"
-  class="hero-video hero-video--{{ section.settings.content_position }} hero-video--align-{{ section.settings.content_alignment }} color-{{ section.settings.color_scheme }}"
+  class="hero-video relative flex overflow-hidden color-{{ section.settings.color_scheme }}"
 >
   {%- comment -%} Video Background {%- endcomment -%}
-  <div class="hero-video__media">
+  <div class="absolute inset-0 z-0">
     {%- if section.settings.video != blank -%}
       <video
-        class="hero-video__video"
+        class="w-full h-full object-cover hidden tablet:block"
         autoplay
         muted
         loop
@@ -26,12 +62,25 @@
       >
         <source src="{{ section.settings.video.sources[1].url }}" type="video/mp4">
       </video>
+      {%- if section.settings.poster_image != blank -%}
+        {{
+          section.settings.poster_image
+          | image_url: width: 1920
+          | image_tag:
+            class: 'w-full h-full object-cover tablet:hidden',
+            loading: 'eager',
+            fetchpriority: 'high',
+            sizes: '100vw',
+            widths: '375, 750, 1100, 1500, 1920',
+            alt: section.settings.poster_image.alt | escape
+        }}
+      {%- endif -%}
     {%- elsif section.settings.poster_image != blank -%}
       {{
         section.settings.poster_image
         | image_url: width: 1920
         | image_tag:
-          class: 'hero-video__poster',
+          class: 'w-full h-full object-cover',
           loading: 'eager',
           fetchpriority: 'high',
           sizes: '100vw',
@@ -39,38 +88,32 @@
           alt: section.settings.poster_image.alt | escape
       }}
     {%- else -%}
-      <div class="hero-video__placeholder">
-        {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      <div class="w-full h-full bg-gray-800">
+        {{ 'hero-apparel-1' | placeholder_svg_tag: 'w-full h-full object-cover' }}
       </div>
     {%- endif -%}
 
     {%- comment -%} Gradient Overlay {%- endcomment -%}
-    <div class="hero-video__overlay"></div>
+    <div class="hero-video__overlay absolute inset-0 z-1"></div>
   </div>
 
   {%- comment -%} Content Overlay {%- endcomment -%}
-  <div class="hero-video__content page-width">
-    <div class="hero-video__content-inner">
-      {%- if section.settings.subheading != blank -%}
-        <p class="hero-video__subheading caption-with-letter-spacing">
-          {{ section.settings.subheading }}
-        </p>
-      {%- endif -%}
-
+  <div class="relative z-2 flex w-full px-6 py-12 tablet:px-12 tablet:py-24 {{ vertical_class }} {{ horizontal_class }}">
+    <div class="max-w-4xl {{ text_align_class }}">
       {%- if section.settings.heading != blank -%}
-        <h1 class="hero-video__heading {{ section.settings.heading_size }}">
+        <h1 class="mb-4 tablet:mb-6 text-3xl tablet:text-5xl desktop:text-6xl font-bold {{ section.settings.heading_size }}">
           {{ section.settings.heading }}
         </h1>
       {%- endif -%}
 
       {%- if section.settings.description != blank -%}
-        <div class="hero-video__description rte">
+        <div class="mb-6 tablet:mb-8 text-base tablet:text-lg opacity-90">
           {{ section.settings.description }}
         </div>
       {%- endif -%}
 
       {%- if section.settings.button_label_1 != blank or section.settings.button_label_2 != blank -%}
-        <div class="hero-video__buttons">
+        <div class="flex flex-col tablet:flex-row flex-wrap gap-4 {{ button_justify_class }}">
           {%- if section.settings.button_label_1 != blank -%}
             <a
               {% if section.settings.button_link_1 == blank %}
@@ -78,7 +121,7 @@
               {% else %}
                 href="{{ section.settings.button_link_1 }}"
               {% endif %}
-              class="button{% if section.settings.button_style_1 == 'secondary' %} button--secondary{% else %} button--primary{% endif %}"
+              class="button{% if section.settings.button_style_1 == 'secondary' %} button--secondary{% else %} button--primary{% endif %} w-full tablet:w-auto justify-center"
             >
               {{ section.settings.button_label_1 | escape }}
             </a>
@@ -91,7 +134,7 @@
               {% else %}
                 href="{{ section.settings.button_link_2 }}"
               {% endif %}
-              class="button{% if section.settings.button_style_2 == 'secondary' %} button--secondary{% else %} button--primary{% endif %}"
+              class="button{% if section.settings.button_style_2 == 'secondary' %} button--secondary{% else %} button--primary{% endif %} w-full tablet:w-auto justify-center"
             >
               {{ section.settings.button_label_2 | escape }}
             </a>
@@ -150,12 +193,6 @@
     {
       "type": "header",
       "content": "Content"
-    },
-    {
-      "type": "text",
-      "id": "subheading",
-      "label": "Subheading",
-      "default": "Welcome to our store"
     },
     {
       "type": "inline_richtext",
