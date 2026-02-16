@@ -9,6 +9,27 @@
  */
 {
   "sections": {
+    "hero_video_XddN3B": {
+      "type": "hero-video",
+      "name": "Hero Video",
+      "settings": {
+        "video": "shopify://files/videos/beeb02.mp4",
+        "overlay_opacity": 30,
+        "hero_height": 100,
+        "heading": "Your <em>Amazing</em> Headline",
+        "heading_size": "h0",
+        "description": "<p>Share your brand story and what makes you unique.</p>",
+        "button_label_1": "Shop Now",
+        "button_link_1": "",
+        "button_style_1": "primary",
+        "button_label_2": "Learn More",
+        "button_link_2": "",
+        "button_style_2": "secondary",
+        "content_position": "middle-center",
+        "content_alignment": "center",
+        "color_scheme": ""
+      }
+    },
     "collabs": {
       "type": "apps",
       "blocks": {
@@ -37,6 +58,7 @@
     }
   },
   "order": [
+    "hero_video_XddN3B",
     "collabs"
   ]
 }

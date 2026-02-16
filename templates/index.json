@@ -11,13 +11,11 @@
   "sections": {
     "hero_video_9rwHfk": {
       "type": "hero-video",
-      "disabled": true,
       "name": "Hero Video",
       "settings": {
         "video": "shopify://files/videos/beeb02.mp4",
         "overlay_opacity": 30,
         "hero_height": 95,
-        "subheading": "Welcome to our store",
         "heading": "Your <em>Amazing</em> Headline",
         "heading_size": "h0",
         "description": "<p>Share your brand story and what makes you unique.</p>",
