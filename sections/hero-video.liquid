@@ -1,3 +1,4 @@
+{%- comment -%} Hero Video Section {%- endcomment -%}
 {{ 'section-hero-video.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
@@ -51,7 +52,7 @@
   <div class="absolute inset-0 z-0">
     {%- if section.settings.video != blank -%}
       <video
-        class="w-full h-full object-cover hidden tablet:block"
+        class="w-full h-full object-cover"
         autoplay
         muted
         loop
@@ -60,7 +61,9 @@
           poster="{{ section.settings.poster_image | image_url: width: 1920 }}"
         {%- endif %}
       >
-        <source src="{{ section.settings.video.sources[1].url }}" type="video/mp4">
+        {%- for source in section.settings.video.sources -%}
+          <source src="{{ source.url }}" type="{{ source.mime_type }}">
+        {%- endfor -%}
       </video>
       {%- if section.settings.poster_image != blank -%}
         {{
