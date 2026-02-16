@@ -51,8 +51,23 @@
   {%- comment -%} Video Background {%- endcomment -%}
   <div class="absolute inset-0 z-0">
     {%- if section.settings.video != blank -%}
+      {%- comment -%} Build video classes based on mobile settings {%- endcomment -%}
+      {%- liquid
+        assign video_fit_class = 'object-cover'
+        if section.settings.video_fit_mobile == 'contain'
+          assign video_fit_class = 'object-contain tablet:object-cover'
+        endif
+
+        assign video_position_class = 'object-center'
+        case section.settings.video_position_mobile
+          when 'left'
+            assign video_position_class = 'object-left tablet:object-center'
+          when 'right'
+            assign video_position_class = 'object-right tablet:object-center'
+        endcase
+      -%}
       <video
-        class="w-full h-full object-cover"
+        class="w-full h-full {{ video_fit_class }} {{ video_position_class }}"
         autoplay
         muted
         loop
@@ -66,11 +81,27 @@
         {%- endfor -%}
       </video>
       {%- if section.settings.poster_image != blank -%}
+        {%- liquid
+          assign poster_fit = 'object-cover'
+          if section.settings.video_fit_mobile == 'contain'
+            assign poster_fit = 'object-contain'
+          endif
+          
+          assign poster_position = 'object-center'
+          case section.settings.video_position_mobile
+            when 'left'
+              assign poster_position = 'object-left'
+            when 'right'
+              assign poster_position = 'object-right'
+          endcase
+          
+          assign poster_classes = 'w-full h-full tablet:hidden ' | append: poster_fit | append: ' ' | append: poster_position
+        -%}
         {{
           section.settings.poster_image
           | image_url: width: 1920
           | image_tag:
-            class: 'w-full h-full object-cover tablet:hidden',
+            class: poster_classes,
             loading: 'eager',
             fetchpriority: 'high',
             sizes: '100vw',
@@ -172,6 +203,44 @@
       "id": "poster_image",
       "label": "Poster image",
       "info": "Displayed while video loads and on mobile devices. Also used as fallback if no video is uploaded."
+    },
+    {
+      "type": "select",
+      "id": "video_fit_mobile",
+      "options": [
+        {
+          "value": "cover",
+          "label": "Cover (fill & crop)"
+        },
+        {
+          "value": "contain",
+          "label": "Contain (show all)"
+        }
+      ],
+      "default": "cover",
+      "label": "Mobile video fit",
+      "info": "Cover fills the space and crops; Contain shows the full video width"
+    },
+    {
+      "type": "select",
+      "id": "video_position_mobile",
+      "options": [
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Mobile video focus",
+      "info": "When cropping on mobile, which part of the video to keep visible"
     },
     {
       "type": "range",
