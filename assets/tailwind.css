@@ -33,8 +33,6 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --width-tablet: 640px;
-    --width-desktop: 1024px;
     --width-widescreen: 1400px;
     --font-fugue: Fugue, sans-serif;
     --color-brand-primary: oklch(0.72 0.11 178);
@@ -218,12 +216,6 @@
     z-index: 1;
   }
   .z-2 {
-    z-index: 2;
-  }
-  .z-\[1\] {
-    z-index: 1;
-  }
-  .z-\[2\] {
     z-index: 2;
   }
   .container {
@@ -421,11 +413,6 @@
   .tablet\:mb-8 {
     @media (width >= 640px) {
       margin-bottom: calc(var(--spacing) * 8);
-    }
-  }
-  .tablet\:block {
-    @media (width >= 640px) {
-      display: block;
     }
   }
   .tablet\:hidden {
