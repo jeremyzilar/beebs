@@ -104,7 +104,7 @@
   <div class="relative z-2 flex w-full px-6 py-12 tablet:px-12 tablet:py-24 {{ vertical_class }} {{ horizontal_class }}">
     <div class="max-w-4xl {{ text_align_class }}">
       {%- if section.settings.heading != blank -%}
-        <h1 class="mb-4 tablet:mb-6 text-4xl tablet:text-5xl desktop:text-6xl font-bold">
+        <h1 class="mb-4 tablet:mb-6 text-3xl tablet:text-5xl desktop:text-6xl font-bold">
           {{ section.settings.heading }}
         </h1>
       {%- endif -%}
@@ -202,30 +202,6 @@
       "id": "heading",
       "label": "Heading",
       "default": "Your <em>Amazing</em> Headline"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "Small"
-        },
-        {
-          "value": "h1",
-          "label": "Medium"
-        },
-        {
-          "value": "h0",
-          "label": "Large"
-        },
-        {
-          "value": "hxl",
-          "label": "Extra large"
-        }
-      ],
-      "default": "h0",
-      "label": "Heading size"
     },
     {
       "type": "richtext",
