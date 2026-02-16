@@ -33,8 +33,6 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --width-tablet: 640px;
-    --width-desktop: 1024px;
     --width-widescreen: 1400px;
     --font-fugue: Fugue, sans-serif;
     --color-brand-primary: oklch(0.72 0.11 178);
@@ -190,6 +188,9 @@
   }
 }
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
   .absolute {
     position: absolute;
   }
@@ -218,12 +219,6 @@
     z-index: 1;
   }
   .z-2 {
-    z-index: 2;
-  }
-  .z-\[1\] {
-    z-index: 1;
-  }
-  .z-\[2\] {
     z-index: 2;
   }
   .container {
@@ -351,8 +346,20 @@
   .bg-gray-800 {
     background-color: var(--color-gray-800);
   }
+  .object-contain {
+    object-fit: contain;
+  }
   .object-cover {
     object-fit: cover;
+  }
+  .object-center {
+    object-position: center;
+  }
+  .object-left {
+    object-position: left;
+  }
+  .object-right {
+    object-position: right;
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
@@ -423,11 +430,6 @@
       margin-bottom: calc(var(--spacing) * 8);
     }
   }
-  .tablet\:block {
-    @media (width >= 640px) {
-      display: block;
-    }
-  }
   .tablet\:hidden {
     @media (width >= 640px) {
       display: none;
@@ -441,6 +443,16 @@
   .tablet\:flex-row {
     @media (width >= 640px) {
       flex-direction: row;
+    }
+  }
+  .tablet\:object-cover {
+    @media (width >= 640px) {
+      object-fit: cover;
+    }
+  }
+  .tablet\:object-center {
+    @media (width >= 640px) {
+      object-position: center;
     }
   }
   .tablet\:px-12 {
