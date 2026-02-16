@@ -15,7 +15,7 @@
       "settings": {
         "video": "shopify://files/videos/beeb02.mp4",
         "poster_image": "shopify://shop_images/beeb-purple-family2.jpg",
-        "overlay_opacity": 30,
+        "hero_height_mobile": 65,
         "hero_height": 95,
         "heading": "The Perfect Dog Treat",
         "heading_size": "hxl",
