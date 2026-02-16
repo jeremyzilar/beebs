@@ -17,18 +17,18 @@
         "poster_image": "shopify://shop_images/beeb-purple-family2.jpg",
         "overlay_opacity": 30,
         "hero_height": 100,
-        "heading": "Your <em>Amazing</em> Headline",
-        "heading_size": "h0",
+        "heading": "The Perfect Dog Treat",
+        "heading_size": "hxl",
         "description": "<p>Share your brand story and what makes you unique.</p>",
-        "button_label_1": "Shop Now",
+        "button_label_1": "",
         "button_link_1": "",
         "button_style_1": "primary",
-        "button_label_2": "Learn More",
+        "button_label_2": "",
         "button_link_2": "",
         "button_style_2": "secondary",
-        "content_position": "middle-center",
+        "content_position": "top-center",
         "content_alignment": "center",
-        "color_scheme": ""
+        "color_scheme": "scheme-5"
       }
     },
     "collabs": {
