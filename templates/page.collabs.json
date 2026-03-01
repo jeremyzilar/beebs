@@ -13,12 +13,11 @@
       "type": "hero-video",
       "name": "Hero Video",
       "settings": {
-        "video": "shopify://files/videos/beeb02.mp4",
+        "video": "shopify://files/videos/beebs_2b.mov",
         "poster_image": "shopify://shop_images/beeb-purple-family2.jpg",
         "hero_height_mobile": 65,
         "hero_height": 95,
         "heading": "The Perfect Dog Treat",
-        "heading_size": "hxl",
         "description": "<p>Share your brand story and what makes you unique.</p>",
         "button_label_1": "",
         "button_link_1": "",
