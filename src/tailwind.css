@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+/*
+  Force-compile utility classes used in dynamic Shopify section settings
+  (e.g. HTML heading fields, color fields) that won't appear in scanned source files.
+*/
+@source inline("{text,font}-{black,white,inherit,current}");
+@source inline("text-{xs,sm,base,lg,xl,2xl,3xl,4xl,5xl,6xl,7xl,8xl,9xl}");
+@source inline("{tablet,desktop}:text-{xs,sm,base,lg,xl,2xl,3xl,4xl,5xl,6xl,7xl,8xl,9xl}");
+@source inline("{italic,not-italic,underline,line-through,no-underline,uppercase,lowercase,capitalize,normal-case}");
+@source inline("font-{thin,extralight,light,normal,medium,semibold,bold,extrabold,black}");
+
 /* Custom design tokens using @theme directive */
 @theme {
   /* Custom Breakpoints (screens) */
