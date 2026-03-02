@@ -13,7 +13,7 @@
       "type": "hero-video",
       "name": "Hero Video",
       "settings": {
-        "video": "shopify://files/videos/beebs_2b.mov",
+        "video": "shopify://files/videos/beeb01.MOV",
         "poster_image": "shopify://shop_images/beeb-purple-family2.jpg",
         "hero_height_mobile": 65,
         "hero_height": 95,
