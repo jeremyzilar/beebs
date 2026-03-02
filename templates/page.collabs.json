@@ -15,8 +15,8 @@
       "settings": {
         "video": "shopify://files/videos/beeb01.MOV",
         "poster_image": "shopify://shop_images/beeb-purple-family2.jpg",
-        "hero_height_mobile": 65,
-        "hero_height": 95,
+        "hero_height_mobile": 50,
+        "hero_height": 90,
         "heading": "THE PERFECT SINGLE-INGREDIENT TREAT <em>FOR</em> DOGS IN PLASTIC-FREE PACKAGING",
         "description": "",
         "button_label_1": "",
