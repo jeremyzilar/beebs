@@ -75,30 +75,6 @@
         "include_margins": true
       }
     },
-    "rich_text_8QRAi8": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_bbRzUb": {
-          "type": "heading",
-          "settings": {
-            "heading": "Plastic-free, refillable packaging",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_bbRzUb"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 24
-      }
-    },
     "reviews_strip_HAFqxh": {
       "type": "reviews-strip",
       "blocks": {
@@ -143,6 +119,30 @@
         "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
         "discount_text": "Get 10% OFF",
         "discount_color_scheme": "scheme-4"
+      }
+    },
+    "rich_text_8QRAi8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bbRzUb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Plastic-free, refillable packaging",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bbRzUb"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
       }
     },
     "featured_collection_t8NmEN": {
@@ -714,8 +714,8 @@
     "image_banner_WJPcxP",
     "hero_kMjTjW",
     "1750009880eb59cd88",
-    "rich_text_8QRAi8",
     "reviews_strip_HAFqxh",
+    "rich_text_8QRAi8",
     "featured_collection_t8NmEN",
     "newsletter_9EBd9K",
     "17488821640b60c9bc",
