@@ -105,6 +105,17 @@
           format("opentype");
       }
 
+      @font-face {
+        font-family: "Fugue Headline";
+        src: url("https://cdn.shopify.com/s/files/1/0419/1115/6900/files/Fugue_Headline.woff2?v=1764624593")
+          format("woff2"),
+          url("https://cdn.shopify.com/s/files/1/0419/1115/6900/files/Fugue_Headline.otf?v=1764622603")
+          format("opentype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
       :root {
         /* --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }}; */
         --font-body-family: "Fugue", sans-serif;
@@ -113,7 +124,7 @@
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
         /* --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }}; */
-        --font-heading-family: "Fugue", sans-serif;
+        --font-heading-family: "Fugue Headline", sans-serif;
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
 
