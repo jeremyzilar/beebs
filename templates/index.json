@@ -15,7 +15,7 @@
       "name": "Hero Video",
       "settings": {
         "video": "shopify://files/videos/beebs_1280.mp4",
-        "hero_height_mobile": 55,
+        "hero_height_mobile": 45,
         "hero_height": 70,
         "heading": "The Perfect Single-Ingredient Treat for Dogs",
         "heading_size_mobile": "2.15rem",
@@ -29,7 +29,7 @@
         "button_style_2": "secondary",
         "content_position": "top-center",
         "content_alignment": "center",
-        "color_scheme": ""
+        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e"
       }
     },
     "image_banner_WJPcxP": {
