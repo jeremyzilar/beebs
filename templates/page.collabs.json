@@ -31,6 +31,38 @@
         "color_scheme": "scheme-5"
       }
     },
+    "rich_text_7RHRGU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cNXADp": {
+          "type": "heading",
+          "settings": {
+            "heading": "The perfect single-ingredient dog treat, in refillable, plastic-free packaging",
+            "heading_size": "h1"
+          }
+        },
+        "heading_rhjLt8": {
+          "type": "heading",
+          "settings": {
+            "heading": "100% all-natural, grass-fed lamb from New Zealand",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cNXADp",
+        "heading_rhjLt8"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "collabs": {
       "type": "apps",
       "blocks": {
@@ -60,6 +92,7 @@
   },
   "order": [
     "hero_video_XddN3B",
+    "rich_text_7RHRGU",
     "collabs"
   ]
 }
