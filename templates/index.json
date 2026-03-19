@@ -11,7 +11,6 @@
   "sections": {
     "hero_video_G3XjDj": {
       "type": "hero-video",
-      "disabled": true,
       "name": "Hero Video",
       "settings": {
         "video": "shopify://files/videos/beebs_1280.mp4",
@@ -20,7 +19,7 @@
         "heading": "The Perfect Single-Ingredient Treat for Dogs",
         "heading_size_mobile": "2.15rem",
         "heading_size_desktop": "3.75rem",
-        "description": "<p>Share your brand story and what makes you unique.</p>",
+        "description": "<p>100% All-Natural, Grass-Fed Lamb from New Zealand</p>",
         "button_label_1": "",
         "button_link_1": "",
         "button_style_1": "primary",
