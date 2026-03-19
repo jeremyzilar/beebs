@@ -98,15 +98,47 @@
         "discount_color_scheme": "scheme-4"
       }
     },
+    "rich_text_8QRAi8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bbRzUb": {
+          "type": "heading",
+          "settings": {
+            "heading": "The perfect single-ingredient dog treat in refillable, plastic-free packaging",
+            "heading_size": "h1"
+          }
+        },
+        "heading_j9kCan": {
+          "type": "heading",
+          "settings": {
+            "heading": "100% grass-fed New Zealand lamb",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bbRzUb",
+        "heading_j9kCan"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_collection_t8NmEN": {
       "type": "featured-collection",
       "settings": {
-        "title": "The perfect single-ingredient dog treat, made from 100% grass-fed lamb from New Zealand",
+        "title": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "description": "",
         "show_description": false,
-        "description_style": "body",
+        "description_style": "uppercase",
         "collection": "lamb-lung-dog-treats",
         "products_to_show": 6,
         "columns_desktop": 3,
@@ -122,7 +154,7 @@
         "quick_add": "standard",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 32,
+        "padding_top": 0,
         "padding_bottom": 32,
         "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
         "background_image": "shopify://shop_images/bean-2.png"
@@ -667,6 +699,7 @@
     "hero_kMjTjW",
     "1750009880eb59cd88",
     "reviews_strip_HAFqxh",
+    "rich_text_8QRAi8",
     "featured_collection_t8NmEN",
     "newsletter_9EBd9K",
     "17488821640b60c9bc",
