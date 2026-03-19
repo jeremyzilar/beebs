@@ -66,7 +66,8 @@
   <div class="absolute inset-0 z-0">
     {%- if section.settings.video != blank -%}
       <video
-        class="w-full h-full object-cover motion-reduce:hidden"
+        id="HeroVideo-{{ section.id }}-video"
+        class="w-full h-full object-cover"
         autoplay
         muted
         loop
@@ -79,19 +80,15 @@
           <source src="{{ source.url }}" type="{{ source.mime_type }}">
         {%- endfor -%}
       </video>
-      {%- if section.settings.poster_image != blank -%}
-        {{
-          section.settings.poster_image
-          | image_url: width: 1920
-          | image_tag:
-            class: 'w-full h-full object-cover tablet:hidden',
-            loading: 'eager',
-            fetchpriority: 'high',
-            sizes: '100vw',
-            widths: '375, 750, 1100, 1500, 1920',
-            alt: section.settings.poster_image.alt | escape
-        }}
-      {%- endif -%}
+      <script>
+        (function () {
+          var video = document.getElementById('HeroVideo-{{ section.id }}-video');
+          if (video && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            video.removeAttribute('autoplay');
+            video.pause();
+          }
+        })();
+      </script>
     {%- elsif section.settings.poster_image != blank -%}
       {{
         section.settings.poster_image
