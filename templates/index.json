@@ -553,7 +553,7 @@
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "Our story",
-        "button_link": "shopify://pages/about-us",
+        "button_link": "shopify://pages/about",
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
