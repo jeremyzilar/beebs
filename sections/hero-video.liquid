@@ -83,10 +83,14 @@
       <script>
         (function () {
           var video = document.getElementById('HeroVideo-{{ section.id }}-video');
-          if (video && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          if (!video) return;
+          if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
             video.removeAttribute('autoplay');
             video.pause();
+            return;
           }
+          // Explicitly trigger play as a fallback for browsers that don't fire autoplay
+          video.play().catch(function () {});
         })();
       </script>
     {%- elsif section.settings.poster_image != blank -%}
