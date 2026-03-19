@@ -9,6 +9,29 @@
  */
 {
   "sections": {
+    "hero_video_G3XjDj": {
+      "type": "hero-video",
+      "disabled": true,
+      "name": "Hero Video",
+      "settings": {
+        "video": "shopify://files/videos/beebs_1280.mp4",
+        "hero_height_mobile": 55,
+        "hero_height": 70,
+        "heading": "The Perfect Single-Ingredient Treat for Dogs",
+        "heading_size_mobile": "2.15rem",
+        "heading_size_desktop": "3.75rem",
+        "description": "<p>Share your brand story and what makes you unique.</p>",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style_1": "primary",
+        "button_label_2": "",
+        "button_link_2": "",
+        "button_style_2": "secondary",
+        "content_position": "top-center",
+        "content_alignment": "center",
+        "color_scheme": ""
+      }
+    },
     "image_banner_WJPcxP": {
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
@@ -695,6 +718,7 @@
     }
   },
   "order": [
+    "hero_video_G3XjDj",
     "image_banner_WJPcxP",
     "hero_kMjTjW",
     "1750009880eb59cd88",
