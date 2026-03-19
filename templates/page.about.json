@@ -9,6 +9,17 @@
  */
 {
   "sections": {
+    "page_EWPyTF": {
+      "type": "page",
+      "name": "t:sections.page.presets.name",
+      "settings": {
+        "page": "about",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 64
+      }
+    },
     "image_with_text_38fdgX": {
       "type": "image-with-text",
       "blocks": {
@@ -149,6 +160,7 @@
     }
   },
   "order": [
+    "page_EWPyTF",
     "image_with_text_38fdgX",
     "collage_Ug7niD",
     "collage_VG7FDe",
