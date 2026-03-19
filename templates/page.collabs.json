@@ -14,6 +14,7 @@
       "name": "Hero Video",
       "settings": {
         "video": "shopify://files/videos/beebs_1280.mp4",
+        "poster_image": "shopify://shop_images/beebs-still_5a40c611-2b50-4eeb-8ea5-986664f4078f.png",
         "hero_height_mobile": 50,
         "hero_height": 80,
         "heading": "The Perfect Single-Ingredient Treat for Dogs",
