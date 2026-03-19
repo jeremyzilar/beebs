@@ -15,8 +15,8 @@
       "settings": {
         "video": "shopify://files/videos/beebs_1280.mp4",
         "hero_height_mobile": 50,
-        "hero_height": 70,
-        "heading": "THE PERFECT SINGLE-INGREDIENT TREAT FOR DOGS<br><span>IN PLASTIC-FREE PACKAGING</span>",
+        "hero_height": 65,
+        "heading": "THE PERFECT SINGLE-INGREDIENT TREAT FOR DOGS",
         "heading_size_mobile": "2.15rem",
         "heading_size_desktop": "4.5rem",
         "description": "",
