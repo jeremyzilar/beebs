@@ -15,7 +15,7 @@
       "settings": {
         "video": "shopify://files/videos/beebs_1280.mp4",
         "hero_height_mobile": 45,
-        "hero_height": 80,
+        "hero_height": 70,
         "heading": "The Perfect Single-Ingredient Treat for Dogs",
         "heading_size_mobile": "2.15rem",
         "heading_size_desktop": "3.75rem",
@@ -126,21 +126,13 @@
         "heading_bbRzUb": {
           "type": "heading",
           "settings": {
-            "heading": "The perfect single-ingredient dog treat in refillable, plastic-free packaging",
+            "heading": "Plastic-free, refillable packaging",
             "heading_size": "h1"
-          }
-        },
-        "heading_j9kCan": {
-          "type": "heading",
-          "settings": {
-            "heading": "100% grass-fed New Zealand lamb",
-            "heading_size": "h2"
           }
         }
       },
       "block_order": [
-        "heading_bbRzUb",
-        "heading_j9kCan"
+        "heading_bbRzUb"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
