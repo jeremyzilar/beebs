@@ -36,6 +36,7 @@
   
   /* Custom Fonts */
   --font-fugue: Fugue, sans-serif;
+  --font-fugue-headline: "Fugue Headline", sans-serif;
   
   /* Custom Colors (examples - add your brand colors) */
   --color-brand-primary: oklch(0.72 0.11 178);

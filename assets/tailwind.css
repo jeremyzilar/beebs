@@ -54,6 +54,7 @@
     --default-mono-font-family: var(--font-mono);
     --width-widescreen: 1400px;
     --font-fugue: Fugue, sans-serif;
+    --font-fugue-headline: "Fugue Headline", sans-serif;
     --color-brand-primary: oklch(0.72 0.11 178);
     --color-brand-secondary: oklch(0.65 0.15 220);
   }
@@ -379,6 +380,9 @@
   }
   .font-fugue {
     font-family: var(--font-fugue);
+  }
+  .font-fugue-headline {
+    font-family: var(--font-fugue-headline);
   }
   .text-2xl {
     font-size: var(--text-2xl);
