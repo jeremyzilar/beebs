@@ -46,7 +46,7 @@
             "number_of_images": "4",
             "logo_position": "above",
             "corner_style": "rounded",
-            "button_background_color": "#000000",
+            "button_background_color": "#0e1b4d",
             "button_label_color": "#ffffff",
             "link_color": "#2c6ecb"
           }
