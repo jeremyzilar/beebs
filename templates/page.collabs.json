@@ -9,30 +9,6 @@
  */
 {
   "sections": {
-    "hero_video_XddN3B": {
-      "type": "hero-video",
-      "disabled": true,
-      "name": "Hero Video",
-      "settings": {
-        "video": "shopify://files/videos/beebs_1280.mp4",
-        "poster_image": "shopify://shop_images/beebs-still_5a40c611-2b50-4eeb-8ea5-986664f4078f.png",
-        "hero_height_mobile": 50,
-        "hero_height": 80,
-        "heading": "The Perfect Single-Ingredient Treat for Dogs",
-        "heading_size_mobile": "2.15rem",
-        "heading_size_desktop": "4.5rem",
-        "description": "<p>100% All-Natural, Grass-Fed Lamb from New Zealand</p>",
-        "button_label_1": "",
-        "button_link_1": "",
-        "button_style_1": "primary",
-        "button_label_2": "",
-        "button_link_2": "",
-        "button_style_2": "secondary",
-        "content_position": "top-center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-5"
-      }
-    },
     "collabs": {
       "type": "apps",
       "blocks": {
@@ -61,7 +37,6 @@
     }
   },
   "order": [
-    "hero_video_XddN3B",
     "collabs"
   ]
 }
