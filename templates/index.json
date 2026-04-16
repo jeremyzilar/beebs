@@ -122,6 +122,54 @@
         "discount_color_scheme": "scheme-4"
       }
     },
+    "image_with_text_KfQxCd": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_NhgXET": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Home Tube",
+            "heading_size": "h1"
+          }
+        },
+        "text_T9jqh6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Treat your dog at home, at the office,  can treat your dog where ever they may be.</p>",
+            "text_style": "subtitle"
+          }
+        },
+        "button_qLrQBj": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop the Home Tube",
+            "button_link": "shopify://products/home-tube",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NhgXET",
+        "text_T9jqh6",
+        "button_qLrQBj"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
+        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_8QRAi8": {
       "type": "rich-text",
       "blocks": {
@@ -716,6 +764,7 @@
     "hero_kMjTjW",
     "1750009880eb59cd88",
     "reviews_strip_HAFqxh",
+    "image_with_text_KfQxCd",
     "rich_text_8QRAi8",
     "featured_collection_t8NmEN",
     "newsletter_9EBd9K",
