@@ -135,7 +135,7 @@
         "text_T9jqh6": {
           "type": "text",
           "settings": {
-            "text": "<p>Treat your dog at home, at the office,  can treat your dog where ever they may be.</p>",
+            "text": "<p>It‘s the perfect way to keep treats within reach at home or the office.</p>",
             "text_style": "subtitle"
           }
         },
@@ -153,9 +153,9 @@
         "text_T9jqh6",
         "button_qLrQBj"
       ],
-      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/hometube-purple.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -165,7 +165,7 @@
         "section_color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
         "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
         "image_behavior": "none",
-        "mobile_content_alignment": "left",
+        "mobile_content_alignment": "center",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -184,6 +184,7 @@
       "block_order": [
         "heading_bbRzUb"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -196,6 +197,7 @@
     },
     "featured_collection_t8NmEN": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -274,7 +276,7 @@
         "heading_LarHX7": {
           "type": "heading",
           "settings": {
-            "heading": "Our treats will help you improve your relationship with your dog",
+            "heading": "Improve your relationship with your dog",
             "heading_size": "h1"
           }
         }
