@@ -122,6 +122,31 @@
         "discount_color_scheme": "scheme-4"
       }
     },
+    "rich_text_8QRAi8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bbRzUb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Plastic-free, refillable packaging",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bbRzUb"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
     "image_with_text_KfQxCd": {
       "type": "image-with-text",
       "blocks": {
@@ -170,31 +195,6 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_8QRAi8": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_bbRzUb": {
-          "type": "heading",
-          "settings": {
-            "heading": "Plastic-free, refillable packaging",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_bbRzUb"
-      ],
-      "disabled": true,
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 24
-      }
-    },
     "featured_collection_t8NmEN": {
       "type": "featured-collection",
       "disabled": true,
@@ -226,6 +226,56 @@
         "background_image": "shopify://shop_images/bean-2.png"
       }
     },
+    "17488821640b60c9bc": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_cards_carousel_NyeG8a": {
+          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": false,
+            "reviews_selection": "all",
+            "products": [
+              "beebs-12oz-xl-refill",
+              "pocket-tube",
+              "home-tube",
+              "pocket-tubes",
+              "puppy-pack",
+              "lamb-lung-refill",
+              "starter-pack"
+            ],
+            "star_rating": "all",
+            "show_review_media": true,
+            "display_order": "media_first",
+            "no_image_fallback": "review_text_only",
+            "max_reviews": 20,
+            "review_length": "large",
+            "text_size": "medium",
+            "image_ratio": "1.33",
+            "reviews_shown": 4,
+            "show_reviewer_name": true,
+            "show_product_name": true,
+            "hide_arrows_mobile": true,
+            "arrows_position": "bottom",
+            "max_width": 1100,
+            "corner_styling": "soft",
+            "header_text_color": "#000000",
+            "text_color": "#000000",
+            "card_color": "#F9F9F9",
+            "stars_color": "",
+            "arrows_color": "#000000",
+            "transition_speed": 5,
+            "header_text": "What the dogs had to say",
+            "show_average_rating": true
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_cards_carousel_NyeG8a"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "newsletter_9EBd9K": {
       "type": "newsletter",
       "blocks": {
@@ -251,23 +301,6 @@
         "full_width": true,
         "padding_top": 32,
         "padding_bottom": 32
-      }
-    },
-    "17488821640b60c9bc": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_featured_carousel_pWpzHB": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_featured_carousel_pWpzHB"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "rich_text_WcrBLV": {
@@ -766,11 +799,11 @@
     "hero_kMjTjW",
     "1750009880eb59cd88",
     "reviews_strip_HAFqxh",
-    "image_with_text_KfQxCd",
     "rich_text_8QRAi8",
+    "image_with_text_KfQxCd",
     "featured_collection_t8NmEN",
-    "newsletter_9EBd9K",
     "17488821640b60c9bc",
+    "newsletter_9EBd9K",
     "rich_text_WcrBLV",
     "image_with_text_F9h9pk",
     "rich_text_kr7YDJ",
