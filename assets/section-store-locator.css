@@ -1,0 +1,136 @@
+.store-locator__heading {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.store-locator {
+  display: grid;
+  gap: 2.4rem;
+}
+
+@media screen and (min-width: 750px) {
+  .store-locator {
+    grid-template-columns: 32rem 1fr;
+    align-items: start;
+  }
+}
+
+/* Store list */
+
+.store-locator__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 52rem;
+  overflow-y: auto;
+  padding-right: 0.4rem;
+}
+
+.store-locator__list::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.store-locator__list::-webkit-scrollbar-track {
+  background: rgba(var(--color-foreground), 0.05);
+  border-radius: 0.2rem;
+}
+
+.store-locator__list::-webkit-scrollbar-thumb {
+  background: rgba(var(--color-foreground), 0.2);
+  border-radius: 0.2rem;
+}
+
+.store-locator__item {
+  padding: 1.6rem;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.12);
+  border-radius: var(--buttons-radius, 0.4rem);
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.store-locator__item:hover {
+  background-color: rgba(var(--color-foreground), 0.04);
+  border-color: rgba(var(--color-foreground), 0.25);
+}
+
+.store-locator__item.is-active {
+  background-color: rgba(var(--color-foreground), 0.07);
+  border-color: rgba(var(--color-foreground), 0.4);
+}
+
+.store-locator__name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem;
+}
+
+.store-locator__address {
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  opacity: 0.7;
+  margin: 0 0 0.8rem;
+}
+
+.store-locator__link {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: rgb(var(--color-foreground));
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.store-locator__link:hover {
+  opacity: 0.7;
+}
+
+/* Map */
+
+.store-locator__map-wrapper {
+  position: sticky;
+  top: 2rem;
+}
+
+.store-locator__map {
+  height: 36rem;
+  width: 100%;
+  border-radius: var(--buttons-radius, 0.4rem);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 750px) {
+  .store-locator__map {
+    height: 52rem;
+  }
+}
+
+.store-locator__map-placeholder {
+  height: 36rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--color-foreground), 0.04);
+  border: 0.1rem dashed rgba(var(--color-foreground), 0.2);
+  border-radius: var(--buttons-radius, 0.4rem);
+  padding: 3rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .store-locator__map-placeholder {
+    height: 52rem;
+  }
+}
+
+/* Google Maps info window override */
+
+.store-locator__info-window {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  padding: 0.4rem;
+}
+
+.store-locator__info-window strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}

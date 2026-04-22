@@ -1,0 +1,234 @@
+{{ 'section-store-locator.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- assign stores = shop.metaobjects['store_location'].values -%}
+{%- assign api_key = settings.google_maps_api_key -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding">
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="store-locator__heading {{ section.settings.heading_size }}">
+        {{ section.settings.heading | escape }}
+      </h2>
+    {%- endif -%}
+
+    <div class="store-locator">
+
+      <div class="store-locator__list">
+        {%- for store in stores -%}
+          <div
+            class="store-locator__item"
+            data-lat="{{ store.latitude.value }}"
+            data-lng="{{ store.longitude.value }}"
+          >
+            <h3 class="store-locator__name">{{ store.name.value | escape }}</h3>
+            <address class="store-locator__address">
+              {{ store.address.value | escape }}<br>
+              {{ store.city.value | escape }}, {{ store.state.value | escape }} {{ store.zip.value | escape }}
+            </address>
+            {%- if store.url.value != blank -%}
+              <a
+                href="{{ store.url.value }}"
+                class="store-locator__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit website
+              </a>
+            {%- endif -%}
+          </div>
+        {%- else -%}
+          <p>No store locations have been added yet.</p>
+        {%- endfor -%}
+      </div>
+
+      <div class="store-locator__map-wrapper">
+        {%- if api_key != blank -%}
+          <div id="store-locator-map" class="store-locator__map"></div>
+        {%- else -%}
+          <div class="store-locator__map-placeholder">
+            <p>Add a Google Maps API key in <strong>Theme Settings → Store Locator</strong> to display the map.</p>
+          </div>
+        {%- endif -%}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{%- if api_key != blank -%}
+  <script>
+    window.beebsStoreLocations = [
+      {%- for store in stores -%}
+        {
+          "name": {{ store.name.value | json }},
+          "address": {{ store.address.value | json }},
+          "city": {{ store.city.value | json }},
+          "state": {{ store.state.value | json }},
+          "zip": {{ store.zip.value | json }},
+          "lat": {{ store.latitude.value | default: 0 }},
+          "lng": {{ store.longitude.value | default: 0 }}
+        }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+    ];
+  </script>
+
+  <script>
+    function initStoreMap() {
+      var locations = window.beebsStoreLocations || [];
+      if (!locations.length || !document.getElementById('store-locator-map')) return;
+
+      var map = new google.maps.Map(document.getElementById('store-locator-map'), {
+        zoom: 10,
+        mapTypeControl: false,
+        streetViewControl: false,
+        fullscreenControl: true,
+        styles: [
+          { featureType: 'poi.business', stylers: [{ visibility: 'off' }] },
+          { featureType: 'transit', stylers: [{ visibility: 'off' }] }
+        ]
+      });
+
+      var bounds = new google.maps.LatLngBounds();
+      var infoWindow = new google.maps.InfoWindow();
+      var markers = [];
+      var listItems = document.querySelectorAll('.store-locator__item');
+
+      locations.forEach(function(store, index) {
+        var position = { lat: store.lat, lng: store.lng };
+
+        var marker = new google.maps.Marker({
+          position: position,
+          map: map,
+          title: store.name
+        });
+
+        markers.push(marker);
+        bounds.extend(position);
+
+        marker.addListener('click', function() {
+          infoWindow.setContent(
+            '<div class="store-locator__info-window">' +
+              '<strong>' + store.name + '</strong>' +
+              store.address + '<br>' +
+              store.city + ', ' + store.state + ' ' + store.zip +
+            '</div>'
+          );
+          infoWindow.open(map, marker);
+
+          listItems.forEach(function(el) { el.classList.remove('is-active'); });
+          if (listItems[index]) {
+            listItems[index].classList.add('is-active');
+            listItems[index].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        });
+      });
+
+      if (locations.length === 1) {
+        map.setCenter({ lat: locations[0].lat, lng: locations[0].lng });
+        map.setZoom(14);
+      } else {
+        map.fitBounds(bounds);
+      }
+
+      listItems.forEach(function(item, index) {
+        item.addEventListener('click', function() {
+          var lat = parseFloat(item.dataset.lat);
+          var lng = parseFloat(item.dataset.lng);
+
+          listItems.forEach(function(el) { el.classList.remove('is-active'); });
+          item.classList.add('is-active');
+
+          map.panTo({ lat: lat, lng: lng });
+          map.setZoom(14);
+
+          if (markers[index]) {
+            google.maps.event.trigger(markers[index], 'click');
+          }
+        });
+      });
+    }
+  </script>
+
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&callback=initStoreMap"
+  ></script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Store Locator",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Find Us In Stores"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" }
+      ],
+      "default": "h1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Store Locator"
+    }
+  ]
+}
+{% endschema %}

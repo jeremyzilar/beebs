@@ -1482,5 +1482,16 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "Store Locator",
+    "settings": [
+      {
+        "type": "text",
+        "id": "google_maps_api_key",
+        "label": "Google Maps API Key",
+        "info": "Required to display the store map. Get a key at console.cloud.google.com — enable the Maps JavaScript API and restrict the key to beebsgoods.com."
+      }
+    ]
   }
 ]

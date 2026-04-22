@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "store_locator": {
+      "type": "store-locator",
+      "settings": {
+        "heading": "Find Us In Stores",
+        "heading_size": "h1",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "store_locator"
+  ]
+}
