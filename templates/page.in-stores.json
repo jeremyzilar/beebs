@@ -12,13 +12,6 @@
     "rich_text_VgVRXc": {
       "type": "rich-text",
       "blocks": {
-        "heading_BNLkRh": {
-          "type": "heading",
-          "settings": {
-            "heading": "Find us in Stores",
-            "heading_size": "h1"
-          }
-        },
         "text_DgnrcA": {
           "type": "text",
           "settings": {
@@ -33,7 +26,6 @@
         }
       },
       "block_order": [
-        "heading_BNLkRh",
         "text_DgnrcA",
         "text_A7NVzX"
       ],
@@ -50,7 +42,7 @@
     "store_locator": {
       "type": "store-locator",
       "settings": {
-        "heading": "",
+        "heading": "Find us in stores",
         "heading_size": "h1",
         "color_scheme": "scheme-1",
         "padding_top": 36,
