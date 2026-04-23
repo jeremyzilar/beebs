@@ -71,6 +71,19 @@
   margin: 0 0 0.8rem;
 }
 
+.store-locator__phone {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin: 0 0 0.8rem;
+}
+
+.store-locator__description {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  opacity: 0.7;
+  margin: 0 0 0.8rem;
+}
+
 .store-locator__link {
   font-size: 1.3rem;
   color: inherit;
@@ -82,6 +95,14 @@
 
 .store-locator__link:hover {
   opacity: 1;
+}
+
+.store-locator__link--phone {
+  text-decoration: none;
+}
+
+.store-locator__link--phone:hover {
+  text-decoration: underline;
 }
 
 .store-locator__empty {
@@ -188,6 +209,7 @@
   font-size: 1.3rem;
   line-height: 1.5;
   min-width: 16rem;
+  color: rgb(var(--color-foreground));
 }
 
 .store-locator__info-window strong {
@@ -195,4 +217,40 @@
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
+}
+
+.store-locator__info-addr {
+  opacity: 0.7;
+  margin-bottom: 0.6rem;
+}
+
+.store-locator__info-phone {
+  margin-bottom: 0.6rem;
+}
+
+.store-locator__info-desc {
+  margin: 0 0 0.6rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.store-locator__info-url {
+  margin-top: 0.2rem;
+}
+
+.store-locator__info-link {
+  font-size: 1.3rem;
+  color: inherit;
+  opacity: 0.7;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.store-locator__info-link--phone {
+  text-decoration: none;
+}
+
+.store-locator__info-link--phone:hover {
+  text-decoration: underline;
 }

@@ -42,6 +42,19 @@
             {{ store.address.value | escape }}<br>
             {{ store.city.value | escape }}, {{ store.state.value | escape }} {{ store.zip.value | escape }}
           </address>
+          {%- if store.phone.value != blank -%}
+            <p class="store-locator__phone">
+              <a
+                class="store-locator__link store-locator__link--phone"
+                href="tel:{{ store.phone.value | remove: ' ' | remove: '(' | remove: ')' | remove: '-' | remove: '.' }}"
+              >
+                {{ store.phone.value | escape }}
+              </a>
+            </p>
+          {%- endif -%}
+          {%- if store.description.value != blank -%}
+            <p class="store-locator__description">{{ store.description.value | escape }}</p>
+          {%- endif -%}
           {%- if store.url.value != blank -%}
             <a
               href="{{ store.url.value }}"
@@ -85,7 +98,9 @@
             "zip": {{ store.zip.value | default: '' | json }},
             "lat": {{ store.latitude.value | default: 0 }},
             "lng": {{ store.longitude.value | default: 0 }},
-            "url": {{ store.url.value | default: '' | json }}
+            "url": {{ store.url.value | default: '' | json }},
+            "phone": {{ store.phone.value | default: '' | json }},
+            "description": {{ store.description.value | default: '' | json }}
           }{%- unless forloop.last -%},{%- endunless -%}
         {%- endfor -%}
       ];
@@ -97,6 +112,20 @@
 
   <script>
     function initStoreMap() {
+      function escapeHtml(str) {
+        if (str == null || str === '') return '';
+        return String(str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
+
+      function telHref(phone) {
+        if (!phone) return '';
+        return 'tel:' + String(phone).replace(/[\s().-]/g, '');
+      }
+
       var locations = window.beebsStoreLocations || [];
       if (!locations.length || !document.getElementById('store-locator-map')) return;
 
@@ -131,14 +160,24 @@
         marker.addListener('click', function() {
           var domain = store.url ? store.url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0] : '';
           var urlHtml = store.url
-            ? '<a href="' + store.url + '" target="_blank" rel="noopener noreferrer" style="font-size:1.2rem;opacity:0.5;text-decoration:underline;text-underline-offset:0.2rem;">' + domain + '</a>'
+            ? '<a href="' + escapeHtml(store.url) + '" target="_blank" rel="noopener noreferrer" class="store-locator__info-link">' + escapeHtml(domain) + '</a>'
+            : '';
+          var phoneHtml = store.phone
+            ? '<a href="' + escapeHtml(telHref(store.phone)) + '" class="store-locator__info-link store-locator__info-link--phone">' + escapeHtml(store.phone) + '</a>'
+            : '';
+          var descHtml = store.description
+            ? '<p class="store-locator__info-desc">' + escapeHtml(store.description) + '</p>'
             : '';
           infoWindow.setContent(
             '<div class="store-locator__info-window">' +
-              '<strong>' + store.name + '</strong>' +
-              store.address + '<br>' +
-              store.city + ', ' + store.state + ' ' + store.zip +
-              (urlHtml ? '<br><br>' + urlHtml : '') +
+              '<strong>' + escapeHtml(store.name) + '</strong>' +
+              '<div class="store-locator__info-addr">' +
+                escapeHtml(store.address) + '<br>' +
+                escapeHtml(store.city) + ', ' + escapeHtml(store.state) + ' ' + escapeHtml(store.zip) +
+              '</div>' +
+              (phoneHtml ? '<div class="store-locator__info-phone">' + phoneHtml + '</div>' : '') +
+              descHtml +
+              (urlHtml ? '<div class="store-locator__info-url">' + urlHtml + '</div>' : '') +
             '</div>'
           );
           infoWindow.open(map, marker);
