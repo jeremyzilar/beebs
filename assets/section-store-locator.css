@@ -30,6 +30,12 @@
   gap: 1rem;
 }
 
+@media screen and (max-width: 749px) {
+  .store-locator__list {
+    margin-top: 2.4rem;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .store-locator__list {
     width: 38rem;
