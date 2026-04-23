@@ -131,6 +131,7 @@
     "show_cart_note": true,
     "cart_drawer_collection": "lamb-lung-dog-treats",
     "cart_color_scheme": "scheme-2",
+    "google_maps_api_key": "AIzaSyByCLmVjxegiNwbxfm9XV_MqJpXi3n_gNA",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
