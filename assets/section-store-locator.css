@@ -72,16 +72,16 @@
 }
 
 .store-locator__link {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: inherit;
-  opacity: 0.5;
+  opacity: 0.7;
   text-decoration: underline;
   text-underline-offset: 0.2rem;
   transition: opacity 0.15s ease;
 }
 
 .store-locator__link:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .store-locator__empty {
