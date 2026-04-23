@@ -4,21 +4,6 @@
   border-color: rgba(var(--color-foreground), 0.4);
 }
 
-/* Scrollbar */
-.store-locator__list::-webkit-scrollbar {
-  width: 0.4rem;
-}
-
-.store-locator__list::-webkit-scrollbar-track {
-  background: rgba(var(--color-foreground), 0.05);
-  border-radius: 0.2rem;
-}
-
-.store-locator__list::-webkit-scrollbar-thumb {
-  background: rgba(var(--color-foreground), 0.2);
-  border-radius: 0.2rem;
-}
-
 /* Google Maps info window */
 .gm-style .gm-style-iw-c {
   border-radius: 8px !important;

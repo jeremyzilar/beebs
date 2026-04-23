@@ -26,24 +26,24 @@
       </h2>
     {%- endif -%}
 
-    <div class="grid gap-6 min-[750px]:grid-cols-[32rem_1fr] items-start">
+    <div class="grid gap-6 min-[750px]:grid-cols-[2fr_3fr] items-start">
 
       {{- '<!-- Map: order-1 on mobile (top), order-2 on desktop (right) -->' -}}
-      <div class="order-1 min-[750px]:order-2 min-[750px]:sticky min-[750px]:top-8">
+      <div class="order-1 min-[750px]:order-2 min-[750px]:sticky min-[750px]:top-0">
         {%- if api_key != blank -%}
           <div
             id="store-locator-map"
-            class="h-[36rem] min-[750px]:h-[52rem] w-full rounded-lg overflow-hidden"
+            class="h-[50vw] min-h-[280px] min-[750px]:h-screen w-full min-[750px]:rounded-none overflow-hidden rounded-lg"
           ></div>
         {%- else -%}
-          <div class="h-[36rem] min-[750px]:h-[52rem] flex items-center justify-center bg-black/[.04] border border-dashed border-black/20 rounded-lg p-12 text-center">
+          <div class="h-[50vw] min-h-[280px] min-[750px]:h-screen flex items-center justify-center bg-black/[.04] border border-dashed border-black/20 rounded-lg min-[750px]:rounded-none p-12 text-center">
             <p>Add a Google Maps API key in <strong>Theme Settings → Store Locator</strong> to display the map.</p>
           </div>
         {%- endif -%}
       </div>
 
       {{- '<!-- Store list: order-2 on mobile (bottom), order-1 on desktop (left) -->' -}}
-      <div class="store-locator__list order-2 min-[750px]:order-1 flex flex-col gap-3 max-h-[52rem] overflow-y-auto pr-1">
+      <div class="store-locator__list order-2 min-[750px]:order-1 flex flex-col gap-3">
         {%- for store in stores -%}
           <div
             class="store-locator__item p-4 border border-[rgba(var(--color-foreground),0.12)] rounded-lg cursor-pointer transition-colors duration-200 hover:bg-[rgba(var(--color-foreground),0.04)] hover:border-[rgba(var(--color-foreground),0.25)]"
