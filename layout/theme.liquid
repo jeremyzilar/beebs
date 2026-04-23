@@ -123,10 +123,10 @@
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
-        /* --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }}; */
-        --font-heading-family: "Fugue Headline", sans-serif;
-        --font-heading-style: {{ settings.type_header_font.style }};
-        --font-heading-weight: {{ settings.type_header_font.weight }};
+        /* Headings: same as body (Fugue Regular) site-wide — not Fugue Headline / theme header font */
+        --font-heading-family: var(--font-body-family);
+        --font-heading-style: normal;
+        --font-heading-weight: var(--font-body-weight);
 
         --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
         --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};

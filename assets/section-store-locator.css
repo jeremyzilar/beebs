@@ -5,11 +5,6 @@
 .store-locator__heading {
   text-align: center;
   margin-bottom: 3rem;
-  /* Use body (Regular) type instead of theme heading / Fugue Headline */
-  font-family: var(--font-body-family);
-  font-style: var(--font-body-style);
-  font-weight: var(--font-body-weight);
-  letter-spacing: normal;
 }
 
 .store-locator {
