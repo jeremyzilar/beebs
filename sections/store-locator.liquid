@@ -58,11 +58,11 @@
             {%- if store.url.value != blank -%}
               <a
                 href="{{ store.url.value }}"
-                class="text-[1.2rem] underline underline-offset-2 text-current hover:opacity-70 transition-opacity"
+                class="text-[1.2rem] underline underline-offset-2 opacity-50 hover:opacity-80 transition-opacity"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Visit website
+                {{ store.url.value | remove: 'https://' | remove: 'http://' | remove: 'www.' | split: '/' | first }}
               </a>
             {%- endif -%}
           </div>
@@ -86,7 +86,8 @@
           "state": {{ store.state.value | json }},
           "zip": {{ store.zip.value | json }},
           "lat": {{ store.latitude.value | default: 0 }},
-          "lng": {{ store.longitude.value | default: 0 }}
+          "lng": {{ store.longitude.value | default: 0 }},
+          "url": {{ store.url.value | json }}
         }{%- unless forloop.last -%},{%- endunless -%}
       {%- endfor -%}
     ];
@@ -126,11 +127,16 @@
         bounds.extend(position);
 
         marker.addListener('click', function() {
+          var domain = store.url ? store.url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0] : '';
+          var urlHtml = store.url
+            ? '<a href="' + store.url + '" target="_blank" rel="noopener noreferrer" style="font-size:1.2rem;opacity:0.5;text-decoration:underline;text-underline-offset:0.2rem;">' + domain + '</a>'
+            : '';
           infoWindow.setContent(
             '<div class="store-locator__info-window">' +
               '<strong>' + store.name + '</strong>' +
               store.address + '<br>' +
               store.city + ', ' + store.state + ' ' + store.zip +
+              (urlHtml ? '<br><br>' + urlHtml : '') +
             '</div>'
           );
           infoWindow.open(map, marker);
