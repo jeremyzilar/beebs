@@ -24,11 +24,18 @@
           "settings": {
             "text": "<p>Beeb’s is available at a growing list of thoughtful, dog-friendly locations around the country. We’re proud to be on the shelves of places that share our love for good design, great dogs, and healthy treats.</p>"
           }
+        },
+        "text_A7NVzX": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/wholesale\" title=\"Get Beeb's in Your Store\">Learn about Wholesale opportunities »</a></p>"
+          }
         }
       },
       "block_order": [
         "heading_BNLkRh",
-        "text_DgnrcA"
+        "text_DgnrcA",
+        "text_A7NVzX"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
