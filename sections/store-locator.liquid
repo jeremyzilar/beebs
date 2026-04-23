@@ -21,29 +21,44 @@
   <div class="page-width section-{{ section.id }}-padding">
 
     {%- if section.settings.heading != blank -%}
-      <h2 class="store-locator__heading {{ section.settings.heading_size }}">
+      <h2 class="text-center mb-12 {{ section.settings.heading_size }}">
         {{ section.settings.heading | escape }}
       </h2>
     {%- endif -%}
 
-    <div class="store-locator">
+    <div class="grid gap-6 min-[750px]:grid-cols-[32rem_1fr] items-start">
 
-      <div class="store-locator__list">
+      {{- '<!-- Map: order-1 on mobile (top), order-2 on desktop (right) -->' -}}
+      <div class="order-1 min-[750px]:order-2 min-[750px]:sticky min-[750px]:top-8">
+        {%- if api_key != blank -%}
+          <div
+            id="store-locator-map"
+            class="h-[36rem] min-[750px]:h-[52rem] w-full rounded-lg overflow-hidden"
+          ></div>
+        {%- else -%}
+          <div class="h-[36rem] min-[750px]:h-[52rem] flex items-center justify-center bg-black/[.04] border border-dashed border-black/20 rounded-lg p-12 text-center">
+            <p>Add a Google Maps API key in <strong>Theme Settings → Store Locator</strong> to display the map.</p>
+          </div>
+        {%- endif -%}
+      </div>
+
+      {{- '<!-- Store list: order-2 on mobile (bottom), order-1 on desktop (left) -->' -}}
+      <div class="store-locator__list order-2 min-[750px]:order-1 flex flex-col gap-3 max-h-[52rem] overflow-y-auto pr-1">
         {%- for store in stores -%}
           <div
-            class="store-locator__item"
+            class="store-locator__item p-4 border border-[rgba(var(--color-foreground),0.12)] rounded-lg cursor-pointer transition-colors duration-200 hover:bg-[rgba(var(--color-foreground),0.04)] hover:border-[rgba(var(--color-foreground),0.25)]"
             data-lat="{{ store.latitude.value }}"
             data-lng="{{ store.longitude.value }}"
           >
-            <h3 class="store-locator__name">{{ store.name.value | escape }}</h3>
-            <address class="store-locator__address">
+            <h3 class="text-[1.4rem] font-semibold m-0 mb-2">{{ store.name.value | escape }}</h3>
+            <address class="not-italic text-[1.3rem] leading-relaxed opacity-70 mb-2 block">
               {{ store.address.value | escape }}<br>
               {{ store.city.value | escape }}, {{ store.state.value | escape }} {{ store.zip.value | escape }}
             </address>
             {%- if store.url.value != blank -%}
               <a
                 href="{{ store.url.value }}"
-                class="store-locator__link"
+                class="text-[1.2rem] underline underline-offset-2 text-current hover:opacity-70 transition-opacity"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -52,18 +67,8 @@
             {%- endif -%}
           </div>
         {%- else -%}
-          <p>No store locations have been added yet.</p>
+          <p class="text-[1.4rem] opacity-60">No store locations have been added yet.</p>
         {%- endfor -%}
-      </div>
-
-      <div class="store-locator__map-wrapper">
-        {%- if api_key != blank -%}
-          <div id="store-locator-map" class="store-locator__map"></div>
-        {%- else -%}
-          <div class="store-locator__map-placeholder">
-            <p>Add a Google Maps API key in <strong>Theme Settings → Store Locator</strong> to display the map.</p>
-          </div>
-        {%- endif -%}
       </div>
 
     </div>
