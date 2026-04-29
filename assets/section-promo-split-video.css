@@ -1,0 +1,206 @@
+/* Promo split video — two columns (copy + portrait video) */
+
+.promo-split-video {
+  width: 100%;
+}
+
+.promo-split-video__inner {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .promo-split-video__inner {
+    flex-direction: row;
+    align-items: stretch;
+    min-height: min(90vh, 56rem);
+  }
+}
+
+/* Copy column */
+.promo-split-video__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.4rem 2rem 3.2rem;
+  color: #fff;
+}
+
+@media screen and (min-width: 750px) {
+  .promo-split-video__copy {
+    flex: 1;
+    min-width: 0;
+    padding: 3.2rem 4rem;
+  }
+}
+
+.promo-split-video__heading {
+  margin: 0 0 1.2rem;
+  font-size: clamp(1.75rem, 2.5vw + 1rem, 2.75rem);
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.promo-split-video__subhead {
+  margin: 0 0 2rem;
+  font-size: clamp(1.15rem, 0.5vw + 1rem, 1.35rem);
+  line-height: 1.5;
+  font-weight: 400;
+  opacity: 0.95;
+  max-width: 36em;
+}
+
+/* Highlighter */
+.promo-split-video__hl {
+  display: inline;
+  padding: 0.1em 0.28em 0.12em;
+  border-radius: 0.2em;
+  background-color: var(--promo-split-hl, rgba(255, 250, 150, 0.55));
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  color: inherit;
+}
+
+/* Ghost pill buttons */
+.promo-split-video__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1rem;
+}
+
+.promo-split-video__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75em 1.4em;
+  min-height: 3.2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border: 0.15rem solid rgba(255, 255, 255, 0.95);
+  border-radius: 9999px;
+  background: transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.promo-split-video__btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.promo-split-video__btn[aria-disabled="true"] {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Media column */
+.promo-split-video__media-col {
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 750px) {
+  .promo-split-video__media-col {
+    flex: 0 0 44%;
+    max-width: 50%;
+  }
+}
+
+.promo-split-video__media {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Mobile: fixed aspect from setting */
+@media screen and (max-width: 749px) {
+  .promo-split-video__media--ratio-3-4 {
+    aspect-ratio: 3 / 4;
+  }
+
+  .promo-split-video__media--ratio-9-16 {
+    aspect-ratio: 9 / 16;
+  }
+}
+
+/* Desktop: video fills column height (matches left column) */
+@media screen and (min-width: 750px) {
+  .promo-split-video__media {
+    flex: 1;
+    min-height: 0;
+    height: 100%;
+  }
+
+  .promo-split-video__media--ratio-3-4,
+  .promo-split-video__media--ratio-9-16 {
+    aspect-ratio: auto;
+  }
+}
+
+.promo-split-video__video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (min-width: 750px) {
+  .promo-split-video__video {
+    position: absolute;
+    inset: 0;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .promo-split-video__media .promo-split-video__video {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+  }
+}
+
+/* Mobile order */
+@media screen and (max-width: 749px) {
+  .promo-split-video--video-first .promo-split-video__media-col {
+    order: -1;
+  }
+
+  .promo-split-video--text-first .promo-split-video__copy {
+    order: 1;
+  }
+
+  .promo-split-video--text-first .promo-split-video__media-col {
+    order: 2;
+  }
+}
+
+.promo-split-video__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 16rem;
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.15);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .promo-split-video__placeholder {
+    flex: 1;
+    min-height: 0;
+  }
+}

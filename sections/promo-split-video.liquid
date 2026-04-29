@@ -1,0 +1,223 @@
+{{ 'section-promo-split-video.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign ratio_class = 'promo-split-video__media--ratio-3-4'
+  if section.settings.video_frame == '9_16'
+    assign ratio_class = 'promo-split-video__media--ratio-9-16'
+  endif
+
+  assign order_class = 'promo-split-video--video-first'
+  if section.settings.mobile_order == 'text_first'
+    assign order_class = 'promo-split-video--text-first'
+  endif
+-%}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --promo-split-hl: {{ section.settings.highlight_color }};
+  }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  class="promo-split-video {{ order_class }} section-{{ section.id }}-padding"
+>
+  <div class="promo-split-video__inner">
+    <div
+      class="promo-split-video__copy"
+      style="background: {{ section.settings.left_background }};"
+    >
+      <h2 class="promo-split-video__heading">
+        Never worry about feeding your dog too many treats again
+      </h2>
+      <p class="promo-split-video__subhead">
+        Our high-value, <span class="promo-split-video__hl">single-ingredient</span> dog treats that are only
+        <span class="promo-split-video__hl">2 calories</span> per treat.
+      </p>
+      <div class="promo-split-video__actions">
+        <a
+          class="promo-split-video__btn"
+          {% if section.settings.button_link_learn == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ section.settings.button_link_learn }}"
+          {% endif %}
+        >
+          Learn more
+        </a>
+        <a
+          class="promo-split-video__btn"
+          {% if section.settings.button_link_buy == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ section.settings.button_link_buy }}"
+          {% endif %}
+        >
+          Buy
+        </a>
+      </div>
+    </div>
+
+    <div class="promo-split-video__media-col">
+      {%- if section.settings.video != blank -%}
+        <div class="promo-split-video__media {{ ratio_class }}">
+          <video
+            id="PromoSplitVideo-{{ section.id }}"
+            class="promo-split-video__video"
+            autoplay
+            muted
+            loop
+            playsinline
+            aria-hidden="true"
+            {%- if section.settings.poster_image != blank -%}
+              poster="{{ section.settings.poster_image | image_url: width: 1200 }}"
+            {%- endif -%}
+          >
+            {%- for source in section.settings.video.sources -%}
+              <source src="{{ source.url }}" type="{{ source.mime_type }}">
+            {%- endfor -%}
+          </video>
+        </div>
+        <script>
+          (function () {
+            var v = document.getElementById('PromoSplitVideo-{{ section.id }}');
+            if (!v) return;
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+              v.removeAttribute('autoplay');
+              v.pause();
+              return;
+            }
+            v.play().catch(function () {});
+          })();
+        </script>
+      {%- else -%}
+        <div class="promo-split-video__media {{ ratio_class }}">
+          <div class="promo-split-video__placeholder">
+            <p>Add a video in the section settings.</p>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Promo split video",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Media"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video",
+      "info": "Portrait: 3:4 (e.g. 1080×1440) or 9:16 (e.g. 1080×1920). MP4, muted for autoplay."
+    },
+    {
+      "type": "image_picker",
+      "id": "poster_image",
+      "label": "Poster image",
+      "info": "Optional. Shown while the video loads."
+    },
+    {
+      "type": "select",
+      "id": "video_frame",
+      "label": "Video frame (aspect ratio)",
+      "options": [
+        { "value": "3_4", "label": "3:4" },
+        { "value": "9_16", "label": "9:16" }
+      ],
+      "default": "3_4"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "mobile_order",
+      "label": "Order on mobile",
+      "options": [
+        { "value": "video_first", "label": "Video first" },
+        { "value": "text_first", "label": "Text first" }
+      ],
+      "default": "video_first"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "left_background",
+      "label": "Left column background",
+      "default": "#5c6bc0"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Subhead highlighter",
+      "default": "#fff3a0"
+    },
+    {
+      "type": "header",
+      "content": "Buttons"
+    },
+    {
+      "type": "url",
+      "id": "button_link_learn",
+      "label": "Learn more link"
+    },
+    {
+      "type": "url",
+      "id": "button_link_buy",
+      "label": "Buy link"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Promo split video"
+    }
+  ]
+}
+{% endschema %}
