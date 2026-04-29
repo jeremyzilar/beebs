@@ -15,6 +15,11 @@
 {%- style -%}
   #shopify-section-{{ section.id }} {
     --promo-split-hl: {{ section.settings.highlight_color }};
+    --promo-heading: {{ section.settings.heading_text_color }};
+    --promo-subhead: {{ section.settings.subhead_text_color }};
+    --promo-hl-text: {{ section.settings.highlight_text_color }};
+    --promo-button-text: {{ section.settings.heading_text_color }};
+    --promo-button-border: {{ section.settings.heading_text_color }};
   }
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -69,7 +74,10 @@
 
     <div class="promo-split-video__media-col">
       {%- if section.settings.video != blank -%}
-        <div class="promo-split-video__media {{ ratio_class }}">
+        <div
+          class="promo-split-video__media {{ ratio_class }}"
+          data-video-frame="{{ section.settings.video_frame | default: '3_4' }}"
+        >
           <video
             id="PromoSplitVideo-{{ section.id }}"
             class="promo-split-video__video"
@@ -100,7 +108,10 @@
           })();
         </script>
       {%- else -%}
-        <div class="promo-split-video__media {{ ratio_class }}">
+        <div
+          class="promo-split-video__media {{ ratio_class }}"
+          data-video-frame="{{ section.settings.video_frame | default: '3_4' }}"
+        >
           <div class="promo-split-video__placeholder">
             <p>Add a video in the section settings.</p>
           </div>
@@ -172,8 +183,26 @@
     {
       "type": "color",
       "id": "highlight_color",
-      "label": "Subhead highlighter",
+      "label": "Highlight background",
       "default": "#fff3a0"
+    },
+    {
+      "type": "color",
+      "id": "heading_text_color",
+      "label": "Heading text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "subhead_text_color",
+      "label": "Subhead text (outside highlight)",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "highlight_text_color",
+      "label": "Subhead text (on highlight)",
+      "default": "#1e293b"
     },
     {
       "type": "header",
