@@ -1,0 +1,183 @@
+{{ 'section-treat-comparison.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- comment -%}
+  Hard-coded comparison data (edit this file to change numbers and labels).
+{%- endcomment -%}
+
+<div class="treat-comparison color-scheme-1 section-{{ section.id }}-padding">
+  <div class="treat-comparison__scroll page-width">
+    <table
+      class="treat-comparison__table"
+      role="table"
+      aria-label="Treat comparison"
+    >
+      <thead>
+        <tr>
+          <th class="treat-comparison__corner" scope="col"></th>
+          <th class="treat-comparison__brand treat-comparison__brand--beebs" scope="col">
+            {%- if section.settings.logo_beebs != blank -%}
+              <img
+                class="treat-comparison__logo"
+                src="{{ section.settings.logo_beebs | image_url: width: 360 }}"
+                alt="Beeb’s"
+                width="{{ section.settings.logo_beebs.width }}"
+                height="{{ section.settings.logo_beebs.height }}"
+                loading="lazy"
+              >
+            {%- else -%}
+              <span class="treat-comparison__logo-fallback">Beeb’s</span>
+            {%- endif -%}
+          </th>
+          <th class="treat-comparison__brand" scope="col">
+            {%- if section.settings.logo_milk_bone != blank -%}
+              <img
+                class="treat-comparison__logo"
+                src="{{ section.settings.logo_milk_bone | image_url: width: 360 }}"
+                alt="Milk-Bone"
+                width="{{ section.settings.logo_milk_bone.width }}"
+                height="{{ section.settings.logo_milk_bone.height }}"
+                loading="lazy"
+              >
+            {%- else -%}
+              <span class="treat-comparison__logo-fallback">Milk-Bone</span>
+            {%- endif -%}
+          </th>
+          <th class="treat-comparison__brand" scope="col">
+            {%- if section.settings.logo_blue_buffalo != blank -%}
+              <img
+                class="treat-comparison__logo"
+                src="{{ section.settings.logo_blue_buffalo | image_url: width: 360 }}"
+                alt="Blue Buffalo"
+                width="{{ section.settings.logo_blue_buffalo.width }}"
+                height="{{ section.settings.logo_blue_buffalo.height }}"
+                loading="lazy"
+              >
+            {%- else -%}
+              <span class="treat-comparison__logo-fallback">Blue Buffalo</span>
+            {%- endif -%}
+          </th>
+          <th class="treat-comparison__brand" scope="col">
+            {%- if section.settings.logo_zukes != blank -%}
+              <img
+                class="treat-comparison__logo"
+                src="{{ section.settings.logo_zukes | image_url: width: 360 }}"
+                alt="Zuke’s"
+                width="{{ section.settings.logo_zukes.width }}"
+                height="{{ section.settings.logo_zukes.height }}"
+                loading="lazy"
+              >
+            {%- else -%}
+              <span class="treat-comparison__logo-fallback">Zuke’s</span>
+            {%- endif -%}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="treat-comparison__metric" scope="row">Calories per treat</th>
+          <td class="treat-comparison__cell--beebs">2</td>
+          <td class="treat-comparison__cell--other">12</td>
+          <td class="treat-comparison__cell--other">8</td>
+          <td class="treat-comparison__cell--other">9</td>
+        </tr>
+        <tr>
+          <th class="treat-comparison__metric" scope="row">Protein</th>
+          <td class="treat-comparison__cell--beebs">6g</td>
+          <td class="treat-comparison__cell--other">1g</td>
+          <td class="treat-comparison__cell--other">2g</td>
+          <td class="treat-comparison__cell--other">1.5g</td>
+        </tr>
+        <tr>
+          <th class="treat-comparison__metric" scope="row">Fat</th>
+          <td class="treat-comparison__cell--beebs">0.5g</td>
+          <td class="treat-comparison__cell--other">2g</td>
+          <td class="treat-comparison__cell--other">1.5g</td>
+          <td class="treat-comparison__cell--other">2g</td>
+        </tr>
+        <tr>
+          <th class="treat-comparison__metric" scope="row">Number of ingredients</th>
+          <td class="treat-comparison__cell--beebs">1</td>
+          <td class="treat-comparison__cell--other">15+</td>
+          <td class="treat-comparison__cell--other">10+</td>
+          <td class="treat-comparison__cell--other">8+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Treat comparison",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Logos (optional — text shows if empty)"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_beebs",
+      "label": "Beeb’s logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_milk_bone",
+      "label": "Milk-Bone logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_blue_buffalo",
+      "label": "Blue Buffalo logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_zukes",
+      "label": "Zuke’s logo"
+    },
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Treat comparison"
+    }
+  ]
+}
+{% endschema %}
