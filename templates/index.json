@@ -9,26 +9,6 @@
  */
 {
   "sections": {
-    "promo_split_video_DnAj87": {
-      "type": "promo-split-video",
-      "disabled": true,
-      "name": "Promo split video",
-      "settings": {
-        "video": "shopify://files/videos/home-tubes.mp4",
-        "poster_image": "shopify://shop_images/beeb.png",
-        "video_frame": "9_16",
-        "mobile_order": "video_first",
-        "left_background": "#5c6bc0",
-        "highlight_color": "#fff3a0",
-        "heading_text_color": "#ffffff",
-        "subhead_text_color": "#ffffff",
-        "highlight_text_color": "#1e293b",
-        "button_link_learn": "",
-        "button_link_buy": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "hero_video_G3XjDj": {
       "type": "hero-video",
       "name": "Hero Video",
@@ -113,31 +93,6 @@
         "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
         "discount_text": "Get 10% OFF",
         "discount_color_scheme": "scheme-4"
-      }
-    },
-    "rich_text_8QRAi8": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_bbRzUb": {
-          "type": "heading",
-          "settings": {
-            "heading": "Plastic-free, refillable packaging",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_bbRzUb"
-      ],
-      "disabled": true,
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 24
       }
     },
     "image_with_text_KfQxCd": {
@@ -233,7 +188,6 @@
     },
     "17488821640b60c9bc": {
       "type": "apps",
-      "disabled": true,
       "blocks": {
         "judge_me_reviews_cards_carousel_NyeG8a": {
           "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
@@ -278,6 +232,7 @@
       "block_order": [
         "judge_me_reviews_cards_carousel_NyeG8a"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -800,11 +755,9 @@
     }
   },
   "order": [
-    "promo_split_video_DnAj87",
     "hero_video_G3XjDj",
     "1750009880eb59cd88",
     "reviews_strip_HAFqxh",
-    "rich_text_8QRAi8",
     "image_with_text_KfQxCd",
     "featured_collection_t8NmEN",
     "featured_reviews_carousel_home",
