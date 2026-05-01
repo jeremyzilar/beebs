@@ -1,4 +1,5 @@
-/* Treat comparison grid — yellow field, black type, bold Beeb’s column */
+/* Treat comparison grid — yellow field, black type, immi-style inner grid only
+   (no outer box; horizontal rules do not extend into the label column) */
 
 .treat-comparison {
   background: #fff200;
@@ -14,6 +15,7 @@
 .treat-comparison__table {
   width: 100%;
   min-width: 36rem;
+  border: 0;
   border-collapse: collapse;
   table-layout: fixed;
   font-family: var(--font-body-family, "Fugue", sans-serif);
@@ -23,25 +25,41 @@
 
 .treat-comparison__table th,
 .treat-comparison__table td {
-  border: 0.1rem solid #000;
+  border: 0;
   padding: 1rem 0.8rem;
   text-align: center;
   vertical-align: middle;
 }
 
+/* Vertical dividers between columns only (no line on far right) */
+.treat-comparison__table th:not(:last-child),
+.treat-comparison__table td:not(:last-child) {
+  border-right: 0.1rem solid #000;
+}
+
+/* Horizontal rules across brand columns only — header row under logos */
+.treat-comparison__table thead th.treat-comparison__brand {
+  border-bottom: 0.1rem solid #000;
+}
+
+/* Body: row dividers on data cells only (not under label column) */
+.treat-comparison__table tbody tr:not(:first-child) td {
+  border-top: 0.1rem solid #000;
+}
+
 .treat-comparison__corner {
   width: 14%;
-  border: 0.1rem solid #000;
   background: #fff200;
 }
 
 .treat-comparison__metric {
-  text-align: right;
+  text-align: left;
   font-weight: 600;
   font-size: 1.1rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   padding-right: 1.2rem;
+  padding-left: 0;
   background: #fff200;
 }
 
@@ -93,7 +111,7 @@
 
   .treat-comparison__metric {
     font-size: 1.2rem;
-    padding: 1.2rem 1.6rem 1.2rem 1.2rem;
+    padding: 1.2rem 1.6rem 1.2rem 0;
   }
 
   .treat-comparison__cell--beebs {
