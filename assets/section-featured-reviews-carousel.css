@@ -106,6 +106,22 @@
   min-height: 12rem;
 }
 
+.featured-review-card__dog-badge {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  z-index: 1;
+  max-width: calc(100% - 1rem);
+  padding: 0.35rem 0.55rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #000;
+  background: #fff;
+  border-radius: 2px;
+  text-align: right;
+  word-break: break-word;
+}
+
 .featured-review-card__content {
   flex: 1 1 auto;
   padding: 1.2rem 1rem 1.4rem;
@@ -116,8 +132,12 @@
 
 .featured-review-card__title {
   margin: 0;
-  font-size: 1.25rem;
+  font-family: var(--font-fugue-headline);
+  font-weight: var(--font-weight-bold, 700);
+  font-size: calc(var(--font-heading-scale) * 1.35rem);
   line-height: 1.25;
+  letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
+  color: rgb(var(--color-foreground));
 }
 
 .featured-review-card__stars {
@@ -146,16 +166,10 @@
   margin-bottom: 0;
 }
 
-.featured-review-card__byline,
-.featured-review-card__dog {
+.featured-review-card__byline {
   margin: 0;
   font-size: 1.2rem;
   line-height: 1.35;
-}
-
-.featured-review-card__dog-label {
-  font-weight: 600;
-  margin-right: 0.25rem;
 }
 
 .featured-reviews-carousel__empty {

@@ -112,6 +112,9 @@
                 {%- else -%}
                   <div class="featured-review-card__media-placeholder" aria-hidden="true"></div>
                 {%- endif -%}
+                {%- if review.dog_name.value != blank -%}
+                  <span class="featured-review-card__dog-badge">{{ review.dog_name.value | escape }}</span>
+                {%- endif -%}
               </div>
 
               <div class="featured-review-card__content">
@@ -169,13 +172,6 @@
                 -%}
                 {%- if reviewer_line != blank -%}
                   <p class="featured-review-card__byline">{{ reviewer_line | escape }}</p>
-                {%- endif -%}
-
-                {%- if review.dog_name.value != blank -%}
-                  <p class="featured-review-card__dog">
-                    <span class="featured-review-card__dog-label">Dog:</span>
-                    {{ review.dog_name.value | escape }}
-                  </p>
                 {%- endif -%}
               </div>
             </article>
