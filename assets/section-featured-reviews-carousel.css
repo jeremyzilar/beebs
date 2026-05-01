@@ -1,4 +1,4 @@
-/* Featured reviews: flush horizontal strip, 5-up desktop, scroll + Dawn SliderComponent */
+/* Featured reviews: flush strip — ~1.2 cards mobile, ~2.5 tablet, ~5.5 desktop (peek) */
 
 .featured-reviews-carousel__header {
   margin-bottom: 2rem;
@@ -29,17 +29,19 @@
   padding: 0;
   list-style: none;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+  /* No snap — allows smooth continuous JS scrolling */
+  scroll-snap-type: none;
+  scroll-behavior: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
 }
 
+/* ~1.2 cards visible — peek of next card on small screens */
 .featured-reviews-carousel .featured-reviews-carousel__slide.slider__slide {
-  flex: 0 0 100%;
-  width: 100%;
-  max-width: 100%;
-  scroll-snap-align: start;
+  flex: 0 0 calc(100% / 1.2);
+  width: calc(100% / 1.2);
+  max-width: calc(100% / 1.2);
+  min-width: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -47,17 +49,18 @@
 
 @media screen and (min-width: 750px) {
   .featured-reviews-carousel .featured-reviews-carousel__slide.slider__slide {
-    flex: 0 0 50%;
-    width: 50%;
-    max-width: 50%;
+    flex: 0 0 calc(100% / 2.5);
+    width: calc(100% / 2.5);
+    max-width: calc(100% / 2.5);
   }
 }
 
+/* 5.5 cards visible — half of next card shows (desktop) */
 @media screen and (min-width: 990px) {
   .featured-reviews-carousel .featured-reviews-carousel__slide.slider__slide {
-    flex: 0 0 20%;
-    width: 20%;
-    max-width: 20%;
+    flex: 0 0 calc(100% / 5.5);
+    width: calc(100% / 5.5);
+    max-width: calc(100% / 5.5);
   }
 }
 

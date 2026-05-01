@@ -29,7 +29,7 @@
   class="featured-reviews-carousel color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding"
   {% if section.settings.autoscroll_enable and visible_count > 1 %}
     data-featured-reviews-autoscroll="true"
-    data-autoscroll-interval="{{ section.settings.autoscroll_interval | times: 1000 }}"
+    data-autoscroll-speed="{{ section.settings.autoscroll_speed }}"
   {% endif %}
 >
   {%- if section.settings.title != blank -%}
@@ -256,18 +256,19 @@
       "type": "checkbox",
       "id": "autoscroll_enable",
       "default": true,
-      "label": "Auto-advance carousel",
-      "info": "Scrolls one card at a time while this section is on screen. Pauses on hover or touch. Respects reduced motion."
+      "label": "Slow auto-scroll",
+      "info": "Smoothly scrolls the strip while this section is visible. Pauses on hover, touch, or mouse wheel. Disabled when reduced motion is on."
     },
     {
       "type": "range",
-      "id": "autoscroll_interval",
-      "min": 3,
-      "max": 12,
+      "id": "autoscroll_speed",
+      "min": 8,
+      "max": 45,
       "step": 1,
-      "unit": "sec",
-      "label": "Seconds between advances",
-      "default": 5
+      "unit": "px/s",
+      "label": "Auto-scroll speed",
+      "default": 20,
+      "info": "Pixels per second. Lower is slower."
     },
     {
       "type": "color_scheme",

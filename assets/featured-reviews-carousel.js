@@ -1,6 +1,6 @@
 /**
- * Featured reviews carousel: auto-advance horizontal strip when section is visible.
- * Pauses on hover, touch, hidden tab, and prefers-reduced-motion.
+ * Featured reviews carousel: slow continuous horizontal scroll when section is visible.
+ * Pauses on hover, touch, wheel, hidden tab, and prefers-reduced-motion.
  */
 (function () {
   function prefersReducedMotion() {
@@ -14,63 +14,79 @@
     const slides = track.querySelectorAll('.slider__slide');
     if (slides.length < 2) return;
 
-    const intervalMs = Math.max(
-      3000,
-      parseInt(section.dataset.autoscrollInterval || '5000', 10) || 5000
+    const pixelsPerSecond = Math.max(
+      4,
+      parseFloat(section.dataset.autoscrollSpeed || '20') || 20
     );
 
-    let timer = null;
+    let rafId = null;
+    let lastTs = null;
     let visible = false;
     let hovered = false;
     let touchHeld = false;
+    let wheelCooldown = null;
 
-    function getStep() {
-      const first = slides[0];
-      return first ? first.offsetWidth || first.getBoundingClientRect().width : 0;
+    function shouldRun() {
+      return (
+        visible &&
+        !hovered &&
+        !touchHeld &&
+        !document.hidden &&
+        !prefersReducedMotion() &&
+        wheelCooldown === null
+      );
     }
 
-    function advance() {
-      const step = getStep();
-      if (step <= 0) return;
+    function stopLoop() {
+      if (rafId !== null) {
+        cancelAnimationFrame(rafId);
+        rafId = null;
+      }
+      lastTs = null;
+    }
+
+    function tick(ts) {
+      if (!shouldRun()) {
+        stopLoop();
+        return;
+      }
+
+      if (lastTs === null) lastTs = ts;
+      let dt = (ts - lastTs) / 1000;
+      if (dt > 0.25) dt = 0.25;
+      lastTs = ts;
 
       const maxScroll = track.scrollWidth - track.clientWidth;
-      if (maxScroll <= 1) return;
-
-      const behavior = prefersReducedMotion() ? 'auto' : 'smooth';
-      const nextLeft = track.scrollLeft + step;
-
-      if (nextLeft >= maxScroll - 2) {
-        track.scrollTo({ left: 0, behavior });
-      } else {
-        track.scrollBy({ left: step, behavior });
+      if (maxScroll <= 1) {
+        rafId = requestAnimationFrame(tick);
+        return;
       }
+
+      track.scrollLeft += pixelsPerSecond * dt;
+
+      if (track.scrollLeft >= maxScroll - 0.75) {
+        track.scrollLeft = 0;
+      }
+
+      rafId = requestAnimationFrame(tick);
     }
 
-    function startTimer() {
-      stopTimer();
-      if (prefersReducedMotion()) return;
-      if (!visible || hovered || touchHeld) return;
-      if (document.hidden) return;
-
-      timer = window.setInterval(advance, intervalMs);
-    }
-
-    function stopTimer() {
-      if (timer !== null) {
-        window.clearInterval(timer);
-        timer = null;
-      }
+    function startLoop() {
+      stopLoop();
+      if (!shouldRun()) return;
+      lastTs = null;
+      rafId = requestAnimationFrame(tick);
     }
 
     function sync() {
       if (prefersReducedMotion()) {
-        stopTimer();
+        stopLoop();
         return;
       }
-      if (visible && !hovered && !touchHeld && !document.hidden) {
-        startTimer();
+      if (shouldRun()) {
+        startLoop();
       } else {
-        stopTimer();
+        stopLoop();
       }
     }
 
@@ -89,7 +105,7 @@
       'mouseenter',
       () => {
         hovered = true;
-        stopTimer();
+        stopLoop();
       },
       { passive: true }
     );
@@ -106,7 +122,7 @@
       'touchstart',
       () => {
         touchHeld = true;
-        stopTimer();
+        stopLoop();
       },
       { passive: true }
     );
@@ -114,7 +130,20 @@
       'touchend',
       () => {
         touchHeld = false;
-        window.setTimeout(sync, 800);
+        window.setTimeout(sync, 600);
+      },
+      { passive: true }
+    );
+
+    track.addEventListener(
+      'wheel',
+      () => {
+        stopLoop();
+        if (wheelCooldown !== null) clearTimeout(wheelCooldown);
+        wheelCooldown = setTimeout(() => {
+          wheelCooldown = null;
+          sync();
+        }, 2800);
       },
       { passive: true }
     );
@@ -131,7 +160,6 @@
     window.addEventListener(
       'resize',
       () => {
-        /* Recalculate on layout change */
         sync();
       },
       { passive: true }
