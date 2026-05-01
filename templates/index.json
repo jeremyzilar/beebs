@@ -32,6 +32,19 @@
         "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e"
       }
     },
+    "featured_reviews_carousel_DdmDPG": {
+      "type": "featured-reviews-carousel",
+      "disabled": true,
+      "name": "Featured reviews carousel",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "filter_type": "review",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "1750009880eb59cd88": {
       "type": "apps",
       "blocks": {
@@ -756,6 +769,7 @@
   },
   "order": [
     "hero_video_G3XjDj",
+    "featured_reviews_carousel_DdmDPG",
     "1750009880eb59cd88",
     "reviews_strip_HAFqxh",
     "image_with_text_KfQxCd",
