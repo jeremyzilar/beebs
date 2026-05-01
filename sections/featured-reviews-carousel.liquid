@@ -27,6 +27,9 @@
 
 <div
   class="featured-reviews-carousel color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding"
+  {% if section.settings.shuffle_on_load %}
+    data-shuffle-reviews="true"
+  {% endif %}
   {% if section.settings.autoscroll_enable and visible_count > 1 %}
     data-featured-reviews-autoscroll="true"
     data-autoscroll-speed="{{ section.settings.autoscroll_speed | default: 20 }}"
@@ -215,8 +218,10 @@
       </p>
     </div>
   {%- endif -%}
-  {%- if visible_count > 1 and section.settings.autoscroll_enable -%}
-    <script src="{{ 'featured-reviews-carousel.js' | asset_url }}" defer></script>
+  {%- if visible_count > 1 -%}
+    {%- if section.settings.autoscroll_enable or section.settings.shuffle_on_load -%}
+      <script src="{{ 'featured-reviews-carousel.js' | asset_url }}" defer></script>
+    {%- endif -%}
   {%- endif -%}
 </div>
 
@@ -251,6 +256,13 @@
       "id": "filter_type",
       "label": "Only show reviews with this type",
       "info": "Matches the featured_review “type” choice value exactly. Leave blank to show all entries."
+    },
+    {
+      "type": "checkbox",
+      "id": "shuffle_on_load",
+      "default": true,
+      "label": "Shuffle order on each page load",
+      "info": "Randomizes card order in the browser when the page loads (not in Liquid, so it stays fresh each visit)."
     },
     {
       "type": "checkbox",

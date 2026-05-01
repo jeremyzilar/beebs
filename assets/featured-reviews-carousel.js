@@ -1,10 +1,24 @@
 /**
- * Featured reviews carousel: slow continuous horizontal scroll when section is visible.
- * Pauses on hover, touch, wheel, hidden tab, and prefers-reduced-motion.
+ * Featured reviews carousel:
+ * - Optional Fisher–Yates shuffle of slides on each load (client-side).
+ * - Slow continuous horizontal scroll when section is visible.
  */
 (function () {
   function prefersReducedMotion() {
     return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+
+  /** Randomize order of slide list items (runs before auto-scroll). */
+  function shuffleTrack(track) {
+    const items = Array.from(track.querySelectorAll(':scope > li.slider__slide'));
+    if (items.length < 2) return;
+    for (let i = items.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const t = items[i];
+      items[i] = items[j];
+      items[j] = t;
+    }
+    items.forEach((li) => track.appendChild(li));
   }
 
   function setup(section) {
@@ -90,7 +104,6 @@
       }
     }
 
-    /* Any intersection counts — ratio alone breaks thin/short sections */
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -102,7 +115,6 @@
     );
     io.observe(section);
 
-    /* IO can be delayed first paint — kick sync once layout exists */
     requestAnimationFrame(() => {
       const pending = io.takeRecords();
       if (pending.length) {
@@ -184,6 +196,16 @@
 
   function init(root) {
     const scope = root || document;
+
+    scope.querySelectorAll('[data-shuffle-reviews="true"]').forEach((section) => {
+      if (section.dataset.shuffleReady === 'true') return;
+      const track = section.querySelector('[id^="Slider-"]');
+      if (track && track.querySelectorAll('.slider__slide').length > 1) {
+        shuffleTrack(track);
+      }
+      section.dataset.shuffleReady = 'true';
+    });
+
     scope.querySelectorAll('[data-featured-reviews-autoscroll="true"]').forEach((section) => {
       if (section.dataset.autoscrollReady === 'true') return;
       section.dataset.autoscrollReady = 'true';
