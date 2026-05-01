@@ -25,7 +25,13 @@
   endfor
 -%}
 
-<div class="featured-reviews-carousel color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<div
+  class="featured-reviews-carousel color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding"
+  {% if section.settings.autoscroll_enable and visible_count > 1 %}
+    data-featured-reviews-autoscroll="true"
+    data-autoscroll-interval="{{ section.settings.autoscroll_interval | times: 1000 }}"
+  {% endif %}
+>
   {%- if section.settings.title != blank -%}
     <div class="page-width featured-reviews-carousel__header">
       <h2 class="featured-reviews-carousel__heading {{ section.settings.heading_size }}">
@@ -209,6 +215,9 @@
       </p>
     </div>
   {%- endif -%}
+  {%- if visible_count > 1 and section.settings.autoscroll_enable -%}
+    <script src="{{ 'featured-reviews-carousel.js' | asset_url }}" defer></script>
+  {%- endif -%}
 </div>
 
 {% schema %}
@@ -242,6 +251,23 @@
       "id": "filter_type",
       "label": "Only show reviews with this type",
       "info": "Matches the featured_review “type” choice value exactly. Leave blank to show all entries."
+    },
+    {
+      "type": "checkbox",
+      "id": "autoscroll_enable",
+      "default": true,
+      "label": "Auto-advance carousel",
+      "info": "Scrolls one card at a time while this section is on screen. Pauses on hover or touch. Respects reduced motion."
+    },
+    {
+      "type": "range",
+      "id": "autoscroll_interval",
+      "min": 3,
+      "max": 12,
+      "step": 1,
+      "unit": "sec",
+      "label": "Seconds between advances",
+      "default": 5
     },
     {
       "type": "color_scheme",

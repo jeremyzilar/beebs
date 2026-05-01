@@ -226,6 +226,8 @@
         "title": "What the dogs had to say",
         "heading_size": "h1",
         "filter_type": "",
+        "autoscroll_enable": true,
+        "autoscroll_interval": 5,
         "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
         "padding_top": 36,
         "padding_bottom": 36
