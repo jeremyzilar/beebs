@@ -51,16 +51,16 @@
         return;
       }
 
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      if (maxScroll <= 1) {
+        stopLoop();
+        return;
+      }
+
       if (lastTs === null) lastTs = ts;
       let dt = (ts - lastTs) / 1000;
       if (dt > 0.25) dt = 0.25;
       lastTs = ts;
-
-      const maxScroll = track.scrollWidth - track.clientWidth;
-      if (maxScroll <= 1) {
-        rafId = requestAnimationFrame(tick);
-        return;
-      }
 
       track.scrollLeft += pixelsPerSecond * dt;
 
@@ -90,16 +90,32 @@
       }
     }
 
+    /* Any intersection counts — ratio alone breaks thin/short sections */
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          visible = entry.isIntersecting && entry.intersectionRatio > 0.05;
+          visible = entry.isIntersecting;
           sync();
         });
       },
-      { threshold: [0, 0.1, 0.2], rootMargin: '0px 0px -5% 0px' }
+      { threshold: [0, 0.01, 0.05, 0.1], rootMargin: '0px' }
     );
     io.observe(section);
+
+    /* IO can be delayed first paint — kick sync once layout exists */
+    requestAnimationFrame(() => {
+      const pending = io.takeRecords();
+      if (pending.length) {
+        pending.forEach((entry) => {
+          visible = entry.isIntersecting;
+        });
+      } else {
+        const r = section.getBoundingClientRect();
+        const vh = window.innerHeight || document.documentElement.clientHeight;
+        visible = r.top < vh && r.bottom > 0;
+      }
+      sync();
+    });
 
     section.addEventListener(
       'mouseenter',

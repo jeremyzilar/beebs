@@ -1,4 +1,4 @@
-/* Featured reviews: flush strip — ~1.2 cards mobile, ~2.5 tablet, ~5.5 desktop (peek) */
+/* Featured reviews: flush strip — ~1.2 cards mobile, ~2.5 tablet, ~4.5 desktop (peek) */
 
 .featured-reviews-carousel__header {
   margin-bottom: 2rem;
@@ -55,12 +55,12 @@
   }
 }
 
-/* 5.5 cards visible — half of next card shows (desktop) */
+/* ~4.5 cards visible — peek of next card (desktop) */
 @media screen and (min-width: 990px) {
   .featured-reviews-carousel .featured-reviews-carousel__slide.slider__slide {
-    flex: 0 0 calc(100% / 5.5);
-    width: calc(100% / 5.5);
-    max-width: calc(100% / 5.5);
+    flex: 0 0 calc(100% / 4.5);
+    width: calc(100% / 4.5);
+    max-width: calc(100% / 4.5);
   }
 }
 

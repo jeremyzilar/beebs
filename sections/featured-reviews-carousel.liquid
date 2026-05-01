@@ -29,7 +29,7 @@
   class="featured-reviews-carousel color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding"
   {% if section.settings.autoscroll_enable and visible_count > 1 %}
     data-featured-reviews-autoscroll="true"
-    data-autoscroll-speed="{{ section.settings.autoscroll_speed }}"
+    data-autoscroll-speed="{{ section.settings.autoscroll_speed | default: 20 }}"
   {% endif %}
 >
   {%- if section.settings.title != blank -%}
