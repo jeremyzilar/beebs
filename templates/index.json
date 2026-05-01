@@ -219,8 +219,21 @@
         "background_image": "shopify://shop_images/bean-2.png"
       }
     },
+    "featured_reviews_carousel_home": {
+      "type": "featured-reviews-carousel",
+      "name": "Featured reviews carousel",
+      "settings": {
+        "title": "What the dogs had to say",
+        "heading_size": "h1",
+        "filter_type": "",
+        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "17488821640b60c9bc": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "judge_me_reviews_cards_carousel_NyeG8a": {
           "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
@@ -794,6 +807,7 @@
     "rich_text_8QRAi8",
     "image_with_text_KfQxCd",
     "featured_collection_t8NmEN",
+    "featured_reviews_carousel_home",
     "17488821640b60c9bc",
     "newsletter_9EBd9K",
     "rich_text_WcrBLV",

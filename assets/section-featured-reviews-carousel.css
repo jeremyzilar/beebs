@@ -1,0 +1,167 @@
+/* Featured reviews: flush horizontal strip, 5-up desktop, scroll + Dawn SliderComponent */
+
+.featured-reviews-carousel__header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.featured-reviews-carousel__heading {
+  margin: 0;
+}
+
+.featured-reviews-carousel__slider-component.page-width {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.featured-reviews-carousel .featured-reviews-carousel__track.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.featured-reviews-carousel .featured-reviews-carousel__slide.slider__slide {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  scroll-snap-align: start;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 750px) {
+  .featured-reviews-carousel .featured-reviews-carousel__slide.slider__slide {
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .featured-reviews-carousel .featured-reviews-carousel__slide.slider__slide {
+    flex: 0 0 20%;
+    width: 20%;
+    max-width: 20%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .featured-reviews-carousel .featured-reviews-carousel__track.slider {
+    scroll-behavior: auto;
+  }
+}
+
+/* Card */
+.featured-review-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  background: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+}
+
+.featured-review-card__media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: rgba(var(--color-foreground), 0.06);
+}
+
+.featured-review-card__img,
+.featured-review-card__video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-review-card__video {
+  background: #000;
+}
+
+.featured-review-card__media-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 12rem;
+}
+
+.featured-review-card__content {
+  flex: 1 1 auto;
+  padding: 1.2rem 1rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.featured-review-card__title {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.featured-review-card__rating {
+  margin: 0;
+}
+
+.featured-review-card__text {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.45;
+}
+
+.featured-review-card__text p {
+  margin: 0 0 0.5rem;
+}
+
+.featured-review-card__text p:last-child {
+  margin-bottom: 0;
+}
+
+.featured-review-card__byline,
+.featured-review-card__dog {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+.featured-review-card__dog-label {
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+
+.featured-reviews-carousel__empty {
+  text-align: center;
+  opacity: 0.85;
+}
+
+/* Dawn hides .slider-buttons by default — always show for this section when rendered */
+.featured-reviews-carousel .slider-buttons.featured-reviews-carousel__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.featured-reviews-carousel .slider-button .svg-wrapper {
+  display: flex;
+}
+
+.featured-reviews-carousel .slider-button--next .svg-wrapper {
+  transform: rotate(-90deg);
+}
+
+.featured-reviews-carousel .slider-button--prev .svg-wrapper {
+  transform: rotate(90deg);
+}

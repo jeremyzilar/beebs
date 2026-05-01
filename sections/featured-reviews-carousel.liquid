@@ -1,0 +1,276 @@
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'component-rating.css' | asset_url | stylesheet_tag }}
+{{ 'section-featured-reviews-carousel.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign reviews_all = shop.metaobjects['featured_review'].values
+  assign filter_label = section.settings.filter_type | strip
+  assign visible_count = 0
+  for review in reviews_all
+    if filter_label == blank or review.type.value == filter_label
+      assign visible_count = visible_count | plus: 1
+    endif
+  endfor
+-%}
+
+<div class="featured-reviews-carousel color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  {%- if section.settings.title != blank -%}
+    <div class="page-width featured-reviews-carousel__header">
+      <h2 class="featured-reviews-carousel__heading {{ section.settings.heading_size }}">
+        {{ section.settings.title }}
+      </h2>
+    </div>
+  {%- endif -%}
+
+  {%- if visible_count > 0 -%}
+    <slider-component class="featured-reviews-carousel__slider-component slider-mobile-gutter page-width">
+      <ul
+        id="Slider-{{ section.id }}"
+        class="featured-reviews-carousel__track slider"
+        role="list"
+        aria-label="{{ section.settings.title | default: 'Featured reviews' | escape }}"
+      >
+        {%- assign slide_idx = 0 -%}
+        {%- for review in reviews_all -%}
+          {%- liquid
+            assign show_card = true
+            if filter_label != blank and review.type.value != filter_label
+              assign show_card = false
+            endif
+          -%}
+          {%- if show_card -%}
+          {%- assign slide_idx = slide_idx | plus: 1 -%}
+          <li
+            id="Slide-{{ section.id }}-{{ slide_idx }}"
+            class="featured-reviews-carousel__slide slider__slide"
+          >
+            <article class="featured-review-card">
+              <div class="featured-review-card__media">
+                {%- liquid
+                  assign media_kind = 'none'
+                  if review.video.value != blank and review.video.value.sources.size > 0
+                    assign media_kind = 'video'
+                  elsif review.photo.value != blank
+                    assign media_kind = 'photo'
+                  elsif review.image_url.value != blank
+                    assign media_kind = 'url'
+                  endif
+                -%}
+                {%- if media_kind == 'video' -%}
+                  <video
+                    controls
+                    playsinline
+                    preload="metadata"
+                    class="featured-review-card__video"
+                    {% if review.photo.value != blank %}
+                      poster="{{ review.photo.value | image_url: width: 1100 }}"
+                    {% endif %}
+                  >
+                    {%- for source in review.video.value.sources -%}
+                      <source src="{{ source.url }}" type="{{ source.mime_type }}">
+                    {%- endfor -%}
+                  </video>
+                {%- elsif media_kind == 'photo' -%}
+                  <img
+                    src="{{ review.photo.value | image_url: width: 1100 }}"
+                    alt="{{ review.title.value | default: 'Review photo' | escape }}"
+                    width="{{ review.photo.value.width }}"
+                    height="{{ review.photo.value.height }}"
+                    loading="lazy"
+                    class="featured-review-card__img"
+                  >
+                {%- elsif media_kind == 'url' -%}
+                  <img
+                    src="{{ review.image_url.value }}"
+                    alt="{{ review.title.value | default: 'Review photo' | escape }}"
+                    loading="lazy"
+                    width="768"
+                    height="1024"
+                    class="featured-review-card__img"
+                  >
+                {%- else -%}
+                  <div class="featured-review-card__media-placeholder" aria-hidden="true"></div>
+                {%- endif -%}
+              </div>
+
+              <div class="featured-review-card__content">
+                {%- if review.title.value != blank -%}
+                  <h3 class="featured-review-card__title">{{ review.title.value | escape }}</h3>
+                {%- endif -%}
+
+                {%- if review.stars.value != blank -%}
+                  {% liquid
+                    assign rv = review.stars.value
+                    assign scale = rv.scale_max | default: 5
+                    assign rating_decimal = 0
+                    assign decimal = rv.rating | modulo: 1
+                    if decimal >= 0.3 and decimal <= 0.7
+                      assign rating_decimal = 0.5
+                    elsif decimal > 0.7
+                      assign rating_decimal = 1
+                    endif
+                  %}
+                  <div
+                    class="rating featured-review-card__rating"
+                    role="img"
+                    aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: rv.rating, rating_max: scale }}"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="rating-star"
+                      style="--rating: {{ rv.rating | floor }}; --rating-max: {{ scale }}; --rating-decimal: {{ rating_decimal }};"
+                    ></span>
+                  </div>
+                {%- endif -%}
+
+                {%- if review.body != blank -%}
+                  <div class="rte featured-review-card__text">
+                    {{ review.body | metafield_tag }}
+                  </div>
+                {%- endif -%}
+
+                {%- liquid
+                  assign reviewer_line = ''
+                  if review.name.value != blank
+                    assign reviewer_line = review.name.value
+                  endif
+                  if review.location.value != blank
+                    if reviewer_line != blank
+                      assign reviewer_line = reviewer_line | append: ' · ' | append: review.location.value
+                    else
+                      assign reviewer_line = review.location.value
+                    endif
+                  endif
+                -%}
+                {%- if reviewer_line != blank -%}
+                  <p class="featured-review-card__byline">{{ reviewer_line | escape }}</p>
+                {%- endif -%}
+
+                {%- if review.dog_name.value != blank -%}
+                  <p class="featured-review-card__dog">
+                    <span class="featured-review-card__dog-label">Dog:</span>
+                    {{ review.dog_name.value | escape }}
+                  </p>
+                {%- endif -%}
+              </div>
+            </article>
+          </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+
+      {%- if visible_count > 1 -%}
+        <div class="slider-buttons featured-reviews-carousel__buttons">
+          <button
+            type="button"
+            class="slider-button slider-button--prev"
+            name="previous"
+            aria-label="{{ 'general.slider.previous_slide' | t }}"
+            aria-controls="Slider-{{ section.id }}"
+          >
+            <span class="svg-wrapper">
+              {{- 'icon-caret.svg' | inline_asset_content -}}
+            </span>
+          </button>
+          <button
+            type="button"
+            class="slider-button slider-button--next"
+            name="next"
+            aria-label="{{ 'general.slider.next_slide' | t }}"
+            aria-controls="Slider-{{ section.id }}"
+          >
+            <span class="svg-wrapper">
+              {{- 'icon-caret.svg' | inline_asset_content -}}
+            </span>
+          </button>
+        </div>
+      {%- endif -%}
+    </slider-component>
+  {%- else -%}
+    <div class="page-width">
+      <p class="featured-reviews-carousel__empty">
+        Add <strong>featured_review</strong> entries in Shopify Admin → Content → Metaobjects, or clear/adjust the type filter for this section.
+      </p>
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Featured reviews carousel",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "What the dogs had to say",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "text",
+      "id": "filter_type",
+      "label": "Only show reviews with this type",
+      "info": "Matches the featured_review “type” choice value exactly. Leave blank to show all entries."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured reviews carousel"
+    }
+  ]
+}
+{% endschema %}
