@@ -117,8 +117,16 @@
   line-height: 1.25;
 }
 
-.featured-review-card__rating {
+.featured-review-card__stars {
   margin: 0;
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: rgb(var(--color-foreground));
+}
+
+.featured-review-card__stars-inner {
+  font-variant-emoji: emoji;
 }
 
 .featured-review-card__text {
