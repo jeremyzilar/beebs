@@ -32,19 +32,6 @@
         "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e"
       }
     },
-    "featured_reviews_carousel_DdmDPG": {
-      "type": "featured-reviews-carousel",
-      "disabled": true,
-      "name": "Featured reviews carousel",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "filter_type": "review",
-        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "1750009880eb59cd88": {
       "type": "apps",
       "blocks": {
@@ -187,69 +174,18 @@
         "background_image": "shopify://shop_images/bean-2.png"
       }
     },
-    "featured_reviews_carousel_home": {
+    "featured_reviews_carousel_DdmDPG": {
       "type": "featured-reviews-carousel",
       "name": "Featured reviews carousel",
       "settings": {
-        "title": "What the dogs had to say",
+        "title": "",
         "heading_size": "h1",
-        "filter_type": "",
+        "filter_type": "review",
         "autoscroll_enable": true,
         "autoscroll_speed": 20,
         "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "17488821640b60c9bc": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_cards_carousel_NyeG8a": {
-          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "show_sample_reviews": false,
-            "reviews_selection": "all",
-            "products": [
-              "beebs-12oz-xl-refill",
-              "pocket-tube",
-              "home-tube",
-              "pocket-tubes",
-              "puppy-pack",
-              "lamb-lung-refill",
-              "starter-pack"
-            ],
-            "star_rating": "all",
-            "show_review_media": true,
-            "display_order": "media_first",
-            "no_image_fallback": "review_text_only",
-            "max_reviews": 20,
-            "review_length": "large",
-            "text_size": "medium",
-            "image_ratio": "1.33",
-            "reviews_shown": 4,
-            "show_reviewer_name": true,
-            "show_product_name": true,
-            "hide_arrows_mobile": true,
-            "arrows_position": "bottom",
-            "max_width": 1100,
-            "corner_styling": "soft",
-            "header_text_color": "#000000",
-            "text_color": "#000000",
-            "card_color": "#f9f9f9",
-            "stars_color": "",
-            "arrows_color": "#000000",
-            "transition_speed": 5,
-            "header_text": "What the dogs had to say",
-            "show_average_rating": true
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_cards_carousel_NyeG8a"
-      ],
-      "disabled": true,
-      "settings": {
-        "include_margins": true
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "newsletter_9EBd9K": {
@@ -771,13 +707,11 @@
   },
   "order": [
     "hero_video_G3XjDj",
-    "featured_reviews_carousel_DdmDPG",
     "1750009880eb59cd88",
     "reviews_strip_HAFqxh",
     "image_with_text_KfQxCd",
     "featured_collection_t8NmEN",
-    "featured_reviews_carousel_home",
-    "17488821640b60c9bc",
+    "featured_reviews_carousel_DdmDPG",
     "newsletter_9EBd9K",
     "rich_text_WcrBLV",
     "image_with_text_F9h9pk",
