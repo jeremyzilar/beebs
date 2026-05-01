@@ -95,6 +95,21 @@
         "discount_color_scheme": "scheme-4"
       }
     },
+    "featured_reviews_carousel_DdmDPG": {
+      "type": "featured-reviews-carousel",
+      "name": "Featured reviews carousel",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "filter_type": "review",
+        "shuffle_on_load": true,
+        "autoscroll_enable": false,
+        "autoscroll_speed": 32,
+        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "image_with_text_KfQxCd": {
       "type": "image-with-text",
       "blocks": {
@@ -172,21 +187,6 @@
         "padding_bottom": 32,
         "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
         "background_image": "shopify://shop_images/bean-2.png"
-      }
-    },
-    "featured_reviews_carousel_DdmDPG": {
-      "type": "featured-reviews-carousel",
-      "name": "Featured reviews carousel",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "filter_type": "review",
-        "shuffle_on_load": true,
-        "autoscroll_enable": true,
-        "autoscroll_speed": 20,
-        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "newsletter_9EBd9K": {
@@ -710,9 +710,9 @@
     "hero_video_G3XjDj",
     "1750009880eb59cd88",
     "reviews_strip_HAFqxh",
+    "featured_reviews_carousel_DdmDPG",
     "image_with_text_KfQxCd",
     "featured_collection_t8NmEN",
-    "featured_reviews_carousel_DdmDPG",
     "newsletter_9EBd9K",
     "rich_text_WcrBLV",
     "image_with_text_F9h9pk",
