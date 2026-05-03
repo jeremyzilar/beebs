@@ -1,0 +1,183 @@
+/**
+ * Graza-style editorial footer: newsletter + 3 menu columns, dashed dividers,
+ * full-bleed mega logo. Works with .footer--editorial on the footer element.
+ */
+
+.footer-editorial__inner {
+  max-width: var(--page-width, 120rem);
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .footer-editorial__inner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.footer-editorial__top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px dashed rgba(var(--color-foreground), 0.28);
+}
+
+@media screen and (min-width: 990px) {
+  .footer-editorial__top {
+    grid-template-columns: minmax(17rem, 32rem) minmax(0, 1fr);
+    column-gap: 3rem;
+    align-items: start;
+  }
+
+  .footer-editorial__col--menus {
+    border-left: 1px dashed rgba(var(--color-foreground), 0.28);
+    padding-left: 3rem;
+  }
+}
+
+.footer-editorial__subtext {
+  margin: 0 0 1.25rem;
+  font-size: 1.35rem;
+  line-height: 1.45;
+}
+
+.footer-editorial__subtext p {
+  margin: 0;
+}
+
+.footer-editorial__cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .footer-editorial__cols {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem 2.5rem;
+  }
+}
+
+.footer-editorial__nav-heading {
+  margin: 0 0 0.9rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(var(--color-foreground));
+}
+
+.footer-editorial__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-editorial__list li {
+  margin: 0 0 0.4rem;
+}
+
+.footer-editorial__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.35rem;
+  line-height: 1.4;
+  color: rgba(var(--color-foreground), 0.9);
+}
+
+.footer-editorial__link:hover,
+.footer-editorial__link:focus-visible {
+  text-decoration: underline;
+}
+
+/* Newsletter column */
+.footer-editorial__col--news .footer-block__newsletter {
+  max-width: 36rem;
+}
+
+.footer-editorial__col--news .footer-block__heading {
+  text-align: left;
+  margin-top: 0;
+}
+
+.footer-editorial__col--news .newsletter-form {
+  margin-top: 0.5rem;
+}
+
+.footer-editorial__follow {
+  margin-top: 1.25rem;
+}
+
+.footer-editorial__social {
+  margin-top: 1rem;
+}
+
+.footer-editorial__social .footer__list-social {
+  justify-content: flex-start;
+}
+
+/* Mega logo — full viewport width, cropped at bottom like Graza */
+.footer-editorial__mega-wrap {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  overflow: hidden;
+  line-height: 0;
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(var(--color-foreground), 0.28);
+}
+
+.footer-editorial__mega-logo {
+  display: inline-block;
+  line-height: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-editorial__mega-logo:focus-visible {
+  outline: 2px solid rgb(var(--color-foreground));
+  outline-offset: 4px;
+}
+
+.footer-editorial__mega-img {
+  width: min(var(--footer-mega-w, 1100px), 96vw);
+  height: auto;
+  max-width: none;
+  display: inline-block;
+  vertical-align: bottom;
+  transform: translateY(calc(8% + 0.5rem));
+}
+
+.footer-editorial__mega-word {
+  margin: 0;
+  padding: 1rem 1.5rem 3rem;
+  font-family: var(--font-fugue-headline, var(--font-heading-family));
+  font-weight: var(--font-weight-bold, 700);
+  font-size: clamp(3.5rem, 16vw, 12rem);
+  line-height: 0.82;
+  letter-spacing: -0.02em;
+  color: rgb(var(--color-foreground));
+}
+
+/* Optional legacy blocks (apps, extra images) */
+.footer-editorial__legacy {
+  max-width: var(--page-width, 120rem);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 0;
+}
+
+@media screen and (min-width: 750px) {
+  .footer-editorial__legacy {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.footer-editorial__legacy .footer__blocks-wrapper {
+  margin-bottom: 0;
+}

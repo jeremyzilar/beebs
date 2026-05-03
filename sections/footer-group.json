@@ -14,26 +14,40 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "image_kDznET": {
-          "type": "image",
+        "footer_col_shop": {
+          "type": "footer_column",
           "settings": {
-            "image": "shopify://shop_images/beebs-plastic-free.png",
-            "image_width": 300,
-            "alignment": "center"
+            "heading": "Shop",
+            "menu": ""
+          }
+        },
+        "footer_col_about": {
+          "type": "footer_column",
+          "settings": {
+            "heading": "About",
+            "menu": ""
+          }
+        },
+        "footer_col_social": {
+          "type": "footer_column",
+          "settings": {
+            "heading": "Social",
+            "menu": ""
           }
         }
       },
       "block_order": [
-        "image_kDznET"
-      ],
-      "custom_css": [
-        ".footer,h2 {color: white;}",
-        "button {color: black;}"
+        "footer_col_shop",
+        "footer_col_about",
+        "footer_col_social"
       ],
       "settings": {
         "color_scheme": "scheme-16210672-7c87-4e3e-9fc2-dd0b8f17a33c",
+        "show_mega_logo": true,
+        "mega_logo_max_width": 1200,
         "newsletter_enable": true,
         "newsletter_heading": "Sign up and get 10% off!",
+        "newsletter_subtext": "",
         "enable_follow_on_shop": false,
         "show_social": false,
         "enable_country_selector": false,
