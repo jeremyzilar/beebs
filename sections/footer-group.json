@@ -11,64 +11,80 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "footer": {
-      "type": "footer",
+    "footer_split": {
+      "type": "footer-split",
       "blocks": {
-        "footer_col_shop": {
-          "type": "footer_column",
+        "g_menu_shop": {
+          "type": "menu_column",
           "settings": {
             "heading": "Shop",
             "menu": "shop"
           }
         },
-        "footer_col_about": {
-          "type": "footer_column",
+        "g_menu_about": {
+          "type": "menu_column",
           "settings": {
-            "heading": "About",
+            "heading": "About Us",
             "menu": ""
           }
         },
-        "footer_col_social": {
-          "type": "footer_column",
+        "g_menu_social": {
+          "type": "menu_column",
           "settings": {
             "heading": "Social",
             "menu": "social"
           }
-        },
-        "brand_information_maMaFU": {
-          "type": "brand_information",
-          "settings": {
-            "show_social": true
-          }
         }
       },
       "block_order": [
-        "footer_col_shop",
-        "footer_col_about",
-        "footer_col_social",
-        "brand_information_maMaFU"
+        "g_menu_shop",
+        "g_menu_about",
+        "g_menu_social"
       ],
-      "custom_css": [],
       "settings": {
         "color_scheme": "scheme-16210672-7c87-4e3e-9fc2-dd0b8f17a33c",
-        "show_mega_logo": true,
-        "mega_logo_max_width": 1200,
+        "menu_column_side": "right",
+        "intro_text": "<p>Add a short message above the newsletter form.</p>",
         "newsletter_enable": true,
+        "show_policy_row": true,
+        "show_policy_links": true,
+        "show_copyright": true,
+        "copyright_uppercase": false,
+        "show_utility_row": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_powered_by": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {},
+      "block_order": [],
+      "custom_css": [
+        ".footer,h2 {color: white;}",
+        "button {color: black;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-16210672-7c87-4e3e-9fc2-dd0b8f17a33c",
+        "newsletter_enable": false,
         "newsletter_heading": "Sign up and get 10% off!",
-        "newsletter_subtext": "",
         "enable_follow_on_shop": false,
         "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
-        "show_policy": true,
+        "show_policy": false,
         "margin_top": 0,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     }
   },
   "order": [
+    "footer_split",
     "footer"
   ]
 }

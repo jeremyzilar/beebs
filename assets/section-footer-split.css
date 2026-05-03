@@ -1,0 +1,226 @@
+/* Split footer — dashed grid, monospace */
+
+.footer-split {
+  --footer-split-border: 1px dashed rgba(var(--color-foreground), 0.35);
+  font-family: ui-monospace, 'SFMono-Regular', 'Menlo', 'Consolas', 'Courier New', monospace;
+  font-size: 1.3rem;
+  line-height: 1.45;
+}
+
+.footer-split__split {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: var(--footer-split-border);
+}
+
+@media screen and (min-width: 990px) {
+  .footer-split__split {
+    grid-template-columns: 1fr 1fr;
+    min-height: 28rem;
+  }
+}
+
+.footer-split__col {
+  padding: 3.2rem 2rem 4rem;
+  border-bottom: var(--footer-split-border);
+}
+
+@media screen and (min-width: 990px) {
+  .footer-split__col {
+    border-bottom: none;
+    padding: 4rem 3.2rem 4.8rem;
+  }
+
+  .footer-split__col--menus {
+    border-left: var(--footer-split-border);
+  }
+
+  .footer-split--menus-left .footer-split__col--menus {
+    border-left: none;
+    border-right: var(--footer-split-border);
+    order: -1;
+  }
+}
+
+.footer-split__intro {
+  margin: 0 0 3.2rem;
+  max-width: 42rem;
+}
+
+.footer-split__intro p {
+  margin: 0 0 1em;
+}
+
+.footer-split__intro p:last-child {
+  margin-bottom: 0;
+}
+
+.footer-split__newsletter-form {
+  margin-top: 2.4rem;
+}
+
+.footer-split__newsletter-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  border: 1px solid rgb(var(--color-foreground));
+  border-radius: 0.6rem;
+  overflow: hidden;
+  max-width: 48rem;
+  background: rgb(var(--color-background));
+}
+
+.footer-split__newsletter-box .field {
+  flex: 1 1 12rem;
+  margin: 0;
+}
+
+.footer-split__newsletter-box .field__input {
+  border: none;
+  border-radius: 0;
+  min-height: 5.2rem;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.footer-split__newsletter-box .field__label {
+  font-family: inherit;
+}
+
+.footer-split__newsletter-submit {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1.6rem 0 1.2rem;
+  border: none;
+  border-left: 1px solid rgb(var(--color-foreground));
+  background: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  font-family: inherit;
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.footer-split__newsletter-submit:hover,
+.footer-split__newsletter-submit:focus-visible {
+  background: rgba(var(--color-foreground), 0.06);
+}
+
+.footer-split__submit-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  background: #c4f542;
+  color: rgb(var(--color-foreground));
+  border-radius: 0.2rem;
+}
+
+.footer-split__submit-icon .svg-wrapper {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.footer-split__menus {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem 2rem;
+  margin-bottom: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-split__menus {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.footer-split__menu-heading {
+  margin: 0 0 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.footer-split__menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-split__menu-list a {
+  text-decoration: none;
+  color: rgb(var(--color-foreground));
+  display: inline-block;
+  padding: 0.25rem 0;
+}
+
+.footer-split__menu-list a:hover,
+.footer-split__menu-list a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.footer-split__col--menus {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.footer-split__menus-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.6rem 2rem;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: var(--footer-split-border);
+}
+
+.footer-split__policies {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.6rem;
+}
+
+.footer-split__policies a {
+  color: rgb(var(--color-foreground));
+  text-decoration: none;
+}
+
+.footer-split__policies a:hover,
+.footer-split__policies a:focus-visible {
+  text-decoration: underline;
+}
+
+.footer-split__copyright {
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.footer-split__menus-footer .footer-split__copyright:only-child {
+  margin-left: auto;
+}
+
+.footer-split__bottom {
+  border-top: var(--footer-split-border);
+  padding: 2rem 2rem 2.4rem;
+}
+
+@media screen and (min-width: 750px) {
+  .footer-split__bottom {
+    padding: 2rem 3.2rem 2.8rem;
+  }
+}
+
+.footer-split__bottom .footer__content-bottom-wrapper {
+  margin-bottom: 0;
+}
