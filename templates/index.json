@@ -141,6 +141,7 @@
         "text_T9jqh6",
         "button_qLrQBj"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/hometube-purple.png",
