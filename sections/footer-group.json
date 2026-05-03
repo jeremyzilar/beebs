@@ -25,7 +25,7 @@
           "type": "menu_column",
           "settings": {
             "heading": "About Us",
-            "menu": ""
+            "menu": "navigation"
           }
         },
         "gmenusocial": {
@@ -61,6 +61,7 @@
     },
     "footer": {
       "type": "footer",
+      "disabled": true,
       "custom_css": [
         ".footer,h2 {color: white;}",
         "button {color: black;}"
