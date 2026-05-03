@@ -1,0 +1,38 @@
+---
+description: Beebs Shopify theme — critical settings and Liquid/schema guardrails
+alwaysApply: true
+---
+
+# Beebs theme (Cursor)
+
+This repo is a **Shopify Online Store 2.0** theme (Liquid, JSON templates, sections).
+
+## Critical settings
+
+Maintain the same facts here and in **`CLAUDE.md`** (Critical settings table) when values change.
+
+| Setting | Your value | Notes |
+|--------|------------|--------|
+| Production URL | `https://beebsgoods.com/` | |
+| Shopify admin store | _e.g. `the-elastic-space-of-meaning.myshopify.com`_ | |
+| Live theme name or ID | _fill in_ | |
+| Dev / preview theme | _fill in_ | |
+| Footer column menus (handles) | Shop / About / Social → _handles_ | Navigation → Footer blocks |
+| Main menu handle | _fill in_ | |
+| Metaobject: reviews | `featured_review` | |
+| Metaobject: stores | `store_location` | |
+| Reviews page | `pages.reviews` or `/pages/reviews` | |
+
+Do not commit secrets; document locations only.
+
+## Agent guardrails
+
+- Prefer **existing section patterns** before adding new global settings.
+- **Never** add multiple `link_list` fields to the **root** `settings` of one section.
+- Be cautious re-adding **`@app`** to sections that already use multiple resource pickers (e.g. several menus in blocks); validate with `shopify theme check` / upload before assuming schema is valid.
+- Match existing Liquid/CSS naming and file layout; avoid unrelated refactors.
+- If a change is a bad idea, please push back on it.
+
+## Commands
+
+`shopify theme dev` · `shopify theme deploy`
