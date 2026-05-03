@@ -171,7 +171,7 @@
                   endif
                 -%}
                 {%- if reviewer_line != blank -%}
-                  <p class="featured-review-card__byline">{{ reviewer_line | escape }}</p>
+                  <p class="featured-review-card__byline">- {{ reviewer_line | escape }}</p>
                 {%- endif -%}
               </div>
             </article>

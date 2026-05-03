@@ -1,0 +1,139 @@
+/**
+ * Shopify Customer Privacy cookie banner (storefront-banner.js) — compact layout.
+ * Loaded at end of <body> so these rules follow the injected banner stylesheet.
+ *
+ * Layout (≥750px): copy wraps on the left; actions in a column on the right.
+ * DOM order in .btns: manage-prefs, accept, decline — grid places accept|decline
+ * on the first row and manage-prefs on the second row, all right-aligned.
+ */
+
+#shopify-pc__banner.shopify-pc__banner__dialog {
+  padding: 2rem 2rem !important;
+}
+
+#shopify-pc__banner h2 {
+  font-size: 1em !important;
+  margin: 0 0 0.35em !important;
+  line-height: 1.25 !important;
+  display: none !important;
+}
+
+#shopify-pc__banner p {
+  font-size: 0.92em !important;
+  line-height: 1.35 !important;
+}
+
+#shopify-pc__banner button.shopify-pc__banner__btn-accept,
+#shopify-pc__banner button.shopify-pc__banner__btn-decline {
+  padding: 6px 34px 4px 34px !important;
+  margin: 0 !important;
+  font-size: 0.88em !important;
+  flex-basis: auto !important;
+  flex-grow: 0 !important;
+  border-radius: 4px !important;
+}
+
+#shopify-pc__banner button.shopify-pc__banner__btn-manage-prefs {
+  font-size: 0.88em !important;
+  margin: 0 !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+#shopify-pc__banner button.shopify-pc__banner__btn-manage-prefs span {
+  text-align: center !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+/* Two columns: text (wraps) | actions */
+@media screen and (min-width: 750px) {
+  #shopify-pc__banner .shopify-pc__banner__wrapper {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    align-items: start !important;
+    column-gap: 1.5rem !important;
+    row-gap: 0.75rem !important;
+    width: 100% !important;
+  }
+
+  #shopify-pc__banner .shopify-pc__banner__body {
+    margin: 0 !important;
+    min-width: 0 !important;
+    width: auto !important;
+  }
+
+  /* Right column: [ Accept ] [ Decline ]; Manage preferences below */
+  #shopify-pc__banner .shopify-pc__banner__btns {
+    display: grid !important;
+    grid-template-columns: auto auto !important;
+    gap: 8px 10px !important;
+    min-width: auto !important;
+    width: max-content !important;
+    max-width: 100% !important;
+  }
+
+  #shopify-pc__banner button.shopify-pc__banner__btn-accept {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    justify-self: end !important;
+  }
+
+  #shopify-pc__banner button.shopify-pc__banner__btn-decline {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    justify-self: end !important;
+  }
+
+  #shopify-pc__banner button.shopify-pc__banner__btn-manage-prefs {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    justify-self: end !important;
+    text-align: right !important;
+  }
+}
+
+/* Narrow: stack; actions align right */
+@media screen and (max-width: 749px) {
+  #shopify-pc__banner .shopify-pc__banner__wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  #shopify-pc__banner .shopify-pc__banner__body {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+  }
+
+  #shopify-pc__banner .shopify-pc__banner__btns {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+    min-width: auto !important;
+  }
+
+  #shopify-pc__banner button.shopify-pc__banner__btn-manage-prefs {
+    flex: 1 0 100% !important;
+    text-align: right !important;
+    order: 3 !important;
+  }
+
+  #shopify-pc__banner .shopify-pc__banner__btn-accept {
+    order: 1 !important;
+  }
+
+  #shopify-pc__banner .shopify-pc__banner__btn-decline {
+    order: 2 !important;
+  }
+
+  #shopify-pc__banner.shopify-pc__banner__dialog {
+    padding: 10px 12px !important;
+    max-height: min(46vh, 340px) !important;
+  }
+}
