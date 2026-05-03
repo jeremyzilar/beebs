@@ -44,7 +44,7 @@
       "settings": {
         "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
         "menu_column_side": "right",
-        "intro_text": "<p>Add a short message above the newsletter form.</p>",
+        "intro_text": "<p>Get 10% off your first order!</p>",
         "newsletter_enable": true,
         "show_policy_row": true,
         "show_policy_links": true,
