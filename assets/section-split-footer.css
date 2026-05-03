@@ -47,10 +47,13 @@
 .split-footer__intro {
   margin: 0 0 3.2rem;
   max-width: 42rem;
+  text-align: center;
 }
 
 .split-footer__intro p {
   margin: 0 0 1em;
+  font-size: 2rem;
+  line-height: 1.2;
 }
 
 .split-footer__intro p:last-child {
@@ -63,6 +66,7 @@
 
 .split-footer .newsletter-form__field-wrapper {
   max-width: 48rem;
+  margin: 0 auto;
 }
 
 .split-footer .split-footer__newsletter-form-inner .field__input,
