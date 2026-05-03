@@ -1,16 +1,16 @@
 {% comment %}theme-check-disable UndefinedObject{% endcomment %}
-{{ 'section-footer-split.css' | asset_url | stylesheet_tag }}
+{{ 'section-split-footer.css' | asset_url | stylesheet_tag }}
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .footer-split.section-{{ section.id }}-padding {
+  .split-footer.section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
   @media screen and (min-width: 750px) {
-    .footer-split.section-{{ section.id }}-padding {
+    .split-footer.section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
@@ -18,24 +18,24 @@
 {%- endstyle -%}
 
 <footer
-  class="footer-split color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding{% if section.settings.menu_column_side == 'left' %} footer-split--menus-left{% endif %}"
-  id="FooterSplit-{{ section.id }}"
+  class="split-footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding{% if section.settings.menu_column_side == 'left' %} split-footer--menus-left{% endif %}"
+  id="SplitFooter-{{ section.id }}"
   aria-label="{{ shop.name | escape }} — {{ 'sections.footer.name' | t }}"
 >
-  <div class="footer-split__split">
-    <div class="footer-split__col footer-split__col--intro">
+  <div class="split-footer__split">
+    <div class="split-footer__col split-footer__col--intro">
       {%- if section.settings.intro_text != blank -%}
-        <div class="footer-split__intro rte">{{ section.settings.intro_text }}</div>
+        <div class="split-footer__intro rte">{{ section.settings.intro_text }}</div>
       {%- endif -%}
 
       {%- if section.settings.newsletter_enable -%}
-        <div class="footer-split__newsletter-form">
-          {%- form 'customer', id: 'ContactFooterSplit--{{ section.id }}', class: 'footer-split__newsletter-form-inner' -%}
+        <div class="split-footer__newsletter-form">
+          {%- form 'customer', id: 'ContactSplitFooter--{{ section.id }}', class: 'split-footer__newsletter-form-inner' -%}
             <input type="hidden" name="contact[tags]" value="newsletter">
-            <div class="footer-split__newsletter-box">
+            <div class="split-footer__newsletter-box">
               <div class="field">
                 <input
-                  id="NewsletterSplit--{{ section.id }}"
+                  id="NewsletterSplitFooter--{{ section.id }}"
                   type="email"
                   name="contact[email]"
                   class="field__input"
@@ -47,25 +47,25 @@
                   {% if form.errors %}
                     autofocus
                     aria-invalid="true"
-                    aria-describedby="ContactFooterSplit-error--{{ section.id }}"
+                    aria-describedby="ContactSplitFooter-error--{{ section.id }}"
                   {% elsif form.posted_successfully? %}
-                    aria-describedby="ContactFooterSplit-success--{{ section.id }}"
+                    aria-describedby="ContactSplitFooter-success--{{ section.id }}"
                   {% endif %}
                   placeholder="{{ 'newsletter.label' | t }}"
                   required
                 >
-                <label class="field__label visually-hidden" for="NewsletterSplit--{{ section.id }}">
+                <label class="field__label visually-hidden" for="NewsletterSplitFooter--{{ section.id }}">
                   {{ 'newsletter.label' | t }}
                 </label>
               </div>
               <button
                 type="submit"
-                class="footer-split__newsletter-submit"
+                class="split-footer__newsletter-submit"
                 name="commit"
                 aria-label="{{ 'newsletter.button_label' | t }}"
               >
                 <span>{{ 'newsletter.button_label' | t }}</span>
-                <span class="footer-split__submit-icon" aria-hidden="true">
+                <span class="split-footer__submit-icon" aria-hidden="true">
                   <span class="svg-wrapper">
                     {{- 'icon-arrow.svg' | inline_asset_content -}}
                   </span>
@@ -73,7 +73,7 @@
               </button>
             </div>
             {%- if form.errors -%}
-              <small class="newsletter-form__message form__message" id="ContactFooterSplit-error--{{ section.id }}">
+              <small class="newsletter-form__message form__message" id="ContactSplitFooter-error--{{ section.id }}">
                 <span class="svg-wrapper">{{- 'icon-error.svg' | inline_asset_content -}}</span>
                 {{- form.errors.translated_fields.email | capitalize }}
                 {{ form.errors.messages.email -}}
@@ -82,7 +82,7 @@
             {%- if form.posted_successfully? -%}
               <h3
                 class="newsletter-form__message newsletter-form__message--success form__message"
-                id="ContactFooterSplit-success--{{ section.id }}"
+                id="ContactSplitFooter-success--{{ section.id }}"
                 tabindex="-1"
                 autofocus
               >
@@ -95,16 +95,16 @@
       {%- endif -%}
     </div>
 
-    <div class="footer-split__col footer-split__col--menus">
-      <div class="footer-split__menus">
+    <div class="split-footer__col split-footer__col--menus">
+      <div class="split-footer__menus">
         {%- for block in section.blocks -%}
           {%- if block.type == 'menu_column' -%}
-            <div class="footer-split__menu-col" {{ block.shopify_attributes }}>
+            <div class="split-footer__menu-col" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                <h2 class="footer-split__menu-heading inline-richtext">{{ block.settings.heading }}</h2>
+                <h2 class="split-footer__menu-heading inline-richtext">{{ block.settings.heading }}</h2>
               {%- endif -%}
               {%- if block.settings.menu != blank and block.settings.menu.links.size > 0 -%}
-                <ul class="footer-split__menu-list">
+                <ul class="split-footer__menu-list">
                   {%- for link in block.settings.menu.links -%}
                     <li>
                       <a href="{{ link.url }}">{{ link.title | escape }}</a>
@@ -119,9 +119,9 @@
 
       {%- if section.settings.show_policy_row -%}
         {%- if section.settings.show_policy_links or section.settings.show_copyright -%}
-          <div class="footer-split__menus-footer">
+          <div class="split-footer__menus-footer">
             {%- if section.settings.show_policy_links -%}
-              <ul class="footer-split__policies" role="list">
+              <ul class="split-footer__policies" role="list">
                 {%- for policy in shop.policies -%}
                   {%- if policy != blank -%}
                     <li>
@@ -132,7 +132,7 @@
               </ul>
             {%- endif -%}
             {%- if section.settings.show_copyright -%}
-              <p class="footer-split__copyright">
+              <p class="split-footer__copyright">
                 &copy;
                 {%- if section.settings.copyright_uppercase -%}
                   {{ shop.name | upcase }}
@@ -149,34 +149,34 @@
   </div>
 
   {%- liquid
-    assign footer_split_loc = 'FooterSplit' | append: section.id
-    assign footer_split_country_lp = footer_split_loc | append: 'Country'
-    assign footer_split_language_lp = footer_split_loc | append: 'Language'
+    assign split_footer_base = 'SplitFooter' | append: section.id
+    assign split_footer_country_lp = split_footer_base | append: 'Country'
+    assign split_footer_language_lp = split_footer_base | append: 'Language'
   -%}
   {%- if section.settings.show_utility_row -%}
-    <div class="footer-split__bottom footer__content-bottom">
+    <div class="split-footer__bottom footer__content-bottom">
       <div class="footer__content-bottom-wrapper page-width">
         <div class="footer__column footer__localization isolate">
           {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
             <localization-form>
-              {%- form 'localization', id: 'FooterSplitCountryForm--{{ section.id }}', class: 'localization-form' -%}
+              {%- form 'localization', id: 'SplitFooterCountryForm--{{ section.id }}', class: 'localization-form' -%}
                 <div>
-                  <h2 class="caption-large text-body" id="{{ footer_split_country_lp }}Label">
+                  <h2 class="caption-large text-body" id="{{ split_footer_country_lp }}Label">
                     {{ 'localization.country_label' | t }}
                   </h2>
-                  {%- render 'country-localization', localPosition: footer_split_country_lp -%}
+                  {%- render 'country-localization', localPosition: split_footer_country_lp -%}
                 </div>
               {%- endform -%}
             </localization-form>
           {%- endif -%}
           {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
             <localization-form>
-              {%- form 'localization', id: 'FooterSplitLanguageForm--{{ section.id }}', class: 'localization-form' -%}
+              {%- form 'localization', id: 'SplitFooterLanguageForm--{{ section.id }}', class: 'localization-form' -%}
                 <div>
-                  <h2 class="caption-large text-body" id="{{ footer_split_language_lp }}Label">
+                  <h2 class="caption-large text-body" id="{{ split_footer_language_lp }}Label">
                     {{ 'localization.language_label' | t }}
                   </h2>
-                  {%- render 'language-localization', localPosition: footer_split_language_lp -%}
+                  {%- render 'language-localization', localPosition: split_footer_language_lp -%}
                 </div>
               {%- endform -%}
             </localization-form>
@@ -212,7 +212,7 @@
 {
   "name": "Split footer",
   "tag": "section",
-  "class": "section-footer-split",
+  "class": "section-split-footer",
   "blocks": [
     {
       "type": "menu_column",
@@ -367,9 +367,6 @@
         { "type": "menu_column", "settings": { "heading": "Social" } }
       ]
     }
-  ],
-  "enabled_on": {
-    "groups": ["footer"]
-  }
+  ]
 }
 {% endschema %}

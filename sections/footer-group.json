@@ -11,24 +11,24 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "footer_split": {
-      "type": "footer-split",
+    "splitfooter": {
+      "type": "split-footer",
       "blocks": {
-        "g_menu_shop": {
+        "gmenushop": {
           "type": "menu_column",
           "settings": {
             "heading": "Shop",
             "menu": "shop"
           }
         },
-        "g_menu_about": {
+        "gmenuabout": {
           "type": "menu_column",
           "settings": {
             "heading": "About Us",
             "menu": ""
           }
         },
-        "g_menu_social": {
+        "gmenusocial": {
           "type": "menu_column",
           "settings": {
             "heading": "Social",
@@ -37,9 +37,9 @@
         }
       },
       "block_order": [
-        "g_menu_shop",
-        "g_menu_about",
-        "g_menu_social"
+        "gmenushop",
+        "gmenuabout",
+        "gmenusocial"
       ],
       "settings": {
         "color_scheme": "scheme-16210672-7c87-4e3e-9fc2-dd0b8f17a33c",
@@ -84,7 +84,7 @@
     }
   },
   "order": [
-    "footer_split",
+    "splitfooter",
     "footer"
   ]
 }
