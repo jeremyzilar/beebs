@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -5,21 +14,21 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "gmenushop": {
+        "menu_column_JGgQhR": {
           "type": "menu_column",
           "settings": {
             "heading": "Shop",
             "menu": "shop"
           }
         },
-        "gmenuabout": {
+        "menu_column_z7nydY": {
           "type": "menu_column",
           "settings": {
-            "heading": "About Us",
-            "menu": ""
+            "heading": "About",
+            "menu": "about"
           }
         },
-        "gmenusocial": {
+        "menu_column_FfgXUz": {
           "type": "menu_column",
           "settings": {
             "heading": "Social",
@@ -28,18 +37,21 @@
         }
       },
       "block_order": [
-        "gmenushop",
-        "gmenuabout",
-        "gmenusocial"
+        "menu_column_JGgQhR",
+        "menu_column_z7nydY",
+        "menu_column_FfgXUz"
       ],
+      "custom_css": [],
       "settings": {
-        "color_scheme": "scheme-16210672-7c87-4e3e-9fc2-dd0b8f17a33c",
+        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
         "menu_column_side": "right",
-        "intro_text": "<p>Add a short message above the newsletter form.</p>",
+        "intro_text": "<p>Get 10% off your first order!</p>",
         "newsletter_enable": true,
-        "newsletter_target": "klaviyo",
+        "newsletter_target": "shopify",
         "klaviyo_company_id": "",
         "klaviyo_list_id": "",
+        "bottom_image": "shopify://shop_images/Asset_7.png",
+        "bottom_image_max_width": 640,
         "show_policy_row": true,
         "show_policy_links": true,
         "show_copyright": true,
@@ -47,10 +59,10 @@
         "show_utility_row": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "payment_enable": false,
+        "payment_enable": true,
         "show_powered_by": false,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 24,
+        "padding_bottom": 64
       }
     }
   },
