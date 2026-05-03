@@ -14,31 +14,42 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "image_kDznET": {
-          "type": "image",
+        "brand_information_maMaFU": {
+          "type": "brand_information",
           "settings": {
-            "image": "shopify://shop_images/beebs-plastic-free.png",
-            "image_width": 300,
-            "alignment": "center"
+            "show_social": true
+          }
+        },
+        "link_list_8qnn6T": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Shop",
+            "menu": "shop"
+          }
+        },
+        "link_list_nmFdyg": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Social",
+            "menu": "social"
           }
         }
       },
       "block_order": [
-        "image_kDznET"
+        "brand_information_maMaFU",
+        "link_list_8qnn6T",
+        "link_list_nmFdyg"
       ],
-      "custom_css": [
-        ".footer,h2 {color: white;}",
-        "button {color: black;}"
-      ],
+      "custom_css": [],
       "settings": {
-        "color_scheme": "scheme-16210672-7c87-4e3e-9fc2-dd0b8f17a33c",
+        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
         "newsletter_enable": true,
         "newsletter_heading": "Sign up and get 10% off!",
         "enable_follow_on_shop": false,
         "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "payment_enable": true,
+        "payment_enable": false,
         "show_policy": true,
         "margin_top": 0,
         "padding_top": 40,
