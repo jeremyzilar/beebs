@@ -140,6 +140,17 @@
   color: rgb(var(--color-foreground));
 }
 
+.featured-review-card__title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.featured-review-card__title a:hover,
+.featured-review-card__title a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
 .featured-review-card__stars {
   margin: 0;
   font-size: 1.6rem;
@@ -170,6 +181,17 @@
   margin: 0;
   font-size: 1.2rem;
   line-height: 1.35;
+}
+
+.featured-review-card__byline a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.featured-review-card__byline a:hover,
+.featured-review-card__byline a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 
 .featured-reviews-carousel__empty {

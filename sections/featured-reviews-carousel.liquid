@@ -23,6 +23,10 @@
       assign visible_count = visible_count | plus: 1
     endif
   endfor
+  assign reviews_list_url = '/pages/reviews'
+  if pages.reviews != blank
+    assign reviews_list_url = pages.reviews.url
+  endif
 -%}
 
 <div
@@ -119,7 +123,9 @@
 
               <div class="featured-review-card__content">
                 {%- if review.title.value != blank -%}
-                  <h3 class="featured-review-card__title">{{ review.title.value | escape }}</h3>
+                  <h3 class="featured-review-card__title">
+                    <a href="{{ reviews_list_url }}">{{ review.title.value | escape }}</a>
+                  </h3>
                 {%- endif -%}
 
                 {%- if review.stars.value != blank -%}
@@ -171,7 +177,9 @@
                   endif
                 -%}
                 {%- if reviewer_line != blank -%}
-                  <p class="featured-review-card__byline">- {{ reviewer_line | escape }}</p>
+                  <p class="featured-review-card__byline">
+                    - <a href="{{ reviews_list_url }}">{{ reviewer_line | escape }}</a>
+                  </p>
                 {%- endif -%}
               </div>
             </article>
