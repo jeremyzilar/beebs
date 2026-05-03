@@ -1,16 +1,20 @@
-/* Two-column footer — dashed grid, monospace */
+/* Split footer — Fugue, solid column divider, no outer top/bottom rules */
 
 .split-footer {
-  --split-footer-border: 1px dashed rgba(var(--color-foreground), 0.35);
-  font-family: ui-monospace, 'SFMono-Regular', 'Menlo', 'Consolas', 'Courier New', monospace;
+  --split-footer-divider: 1px solid rgba(var(--color-foreground), 0.35);
+  --split-footer-inner-rule: 1px solid rgba(var(--color-foreground), 0.25);
+  font-family: var(--font-body-family, "Fugue", sans-serif);
   font-size: 1.3rem;
   line-height: 1.45;
+}
+
+.split-footer .split-footer__menu-heading {
+  font-family: var(--font-heading-family, var(--font-body-family, "Fugue", sans-serif));
 }
 
 .split-footer__split {
   display: grid;
   grid-template-columns: 1fr;
-  border-top: var(--split-footer-border);
 }
 
 @media screen and (min-width: 990px) {
@@ -22,22 +26,20 @@
 
 .split-footer__col {
   padding: 3.2rem 2rem 4rem;
-  border-bottom: var(--split-footer-border);
 }
 
 @media screen and (min-width: 990px) {
   .split-footer__col {
-    border-bottom: none;
     padding: 4rem 3.2rem 4.8rem;
   }
 
   .split-footer__col--menus {
-    border-left: var(--split-footer-border);
+    border-left: var(--split-footer-divider);
   }
 
   .split-footer--menus-left .split-footer__col--menus {
     border-left: none;
-    border-right: var(--split-footer-border);
+    border-right: var(--split-footer-divider);
     order: -1;
   }
 }
@@ -59,69 +61,17 @@
   margin-top: 2.4rem;
 }
 
-.split-footer__newsletter-box {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  border: 1px solid rgb(var(--color-foreground));
-  border-radius: 0.6rem;
-  overflow: hidden;
+.split-footer .newsletter-form__field-wrapper {
   max-width: 48rem;
-  background: rgb(var(--color-background));
 }
 
-.split-footer__newsletter-box .field {
-  flex: 1 1 12rem;
-  margin: 0;
-}
-
-.split-footer__newsletter-box .field__input {
-  border: none;
-  border-radius: 0;
-  min-height: 5.2rem;
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.split-footer__newsletter-box .field__label {
-  font-family: inherit;
-}
-
-.split-footer__newsletter-submit {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0 1.6rem 0 1.2rem;
-  border: none;
-  border-left: 1px solid rgb(var(--color-foreground));
-  background: rgb(var(--color-background));
-  color: rgb(var(--color-foreground));
-  font-family: inherit;
-  font-size: 1.2rem;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.split-footer__newsletter-submit:hover,
-.split-footer__newsletter-submit:focus-visible {
-  background: rgba(var(--color-foreground), 0.06);
-}
-
-.split-footer__submit-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3.6rem;
-  height: 3.6rem;
-  background: #c4f542;
-  color: rgb(var(--color-foreground));
-  border-radius: 0.2rem;
-}
-
-.split-footer__submit-icon .svg-wrapper {
-  width: 1.8rem;
-  height: 1.8rem;
+.split-footer .split-footer__newsletter-form-inner .field__input,
+.split-footer .split-footer__newsletter-form-inner .field__label,
+.split-footer .split-footer__newsletter-form-inner .newsletter-form__button,
+.split-footer .split-footer__menu-list a,
+.split-footer .split-footer__policies a,
+.split-footer .split-footer__copyright {
+  font-family: var(--font-body-family, "Fugue", sans-serif);
 }
 
 .split-footer__menus {
@@ -177,7 +127,7 @@
   gap: 1.6rem 2rem;
   margin-top: 4rem;
   padding-top: 2rem;
-  border-top: var(--split-footer-border);
+  border-top: var(--split-footer-inner-rule);
 }
 
 .split-footer__policies {
@@ -210,8 +160,30 @@
   margin-left: auto;
 }
 
+.split-footer__image-row {
+  padding: 2.4rem 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 750px) {
+  .split-footer__image-row {
+    padding: 3.2rem 3.2rem 0;
+  }
+}
+
+.split-footer__image-inner {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.split-footer__bottom-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .split-footer__bottom {
-  border-top: var(--split-footer-border);
   padding: 2rem 2rem 2.4rem;
 }
 
