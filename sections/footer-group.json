@@ -42,7 +42,7 @@
         "gmenusocial"
       ],
       "settings": {
-        "color_scheme": "scheme-16210672-7c87-4e3e-9fc2-dd0b8f17a33c",
+        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
         "menu_column_side": "right",
         "intro_text": "<p>Add a short message above the newsletter form.</p>",
         "newsletter_enable": true,
@@ -61,8 +61,6 @@
     },
     "footer": {
       "type": "footer",
-      "blocks": {},
-      "block_order": [],
       "custom_css": [
         ".footer,h2 {color: white;}",
         "button {color: black;}"
