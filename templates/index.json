@@ -32,6 +32,63 @@
         "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e"
       }
     },
+    "newsletter_9EBd9K": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_9qibaz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get 10% off your first order!",
+            "heading_size": "h2"
+          }
+        },
+        "email_form_yKgQgN": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_9qibaz",
+        "email_form_yKgQgN"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "featured_collection_t8NmEN": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "description": "",
+        "show_description": false,
+        "description_style": "uppercase",
+        "collection": "lamb-lung-dog-treats",
+        "products_to_show": 6,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": true,
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 24,
+        "padding_bottom": 32,
+        "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
+        "background_image": "shopify://shop_images/bean-2.png"
+      }
+    },
     "1750009880eb59cd88": {
       "type": "apps",
       "blocks": {
@@ -157,63 +214,6 @@
         "mobile_content_alignment": "center",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "featured_collection_t8NmEN": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "description": "",
-        "show_description": false,
-        "description_style": "uppercase",
-        "collection": "lamb-lung-dog-treats",
-        "products_to_show": 6,
-        "columns_desktop": 3,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "enable_desktop_slider": true,
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "quick_add": "standard",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 24,
-        "padding_bottom": 32,
-        "color_scheme": "scheme-2663c35d-840d-499c-aaaa-90d347f59343",
-        "background_image": "shopify://shop_images/bean-2.png"
-      }
-    },
-    "newsletter_9EBd9K": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_9qibaz": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get 10% off your first order!",
-            "heading_size": "h2"
-          }
-        },
-        "email_form_yKgQgN": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_9qibaz",
-        "email_form_yKgQgN"
-      ],
-      "custom_css": [],
-      "settings": {
-        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
-        "full_width": true,
-        "padding_top": 32,
-        "padding_bottom": 32
       }
     },
     "rich_text_WcrBLV": {
@@ -708,12 +708,12 @@
   },
   "order": [
     "hero_video_G3XjDj",
+    "newsletter_9EBd9K",
+    "featured_collection_t8NmEN",
     "1750009880eb59cd88",
     "reviews_strip_HAFqxh",
     "featured_reviews_carousel_DdmDPG",
     "image_with_text_KfQxCd",
-    "featured_collection_t8NmEN",
-    "newsletter_9EBd9K",
     "rich_text_WcrBLV",
     "image_with_text_F9h9pk",
     "rich_text_kr7YDJ",
