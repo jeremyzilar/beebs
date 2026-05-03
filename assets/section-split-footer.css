@@ -28,6 +28,14 @@
   padding: 3.2rem 2rem 4rem;
 }
 
+.split-footer__col--intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 @media screen and (min-width: 990px) {
   .split-footer__col {
     padding: 4rem 3.2rem 4.8rem;
@@ -46,8 +54,8 @@
 
 .split-footer__intro {
   margin: 0 0 3.2rem;
+  width: 100%;
   max-width: 42rem;
-  text-align: center;
 }
 
 .split-footer__intro p {
@@ -62,11 +70,12 @@
 
 .split-footer__newsletter-form {
   margin-top: 2.4rem;
+  width: 100%;
+  max-width: 48rem;
 }
 
 .split-footer .newsletter-form__field-wrapper {
-  max-width: 48rem;
-  margin: 0 auto;
+  max-width: 100%;
 }
 
 .split-footer .split-footer__newsletter-form-inner .field__input,
