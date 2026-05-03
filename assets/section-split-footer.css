@@ -99,12 +99,14 @@
   padding: 0;
   list-style: none;
 }
-
+.split-footer__menu-list li {
+  margin-bottom: 0.5rem;
+}
 .split-footer__menu-list a {
   text-decoration: none;
   color: rgb(var(--color-foreground));
   display: inline;
-  padding: 0.45rem 0;
+  padding: 0.25rem 0;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -146,6 +148,7 @@
 .split-footer__policies a {
   color: rgb(var(--color-foreground));
   text-decoration: none;
+  padding: 0.25rem 0;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
