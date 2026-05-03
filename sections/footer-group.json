@@ -18,7 +18,7 @@
           "type": "footer_column",
           "settings": {
             "heading": "Shop",
-            "menu": ""
+            "menu": "shop"
           }
         },
         "footer_col_about": {
@@ -32,15 +32,23 @@
           "type": "footer_column",
           "settings": {
             "heading": "Social",
-            "menu": ""
+            "menu": "social"
+          }
+        },
+        "brand_information_maMaFU": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
           }
         }
       },
       "block_order": [
         "footer_col_shop",
         "footer_col_about",
-        "footer_col_social"
+        "footer_col_social",
+        "brand_information_maMaFU"
       ],
+      "custom_css": [],
       "settings": {
         "color_scheme": "scheme-16210672-7c87-4e3e-9fc2-dd0b8f17a33c",
         "show_mega_logo": true,
