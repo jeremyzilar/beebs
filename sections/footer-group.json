@@ -1,18 +1,9 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "splitfooter": {
-      "type": "split-footer",
+    "footer": {
+      "type": "footer",
       "blocks": {
         "gmenushop": {
           "type": "menu_column",
@@ -25,7 +16,7 @@
           "type": "menu_column",
           "settings": {
             "heading": "About Us",
-            "menu": "navigation"
+            "menu": ""
           }
         },
         "gmenusocial": {
@@ -42,15 +33,13 @@
         "gmenusocial"
       ],
       "settings": {
-        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
+        "color_scheme": "scheme-16210672-7c87-4e3e-9fc2-dd0b8f17a33c",
         "menu_column_side": "right",
-        "intro_text": "<p>Get 10% off your first order!</p>",
+        "intro_text": "<p>Add a short message above the newsletter form.</p>",
         "newsletter_enable": true,
-        "newsletter_target": "shopify",
+        "newsletter_target": "klaviyo",
         "klaviyo_company_id": "",
         "klaviyo_list_id": "",
-        "bottom_image": "shopify://shop_images/Asset_7.png",
-        "bottom_image_max_width": 580,
         "show_policy_row": true,
         "show_policy_links": true,
         "show_copyright": true,
@@ -63,32 +52,9 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
-    },
-    "footer": {
-      "type": "footer",
-      "disabled": true,
-      "custom_css": [
-        ".footer,h2 {color: white;}",
-        "button {color: black;}"
-      ],
-      "settings": {
-        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
-        "newsletter_enable": false,
-        "newsletter_heading": "Sign up and get 10% off!",
-        "enable_follow_on_shop": false,
-        "show_social": false,
-        "enable_country_selector": false,
-        "enable_language_selector": false,
-        "payment_enable": true,
-        "show_policy": false,
-        "margin_top": 0,
-        "padding_top": 24,
-        "padding_bottom": 24
-      }
     }
   },
   "order": [
-    "splitfooter",
     "footer"
   ]
 }
