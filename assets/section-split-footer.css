@@ -110,7 +110,8 @@
 .split-footer__menu-list a:hover,
 .split-footer__menu-list a:focus-visible {
   text-decoration: underline;
-  text-underline-offset: 0.2em;
+  text-underline-offset: 0.35em;
+  text-decoration-thickness: 1px;
 }
 
 .split-footer__col--menus {
@@ -147,6 +148,8 @@
 .split-footer__policies a:hover,
 .split-footer__policies a:focus-visible {
   text-decoration: underline;
+  text-underline-offset: 0.35em;
+  text-decoration-thickness: 1px;
 }
 
 .split-footer__copyright {
