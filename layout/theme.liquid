@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
     <meta name="theme-color" content="#222222">
+    <meta name="color-scheme" content="light">
     <link rel="canonical" href="{{ canonical_url }}">
 
     {%- if settings.favicon != blank -%}
@@ -117,6 +118,8 @@
       }
 
       :root {
+        color-scheme: light;
+
         /* --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }}; */
         --font-body-family: "Fugue", sans-serif;
         --font-body-style: {{ settings.type_body_font.style }};
