@@ -204,6 +204,7 @@
     <div class="split-footer__image-row page-width">
       {%- assign bottom_w = section.settings.bottom_image_max_width | default: 800 -%}
       {%- assign bottom_w_2x = bottom_w | times: 2 | at_most: 4000 -%}
+      {%- assign bottom_sizes = '(min-width: 990px) ' | append: bottom_w | append: 'px, 100vw' -%}
       <div class="split-footer__image-inner" style="max-width: {{ bottom_w }}px;">
         {{
           section.settings.bottom_image
@@ -211,7 +212,7 @@
           | image_tag:
             loading: 'lazy',
             widths: '360, 540, 720, 900, 1200, 1600',
-            sizes: '(min-width: 990px) {{ bottom_w }}px, 100vw',
+            sizes: bottom_sizes,
             width: section.settings.bottom_image.width,
             height: section.settings.bottom_image.height,
             class: 'split-footer__bottom-image',
