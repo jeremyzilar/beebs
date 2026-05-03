@@ -17,6 +17,30 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_D9E7tC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_V6nqbb": {
+          "type": "heading",
+          "settings": {
+            "heading": "What the dogs had to say",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_V6nqbb"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "1777827154fcea5b3e": {
       "type": "apps",
       "blocks": {
@@ -41,6 +65,7 @@
   },
   "order": [
     "main",
+    "rich_text_D9E7tC",
     "1777827154fcea5b3e"
   ]
 }
