@@ -448,13 +448,25 @@
           document.cookie = COOKIE + '=1; expires=' + exp.toUTCString() + '; path=/; SameSite=Lax';
         }
 
-        /* If cookie exists, add class to <body> — CSS does the rest, survives cart re-renders */
-        var hasCookie = document.cookie.split(';').some(function (c) {
-          return c.trim().indexOf(COOKIE + '=') === 0;
-        });
-        if (hasCookie) {
-          document.documentElement.classList.add('has-discount-banner');
+        function hasCookie() {
+          return document.cookie.split(';').some(function (c) {
+            return c.trim().indexOf(COOKIE + '=') === 0;
+          });
         }
+
+        function showBanner() {
+          if (!hasCookie()) return;
+          /* Class on <html> for CSS */
+          document.documentElement.classList.add('has-discount-banner');
+          /* Inline style overrides any CSS display:none — works after re-renders too */
+          var els = document.querySelectorAll('.beebs-discount-banner');
+          for (var i = 0; i < els.length; i++) {
+            els[i].style.display = 'block';
+          }
+        }
+
+        showBanner();
+        document.addEventListener('DOMContentLoaded', showBanner);
       })();
     </script>
   </body>
