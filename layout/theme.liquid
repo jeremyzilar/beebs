@@ -281,6 +281,18 @@
         touch-action: pan-x;
       }
 
+      /* Discount banner in cart drawer */
+      .beebs-discount-banner {
+        margin-bottom: 1.2rem;
+        padding: 1rem 1.4rem;
+        background: rgba(var(--color-foreground), 0.06);
+        border-radius: 0.4rem;
+        font-size: 1.4rem;
+        font-family: var(--font-body-family);
+        text-align: center;
+        letter-spacing: 0.02em;
+      }
+
       /*
         Tailwind's .card utility conflicts with Dawn's .card component class.
         Reset the Tailwind-injected padding/background/shadow on all product cards.
@@ -415,5 +427,48 @@
     {%- endif -%}
 
     {{ 'shopify-privacy-banner-overrides.css' | asset_url | stylesheet_tag }}
+
+    <script>
+      (function () {
+        var COOKIE = 'beebs_discount_active';
+        var CODE   = 'NEWBEEB';
+
+        /* Set cookie if this page is the discount redemption URL */
+        var loc = window.location;
+        if (
+          loc.pathname.toUpperCase().indexOf('/DISCOUNT/' + CODE) !== -1 ||
+          loc.search.toUpperCase().indexOf('DISCOUNT=' + CODE) !== -1
+        ) {
+          var exp = new Date();
+          exp.setDate(exp.getDate() + 30);
+          document.cookie = COOKIE + '=1; expires=' + exp.toUTCString() + '; path=/; SameSite=Lax';
+        }
+
+        function hasDiscountCookie() {
+          return document.cookie.split(';').some(function (c) {
+            return c.trim().indexOf(COOKIE + '=') === 0;
+          });
+        }
+
+        function refreshBanner() {
+          var banner = document.getElementById('beebs-discount-banner');
+          if (!banner) return;
+          banner.style.display = hasDiscountCookie() ? '' : 'none';
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+          refreshBanner();
+
+          /* Re-run whenever Dawn re-renders the cart drawer inner HTML */
+          var cartDrawerEl = document.querySelector('cart-drawer');
+          if (cartDrawerEl && typeof MutationObserver !== 'undefined') {
+            new MutationObserver(refreshBanner).observe(cartDrawerEl, {
+              childList: true,
+              subtree: true
+            });
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
