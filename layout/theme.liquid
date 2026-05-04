@@ -434,31 +434,18 @@
 
     <script>
       (function () {
-        var COOKIE = 'beebs_discount_active';
-        var CODE   = 'NEWBEEB';
-
-        /* Set cookie when the discount redemption URL is visited */
-        var loc = window.location;
-        if (
-          loc.pathname.toUpperCase().indexOf('/DISCOUNT/' + CODE) !== -1 ||
-          loc.search.toUpperCase().indexOf('DISCOUNT=' + CODE) !== -1
-        ) {
-          var exp = new Date();
-          exp.setDate(exp.getDate() + 30);
-          document.cookie = COOKIE + '=1; expires=' + exp.toUTCString() + '; path=/; SameSite=Lax';
-        }
-
-        function hasCookie() {
+        /* Shopify sets discount_code=NEWBEEB automatically when /discount/NEWBEEB is visited */
+        function hasShopifyDiscount() {
           return document.cookie.split(';').some(function (c) {
-            return c.trim().indexOf(COOKIE + '=') === 0;
+            var pair = c.trim().split('=');
+            return pair[0] === 'discount_code' &&
+                   decodeURIComponent(pair[1] || '').toUpperCase() === 'NEWBEEB';
           });
         }
 
         function showBanner() {
-          if (!hasCookie()) return;
-          /* Class on <html> for CSS */
+          if (!hasShopifyDiscount()) return;
           document.documentElement.classList.add('has-discount-banner');
-          /* Inline style overrides any CSS display:none — works after re-renders too */
           var els = document.querySelectorAll('.beebs-discount-banner');
           for (var i = 0; i < els.length; i++) {
             els[i].style.display = 'block';
