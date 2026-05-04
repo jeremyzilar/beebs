@@ -280,6 +280,17 @@
       .slider {
         touch-action: pan-y;
       }
+
+      /*
+        Tailwind's .card utility conflicts with Dawn's .card component class.
+        Reset the Tailwind-injected padding/background/shadow on all product cards.
+      */
+      .card-wrapper .card {
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+        box-shadow: none;
+      }
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
