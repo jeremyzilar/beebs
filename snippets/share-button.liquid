@@ -54,7 +54,12 @@
   </share-button>
   {%- assign amazon_url = product.metafields.custom.amazon_attribution_link -%}
   {%- if settings.enable_amazon_payments and amazon_url != blank -%}
-    <a href="{{ amazon_url }}" target="_blank" class="view-amazon">
+    <a
+      href="{{ amazon_url }}"
+      target="_blank"
+      class="view-amazon"
+      onclick="if(window.posthog)posthog.capture('amazon_link_clicked',{product:'{{ product.title | escape }}',url:'{{ amazon_url | escape }}'})"
+    >
       View on Amazon
     </a>
   {%- endif -%}
