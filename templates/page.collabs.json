@@ -9,36 +9,15 @@
  */
 {
   "sections": {
-    "rich_text_ig7Yai": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_idm8di": {
-          "type": "heading",
-          "settings": {
-            "heading": "Beeb’s Ambassador Program",
-            "heading_size": "h1"
-          }
-        },
-        "text_9h8fBj": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Gift your community 10% OFF their first Beeb’s purchase and earn commission for each sale.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_idm8di",
-        "text_9h8fBj"
-      ],
-      "custom_css": [],
-      "name": "t:sections.rich-text.presets.name",
+    "page_m4hhFc": {
+      "type": "page",
+      "name": "t:sections.page.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "page": "collabs",
+        "heading_size": "h1",
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "collabs": {
@@ -73,7 +52,7 @@
     }
   },
   "order": [
-    "rich_text_ig7Yai",
+    "page_m4hhFc",
     "collabs"
   ]
 }
