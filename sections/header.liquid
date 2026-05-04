@@ -437,7 +437,7 @@
 
 <script>
   document.addEventListener('click', function (e) {
-    var link = e.target.closest('[id^="HeaderMenu-"] a, [id^="HeaderDrawer-"]');
+    var link = e.target.closest('a[id^="HeaderMenu-"], [id^="HeaderDrawer-"]');
     if (!link || link.tagName !== 'A') return;
     if (typeof window.posthog === 'undefined') return;
 
