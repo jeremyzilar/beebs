@@ -9,16 +9,59 @@
  */
 {
   "sections": {
+    "page_m4hhFc": {
+      "type": "page",
+      "disabled": true,
+      "name": "t:sections.page.presets.name",
+      "settings": {
+        "page": "collabs",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_8DmAMt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_agrw84": {
+          "type": "heading",
+          "settings": {
+            "heading": "Become a Beeb’s Ambassador",
+            "heading_size": "h1"
+          }
+        },
+        "text_t6bzCX": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Give your audience </strong><span style=\"text-decoration:underline\"><strong>free shipping</strong></span><strong> while earning a commission</strong></h3>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_agrw84",
+        "text_t6bzCX"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
     "collabs": {
       "type": "apps",
       "blocks": {
         "80ac2d80-e440-4fab-8785-eeb9b5fa31af": {
           "type": "shopify://apps/collabs/blocks/application-page/54758706-9f25-4fa9-a553-64720a4c998b",
           "settings": {
-            "heading": "Let’s collaborate",
+            "heading": "",
             "show_square_logo": false,
-            "show_partnership_info": true,
-            "button_text": "Apply now",
+            "show_partnership_info": false,
+            "button_text": "APPLY NOW",
             "number_of_images": "4",
             "logo_position": "above",
             "corner_style": "rounded",
@@ -31,12 +74,82 @@
       "block_order": [
         "80ac2d80-e440-4fab-8785-eeb9b5fa31af"
       ],
+      "custom_css": [
+        ".collabs-page__intro p {display: none;}",
+        ".collabs-page__images,.collabs-page__intro .collabs-page__header {display: none;}"
+      ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "rich_text_jqE3Yw": {
+      "type": "rich-text",
+      "blocks": {
+        "text_7LBdQC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We started Beeb’s the way most good things start: with a dog we loved, a problem we couldn’t stop thinking about, and a stubborn belief that it could be done better.</p><p>Juliette and I are designers, builders, makers, artists at heart, and we built this brand to prove that it is possible to make an impact on people’s lives through making something simple, sustainable, and well designed.</p><p>The most meaningful connections we’ve made along the way have been with creative people who have a direct connection to quality materials and making saw what we were building and have given us valuable feedback, or wanted to be part of it in some shape or form.</p><p>If that’s you, we’d love to work together. Our ambassador program is designed for people who create things, share things, and care about what they put their name on. You don’t need a massive following. You need a real one. We offer a generous commission, a personal discount code for your community, and the kind of partnership where we actually pay attention to who you are and what you make.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_7LBdQC"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "collage_Att98i": {
+      "type": "collage",
+      "blocks": {
+        "image_REmfng": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8360.jpg"
+          }
+        },
+        "image_a7Lr4g": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1825.jpg"
+          }
+        },
+        "image_MB9QRX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_3737.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_REmfng",
+        "image_a7Lr4g",
+        "image_MB9QRX"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 80
       }
     }
   },
   "order": [
-    "collabs"
+    "page_m4hhFc",
+    "rich_text_8DmAMt",
+    "collabs",
+    "rich_text_jqE3Yw",
+    "collage_Att98i"
   ]
 }

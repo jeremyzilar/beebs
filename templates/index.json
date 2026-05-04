@@ -38,7 +38,7 @@
         "heading_9qibaz": {
           "type": "heading",
           "settings": {
-            "heading": "Get 10% off your first order!",
+            "heading": "Get <span style=\"text-decoration:underline\">Free Shipping</span> on your first order!",
             "heading_size": "h2"
           }
         },
