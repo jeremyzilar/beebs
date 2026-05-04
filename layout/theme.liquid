@@ -275,6 +275,11 @@
           font-size: 1.6rem;
         }
       }
+
+      /* Allow vertical page scroll when swiping over horizontal sliders */
+      .slider {
+        touch-action: pan-y;
+      }
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
