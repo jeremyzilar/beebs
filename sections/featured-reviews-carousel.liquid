@@ -188,32 +188,6 @@
         {%- endfor -%}
       </ul>
 
-      {%- if visible_count > 1 -%}
-        <div class="slider-buttons featured-reviews-carousel__buttons">
-          <button
-            type="button"
-            class="slider-button slider-button--prev"
-            name="previous"
-            aria-label="{{ 'general.slider.previous_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-caret.svg' | inline_asset_content -}}
-            </span>
-          </button>
-          <button
-            type="button"
-            class="slider-button slider-button--next"
-            name="next"
-            aria-label="{{ 'general.slider.next_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-caret.svg' | inline_asset_content -}}
-            </span>
-          </button>
-        </div>
-      {%- endif -%}
     </slider-component>
   {%- else -%}
     <div class="page-width">
