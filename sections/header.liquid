@@ -76,6 +76,14 @@
       padding-top: 0.5rem;
     }
   }
+
+  .menu-drawer__menu-item {
+    padding-left: 2.4rem;
+  }
+
+  .header__icon--search {
+    display: none;
+  }
 </style>
 
 {%- style -%}
@@ -425,6 +433,22 @@
     ],
     "url": {{ request.origin | append: page.url | json }}
   }
+</script>
+
+<script>
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('[id^="HeaderMenu-"] a, [id^="HeaderDrawer-"]');
+    if (!link || link.tagName !== 'A') return;
+    if (typeof window.posthog === 'undefined') return;
+
+    var isDrawer = link.id.startsWith('HeaderDrawer-');
+    window.posthog.capture('nav_clicked', {
+      label: link.textContent.trim(),
+      url: link.getAttribute('href'),
+      handle: link.id.replace(/^HeaderMenu-|^HeaderDrawer-/, ''),
+      nav: isDrawer ? 'mobile' : 'desktop'
+    });
+  });
 </script>
 
 {%- if request.page_type == 'index' -%}
