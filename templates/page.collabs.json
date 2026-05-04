@@ -11,6 +11,7 @@
   "sections": {
     "page_m4hhFc": {
       "type": "page",
+      "disabled": true,
       "name": "t:sections.page.presets.name",
       "settings": {
         "page": "collabs",
@@ -18,6 +19,44 @@
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_8DmAMt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_agrw84": {
+          "type": "heading",
+          "settings": {
+            "heading": "Become a Beeb’s Ambassador",
+            "heading_size": "h1"
+          }
+        },
+        "text_t6bzCX": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Give your audience </strong><span style=\"text-decoration:underline\"><strong>free shipping</strong></span><strong> while earning a commission on sales</strong></h3>"
+          }
+        },
+        "text_kJGMjC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We started Beeb’s the way most good things start: with a dog we loved, a problem we couldn’t stop thinking about, and a stubborn belief that it could be done better.</p><p>Juliette and I are designers, builders, makers, artists at heart, and we built this brand to prove that it is possible to make an impact on people’s lives through making something simple, sustainable, and well designed.</p><p>The most meaningful connections we’ve made along the way have been with creative people who have a direct connection to quality materials and making saw what we were building and have given us valuable feedback, or wanted to be part of it in some shape or form.</p><p>If that’s you, we’d love to work together. Our ambassador program is designed for people who create things, share things, and care about what they put their name on. You don’t need a massive following. You need a real one. We offer a generous commission, a personal discount code for your community, and the kind of partnership where we actually pay attention to who you are and what you make.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_agrw84",
+        "text_t6bzCX",
+        "text_kJGMjC"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "collabs": {
@@ -53,6 +92,7 @@
   },
   "order": [
     "page_m4hhFc",
+    "rich_text_8DmAMt",
     "collabs"
   ]
 }
