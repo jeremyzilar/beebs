@@ -46,24 +46,16 @@
         "stat_VpxTT6": {
           "type": "stat",
           "settings": {
-            "label": "HIGH PROTEIN",
+            "label": "HIGH-PROTEIN",
             "value": "82.5%",
-            "sublabel": ""
-          }
-        },
-        "stat_y3WCCN": {
-          "type": "stat",
-          "settings": {
-            "label": "FIBER",
-            "value": "3%",
             "sublabel": ""
           }
         },
         "stat_TU4wQR": {
           "type": "stat",
           "settings": {
-            "label": "Grass-Fed",
-            "value": "LAMB",
+            "label": "Grass-Fed Lamb",
+            "value": "100%",
             "sublabel": ""
           }
         }
@@ -71,7 +63,6 @@
       "block_order": [
         "stat_LzWrD6",
         "stat_VpxTT6",
-        "stat_y3WCCN",
         "stat_TU4wQR"
       ],
       "name": "Nutrition bar",
