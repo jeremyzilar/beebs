@@ -18,6 +18,51 @@
         "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81"
       }
     },
+    "nutrition_bar_e6dUAm": {
+      "type": "nutrition-bar",
+      "blocks": {
+        "stat_3ErUAa": {
+          "type": "stat",
+          "settings": {
+            "label": "Calories/Treat",
+            "value": "2",
+            "sublabel": ""
+          }
+        },
+        "stat_dxTfPe": {
+          "type": "stat",
+          "settings": {
+            "label": "PROTEIN",
+            "value": "82.5%",
+            "sublabel": ""
+          }
+        },
+        "stat_Xn3AHR": {
+          "type": "stat",
+          "settings": {
+            "label": "Grass-Fed Lamb",
+            "value": "100%",
+            "sublabel": ""
+          }
+        }
+      },
+      "block_order": [
+        "stat_3ErUAa",
+        "stat_dxTfPe",
+        "stat_Xn3AHR"
+      ],
+      "name": "Nutrition bar",
+      "settings": {
+        "heading": "THE FIRST REFILLABLE TREAT SYSTEM",
+        "heading_size": 6,
+        "deck": "100% grass-fed New Zealand lamb lung, in packaging you can actually feel good about",
+        "heading_weight": "bold",
+        "heading_max_width_desktop": 65,
+        "heading_max_width_mobile": 90,
+        "color_scheme": "scheme-d9f2c461-f562-4f4b-a737-6c7e51cc927d",
+        "full_width": true
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -41,6 +86,7 @@
   },
   "order": [
     "banner",
+    "nutrition_bar_e6dUAm",
     "product-grid"
   ]
 }
