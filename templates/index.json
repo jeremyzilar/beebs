@@ -67,7 +67,7 @@
       ],
       "name": "Nutrition bar",
       "settings": {
-        "heading": "Never worry about feeding your dog too many treats again",
+        "heading": "Never worry about feeding your dog too many treats",
         "heading_size": 4,
         "deck": "A super high-value single-ingredient dog treat with only <span>2 calories per treat</span>",
         "heading_weight": "bold",
