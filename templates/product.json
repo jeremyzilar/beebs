@@ -112,19 +112,64 @@
         "padding_bottom": 60
       }
     },
+    "nutrition_bar_qQBjQ6": {
+      "type": "nutrition-bar",
+      "blocks": {
+        "stat_WjEFKM": {
+          "type": "stat",
+          "settings": {
+            "label": "CALORIES/TREAT",
+            "value": "2",
+            "sublabel": ""
+          }
+        },
+        "stat_C8P4XR": {
+          "type": "stat",
+          "settings": {
+            "label": "PROTEIN",
+            "value": "82.5%",
+            "sublabel": ""
+          }
+        },
+        "stat_XRnp3e": {
+          "type": "stat",
+          "settings": {
+            "label": "GRASS-FED LAMB",
+            "value": "100%",
+            "sublabel": ""
+          }
+        }
+      },
+      "block_order": [
+        "stat_WjEFKM",
+        "stat_C8P4XR",
+        "stat_XRnp3e"
+      ],
+      "name": "Nutrition bar",
+      "settings": {
+        "heading": "Single-Ingredient Perfected",
+        "heading_size": 5.5,
+        "deck": "Train all day. Treat all day. <span>Only 2 calories</span> each.",
+        "heading_weight": "regular",
+        "heading_max_width_desktop": 65,
+        "heading_max_width_mobile": 90,
+        "color_scheme": "scheme-d9f2c461-f562-4f4b-a737-6c7e51cc927d",
+        "full_width": true
+      }
+    },
     "featured_reviews_carousel_m3mdiU": {
       "type": "featured-reviews-carousel",
       "name": "Featured reviews carousel",
       "settings": {
-        "title": "What the dogs had to say",
+        "title": "",
         "heading_size": "h1",
         "filter_type": "",
         "shuffle_on_load": true,
         "autoscroll_enable": true,
         "autoscroll_speed": 20,
         "color_scheme": "scheme-d9f2c461-f562-4f4b-a737-6c7e51cc927d",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     },
     "related-products": {
@@ -169,6 +214,7 @@
   },
   "order": [
     "main",
+    "nutrition_bar_qQBjQ6",
     "featured_reviews_carousel_m3mdiU",
     "related-products",
     "1748882024b60924c5"
