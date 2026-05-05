@@ -38,7 +38,7 @@
         "stat_LzWrD6": {
           "type": "stat",
           "settings": {
-            "label": "CALORIES / Treat",
+            "label": "CALORIES/Treat",
             "value": "2",
             "sublabel": ""
           }
@@ -59,11 +59,11 @@
             "sublabel": ""
           }
         },
-        "stat_jQ7hap": {
+        "stat_TU4wQR": {
           "type": "stat",
           "settings": {
-            "label": "LOW FAT",
-            "value": "9.6%",
+            "label": "Grass-Fed",
+            "value": "LAMB",
             "sublabel": ""
           }
         }
@@ -72,7 +72,7 @@
         "stat_LzWrD6",
         "stat_VpxTT6",
         "stat_y3WCCN",
-        "stat_jQ7hap"
+        "stat_TU4wQR"
       ],
       "name": "Nutrition bar",
       "settings": {
