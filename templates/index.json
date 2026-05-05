@@ -69,7 +69,7 @@
       "settings": {
         "heading": "Never worry about feeding your dog too many treats again",
         "heading_size": 3.5,
-        "deck": "A super high-value single-ingredient dog treat that has only <span>2 calories per treat</span>",
+        "deck": "A super high-value single-ingredient dog treat with only <span>2 calories per treat</span>",
         "heading_weight": "bold",
         "color_scheme": "scheme-d9f2c461-f562-4f4b-a737-6c7e51cc927d",
         "full_width": true
