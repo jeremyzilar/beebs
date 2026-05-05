@@ -1,6 +1,12 @@
 {{ 'section-nutrition-bar.css' | asset_url | stylesheet_tag }}
 
 <div class="nutrition-bar color-{{ section.settings.color_scheme }} gradient">
+  {%- if section.settings.heading != blank -%}
+    <p class="nutrition-bar__heading nutrition-bar__heading--{{ section.settings.heading_weight }}"
+       style="font-size: {{ section.settings.heading_size }}rem;">
+      {{- section.settings.heading -}}
+    </p>
+  {%- endif -%}
   <div class="nutrition-bar__inner{% if section.settings.full_width == false %} page-width{% endif %}">
     {%- for block in section.blocks -%}
       {%- if block.type == 'stat' -%}
@@ -15,9 +21,6 @@
             <p class="nutrition-bar__sublabel">{{ block.settings.sublabel }}</p>
           {%- endif -%}
         </div>
-        {%- unless forloop.last -%}
-          <div class="nutrition-bar__divider" aria-hidden="true"></div>
-        {%- endunless -%}
       {%- endif -%}
     {%- endfor -%}
   </div>
@@ -57,6 +60,32 @@
     }
   ],
   "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading text",
+      "info": "Displayed centered above the stats. Leave blank to hide."
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading font size",
+      "min": 1.0,
+      "max": 6.0,
+      "step": 0.1,
+      "unit": "rem",
+      "default": 2.0
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Heading weight",
+      "options": [
+        { "value": "regular", "label": "Regular" },
+        { "value": "bold", "label": "Headline (bold)" }
+      ],
+      "default": "regular"
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
