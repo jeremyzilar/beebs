@@ -32,6 +32,54 @@
         "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e"
       }
     },
+    "nutrition_bar_iKN9gh": {
+      "type": "nutrition-bar",
+      "blocks": {
+        "stat_LzWrD6": {
+          "type": "stat",
+          "settings": {
+            "label": "CALORIES / Treat",
+            "value": "2",
+            "sublabel": ""
+          }
+        },
+        "stat_VpxTT6": {
+          "type": "stat",
+          "settings": {
+            "label": "PROTEIN",
+            "value": "82.5%",
+            "sublabel": ""
+          }
+        },
+        "stat_y3WCCN": {
+          "type": "stat",
+          "settings": {
+            "label": "FIBER",
+            "value": "3%",
+            "sublabel": ""
+          }
+        },
+        "stat_jQ7hap": {
+          "type": "stat",
+          "settings": {
+            "label": "FAT",
+            "value": "LOW",
+            "sublabel": ""
+          }
+        }
+      },
+      "block_order": [
+        "stat_LzWrD6",
+        "stat_VpxTT6",
+        "stat_y3WCCN",
+        "stat_jQ7hap"
+      ],
+      "name": "Nutrition bar",
+      "settings": {
+        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
+        "full_width": true
+      }
+    },
     "reviews_strip_HAFqxh": {
       "type": "reviews-strip",
       "blocks": {
@@ -691,6 +739,7 @@
   },
   "order": [
     "hero_video_G3XjDj",
+    "nutrition_bar_iKN9gh",
     "reviews_strip_HAFqxh",
     "featured_reviews_carousel_DdmDPG",
     "newsletter_9EBd9K",
