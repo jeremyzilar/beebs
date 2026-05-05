@@ -1,0 +1,113 @@
+{{ 'section-nutrition-bar.css' | asset_url | stylesheet_tag }}
+
+<div class="nutrition-bar color-{{ section.settings.color_scheme }} gradient">
+  <div class="nutrition-bar__inner{% if section.settings.full_width == false %} page-width{% endif %}">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'stat' -%}
+        <div class="nutrition-bar__stat" {{ block.shopify_attributes }}>
+          {%- if block.settings.label != blank -%}
+            <p class="nutrition-bar__label">{{ block.settings.label }}</p>
+          {%- endif -%}
+          {%- if block.settings.value != blank -%}
+            <p class="nutrition-bar__value">{{ block.settings.value }}</p>
+          {%- endif -%}
+          {%- if block.settings.sublabel != blank -%}
+            <p class="nutrition-bar__sublabel">{{ block.settings.sublabel }}</p>
+          {%- endif -%}
+        </div>
+        {%- unless forloop.last -%}
+          <div class="nutrition-bar__divider" aria-hidden="true"></div>
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Nutrition bar",
+  "tag": "section",
+  "class": "section-nutrition-bar",
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "PROTEIN",
+          "info": "Short label shown above the value, e.g. HIGH PROTEIN"
+        },
+        {
+          "type": "text",
+          "id": "value",
+          "label": "Value",
+          "default": "82.5%",
+          "info": "The large number or stat, e.g. 82.5%"
+        },
+        {
+          "type": "text",
+          "id": "sublabel",
+          "label": "Sub-label (optional)",
+          "info": "Smaller text below the value, e.g. per treat"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Nutrition bar",
+      "blocks": [
+        {
+          "type": "stat",
+          "settings": {
+            "label": "CALORIES",
+            "value": "2",
+            "sublabel": "per treat"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "label": "PROTEIN",
+            "value": "82.5%",
+            "sublabel": ""
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "label": "FIBER",
+            "value": "3%",
+            "sublabel": ""
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "label": "FAT",
+            "value": "LOW",
+            "sublabel": ""
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
