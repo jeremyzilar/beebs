@@ -62,8 +62,8 @@
         "stat_jQ7hap": {
           "type": "stat",
           "settings": {
-            "label": "FAT",
-            "value": "LOW",
+            "label": "LOW FAT",
+            "value": "9.6%",
             "sublabel": ""
           }
         }
