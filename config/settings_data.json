@@ -216,7 +216,7 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#ffb1b1",
+          "background": "#6c7cff",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
@@ -238,11 +238,11 @@
       },
       "scheme-cab2752d-1694-4724-bc61-9f569493f0bd": {
         "settings": {
-          "background": "#ffffff",
-          "background_gradient": "linear-gradient(46deg, rgba(190, 180, 160, 1), rgba(190, 180, 160, 1) 100%)",
+          "background": "#90a6ed",
+          "background_gradient": "",
           "text": "#000000",
-          "button": "#4770db",
-          "button_label": "#eff0f5",
+          "button": "#6c7cff",
+          "button_label": "#ffffff",
           "secondary_button_label": "#000000",
           "shadow": "#0e1b4d"
         }
