@@ -1,6 +1,7 @@
 {{ 'section-nutrition-bar.css' | asset_url | stylesheet_tag }}
 
-<div class="nutrition-bar color-{{ section.settings.color_scheme }} gradient">
+<div class="nutrition-bar color-{{ section.settings.color_scheme }} gradient"
+  style="--heading-max-width-desktop: {{ section.settings.heading_max_width_desktop }}%; --heading-max-width-mobile: {{ section.settings.heading_max_width_mobile }}%;">
   {%- if section.settings.heading != blank -%}
     <p class="nutrition-bar__heading nutrition-bar__heading--{{ section.settings.heading_weight }}"
        style="font-size: {{ section.settings.heading_size }}rem;">
@@ -94,6 +95,26 @@
         { "value": "bold", "label": "Headline (bold)" }
       ],
       "default": "regular"
+    },
+    {
+      "type": "range",
+      "id": "heading_max_width_desktop",
+      "label": "Heading max width — desktop",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 65
+    },
+    {
+      "type": "range",
+      "id": "heading_max_width_mobile",
+      "label": "Heading max width — mobile",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 90
     },
     {
       "type": "color_scheme",
