@@ -67,6 +67,9 @@
       ],
       "name": "Nutrition bar",
       "settings": {
+        "heading": "Never worry about feeding your dog too many treats again",
+        "heading_size": 3.5,
+        "heading_weight": "regular",
         "color_scheme": "scheme-3",
         "full_width": true
       }
