@@ -32,51 +32,6 @@
         "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e"
       }
     },
-    "nutrition_bar_iKN9gh": {
-      "type": "nutrition-bar",
-      "blocks": {
-        "stat_LzWrD6": {
-          "type": "stat",
-          "settings": {
-            "label": "CALORIES/Treat",
-            "value": "2",
-            "sublabel": ""
-          }
-        },
-        "stat_VpxTT6": {
-          "type": "stat",
-          "settings": {
-            "label": "HIGH-PROTEIN",
-            "value": "82.5%",
-            "sublabel": ""
-          }
-        },
-        "stat_TU4wQR": {
-          "type": "stat",
-          "settings": {
-            "label": "Grass-Fed Lamb",
-            "value": "100%",
-            "sublabel": ""
-          }
-        }
-      },
-      "block_order": [
-        "stat_LzWrD6",
-        "stat_VpxTT6",
-        "stat_TU4wQR"
-      ],
-      "name": "Nutrition bar",
-      "settings": {
-        "heading": "Never worry about feeding your dog too many treats again",
-        "heading_size": 3.5,
-        "deck": "A super high-value single-ingredient dog treat with only <span>2 calories per treat</span>",
-        "heading_weight": "bold",
-        "heading_max_width_desktop": 65,
-        "heading_max_width_mobile": 90,
-        "color_scheme": "scheme-d9f2c461-f562-4f4b-a737-6c7e51cc927d",
-        "full_width": true
-      }
-    },
     "reviews_strip_HAFqxh": {
       "type": "reviews-strip",
       "blocks": {
@@ -123,6 +78,51 @@
         "discount_color_scheme": "scheme-4"
       }
     },
+    "nutrition_bar_iKN9gh": {
+      "type": "nutrition-bar",
+      "blocks": {
+        "stat_LzWrD6": {
+          "type": "stat",
+          "settings": {
+            "label": "CALORIES/Treat",
+            "value": "2",
+            "sublabel": ""
+          }
+        },
+        "stat_VpxTT6": {
+          "type": "stat",
+          "settings": {
+            "label": "HIGH-PROTEIN",
+            "value": "82.5%",
+            "sublabel": ""
+          }
+        },
+        "stat_TU4wQR": {
+          "type": "stat",
+          "settings": {
+            "label": "Grass-Fed Lamb",
+            "value": "100%",
+            "sublabel": ""
+          }
+        }
+      },
+      "block_order": [
+        "stat_LzWrD6",
+        "stat_VpxTT6",
+        "stat_TU4wQR"
+      ],
+      "name": "Nutrition bar",
+      "settings": {
+        "heading": "Never worry about feeding your dog too many treats again",
+        "heading_size": 3.5,
+        "deck": "A super high-value single-ingredient dog treat with only <span>2 calories per treat</span>",
+        "heading_weight": "bold",
+        "heading_max_width_desktop": 65,
+        "heading_max_width_mobile": 90,
+        "color_scheme": "scheme-d9f2c461-f562-4f4b-a737-6c7e51cc927d",
+        "full_width": true
+      }
+    },
     "featured_reviews_carousel_DdmDPG": {
       "type": "featured-reviews-carousel",
       "name": "Featured reviews carousel",
@@ -133,7 +133,7 @@
         "shuffle_on_load": true,
         "autoscroll_enable": false,
         "autoscroll_speed": 32,
-        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
+        "color_scheme": "scheme-d9f2c461-f562-4f4b-a737-6c7e51cc927d",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -159,7 +159,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e",
+        "color_scheme": "scheme-d9f2c461-f562-4f4b-a737-6c7e51cc927d",
         "full_width": true,
         "padding_top": 32,
         "padding_bottom": 32
@@ -736,8 +736,8 @@
   },
   "order": [
     "hero_video_G3XjDj",
-    "nutrition_bar_iKN9gh",
     "reviews_strip_HAFqxh",
+    "nutrition_bar_iKN9gh",
     "featured_reviews_carousel_DdmDPG",
     "newsletter_9EBd9K",
     "featured_collection_t8NmEN",
