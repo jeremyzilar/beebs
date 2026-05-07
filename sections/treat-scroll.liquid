@@ -1,0 +1,136 @@
+{{ 'section-treat-scroll.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'section-treat-scroll.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign treat_urls = 'https://cdn.shopify.com/s/files/1/0419/1115/6900/files/treat-1.png?v=1777993493,https://cdn.shopify.com/s/files/1/0419/1115/6900/files/treat-2.png?v=1777993493,https://cdn.shopify.com/s/files/1/0419/1115/6900/files/treat-3.png?v=1777993492,https://cdn.shopify.com/s/files/1/0419/1115/6900/files/treat-4.png?v=1777993492,https://cdn.shopify.com/s/files/1/0419/1115/6900/files/treat-5.png?v=1777993492,https://cdn.shopify.com/s/files/1/0419/1115/6900/files/treat-6.png?v=1778018889,https://cdn.shopify.com/s/files/1/0419/1115/6900/files/treat-7.png?v=1778018889' | split: ','
+-%}
+
+<div class="treat-scroll color-{{ section.settings.color_scheme }} gradient" id="treat-scroll-{{ section.id }}">
+
+  {%- if section.settings.section_heading != blank -%}
+    <div class="treat-scroll__heading-wrap page-width">
+      <h2 class="treat-scroll__heading">{{ section.settings.section_heading | escape }}</h2>
+    </div>
+  {%- endif -%}
+
+  <!-- Hand: normal document flow, scrolls away naturally -->
+  <div class="treat-scroll__hand-wrap">
+    <img
+      class="treat-scroll__hand"
+      src="https://cdn.shopify.com/s/files/1/0419/1115/6900/files/hand.png?v=1777993542"
+      alt=""
+      aria-hidden="true"
+      loading="eager"
+    >
+  </div>
+
+  <!-- Body: CSS Grid so sticky stage and scrolling cards occupy the same area -->
+  <div class="treat-scroll__body" data-treat-scroll-body>
+
+    <!-- Stage: sticky, treats centered and rotating, no tube -->
+    <div class="treat-scroll__stage" data-treat-scroll-stage>
+
+      {%- for url in treat_urls -%}
+        <img
+          class="treat-scroll__treat"
+          src="{{ url }}"
+          alt=""
+          aria-hidden="true"
+          loading="eager"
+          data-treat="{{ forloop.index }}"
+        >
+      {%- endfor -%}
+
+    </div>
+
+    <!-- Cards: normal document flow, scroll naturally over the stage -->
+    <div class="treat-scroll__cards">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'benefit' -%}
+          {%- assign side = block.settings.side | default: 'left' -%}
+          {%- assign size = block.settings.size | default: 'large' -%}
+          <div class="treat-scroll__card-row treat-scroll__card-row--{{ side }}" {{ block.shopify_attributes }}>
+            {%- render 'treat-scroll-benefit', block: block, index: forloop.index0, side: side, size: size -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <!-- Home tube -->
+    <div class="treat-scroll__products" aria-hidden="true">
+      <div class="treat-scroll__product treat-scroll__product--home-tube">
+        <img src="https://cdn.shopify.com/s/files/1/0419/1115/6900/files/home-tube.png?v=1778017564" alt="" loading="lazy">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Treats",
+  "tag": "section",
+  "class": "section-treat-scroll",
+  "max_blocks": 50,
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "settings": [
+        {
+          "type": "select",
+          "id": "side",
+          "label": "Alignment",
+          "options": [
+            { "value": "left",   "label": "Left" },
+            { "value": "center", "label": "Center" },
+            { "value": "right",  "label": "Right" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "size",
+          "label": "Size",
+          "options": [
+            { "value": "large", "label": "Large" },
+            { "value": "small", "label": "Small" }
+          ],
+          "default": "large"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Benefit"
+        },
+        {
+          "type": "textarea",
+          "id": "body",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section heading",
+      "info": "Optional heading above the hand. Leave blank to hide."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Treats"
+    }
+  ]
+}
+{% endschema %}

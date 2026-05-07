@@ -123,6 +123,103 @@
         "full_width": true
       }
     },
+    "treat_scroll_TS8xBq": {
+      "type": "treat-scroll",
+      "name": "Treats",
+      "blocks": {
+        "benefit_single_fLm3a": {
+          "type": "benefit",
+          "settings": {
+            "label": "The Perfect Dog Treat",
+            "side": "center",
+            "size": "large"
+          }
+        },
+        "benefit_single_fLmK2a": {
+          "type": "benefit",
+          "settings": {
+            "label": "Single Ingredient",
+            "body": "100% all natural, grass fed lamb lung, with no grains, no gluten, no fillers, nothing but lamb.",
+            "side": "left",
+            "size": "small"
+          }
+        },
+        "benefit_allnatural_pRnX7b": {
+          "type": "benefit",
+          "settings": {
+            "label": "100% All Natural Lamb",
+            "body": "Sourced in New Zealand and packaged in the USA.",
+            "side": "right",
+            "size": "small"
+          }
+        },
+        "benefit_protein_qWvJ4c": {
+          "type": "benefit",
+          "settings": {
+            "label": "Protein Rich",
+            "body": "High in protein yet low in fat, these treats are delicious and nourishing, promoting a healthy, balanced diet.",
+            "side": "left",
+            "size": "small"
+          }
+        },
+        "benefit_digestion_zYkH9d": {
+          "type": "benefit",
+          "settings": {
+            "label": "Easier Digestion",
+            "body": "Easier for dogs to digest, which is great for pets with sensitive stomachs or gastrointestinal issues.",
+            "size": "small",
+            "side": "right"
+          }
+        },
+        "benefit_allergen_mCgD3e": {
+          "type": "benefit",
+          "settings": {
+            "label": "Allergen-Free",
+            "body": "Great for dogs with allergies or sensitivities. With only one ingredient, it’s much easier to avoid allergens that can cause adverse reactions in dogs.",
+            "size": "small"
+          }
+        },
+        "benefit_nutrient_xBjP6f": {
+          "type": "benefit",
+          "settings": {
+            "label": "Nutrient Dense",
+            "body": "Pure, unadulterated nutrition without any fillers, additives, or preservatives, which means everything your dog is consuming has nutritional value.",
+            "size": "small",
+            "side": "right"
+          }
+        },
+        "benefit_lowmess_nTsQ1g": {
+          "type": "benefit",
+          "settings": {
+            "label": "Low Mess",
+            "body": "Toss a few in your pocket before you go on a walk, and break off bits as needed.",
+            "size": "small"
+          }
+        },
+        "benefit_plasticfree_hVwR5h": {
+          "type": "benefit",
+          "settings": {
+            "label": "100% Plastic Free",
+            "side": "center"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_single_fLm3a",
+        "benefit_single_fLmK2a",
+        "benefit_allnatural_pRnX7b",
+        "benefit_protein_qWvJ4c",
+        "benefit_digestion_zYkH9d",
+        "benefit_allergen_mCgD3e",
+        "benefit_nutrient_xBjP6f",
+        "benefit_lowmess_nTsQ1g",
+        "benefit_plasticfree_hVwR5h"
+      ],
+      "settings": {
+        "section_heading": "",
+        "color_scheme": "scheme-d9f2c461-f562-4f4b-a737-6c7e51cc927d"
+      }
+    },
     "featured_reviews_carousel_DdmDPG": {
       "type": "featured-reviews-carousel",
       "name": "Featured reviews carousel",
@@ -738,6 +835,7 @@
     "hero_video_G3XjDj",
     "reviews_strip_HAFqxh",
     "nutrition_bar_iKN9gh",
+    "treat_scroll_TS8xBq",
     "featured_reviews_carousel_DdmDPG",
     "newsletter_9EBd9K",
     "featured_collection_t8NmEN",

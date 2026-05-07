@@ -1,0 +1,255 @@
+/* ============================================================
+   Treat scroll section
+   ============================================================ */
+
+.treat-scroll {
+  position: relative;
+  overflow: clip; /* clips treats at section boundary without breaking position:sticky */
+  isolation: isolate; /* keeps all internal z-indexes below the nav */
+  background-color: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
+}
+
+
+/* Optional heading */
+.treat-scroll__heading-wrap {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.treat-scroll__heading {
+  margin: 0;
+}
+
+/* ── Hand ────────────────────────────────────────────────── */
+/* Plain document flow. No JS, no sticky. Scrolls away naturally.
+   Adjust --hand-size-mobile and --hand-size-desktop to resize. */
+
+:root {
+  --hand-size-mobile: 35vw;   /* hand width on small screens */
+  --hand-size-desktop: 25vw;  /* hand width on large screens */
+
+  --treat-size-mobile: clamp(50px, 8vw, 65px);   /* treat width on small screens */
+  --treat-size-desktop: clamp(50px, 7vw, 150px); /* treat width on large screens */
+
+  /*
+   * How far the sticky stage pulls up to overlap the hand.
+   * More negative = treats start higher on the hand.
+   */
+  --hand-overlap: -75vh;
+  --hand-overlap-mobile: -63vh;
+
+  /*
+   * How far to pull the product lineup upward into the scroll area.
+   * More negative = products appear earlier, behind the last benefit cards.
+   */
+  --products-offset: 0vh;
+
+  /* ── Home tube height ──
+     Set in vh so it scales with the browser height. 100vh = full viewport height. */
+  --product-home-tube-height: 75vh;
+  --product-home-tube-height-mobile: 40vh;
+
+}
+
+.treat-scroll__hand-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.treat-scroll__hand {
+  display: block;
+  width: var(--hand-size-mobile);
+  pointer-events: none;
+  user-select: none;
+}
+
+@media screen and (min-width: 750px) {
+  .treat-scroll__hand {
+    width: var(--hand-size-desktop);
+  }
+}
+
+/* ── Body ────────────────────────────────────────────────── */
+/* CSS Grid lets the sticky stage and scrolling cards share the
+   same space. Height is driven entirely by the cards content. */
+
+.treat-scroll__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  margin-top: var(--hand-overlap); /* pull stage up to overlap the hand */
+}
+
+/* ── Stage (sticky background) ───────────────────────────── */
+
+.treat-scroll__stage {
+  grid-area: 1 / 1;
+  align-self: start;
+  position: sticky;
+  top: 0;
+  height: 50vh; /* can be any value — treat position uses viewport units, not % */
+  overflow: visible; /* treats render outside stage bounds using viewport units */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ── Treats ──────────────────────────────────────────────── */
+/* Viewport units (50vh / 50vw) keep treats at the center of the screen
+   regardless of stage height. JS adds scatter offset + drift + rotation. */
+
+.treat-scroll__treat {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  width: var(--treat-size-mobile);
+  z-index: 3;
+  pointer-events: none;
+  user-select: none;
+  will-change: transform;
+}
+
+@media screen and (min-width: 750px) {
+  .treat-scroll__treat {
+    width: var(--treat-size-desktop);
+  }
+}
+
+/* ── Products lineup (bottom of component) ──────────────── */
+
+.treat-scroll__products {
+  grid-column: 1;
+  display: flex;
+  align-items: flex-end;      /* all products sit on the same baseline */
+  justify-content: center;
+  margin-top: var(--products-offset);
+  padding: 0 2%;
+  z-index: 2;
+  pointer-events: none;
+  margin-bottom: -40px;
+}
+
+.treat-scroll__product {
+  display: flex;
+  align-items: flex-end;
+}
+
+.treat-scroll__product img {
+  display: block;
+  width: auto;
+  object-fit: contain;
+  vertical-align: bottom;
+}
+
+.treat-scroll__product--home-tube   img { height: var(--product-home-tube-height); }
+.treat-scroll__product--home-tube   { z-index: 5; }
+
+/* ── Cards (normal flow over stage) ─────────────────────── */
+
+.treat-scroll__cards {
+  grid-area: 1 / 1;
+  gap: 200px;
+  display: grid;
+  align-self: start;
+  padding-top: 80vh; /* first card enters from below after initial view */
+  padding-bottom: 20vh; 
+  z-index: 0;
+}
+
+.treat-scroll__card-row {
+  display: flex;
+  align-items: center;
+  padding: 3rem 6%;
+}
+
+.treat-scroll__card-row--left {
+  justify-content: flex-start;
+}
+
+.treat-scroll__card-row--right {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.treat-scroll__card-row--center {
+  justify-content: center;
+  text-align: center;
+}
+
+/* ── Benefit card content ────────────────────────────────── */
+
+.treat-scroll__benefit {
+  width: 100%;
+  /* To narrow the text columns, uncomment and set --card-max-width in :root: */
+  /* max-width: var(--card-max-width); */
+}
+
+/* Large (default) */
+.treat-scroll__benefit-label {
+  font-weight: 900;
+  margin: 0 0 0.5rem;
+  font-size: clamp(6rem, 6vw, 8rem);
+  line-height: 1.2;
+}
+
+.treat-scroll__benefit-body {
+  margin: 0;
+  font-size: clamp(3rem, 4vw, 5rem);
+  line-height: 1.4;
+}
+
+/* Small */
+.treat-scroll__benefit--small {
+  width: 400px;
+}
+
+.treat-scroll__benefit--small .treat-scroll__benefit-label {
+  font-size: clamp(3rem, 2.5vw, 3rem);
+}
+
+.treat-scroll__benefit--small .treat-scroll__benefit-body {
+  font-size: clamp(2rem, 1.75vw, 2rem);
+}
+
+/* ── Mobile ──────────────────────────────────────────────── */
+
+@media screen and (max-width: 749px) {
+  .treat-scroll {
+    --hand-overlap: var(--hand-overlap-mobile);
+  }
+
+  .treat-scroll__product--home-tube img {
+    height: var(--product-home-tube-height-mobile);
+  }
+
+  .treat-scroll__card-row--left,
+  .treat-scroll__card-row--right {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* ── Reduced motion ─────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .treat-scroll__stage {
+    display: none;
+  }
+
+  .treat-scroll__cards {
+    padding-top: 0;
+  }
+
+  .treat-scroll__card-row {
+    min-height: auto;
+    padding: 2rem 5%;
+  }
+
+  .treat-scroll__card-row--left,
+  .treat-scroll__card-row--right {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

@@ -1,0 +1,8 @@
+<div class="treat-scroll__benefit treat-scroll__benefit--{{ side }} treat-scroll__benefit--{{ size }}" {{ block.shopify_attributes }}>
+  {%- if block.settings.label != blank -%}
+    <p class="treat-scroll__benefit-label">{{ block.settings.label | escape }}</p>
+  {%- endif -%}
+  {%- if block.settings.body != blank -%}
+    <p class="treat-scroll__benefit-body">{{ block.settings.body | escape }}</p>
+  {%- endif -%}
+</div>
