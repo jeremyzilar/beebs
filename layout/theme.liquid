@@ -352,7 +352,47 @@
       }
     </script>
 
-    
+    <!-- PostHog error tracking: queues errors that fire before PostHog loads -->
+    <script>
+      (function () {
+        var queue = [];
+
+        function flush() {
+          if (typeof window.posthog === 'undefined' || !window.posthog.captureException) return;
+          queue.forEach(function (item) {
+            window.posthog.captureException(item.error, { source: item.source, lineno: item.lineno, colno: item.colno });
+          });
+          queue = [];
+        }
+
+        window.addEventListener('error', function (e) {
+          if (window.posthog && window.posthog.captureException) {
+            window.posthog.captureException(e.error || new Error(e.message), { source: e.filename, lineno: e.lineno, colno: e.colno });
+          } else {
+            queue.push({ error: e.error || new Error(e.message), source: e.filename, lineno: e.lineno, colno: e.colno });
+          }
+        });
+
+        window.addEventListener('unhandledrejection', function (e) {
+          var err = e.reason instanceof Error ? e.reason : new Error(String(e.reason));
+          if (window.posthog && window.posthog.captureException) {
+            window.posthog.captureException(err);
+          } else {
+            queue.push({ error: err });
+          }
+        });
+
+        // Flush the queue once PostHog is ready
+        document.addEventListener('DOMContentLoaded', function () {
+          var attempts = 0;
+          var interval = setInterval(function () {
+            flush();
+            if (queue.length === 0 || ++attempts > 20) clearInterval(interval);
+          }, 300);
+        });
+      })();
+    </script>
+
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
