@@ -161,6 +161,42 @@
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
+              {%- when 'shipping_message' -%}
+                {%- assign threshold_cents = block.settings.free_threshold | times: 100 -%}
+                {%- assign current_price = product.selected_or_first_available_variant.price -%}
+                <div
+                  id="shipping-message-{{ section.id }}"
+                  class="product__shipping-message"
+                  data-threshold="{{ threshold_cents }}"
+                  data-free-message="{{ block.settings.free_message | escape }}"
+                  data-flat-message="{{ block.settings.flat_message | escape }}"
+                  aria-live="polite"
+                  {{ block.shopify_attributes }}
+                >
+                  {%- if current_price >= threshold_cents -%}
+                    <span class="shipping-message shipping-message--free">{{ block.settings.free_message }}</span>
+                  {%- else -%}
+                    <span class="shipping-message shipping-message--flat">{{ block.settings.flat_message }}</span>
+                  {%- endif -%}
+                </div>
+                <script>
+                  (function() {
+                    var el = document.getElementById('shipping-message-{{ section.id }}');
+                    if (!el) return;
+                    var threshold = parseInt(el.dataset.threshold, 10);
+                    var freeMsg = el.dataset.freeMessage;
+                    var flatMsg = el.dataset.flatMessage;
+                    document.addEventListener('variant:change', function(event) {
+                      var price = event.detail.variant ? event.detail.variant.price : null;
+                      if (price === null) return;
+                      if (price >= threshold) {
+                        el.innerHTML = '<span class="shipping-message shipping-message--free">' + freeMsg + '</span>';
+                      } else {
+                        el.innerHTML = '<span class="shipping-message shipping-message--flat">' + flatMsg + '</span>';
+                      }
+                    });
+                  })();
+                </script>
               {%- when 'inventory' -%}
                 <p
                   class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'centered' %} text-center{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
@@ -2110,6 +2146,32 @@
       "type": "product_reviews",
       "limit": 1,
       "settings": []
+    },
+    {
+      "type": "shipping_message",
+      "name": "Shipping message",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "number",
+          "id": "free_threshold",
+          "label": "Free shipping threshold ($)",
+          "default": 50,
+          "info": "Products at or above this price will show the free shipping message"
+        },
+        {
+          "type": "text",
+          "id": "free_message",
+          "label": "Free shipping message",
+          "default": "Free shipping on this order"
+        },
+        {
+          "type": "text",
+          "id": "flat_message",
+          "label": "Flat rate message",
+          "default": "$6.50 flat rate shipping — free on orders over $50"
+        }
+      ]
     }
   ],
   "settings": [

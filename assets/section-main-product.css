@@ -1602,3 +1602,19 @@ a.product__text {
     border: none;
   }
 }
+
+.product__shipping-message {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.shipping-message--free {
+  color: #2a7a2a;
+  font-weight: 500;
+}
+
+.shipping-message--flat {
+  color: rgba(var(--color-foreground), 0.75);
+}

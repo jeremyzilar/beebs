@@ -40,6 +40,14 @@
           "type": "price",
           "settings": {}
         },
+        "shipping_message": {
+          "type": "shipping_message",
+          "settings": {
+            "free_threshold": 50,
+            "free_message": "Free shipping on this order",
+            "flat_message": "$6.50 flat rate shipping — free on orders over $50"
+          }
+        },
         "variant_picker_CG8PQg": {
           "type": "variant_picker",
           "settings": {
@@ -88,6 +96,7 @@
         "judge_me_reviews_preview_badge_yn466d",
         "lead_text_xfrCGc",
         "price",
+        "shipping_message",
         "variant_picker_CG8PQg",
         "quantity_selector",
         "text_kpnnHk",
