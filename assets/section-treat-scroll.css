@@ -190,7 +190,7 @@
 .treat-scroll__benefit-label {
   font-weight: 900;
   margin: 0 0 0.5rem;
-  font-size: clamp(6rem, 6vw, 8rem);
+  font-size: clamp(5rem, 6vw, 8rem);
   line-height: 1.2;
 }
 
@@ -202,7 +202,7 @@
 
 /* Small */
 .treat-scroll__benefit--small {
-  width: 400px;
+  width: 485px;
 }
 
 .treat-scroll__benefit--small .treat-scroll__benefit-label {
@@ -222,6 +222,16 @@
 
   .treat-scroll__product--home-tube img {
     height: var(--product-home-tube-height-mobile);
+  }
+
+  .treat-scroll__cards {
+    gap: 150px;
+    padding-top: 70vh; /* first card enters from below after initial view */
+    padding-bottom: 10vh; 
+  }
+  
+  .treat-scroll__benefit--small {
+    width: auto;
   }
 
   .treat-scroll__card-row--left,
