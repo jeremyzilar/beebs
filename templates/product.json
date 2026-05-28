@@ -40,12 +40,12 @@
           "type": "price",
           "settings": {}
         },
-        "shipping_message": {
+        "shipping_message_hJUBhP": {
           "type": "shipping_message",
           "settings": {
             "free_threshold": 50,
             "free_message": "Free shipping on this order",
-            "flat_message": "$6.50 flat rate shipping — free on orders over $50"
+            "flat_message": "+ $6.50 flat rate (free shipping on orders over $50)"
           }
         },
         "variant_picker_CG8PQg": {
@@ -96,7 +96,7 @@
         "judge_me_reviews_preview_badge_yn466d",
         "lead_text_xfrCGc",
         "price",
-        "shipping_message",
+        "shipping_message_hJUBhP",
         "variant_picker_CG8PQg",
         "quantity_selector",
         "text_kpnnHk",
@@ -119,6 +119,24 @@
         "enable_video_looping": true,
         "padding_top": 20,
         "padding_bottom": 60
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "1",
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     },
     "nutrition_bar_qQBjQ6": {
@@ -181,25 +199,6 @@
         "padding_bottom": 12
       }
     },
-    "related-products": {
-      "type": "related-products",
-      "disabled": true,
-      "settings": {
-        "heading": "You may also like!",
-        "heading_size": "h0",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-4eaa14df-0968-4703-8791-bb0141307d81",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 0,
-        "padding_bottom": 60
-      }
-    },
     "1748882024b60924c5": {
       "type": "apps",
       "blocks": {
@@ -223,9 +222,9 @@
   },
   "order": [
     "main",
+    "related-products",
     "nutrition_bar_qQBjQ6",
     "featured_reviews_carousel_m3mdiU",
-    "related-products",
     "1748882024b60924c5"
   ]
 }
