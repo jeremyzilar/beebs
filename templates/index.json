@@ -233,7 +233,7 @@
         "heading_size": "h1",
         "filter_type": "review",
         "shuffle_on_load": true,
-        "autoscroll_enable": false,
+        "autoscroll_enable": true,
         "autoscroll_speed": 32,
         "color_scheme": "scheme-d9f2c461-f562-4f4b-a737-6c7e51cc927d",
         "padding_top": 24,
