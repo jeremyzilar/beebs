@@ -34,6 +34,8 @@
   scroll-behavior: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
+  /* Allow vertical page scroll when user swipes on the carousel on mobile */
+  touch-action: pan-y;
 }
 
 /* ~1.2 cards visible — peek of next card on small screens */
