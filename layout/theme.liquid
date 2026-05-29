@@ -396,6 +396,7 @@
     <!-- PostHog: capture Klaviyo email signups (popups, flyouts, embedded) -->
     <script>
       document.addEventListener('klaviyoForms', function (e) {
+        console.log('[klaviyoForms debug]', JSON.stringify(e.detail));
         if (!e.detail || e.detail.type !== 'submit') return;
         var email = e.detail.metaData && e.detail.metaData.$email;
         if (!email) return;
