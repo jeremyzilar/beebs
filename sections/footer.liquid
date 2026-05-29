@@ -77,6 +77,19 @@
                 </div>
               </div>
             </form>
+            <script>
+              (function () {
+                var form = document.querySelector('form[action*="kmail-lists.com"]');
+                if (!form) return;
+                form.addEventListener('submit', function () {
+                  if (typeof window.posthog === 'undefined') return;
+                  posthog.capture('newsletter_signup', {
+                    source: 'footer',
+                    list_id: '{{ section.settings.klaviyo_list_id | escape }}'
+                  });
+                });
+              })();
+            </script>
           {%- else -%}
             {%- form 'customer', id: 'ContactFooter--{{ section.id }}', class: 'split-footer__newsletter-form-inner newsletter-form' -%}
               <input type="hidden" name="contact[tags]" value="newsletter">

@@ -100,6 +100,22 @@
           {%- endif -%}
         </div>
       {%- endform -%}
+      <script>
+        (function () {
+          var form = document.getElementById('{{ product_form_id }}');
+          if (!form) return;
+          form.addEventListener('submit', function () {
+            if (typeof window.posthog === 'undefined') return;
+            var variantId = form.querySelector('.product-variant-id');
+            posthog.capture('add_to_cart', {
+              product: {{ product.title | json }},
+              variant_id: variantId ? variantId.value : null,
+              price: {{ product.selected_or_first_available_variant.price | default: 0 }},
+              currency: {{ cart.currency.iso_code | json }}
+            });
+          });
+        })();
+      </script>
     </product-form>
 
   {%- else -%}

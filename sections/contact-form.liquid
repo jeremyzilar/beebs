@@ -131,6 +131,20 @@
           {{ 'templates.contact.form.send' | t }}
         </button>
       </div>
+      <script>
+        (function () {
+          var form = document.getElementById('ContactForm');
+          if (!form) return;
+          form.addEventListener('submit', function () {
+            if (typeof window.posthog === 'undefined') return;
+            var phone = form.querySelector('[name*="Phone"]') || form.querySelector('[name*="phone"]');
+            posthog.capture('contact_form_submitted', {
+              source: 'contact_page',
+              has_phone: !!(phone && phone.value)
+            });
+          });
+        })();
+      </script>
     {%- endform -%}
   </div>
 </div>
