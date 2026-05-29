@@ -393,10 +393,12 @@
       })();
     </script>
 
-    <!-- PostHog: capture all Klaviyo form submissions (popups, flyouts, embedded) -->
+    <!-- PostHog: capture Klaviyo email signups (popups, flyouts, embedded) -->
     <script>
       document.addEventListener('klaviyoForms', function (e) {
-        if (!e.detail || (e.detail.type !== 'submit' && e.detail.type !== 'stepSubmit')) return;
+        if (!e.detail || e.detail.type !== 'submit') return;
+        var email = e.detail.metaData && e.detail.metaData.$email;
+        if (!email) return;
         if (typeof window.posthog === 'undefined') return;
         posthog.capture('newsletter_signup', {
           source: 'klaviyo_form',
