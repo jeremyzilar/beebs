@@ -393,22 +393,6 @@
       })();
     </script>
 
-    <!-- PostHog: capture Klaviyo email signups (popups, flyouts, embedded) -->
-    <script>
-      document.addEventListener('klaviyoForms', function (e) {
-        console.log('[klaviyoForms debug]', JSON.stringify(e.detail));
-        if (!e.detail || e.detail.type !== 'submit') return;
-        var email = e.detail.metaData && e.detail.metaData.$email;
-        if (!email) return;
-        if (typeof window.posthog === 'undefined') return;
-        posthog.capture('newsletter_signup', {
-          source: 'klaviyo_form',
-          form_id: e.detail.formId || null,
-          list_id: (e.detail.metaData && e.detail.metaData.$list_id) || null
-        });
-      });
-    </script>
-
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
