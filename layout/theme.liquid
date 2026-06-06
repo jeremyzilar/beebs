@@ -15,6 +15,36 @@
         api_host: 'https://us.i.posthog.com',
         person_profiles: 'identified_only'
       });
+
+      // Intercept cart/add.js to capture add_to_cart events
+      (function () {
+        var _fetch = window.fetch;
+        window.fetch = function () {
+          var args = Array.prototype.slice.call(arguments);
+          var url = typeof args[0] === 'string' ? args[0] : (args[0] && args[0].url) || '';
+          var isCartAdd = url.indexOf('/cart/add') !== -1;
+          return _fetch.apply(this, args).then(function (response) {
+            if (isCartAdd && response.ok) {
+              response.clone().json().then(function (data) {
+                if (window.posthog) {
+                  var items = data.items || (data.id ? [data] : []);
+                  items.forEach(function (item) {
+                    window.posthog.capture('add_to_cart', {
+                      product_title: item.product_title,
+                      variant_title: item.variant_title,
+                      sku: item.sku,
+                      price: item.price / 100,
+                      quantity: item.quantity,
+                      product_type: item.product_type
+                    });
+                  });
+                }
+              }).catch(function () {});
+            }
+            return response;
+          });
+        };
+      })();
     </script>
 
     {%- if settings.favicon != blank -%}
