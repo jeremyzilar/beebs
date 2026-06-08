@@ -32,6 +32,30 @@
         "color_scheme": "scheme-72a088ce-189c-4565-854a-217746a0488e"
       }
     },
+    "rich_text_KamP9f": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_baqLHG": {
+          "type": "heading",
+          "settings": {
+            "heading": "100% all-natural, grass-fed lamb from New Zealand",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_baqLHG"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-b7eeed0b-4a9f-42df-8fe2-97a3a46693b3",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
     "nutrition_bar_iKN9gh": {
       "type": "nutrition-bar",
       "blocks": {
@@ -838,6 +862,7 @@
   },
   "order": [
     "hero_video_G3XjDj",
+    "rich_text_KamP9f",
     "nutrition_bar_iKN9gh",
     "reviews_strip_HAFqxh",
     "treat_scroll_TS8xBq",
