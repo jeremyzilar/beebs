@@ -14,7 +14,8 @@
       posthog.init('phc_fUC7XqDfSRKMRJhCrueCPH3Fc1gEO1oCs2iw6mRSiyk', {
         api_host: 'https://us.i.posthog.com',
         person_profiles: 'identified_only',
-        defaults: '2026-01-30'
+        defaults: '2026-01-30',
+        disable_session_recording: false
       });
 
       // Intercept cart/add.js to capture add_to_cart events
@@ -47,6 +48,27 @@
         };
       })();
     </script>
+
+    {% if template == 'product' %}
+    <!-- PostHog product view tracking -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        if (window.posthog) {
+          window.posthog.capture('product_viewed', {
+            product_id: '{{ product.id }}',
+            product_title: '{{ product.title | escape }}',
+            product_type: '{{ product.type | escape }}',
+            product_vendor: '{{ product.vendor | escape }}',
+            price: {{ product.price | divided_by: 100.0 }},
+            compare_at_price: {{ product.compare_at_price | divided_by: 100.0 | default: 0 }},
+            sku: '{{ product.selected_or_first_available_variant.sku | escape }}',
+            variant_title: '{{ product.selected_or_first_available_variant.title | escape }}',
+            available: {{ product.available }}
+          });
+        }
+      });
+    </script>
+    {% endif %}
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
